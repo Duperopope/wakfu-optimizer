@@ -4,3 +4,10 @@
 [2026-03-13 10:23:59] [__main__] [INFO] DMG: 100 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=48% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2868.2
 [2026-03-13 10:23:59] [__main__] [INFO] DMG: 100 base | fire | mastery 2423 | REAR x1.0 | crit=False | DI=68% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=4238.6
 [2026-03-13 10:23:59] [__main__] [INFO] HEAL: 50 base | mastery 1838 | crit=False | soins=0%+0% | res_soin=0% | incurable=0 | FINAL=969.0
+[2026-03-13 10:30:30] [__main__] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 10:30:30] [__main__] [INFO] Fighter cree: Sacapatate (ID:2) | B | monster | monster L179 | PV:5000/5000 PA:6 PM:3 PW:0
+[2026-03-13 10:30:30] [__main__] [INFO]   Sacapatate recoit 1500 degats: armure -1000 | PV -500 | restant PV:4500 armure:0
+[2026-03-13 10:30:30] [__main__] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 10)
+[2026-03-13 10:30:30] [__main__] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 20)
+[2026-03-13 10:30:30] [__main__] [INFO]   Sacapatate recoit 99999 degats: armure -0 | PV -5000 | restant PV:0 armure:0 | K.O.!
+[2026-03-13 10:30:30] [__main__] [INFO]   Sacapatate ressuscite avec 1000 PV

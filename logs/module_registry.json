@@ -145,5 +145,12 @@
     "action": "modify",
     "version": "5.0.0",
     "depends_on": []
+  },
+  "engine\\fighter.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
   }
 }
