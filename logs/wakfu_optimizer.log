@@ -11,3 +11,8 @@
 [2026-03-13 10:30:30] [__main__] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 20)
 [2026-03-13 10:30:30] [__main__] [INFO]   Sacapatate recoit 99999 degats: armure -0 | PV -5000 | restant PV:0 armure:0 | K.O.!
 [2026-03-13 10:30:30] [__main__] [INFO]   Sacapatate ressuscite avec 1000 PV
+[2026-03-13 10:43:01] [__main__] [INFO] Grille creee: 10x10 (100 cases)
+[2026-03-13 10:43:01] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 10:43:01] [engine.fighter] [INFO] Fighter cree: Goblin (ID:2) | B | monster | monster L100 | PV:3000/3000 PA:6 PM:3 PW:0
+[2026-03-13 10:43:01] [__main__] [INFO]   Swap: L'Immortel ((2, 3)->(4, 3)) <-> Goblin ((4, 3)->(2, 3))
+[2026-03-13 10:43:01] [__main__] [INFO]   Swap: L'Immortel ((4, 3)->(2, 3)) <-> Goblin ((2, 3)->(4, 3))
