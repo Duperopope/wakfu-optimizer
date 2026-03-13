@@ -16,3 +16,127 @@
 [2026-03-13 10:43:01] [engine.fighter] [INFO] Fighter cree: Goblin (ID:2) | B | monster | monster L100 | PV:3000/3000 PA:6 PM:3 PW:0
 [2026-03-13 10:43:01] [__main__] [INFO]   Swap: L'Immortel ((2, 3)->(4, 3)) <-> Goblin ((4, 3)->(2, 3))
 [2026-03-13 10:43:01] [__main__] [INFO]   Swap: L'Immortel ((4, 3)->(2, 3)) <-> Goblin ((2, 3)->(4, 3))
+[2026-03-13 10:50:59] [engine.grid] [INFO] Grille creee: 15x15 (225 cases)
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: Bouftou Alpha (ID:2) | B | monster | monster L179 | PV:12000/12000 PA:8 PM:4 PW:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: Bouftou Beta (ID:3) | B | monster | monster L150 | PV:8000/8000 PA:6 PM:3 PW:0
+[2026-03-13 10:50:59] [__main__] [INFO] Ordre des tours (equipe A commence, avg 142 vs 105): L'Immortel(142) -> Bouftou Alpha(120) -> Bouftou Beta(90)
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 10)
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 20)
+[2026-03-13 10:50:59] [__main__] [INFO]   L'Immortel: Sram innate -> +20%CC, +50 PF
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT DEMARRE - Max 4 rounds
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 1 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de L'Immortel: PA:13 PM:5 PW:10 PV:8920/8920 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 30)
+[2026-03-13 10:50:59] [__main__] [INFO]   L'Immortel: Isole sans Meurtrier -> +25 PF
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Alpha: PA:8 PM:4 PW:0 PV:12000/12000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Beta: PA:6 PM:3 PW:0 PV:8000/8000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 2 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de L'Immortel: PA:13 PM:5 PW:11 PV:8920/8920 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 40)
+[2026-03-13 10:50:59] [__main__] [INFO]   L'Immortel: Isole sans Meurtrier -> +25 PF
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Alpha: PA:8 PM:4 PW:0 PV:12000/12000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Beta: PA:6 PM:3 PW:0 PV:8000/8000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 3 --- [VELOCITE]
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de L'Immortel: PA:13 PM:5 PW:12 PV:8920/8920 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO]   Velocite Engouement: L'Immortel gagne +2 PA
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 40)
+[2026-03-13 10:50:59] [__main__] [INFO]   L'Immortel: Isole sans Meurtrier -> +25 PF
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Alpha: PA:8 PM:4 PW:0 PV:12000/12000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Beta: PA:6 PM:3 PW:0 PV:8000/8000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 4 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de L'Immortel: PA:13 PM:5 PW:13 PV:8920/8920 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   L'Immortel: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 40)
+[2026-03-13 10:50:59] [__main__] [INFO]   L'Immortel: Isole sans Meurtrier -> +25 PF
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Alpha: PA:8 PM:4 PW:0 PV:12000/12000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Bouftou Beta: PA:6 PM:3 PW:0 PV:8000/8000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+  TIMEOUT - 4 rounds atteints
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT TERMINE - Vainqueur: timeout
+[2026-03-13 10:50:59] [__main__] [INFO]   Rounds: 5 | Tours joues: 12
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe A: 1 vivants, 8920 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe B: 2 vivants, 20000 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Temps: 0.003s
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:50:59] [engine.grid] [INFO] Grille creee: 10x10 (100 cases)
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: Sram2 (ID:4) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: Larve (ID:5) | B | monster | monster L10 | PV:1/1 PA:4 PM:2 PW:0
+[2026-03-13 10:50:59] [__main__] [INFO] Ordre des tours (equipe A commence, avg 142 vs 10): Sram2(142) -> Larve(10)
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   Sram2: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 10)
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   Sram2: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 20)
+[2026-03-13 10:50:59] [__main__] [INFO]   Sram2: Sram innate -> +20%CC, +50 PF
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT DEMARRE - Max 3 rounds
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 1 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Sram2: PA:13 PM:5 PW:10 PV:8920/8920 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   Larve recoit 9999 degats: armure -0 | PV -1 | restant PV:0 armure:0 | K.O.!
+[2026-03-13 10:50:59] [engine.fighter] [INFO]   Sram2: PF refund! +1AP +1MP +1WP +10 Hemorrhagie (niv 30)
+[2026-03-13 10:50:59] [__main__] [INFO]   Sram2: Isole sans Meurtrier -> +25 PF
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT TERMINE - Vainqueur: team_a
+[2026-03-13 10:50:59] [__main__] [INFO]   Rounds: 1 | Tours joues: 1
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe A: 1 vivants, 8920 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe B: 0 vivants, 0 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Temps: 0.001s
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:50:59] [engine.grid] [INFO] Grille creee: 10x10 (100 cases)
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: TestPlayer (ID:6) | A | player | monster L100 | PV:5000/5000 PA:10 PM:4 PW:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] Fighter cree: Dummy (ID:7) | B | monster | monster L100 | PV:99999/99999 PA:6 PM:3 PW:0
+[2026-03-13 10:50:59] [__main__] [INFO] Ordre des tours (equipe A commence, avg 200 vs 50): TestPlayer(200) -> Dummy(50)
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT DEMARRE - Max 7 rounds
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 1 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 2 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 3 --- [VELOCITE]
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO]   Velocite Engouement: TestPlayer gagne +2 PA
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 4 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 5 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 6 --- [VELOCITE]
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO]   Velocite Engouement: TestPlayer gagne +2 PA
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+--- ROUND 7 ---
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de TestPlayer: PA:10 PM:4 PW:0 PV:5000/5000 Armure:0
+[2026-03-13 10:50:59] [engine.fighter] [INFO] --- Tour de Dummy: PA:6 PM:3 PW:0 PV:99999/99999 Armure:0
+[2026-03-13 10:50:59] [__main__] [INFO] 
+  TIMEOUT - 7 rounds atteints
+[2026-03-13 10:50:59] [__main__] [INFO] 
+============================================================
+[2026-03-13 10:50:59] [__main__] [INFO]   COMBAT TERMINE - Vainqueur: timeout
+[2026-03-13 10:50:59] [__main__] [INFO]   Rounds: 8 | Tours joues: 14
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe A: 1 vivants, 5000 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Equipe B: 1 vivants, 99999 PV
+[2026-03-13 10:50:59] [__main__] [INFO]   Temps: 0.004s
+[2026-03-13 10:50:59] [__main__] [INFO] ============================================================
