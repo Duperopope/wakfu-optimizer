@@ -140,3 +140,14 @@
 [2026-03-13 10:50:59] [__main__] [INFO]   Equipe B: 1 vivants, 99999 PV
 [2026-03-13 10:50:59] [__main__] [INFO]   Temps: 0.004s
 [2026-03-13 10:50:59] [__main__] [INFO] ============================================================
+[2026-03-13 10:58:48] [engine.orientation] [INFO] Esquive: L=200.0, Dodge=100, X=0.778, Y_raw=14.2, Y_adj=14.2, Y=14, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 4PM 4PA
+[2026-03-13 10:58:48] [engine.orientation] [INFO] Esquive: L=200.0, Dodge=100, X=0.778, Y_raw=14.2, Y_adj=7.1, Y=7, orientation_tacleur=REAR, caps=(3PM,3PA) -> perte 3PM 3PA
+[2026-03-13 10:58:48] [engine.orientation] [INFO] Esquive: L=50.0, Dodge=500, X=-1.909, Y_raw=-7.3, Y_adj=-7.3, Y=0, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 0PM 0PA
+[2026-03-13 10:58:48] [engine.orientation] [INFO] Esquive: L=275.0, Dodge=100, X=1.089, Y_raw=16.7, Y_adj=16.7, Y=16, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 4PM 4PA
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Esquive: L=200.0, Dodge=100, X=0.778, Y_raw=14.2, Y_adj=14.2, Y=14, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 4PM 4PA
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Esquive: L=200.0, Dodge=100, X=0.778, Y_raw=14.2, Y_adj=7.1, Y=7, orientation_tacleur=REAR, caps=(3PM,3PA) -> perte 3PM 3PA
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Esquive: L=50.0, Dodge=500, X=-1.909, Y_raw=-7.3, Y_adj=-7.3, Y=0, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 0PM 0PA
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Esquive: L=275.0, Dodge=100, X=1.089, Y_raw=16.7, Y_adj=16.7, Y=16, orientation_tacleur=FRONT, caps=(4PM,4PA) -> perte 4PM 4PA
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou est Stabilise par Sram (source: enemy). Destabilise_enemy applique pour 3 tours.
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou a deja destabilise_enemy, Stabilise impossible de cette source
+[2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou est Stabilise par Eni (source: ally). Destabilise_ally applique pour 3 tours.
