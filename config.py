@@ -64,3 +64,10 @@ DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 CLASSES_DIR = os.path.join(DATA_DIR, "classes")
 PROFILES_DIR = os.path.join(DATA_DIR, "profiles")
 MONSTERS_DIR = os.path.join(DATA_DIR, "monsters")
+
+# Dict de raccourci pour engine/damage.py
+ORIENTATION_MULTIPLIERS = {
+    "FRONT": ORIENTATION_FRONT,
+    "SIDE": ORIENTATION_SIDE,
+    "REAR": ORIENTATION_REAR,
+}

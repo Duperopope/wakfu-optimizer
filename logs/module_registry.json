@@ -84,9 +84,9 @@
     "depends_on": []
   },
   "engine\\damage.py": {
-    "role": "Auto-detecte par scan (create)",
+    "role": "Auto-detecte par scan (modify)",
     "last_modified": "2026-03-13",
-    "action": "create",
+    "action": "modify",
     "version": "5.0.0",
     "depends_on": []
   },
@@ -136,6 +136,13 @@
     "role": "Auto-detecte par scan (create)",
     "last_modified": "2026-03-13",
     "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "config.py": {
+    "role": "Auto-detecte par scan (modify)",
+    "last_modified": "2026-03-13",
+    "action": "modify",
     "version": "5.0.0",
     "depends_on": []
   }
