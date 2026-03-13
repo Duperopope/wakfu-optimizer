@@ -151,3 +151,32 @@
 [2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou est Stabilise par Sram (source: enemy). Destabilise_enemy applique pour 3 tours.
 [2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou a deja destabilise_enemy, Stabilise impossible de cette source
 [2026-03-13 10:59:50] [engine.orientation] [INFO] Bouftou est Stabilise par Eni (source: ally). Destabilise_ally applique pour 3 tours.
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] InvisibilityManager cree pour L'Immortel (Retenue: True)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel lance Invisibilite! Invisible 2 tours, Apparent 3 tours, +2 PM max, Maitre des Ombres pret. PW restants: 6
+[2026-03-13 11:04:05] [engine.invisibility] [WARNING] L'Immortel ne peut pas lancer Invisibilite: Apparent
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: bonus +2 PM max expire
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: Maitre des Ombres ACTIF! +100% DI au prochain sort direct
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: Invisible (1 tour(s) restant(s))
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: Maitre des Ombres consomme! +100% DI sur ce sort
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: sort 2 PA < 4 PA -> reste Invisible (Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] L'Immortel: sort 4 PA >= 4 PA -> Invisibilite revelee! (Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] InvisibilityManager cree pour Sram2 (Retenue: False)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2 lance Invisibilite! Invisible 2 tours, Apparent 3 tours, +2 PM max, Maitre des Ombres pret. PW restants: 6
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2: bonus +2 PM max expire
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2: Maitre des Ombres ACTIF! +100% DI au prochain sort direct
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2: Invisible (1 tour(s) restant(s))
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2: Maitre des Ombres consomme! +100% DI sur ce sort
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram2: sort offensif -> Invisibilite revelee! (pas de Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] InvisibilityManager cree pour Sram3 (Retenue: True)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram3 lance Invisibilite! Invisible 2 tours, Apparent 3 tours, +2 PM max, Maitre des Ombres pret. PW restants: 6
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram3: recoit 500 degats -> Invisibilite brisee!
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] InvisibilityManager cree pour Sram4 (Retenue: True)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4 lance Invisibilite! Invisible 2 tours, Apparent 3 tours, +2 PM max, Maitre des Ombres pret. PW restants: 6
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: bonus +2 PM max expire
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: Maitre des Ombres ACTIF! +100% DI au prochain sort direct
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: Invisible (1 tour(s) restant(s))
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: Maitre des Ombres consomme! +100% DI sur ce sort
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: sort 2 PA < 4 PA -> reste Invisible (Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: sort 2 PA < 4 PA -> reste Invisible (Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: sort 4 PA >= 4 PA -> Invisibilite revelee! (Retenue)
+[2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: Apparent expire
