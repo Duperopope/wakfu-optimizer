@@ -180,3 +180,36 @@
 [2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: sort 2 PA < 4 PA -> reste Invisible (Retenue)
 [2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: sort 4 PA >= 4 PA -> Invisibilite revelee! (Retenue)
 [2026-03-13 11:04:05] [engine.invisibility] [INFO] Sram4: Apparent expire
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de L'Immortel cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(6, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de L'Immortel lance Peur (Double) (cout: 2 PA, reste: 6 PA)
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de L'Immortel lance Diversion (Double) (cout: 2 PA, reste: 4 PA)
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de L'Immortel lance Contact letal (Double) (cout: 2 PA, reste: 2 PA)
+[2026-03-13 11:10:15] [engine.double] [WARNING] Double de L'Immortel: impossible de lancer contact_letal: Max utilisations atteint (1/1)
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de L'Immortel lance Peur (Double) (cout: 2 PA, reste: 0 PA)
+[2026-03-13 11:10:15] [engine.double] [WARNING] Double de L'Immortel: impossible de lancer peur: PA insuffisants (0 < 2)
+[2026-03-13 11:10:15] [engine.double] [INFO] DoubleManager cree pour Sram2. Passifs: []
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram2 cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(6, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram2 invoque le Double en (6, 5)! PV=3568, Tacle=358, PA Sram restants: 11
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram2 prend le controle du Double! PA=8, PM=6
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram2: recoit 500 degats -> PV 3068/3568
+[2026-03-13 11:10:15] [engine.double] [INFO] DoubleManager cree pour Sram3. Passifs: ['leurre']
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram3 cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(6, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram3 invoque le Double en (6, 5)! PV=3568, Tacle=358, PA Sram restants: 11
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram3: recoit 3568 degats -> PV 0/3568 -> DETRUIT
+[2026-03-13 11:10:15] [engine.double] [INFO] Leurre! Double de Sram3 explose: 1784 degats (cercle 2) + Hemorragie +20
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram3 est detruit!
+[2026-03-13 11:10:15] [engine.double] [INFO] DoubleManager cree pour Sram4. Passifs: ['duperie']
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram4 cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(7, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram4 invoque le Double en (7, 5)! PV=3568, Tacle=358, PA Sram restants: 11
+[2026-03-13 11:10:15] [engine.double] [INFO] Duperie! Sram4 echange avec le Double apres degats ((5, 5) <-> (7, 5))
+[2026-03-13 11:10:15] [engine.double] [INFO] Duperie! Sram4 echange avec le Double apres degats ((7, 5) <-> (5, 5))
+[2026-03-13 11:10:15] [engine.double] [INFO] DoubleManager cree pour Sram5. Passifs: []
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram5 cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(6, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram5 invoque le Double en (6, 5)! PV=3568, Tacle=358, PA Sram restants: 11
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram5: recoit 3568 degats -> PV 0/3568 -> DETRUIT
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram5 est detruit!
+[2026-03-13 11:10:15] [engine.double] [INFO] DoubleManager cree pour Sram6. Passifs: ['passe_passe']
+[2026-03-13 11:10:15] [engine.double] [INFO] Double de Sram6 cree: PV=3568/3568, PA=8, PM=6, PW=6, Tacle=358, position=(8, 5)
+[2026-03-13 11:10:15] [engine.double] [INFO] Passe-Passe: Sram6 echange avec Double ((5, 5) <-> (8, 5))
+[2026-03-13 11:10:15] [engine.double] [INFO] Sram6 invoque le Double en (5, 5)! PV=3568, Tacle=358, PA Sram restants: 11
+[2026-03-13 11:10:15] [engine.double] [INFO] Passe-Passe fin de tour: Sram6 <-> Double ((8, 5) <-> (5, 5))
