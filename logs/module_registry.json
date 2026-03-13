@@ -105,9 +105,9 @@
     "depends_on": []
   },
   "logs\\module_registry.json": {
-    "role": "Auto-detecte par scan (create)",
+    "role": "Auto-detecte par scan (modify)",
     "last_modified": "2026-03-13",
-    "action": "create",
+    "action": "modify",
     "version": "5.0.0",
     "depends_on": []
   },
@@ -126,6 +126,13 @@
     "depends_on": []
   },
   "tests\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "DESIGN_DOC.md": {
     "role": "Auto-detecte par scan (create)",
     "last_modified": "2026-03-13",
     "action": "create",
