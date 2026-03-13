@@ -1,0 +1,2032 @@
+{
+  "6712": {
+    "id": 6712,
+    "name_fr": "Renaissance",
+    "name_en": "Rebirth",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8393": {
+    "id": 8393,
+    "name_fr": "Bouclier dorsal",
+    "name_en": "Rear Shield",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8375": {
+    "id": 8375,
+    "name_fr": "Cuirasse singulière",
+    "name_en": "Single Shared Armor",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6001": {
+    "id": 6001,
+    "name_fr": "Retour PA",
+    "name_en": "AP Return",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6031": {
+    "id": 6031,
+    "name_fr": "Retour PM",
+    "name_en": "MP Return",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8493": {
+    "id": 8493,
+    "name_fr": "Balance critique",
+    "name_en": "Critical Scale",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2512": {
+    "id": 2512,
+    "name_fr": "Rage",
+    "name_en": "Fury",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5984": {
+    "id": 5984,
+    "name_fr": "Cicatrisation",
+    "name_en": "Healing",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8381": {
+    "id": 8381,
+    "name_fr": "Pétulance",
+    "name_en": "Ebullience",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9067": {
+    "id": 9067,
+    "name_fr": "Sauvegarde critique",
+    "name_en": "Critical Save",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1611": {
+    "id": 1611,
+    "name_fr": "Emblème d'Ecaflip",
+    "name_en": "Ecaflip Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9072": {
+    "id": 9072,
+    "name_fr": "Absolution",
+    "name_en": "Absolution",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7863": {
+    "id": 7863,
+    "name_fr": "Influence paradoxale",
+    "name_en": "Paradoxical Influence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "3416": {
+    "id": 3416,
+    "name_fr": "Boost PA",
+    "name_en": "AP Boost",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6014": {
+    "id": 6014,
+    "name_fr": "Dérobade lente",
+    "name_en": "Slow Escape",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7861": {
+    "id": 7861,
+    "name_fr": "Force vitale",
+    "name_en": "Vital Strength",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7722": {
+    "id": 7722,
+    "name_fr": "Conservation",
+    "name_en": "Conservation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5885": {
+    "id": 5885,
+    "name_fr": "Inversion",
+    "name_en": "Inversion",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1610": {
+    "id": 1610,
+    "name_fr": "Emblème du Sacrieur",
+    "name_en": "Sacrier Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7875": {
+    "id": 7875,
+    "name_fr": "Distribution",
+    "name_en": "Distribution",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7878": {
+    "id": 7878,
+    "name_fr": "Chaos",
+    "name_en": "Chaos",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7256": {
+    "id": 7256,
+    "name_fr": "Inflexibilité II",
+    "name_en": "Inflexibility II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6818": {
+    "id": 6818,
+    "name_fr": "Vol d'Esquive",
+    "name_en": "Dodge Steal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8394": {
+    "id": 8394,
+    "name_fr": "Propagation",
+    "name_en": "Propagation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2931": {
+    "id": 2931,
+    "name_fr": "Costume de Passage",
+    "name_en": "Passenthru Costume",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6932": {
+    "id": 6932,
+    "name_fr": "Abandon",
+    "name_en": "Abandon",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6711": {
+    "id": 6711,
+    "name_fr": "Énergie ancestrale",
+    "name_en": "Ancestral Energy",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1612": {
+    "id": 1612,
+    "name_fr": "Emblème d'Eniripsa",
+    "name_en": "Eniripsa Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6832": {
+    "id": 6832,
+    "name_fr": "Main forte",
+    "name_en": "Strong Hand",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8400": {
+    "id": 8400,
+    "name_fr": "Coque",
+    "name_en": "Shell",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7079": {
+    "id": 7079,
+    "name_fr": "Préparation critique",
+    "name_en": "Critical Preparation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2932": {
+    "id": 2932,
+    "name_fr": "Costume d'Adale",
+    "name_en": "Adal Costume",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7072": {
+    "id": 7072,
+    "name_fr": "Pacte d'Anathar IV",
+    "name_en": "Anathar's Pact IV",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7714": {
+    "id": 7714,
+    "name_fr": "Témérité",
+    "name_en": "Recklessness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6821": {
+    "id": 6821,
+    "name_fr": "Expert des armes légères",
+    "name_en": "Light Weapons Expert",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9064": {
+    "id": 9064,
+    "name_fr": "Jugement",
+    "name_en": "Judgment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6030": {
+    "id": 6030,
+    "name_fr": "Cyclothymie",
+    "name_en": "Cyclothymia",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7879": {
+    "id": 7879,
+    "name_fr": "Abnégation",
+    "name_en": "Abnegation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6708": {
+    "id": 6708,
+    "name_fr": "Contrôle de l'espace",
+    "name_en": "Controlling Space",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6833": {
+    "id": 6833,
+    "name_fr": "Pied ferme",
+    "name_en": "Firm Foot",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6933": {
+    "id": 6933,
+    "name_fr": "Prétention",
+    "name_en": "Pretension",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6023": {
+    "id": 6023,
+    "name_fr": "Aisance",
+    "name_en": "Poise",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5077": {
+    "id": 5077,
+    "name_fr": "Dénouement",
+    "name_en": "Unraveling",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6637": {
+    "id": 6637,
+    "name_fr": "Retrait de PW",
+    "name_en": "WP Removal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5248": {
+    "id": 5248,
+    "name_fr": "Maniement : Bouclier",
+    "name_en": "Wield type: Shield",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8494": {
+    "id": 8494,
+    "name_fr": "Consolation critique",
+    "name_en": "Critical Consolation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5988": {
+    "id": 5988,
+    "name_fr": "Ténacité",
+    "name_en": "Tenacity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5999": {
+    "id": 5999,
+    "name_fr": "Dimensionnalité",
+    "name_en": "Dimensionality",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6000": {
+    "id": 6000,
+    "name_fr": "Théorie de la matière",
+    "name_en": "Theory of Matter",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6927": {
+    "id": 6927,
+    "name_fr": "Précaution",
+    "name_en": "Precaution",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1621": {
+    "id": 1621,
+    "name_fr": "Emblème du Sram",
+    "name_en": "Sram Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8521": {
+    "id": 8521,
+    "name_fr": "Ventilation",
+    "name_en": "Ventilation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6010": {
+    "id": 6010,
+    "name_fr": "Visibilité",
+    "name_en": "Visibility",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8384": {
+    "id": 8384,
+    "name_fr": "Pilier II",
+    "name_en": "Pillar II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1617": {
+    "id": 1617,
+    "name_fr": "Emblème du Pandawa",
+    "name_en": "Pandawa Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7862": {
+    "id": 7862,
+    "name_fr": "Influence vitale",
+    "name_en": "Vital Influence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8385": {
+    "id": 8385,
+    "name_fr": "Mesure II",
+    "name_en": "Measure II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6032": {
+    "id": 6032,
+    "name_fr": "Prospérité",
+    "name_en": "Prosperity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6931": {
+    "id": 6931,
+    "name_fr": "Neutralité",
+    "name_en": "Neutrality",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6037": {
+    "id": 6037,
+    "name_fr": "Expert des Parades",
+    "name_en": "Blocking Expert",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2571": {
+    "id": 2571,
+    "name_fr": "Berserk 75 %",
+    "name_en": "Berserk 75%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5987": {
+    "id": 5987,
+    "name_fr": "Détermination",
+    "name_en": "Determination",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8380": {
+    "id": 8380,
+    "name_fr": "Aplomb naturel",
+    "name_en": "Natural Poise",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6018": {
+    "id": 6018,
+    "name_fr": "Esquive Berserk",
+    "name_en": "Berserk Dodge",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2573": {
+    "id": 2573,
+    "name_fr": "Requinquage 75 %",
+    "name_en": "Perk Up 75%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9073": {
+    "id": 9073,
+    "name_fr": "Châtiment",
+    "name_en": "Punishment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8379": {
+    "id": 8379,
+    "name_fr": "Lunatique II",
+    "name_en": "Lunatic II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5446": {
+    "id": 5446,
+    "name_fr": "Brutalité",
+    "name_en": "Brutality",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5450": {
+    "id": 5450,
+    "name_fr": "Stasification",
+    "name_en": "Stasification",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6034": {
+    "id": 6034,
+    "name_fr": "Focalisation",
+    "name_en": "Focalization",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "4960": {
+    "id": 4960,
+    "name_fr": "Boost PM",
+    "name_en": "MP Boost",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5985": {
+    "id": 5985,
+    "name_fr": "Embuscade",
+    "name_en": "Ambush",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5073": {
+    "id": 5073,
+    "name_fr": "Inflexible",
+    "name_en": "Inflexible",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5081": {
+    "id": 5081,
+    "name_fr": "Brasero",
+    "name_en": "Brazier",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6830": {
+    "id": 6830,
+    "name_fr": "Nature",
+    "name_en": "Natural",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7881": {
+    "id": 7881,
+    "name_fr": "Volonté de fer",
+    "name_en": "Iron Will",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8395": {
+    "id": 8395,
+    "name_fr": "Valeur ajoutée",
+    "name_en": "Added Value",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5253": {
+    "id": 5253,
+    "name_fr": "Wé",
+    "name_en": "Yeah",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7078": {
+    "id": 7078,
+    "name_fr": "Temporisation",
+    "name_en": "Delay",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2574": {
+    "id": 2574,
+    "name_fr": "Requinquage 25 %",
+    "name_en": "Perk Up 25%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7873": {
+    "id": 7873,
+    "name_fr": "Face-à-face",
+    "name_en": "Face-to-Face",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5992": {
+    "id": 5992,
+    "name_fr": "Topologie",
+    "name_en": "Topology",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8132": {
+    "id": 8132,
+    "name_fr": "Apprêt",
+    "name_en": "Embellishment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6033": {
+    "id": 6033,
+    "name_fr": "Clameur",
+    "name_en": "Clamor",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1973": {
+    "id": 1973,
+    "name_fr": "Costume de Wabbit",
+    "name_en": "Wabbit Costume",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8382": {
+    "id": 8382,
+    "name_fr": "Empressement",
+    "name_en": "Gusto",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8387": {
+    "id": 8387,
+    "name_fr": "Volonté indirecte",
+    "name_en": "Indirect Force of Will",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1354": {
+    "id": 1354,
+    "name_fr": "Aura de l'Amour",
+    "name_en": "Love Aura",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6020": {
+    "id": 6020,
+    "name_fr": "Barrière Mêlée",
+    "name_en": "Melee Barrier",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6038": {
+    "id": 6038,
+    "name_fr": "Enveloppe rocheuse",
+    "name_en": "Rocky Envelope",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8505": {
+    "id": 8505,
+    "name_fr": "Tellurisme secondaire",
+    "name_en": "Secondary Earthbound",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5216": {
+    "id": 5216,
+    "name_fr": "Directives",
+    "name_en": "Directives",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5249": {
+    "id": 5249,
+    "name_fr": "Maniement : Dague",
+    "name_en": "Wield type: Dagger",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5444": {
+    "id": 5444,
+    "name_fr": "Science du placement",
+    "name_en": "Positioning Knowledge",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7865": {
+    "id": 7865,
+    "name_fr": "Interception",
+    "name_en": "Interception",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2505": {
+    "id": 2505,
+    "name_fr": "Fortification",
+    "name_en": "Fortification",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1608": {
+    "id": 1608,
+    "name_fr": "Emblème du Iop",
+    "name_en": "Iop Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7880": {
+    "id": 7880,
+    "name_fr": "Engagement",
+    "name_en": "Engagement",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5993": {
+    "id": 5993,
+    "name_fr": "Réprobation",
+    "name_en": "Condemnation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1618": {
+    "id": 1618,
+    "name_fr": "Emblème du Feca",
+    "name_en": "Feca Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7713": {
+    "id": 7713,
+    "name_fr": "Tabass'Carapace",
+    "name_en": "Bashell",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1615": {
+    "id": 1615,
+    "name_fr": "Emblème d'Enutrof",
+    "name_en": "Enutrof Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7882": {
+    "id": 7882,
+    "name_fr": "Démesuré",
+    "name_en": "Colossal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7872": {
+    "id": 7872,
+    "name_fr": "Contact",
+    "name_en": "Contact",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6029": {
+    "id": 6029,
+    "name_fr": "Muraille",
+    "name_en": "Wall",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7712": {
+    "id": 7712,
+    "name_fr": "Folie",
+    "name_en": "Madness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6813": {
+    "id": 6813,
+    "name_fr": "Retour enflammé",
+    "name_en": "Flaming Return",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6824": {
+    "id": 6824,
+    "name_fr": "Retour vital",
+    "name_en": "Vital Return",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8366": {
+    "id": 8366,
+    "name_fr": "Dernier instant",
+    "name_en": "Last Moment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5453": {
+    "id": 5453,
+    "name_fr": "Garde Levée",
+    "name_en": "Guard Up",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1614": {
+    "id": 1614,
+    "name_fr": "Emblème du Xelor",
+    "name_en": "Xelor Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5994": {
+    "id": 5994,
+    "name_fr": "Frénésie",
+    "name_en": "Frenzy",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6825": {
+    "id": 6825,
+    "name_fr": "Destruction",
+    "name_en": "Destruction",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5452": {
+    "id": 5452,
+    "name_fr": "Aura de flammes",
+    "name_en": "Flame Aura",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6016": {
+    "id": 6016,
+    "name_fr": "Embuscade écartée",
+    "name_en": "Distant Ambush",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6022": {
+    "id": 6022,
+    "name_fr": "Opiniâtreté",
+    "name_en": "Obstinacy",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5075": {
+    "id": 5075,
+    "name_fr": "Mesure",
+    "name_en": "Measure",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6926": {
+    "id": 6926,
+    "name_fr": "Revigoration",
+    "name_en": "Reinvigoration",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8496": {
+    "id": 8496,
+    "name_fr": "Dernière armure",
+    "name_en": "Last Armor",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2411": {
+    "id": 2411,
+    "name_fr": "Requinquage 50 %",
+    "name_en": "Perk Up 50%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5252": {
+    "id": 5252,
+    "name_fr": "Sang de la déchirure",
+    "name_en": "Heartbreaking Blood",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6707": {
+    "id": 6707,
+    "name_fr": "Pilier",
+    "name_en": "Pillar",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5982": {
+    "id": 5982,
+    "name_fr": "Ravage",
+    "name_en": "Devastate",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9060": {
+    "id": 9060,
+    "name_fr": "Apprêt secondaire",
+    "name_en": "Secondary Embellishment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8499": {
+    "id": 8499,
+    "name_fr": "Brûlure secondaire",
+    "name_en": "Secondary Burn",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5989": {
+    "id": 5989,
+    "name_fr": "Solidité",
+    "name_en": "Solidity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6829": {
+    "id": 6829,
+    "name_fr": "Manie",
+    "name_en": "Mania",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8518": {
+    "id": 8518,
+    "name_fr": "Brûlure",
+    "name_en": "Burn",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5074": {
+    "id": 5074,
+    "name_fr": "Constant",
+    "name_en": "Constant",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8398": {
+    "id": 8398,
+    "name_fr": "Sanguinolence",
+    "name_en": "Blood Stains",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8372": {
+    "id": 8372,
+    "name_fr": "Véhémence",
+    "name_en": "Vehemence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8497": {
+    "id": 8497,
+    "name_fr": "Dernier soin",
+    "name_en": "Last Heal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7877": {
+    "id": 7877,
+    "name_fr": "Élémentalisme",
+    "name_en": "Elementalism",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6005": {
+    "id": 6005,
+    "name_fr": "Vélocité",
+    "name_en": "Swiftness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1480": {
+    "id": 1480,
+    "name_fr": "Insigne de Jacko",
+    "name_en": "Jacko Insignia",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7719": {
+    "id": 7719,
+    "name_fr": "Accumulation",
+    "name_en": "Accumulation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2848": {
+    "id": 2848,
+    "name_fr": "Costume du Waterfestival",
+    "name_en": "Water Festival Costume",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5370": {
+    "id": 5370,
+    "name_fr": "Pacte Wakfu",
+    "name_en": "Wakfu Pact",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2636": {
+    "id": 2636,
+    "name_fr": "Transfert Tellurique",
+    "name_en": "Terrestrial Transfer",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6812": {
+    "id": 6812,
+    "name_fr": "Puissance brute",
+    "name_en": "Raw Power",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8403": {
+    "id": 8403,
+    "name_fr": "Rupture PA",
+    "name_en": "AP Rupture",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5886": {
+    "id": 5886,
+    "name_fr": "Eternité",
+    "name_en": "Eternity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2514": {
+    "id": 2514,
+    "name_fr": "Vivacité 90 %",
+    "name_en": "Vivacity 90%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6834": {
+    "id": 6834,
+    "name_fr": "Volte-face",
+    "name_en": "About-Turn",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6017": {
+    "id": 6017,
+    "name_fr": "Epines",
+    "name_en": "Spines",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8251": {
+    "id": 8251,
+    "name_fr": "Dofus Ivoire",
+    "name_en": "Ivory Dofus",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6828": {
+    "id": 6828,
+    "name_fr": "Altruisme",
+    "name_en": "Altruism",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6817": {
+    "id": 6817,
+    "name_fr": "Vol de Tacle",
+    "name_en": "Lock Steal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5082": {
+    "id": 5082,
+    "name_fr": "Robuste",
+    "name_en": "Robust",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6811": {
+    "id": 6811,
+    "name_fr": "Arme solide",
+    "name_en": "Solid Weapon",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6823": {
+    "id": 6823,
+    "name_fr": "Relations sociales",
+    "name_en": "Social Relations",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5445": {
+    "id": 5445,
+    "name_fr": "Anatomie",
+    "name_en": "Anatomy",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6705": {
+    "id": 6705,
+    "name_fr": "Furie",
+    "name_en": "Outrage",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6330": {
+    "id": 6330,
+    "name_fr": "Secret de la vie",
+    "name_en": "Secret of Life",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8399": {
+    "id": 8399,
+    "name_fr": "Représailles",
+    "name_en": "Reprisal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8370": {
+    "id": 8370,
+    "name_fr": "Calibrage",
+    "name_en": "Calibration",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9074": {
+    "id": 9074,
+    "name_fr": "Secret critique",
+    "name_en": "Critical Secret",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8368": {
+    "id": 8368,
+    "name_fr": "Modularité",
+    "name_en": "Modularity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1620": {
+    "id": 1620,
+    "name_fr": "Emblème du Steamer",
+    "name_en": "Foggernaut Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5158": {
+    "id": 5158,
+    "name_fr": "Maniement : Deux mains",
+    "name_en": "Wield type: two-handed",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8376": {
+    "id": 8376,
+    "name_fr": "Calibrage II",
+    "name_en": "Calibration II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6331": {
+    "id": 6331,
+    "name_fr": "Tolérance",
+    "name_en": "Tolerance",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7717": {
+    "id": 7717,
+    "name_fr": "Folie vampirique",
+    "name_en": "Vampiric Madness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6012": {
+    "id": 6012,
+    "name_fr": "Tacle Berserk",
+    "name_en": "Berserk Lock",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5980": {
+    "id": 5980,
+    "name_fr": "Ruine",
+    "name_en": "Ruin",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5076": {
+    "id": 5076,
+    "name_fr": "Précis",
+    "name_en": "Precise",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6709": {
+    "id": 6709,
+    "name_fr": "Longévité",
+    "name_en": "Longevity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8402": {
+    "id": 8402,
+    "name_fr": "Rupture violente",
+    "name_en": "Violent Rupture",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5175": {
+    "id": 5175,
+    "name_fr": "Brise",
+    "name_en": "Breeze",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8386": {
+    "id": 8386,
+    "name_fr": "Volonté directe",
+    "name_en": "Direct Force of Will",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5981": {
+    "id": 5981,
+    "name_fr": "Dévastation",
+    "name_en": "Devastation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5990": {
+    "id": 5990,
+    "name_fr": "Fermeté",
+    "name_en": "Resolute",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6329": {
+    "id": 6329,
+    "name_fr": "Loup Solitaire",
+    "name_en": "Lone Wolf",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6714": {
+    "id": 6714,
+    "name_fr": "Paisible",
+    "name_en": "Peaceful",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6827": {
+    "id": 6827,
+    "name_fr": "Longueur d'armure",
+    "name_en": "Armor Length",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5078": {
+    "id": 5078,
+    "name_fr": "Fracass'carcasse",
+    "name_en": "Smashmouth",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5983": {
+    "id": 5983,
+    "name_fr": "Carnage",
+    "name_en": "Carnage",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6006": {
+    "id": 6006,
+    "name_fr": "Sauvegarde",
+    "name_en": "Save",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6007": {
+    "id": 6007,
+    "name_fr": "Bonne action",
+    "name_en": "Good Deed",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7075": {
+    "id": 7075,
+    "name_fr": "Combat rapproché",
+    "name_en": "Brawling",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6706": {
+    "id": 6706,
+    "name_fr": "Furie II",
+    "name_en": "Outrage II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6328": {
+    "id": 6328,
+    "name_fr": "Intégrité",
+    "name_en": "Integrity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6013": {
+    "id": 6013,
+    "name_fr": "Ravage secondaire",
+    "name_en": "Secondary Devastation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8131": {
+    "id": 8131,
+    "name_fr": "Allocentrisme",
+    "name_en": "Allocentrism",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8502": {
+    "id": 8502,
+    "name_fr": "Gel secondaire",
+    "name_en": "Secondary Freezing",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6002": {
+    "id": 6002,
+    "name_fr": "Endurance",
+    "name_en": "Endurance",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7853": {
+    "id": 7853,
+    "name_fr": "Carapace sanguine",
+    "name_en": "Blood Carapace",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1583": {
+    "id": 1583,
+    "name_fr": "Le demi pay aime",
+    "name_en": "Glass Half Empee",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8489": {
+    "id": 8489,
+    "name_fr": "Cuirasse singulière II",
+    "name_en": "Single Shared Armor II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7868": {
+    "id": 7868,
+    "name_fr": "Interposition",
+    "name_en": "Interposition",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7258": {
+    "id": 7258,
+    "name_fr": "Assimilation",
+    "name_en": "Assimilation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5449": {
+    "id": 5449,
+    "name_fr": "Concentration élémentaire",
+    "name_en": "Elemental Concentration",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8508": {
+    "id": 8508,
+    "name_fr": "Ventilation secondaire",
+    "name_en": "Secondary Ventilation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6042": {
+    "id": 6042,
+    "name_fr": "Stupéfaction",
+    "name_en": "Stupefaction",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8388": {
+    "id": 8388,
+    "name_fr": "Acribie",
+    "name_en": "Scrupulosity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6025": {
+    "id": 6025,
+    "name_fr": "Puits de Vitalité",
+    "name_en": "Vitality Well",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6842": {
+    "id": 6842,
+    "name_fr": "Courage",
+    "name_en": "Courage",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1284": {
+    "id": 1284,
+    "name_fr": "Makabrano Ksion",
+    "name_en": "Makabraktion Ring",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8374": {
+    "id": 8374,
+    "name_fr": "Par-delà la barrière",
+    "name_en": "Beyond the Barrier",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6819": {
+    "id": 6819,
+    "name_fr": "Contre-attaque",
+    "name_en": "Counterattack",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6008": {
+    "id": 6008,
+    "name_fr": "Vivacité",
+    "name_en": "Vivacity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "751": {
+    "id": 751,
+    "name_fr": "Enflammé",
+    "name_en": "Flaming",
+    "description_fr": "Lorsque vous commencez votre tour, les adversaires à votre corps à corps subissent des dégâts.",
+    "description_en": "When you start your turn, enemies adjacent to you will take damage."
+  },
+  "2515": {
+    "id": 2515,
+    "name_fr": "Berserk 50 %",
+    "name_en": "Berserk 50%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6021": {
+    "id": 6021,
+    "name_fr": "Persistance",
+    "name_en": "Persistence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5991": {
+    "id": 5991,
+    "name_fr": "Légèreté",
+    "name_en": "Lightness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7870": {
+    "id": 7870,
+    "name_fr": "Pétillance",
+    "name_en": "Sparkle",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7115": {
+    "id": 7115,
+    "name_fr": "Ambition",
+    "name_en": "Ambition",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6004": {
+    "id": 6004,
+    "name_fr": "Ecailles de Lune",
+    "name_en": "Moon Scales",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6826": {
+    "id": 6826,
+    "name_fr": "Être sensible",
+    "name_en": "Sensitivity",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7859": {
+    "id": 7859,
+    "name_fr": "Force légère",
+    "name_en": "Light Strength",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8391": {
+    "id": 8391,
+    "name_fr": "Bouclier critique",
+    "name_en": "Critical Shield",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8498": {
+    "id": 8498,
+    "name_fr": "Dernières résistances",
+    "name_en": "Last Resistance",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7077": {
+    "id": 7077,
+    "name_fr": "Armure lourde",
+    "name_en": "Heavy Armor",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7860": {
+    "id": 7860,
+    "name_fr": "Agilité vitale",
+    "name_en": "Vital Agility",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7073": {
+    "id": 7073,
+    "name_fr": "Pacte d'Anathar V",
+    "name_en": "Anathar's Pact V",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2513": {
+    "id": 2513,
+    "name_fr": "Requinquage 33 %",
+    "name_en": "Perk Up 33%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8389": {
+    "id": 8389,
+    "name_fr": "Vision intermédiaire",
+    "name_en": "Intermediate Vision",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6930": {
+    "id": 6930,
+    "name_fr": "Critique tactique",
+    "name_en": "Tactical Critical",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "4570": {
+    "id": 4570,
+    "name_fr": "Dofus Prismatique",
+    "name_en": "Prismatic Dofus",
+    "description_fr": "Accorde +2 PA un tour sur deux",
+    "description_en": "Gives +2 AP every other turn"
+  },
+  "5080": {
+    "id": 5080,
+    "name_fr": "Confiance",
+    "name_en": "Trust",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6027": {
+    "id": 6027,
+    "name_fr": "Fureur",
+    "name_en": "Fury",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1613": {
+    "id": 1613,
+    "name_fr": "Emblème du Sadida",
+    "name_en": "Sadida Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6026": {
+    "id": 6026,
+    "name_fr": "Influence",
+    "name_en": "Influence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6024": {
+    "id": 6024,
+    "name_fr": "Parade Berserk",
+    "name_en": "Berserk Block",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1348": {
+    "id": 1348,
+    "name_fr": "Etoi Eskeutula",
+    "name_en": "Legwhat?",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6090": {
+    "id": 6090,
+    "name_fr": "Cicatrisation",
+    "name_en": "Healing",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7711": {
+    "id": 7711,
+    "name_fr": "Art du cachement",
+    "name_en": "Art of Concealment",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7864": {
+    "id": 7864,
+    "name_fr": "Evasion",
+    "name_en": "Evasion",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9070": {
+    "id": 9070,
+    "name_fr": "Sceau de Wakfu",
+    "name_en": "Wakfu Seal",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6009": {
+    "id": 6009,
+    "name_fr": "Critique Berserk",
+    "name_en": "Berserk Critical",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6731": {
+    "id": 6731,
+    "name_fr": "Dofus Turquoise",
+    "name_en": "Turquoise Dofus",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9062": {
+    "id": 9062,
+    "name_fr": "Élan",
+    "name_en": "Surge",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6041": {
+    "id": 6041,
+    "name_fr": "Expert des Coups critiques",
+    "name_en": "Critical Hit Expert",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7076": {
+    "id": 7076,
+    "name_fr": "Carapace",
+    "name_en": "Carapace",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6831": {
+    "id": 6831,
+    "name_fr": "Dernier souffle",
+    "name_en": "Last Breath",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8490": {
+    "id": 8490,
+    "name_fr": "Contrôle du temps",
+    "name_en": "Time Control",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6816": {
+    "id": 6816,
+    "name_fr": "Arme incurable",
+    "name_en": "Incurable Weapon",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8519": {
+    "id": 8519,
+    "name_fr": "Gel",
+    "name_en": "Freezing",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7874": {
+    "id": 7874,
+    "name_fr": "Hypermétrope",
+    "name_en": "Farsighted",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7867": {
+    "id": 7867,
+    "name_fr": "Fuite",
+    "name_en": "Flee",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6019": {
+    "id": 6019,
+    "name_fr": "Barrière Distance",
+    "name_en": "Distance Barrier",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1616": {
+    "id": 1616,
+    "name_fr": "Emblème du Roublard",
+    "name_en": "Rogue Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9078": {
+    "id": 9078,
+    "name_fr": "Emblème de l'horloger VI",
+    "name_en": "Clockmaker VI Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7081": {
+    "id": 7081,
+    "name_fr": "Verrouillage",
+    "name_en": "Locking",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2570": {
+    "id": 2570,
+    "name_fr": "Muraille 75 %",
+    "name_en": "Walls 75%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1619": {
+    "id": 1619,
+    "name_fr": "Emblème d'Osamodas",
+    "name_en": "Osamodas Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8383": {
+    "id": 8383,
+    "name_fr": "Lourdeur involontaire",
+    "name_en": "Involuntary Heaviness",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7257": {
+    "id": 7257,
+    "name_fr": "Sentinelle",
+    "name_en": "Sentinel",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6928": {
+    "id": 6928,
+    "name_fr": "Critique technique",
+    "name_en": "Technical Critical",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9066": {
+    "id": 9066,
+    "name_fr": "Diagnostic",
+    "name_en": "Diagnosis",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6011": {
+    "id": 6011,
+    "name_fr": "Ruine cyclique",
+    "name_en": "Cyclical Ruin",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8390": {
+    "id": 8390,
+    "name_fr": "Dérobade continue",
+    "name_en": "Constant Evasion",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5976": {
+    "id": 5976,
+    "name_fr": "Arme de Lumière",
+    "name_en": "Light Weapon",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9071": {
+    "id": 9071,
+    "name_fr": "Parade unique",
+    "name_en": "Single Block",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7856": {
+    "id": 7856,
+    "name_fr": "Profit",
+    "name_en": "Profit",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7855": {
+    "id": 7855,
+    "name_fr": "Retour d'Armure",
+    "name_en": "Armor Return",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8392": {
+    "id": 8392,
+    "name_fr": "Sauvegarde du Wakfu",
+    "name_en": "Wakfu Conservation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7069": {
+    "id": 7069,
+    "name_fr": "Pacte d'Anathar I",
+    "name_en": "Anathar's Pact I",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8367": {
+    "id": 8367,
+    "name_fr": "Arrogance",
+    "name_en": "Arrogance",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2572": {
+    "id": 2572,
+    "name_fr": "Requinquage 66 %",
+    "name_en": "Perk Up 66%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8492": {
+    "id": 8492,
+    "name_fr": "Mesure III",
+    "name_en": "Measure III",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6039": {
+    "id": 6039,
+    "name_fr": "Influence lente",
+    "name_en": "Slow Influence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7252": {
+    "id": 7252,
+    "name_fr": "Excès II",
+    "name_en": "Excess II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5986": {
+    "id": 5986,
+    "name_fr": "Dérobade",
+    "name_en": "Escape",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5250": {
+    "id": 5250,
+    "name_fr": "Excès",
+    "name_en": "Excess",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1478": {
+    "id": 1478,
+    "name_fr": "Insigne de Sorcier",
+    "name_en": "Wizard Insignia",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1609": {
+    "id": 1609,
+    "name_fr": "Emblème du Cra",
+    "name_en": "Cra Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "9077": {
+    "id": 9077,
+    "name_fr": "Emblème de l'horloger V",
+    "name_en": "Clockmaker V Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "3233": {
+    "id": 3233,
+    "name_fr": "Emblème du Zobal",
+    "name_en": "Masqueraider Emblem",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5448": {
+    "id": 5448,
+    "name_fr": "Force herculéenne",
+    "name_en": "Herculean Strength",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6822": {
+    "id": 6822,
+    "name_fr": "Arcanes",
+    "name_en": "Arcana",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2413": {
+    "id": 2413,
+    "name_fr": "Muraille 50 %",
+    "name_en": "Walls 50%",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8784": {
+    "id": 8784,
+    "name_fr": "Dofus Ébène",
+    "name_en": "Ebony Dofus",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5079": {
+    "id": 5079,
+    "name_fr": "Alternance",
+    "name_en": "Alternation",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "1482": {
+    "id": 1482,
+    "name_fr": "Costume de Goule",
+    "name_en": "Ghoul Costume",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7106": {
+    "id": 7106,
+    "name_fr": "Dofushu",
+    "name_en": "Dofushu",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6036": {
+    "id": 6036,
+    "name_fr": "Longueur",
+    "name_en": "Length",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7071": {
+    "id": 7071,
+    "name_fr": "Pacte d'Anathar III",
+    "name_en": "Anathar's Pact III",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "2064": {
+    "id": 2064,
+    "name_fr": "Insigne des Mérydes",
+    "name_en": "Meridia Insignia",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6929": {
+    "id": 6929,
+    "name_fr": "Parade offensive",
+    "name_en": "Offensive Block",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "8520": {
+    "id": 8520,
+    "name_fr": "Tellurisme",
+    "name_en": "Earthbound",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6814": {
+    "id": 6814,
+    "name_fr": "Influence du Wakfu",
+    "name_en": "Wakfu Influence",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7255": {
+    "id": 7255,
+    "name_fr": "Contrôle de l'espace II",
+    "name_en": "Controlling Space II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7088": {
+    "id": 7088,
+    "name_fr": "Poids plume",
+    "name_en": "Featherweight",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5174": {
+    "id": 5174,
+    "name_fr": "Alternance II",
+    "name_en": "Alternation II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "5443": {
+    "id": 5443,
+    "name_fr": "Santé de fer",
+    "name_en": "Robust Health",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7876": {
+    "id": 7876,
+    "name_fr": "Constant II",
+    "name_en": "Constant II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7254": {
+    "id": 7254,
+    "name_fr": "Lunatique",
+    "name_en": "Lunatic",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "7070": {
+    "id": 7070,
+    "name_fr": "Pacte d'Anathar II",
+    "name_en": "Anathar's Pact II",
+    "description_fr": "",
+    "description_en": ""
+  },
+  "6815": {
+    "id": 6815,
+    "name_fr": "Wakfu Berserk",
+    "name_en": "Berserk Wakfu",
+    "description_fr": "",
+    "description_en": ""
+  }
+}

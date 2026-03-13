@@ -187,5 +187,278 @@
     "action": "create",
     "version": "5.0.0",
     "depends_on": []
+  },
+  "data\\sync_manifest.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\version.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\parsed\\action_map.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\parsed\\all_items.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\parsed\\equipment_types.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\parsed\\state_map.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\actions.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\blueprints.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\collectibleResources.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\equipmentItemTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\harvestLoots.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\itemProperties.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\items.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\itemTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\jobsItems.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\recipeCategories.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\recipeIngredients.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\recipeResults.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\recipes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\resources.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\resourceTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw\\states.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\actions.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\blueprints.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\collectibleResources.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\equipmentItemTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\harvestLoots.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\itemProperties.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\items.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\itemTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\jobsItems.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\recipeCategories.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\recipeIngredients.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\recipeResults.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\recipes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\resources.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\resourceTypes.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\raw_backup_none\\.tmp\\states.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "scripts\\data_sync.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
   }
 }

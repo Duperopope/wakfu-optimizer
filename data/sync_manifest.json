@@ -1,0 +1,29 @@
+{
+  "version": "1.91.1.53",
+  "sync_date": "2026-03-13T10:30:13.813470+00:00",
+  "files": {
+    "H:\\Code\\Ankama Dev\\wakfu-optimizer\\data\\parsed\\action_map.json": "da77e1d95a0c0e3a320edd7b4930f3ee727de11541cc607602d238c5ee72627b",
+    "H:\\Code\\Ankama Dev\\wakfu-optimizer\\data\\parsed\\state_map.json": "dc0c958b7876d09a69bc26588a3f9876364c60631636fd985399db9806c1389c",
+    "H:\\Code\\Ankama Dev\\wakfu-optimizer\\data\\parsed\\equipment_types.json": "8cc7547b9dc94a4870edb9ca8c35e0aa0ac4c2c8fe5fdced8c355d6aafc0e7fe",
+    "H:\\Code\\Ankama Dev\\wakfu-optimizer\\data\\parsed\\all_items.json": "33d62aebbfd5fe48243b17a45a0db34da35efffea0b311fc0546114f468de0d7"
+  },
+  "stats": {
+    "total_actions": 71,
+    "known_actions": 47,
+    "total_states": 290,
+    "total_equip_types": 31,
+    "total_items": 8324,
+    "items_by_rarity": {
+      "uncommon": 451,
+      "rare": 1926,
+      "mythic": 3373,
+      "legendary": 2239,
+      "relic": 98,
+      "epic": 116,
+      "common": 17,
+      "souvenir": 104
+    },
+    "items_level_200_plus": 2026,
+    "validation_errors": []
+  }
+}

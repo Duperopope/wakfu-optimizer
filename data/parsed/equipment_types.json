@@ -1,0 +1,356 @@
+{
+  "101": {
+    "id": 101,
+    "name_fr": "Hache{[~1]?s:} (Deux mains)",
+    "name_en": "Axe{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "103": {
+    "id": 103,
+    "name_fr": "Anneau{[~1]?x:}",
+    "name_en": "Ring{[~1]?s:}",
+    "positions": [
+      "LEFT_HAND",
+      "RIGHT_HAND"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "108": {
+    "id": 108,
+    "name_fr": "Baguette{[~1]?s:} (Une main)",
+    "name_en": "Wand{[~1]?s:} (One-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": true
+  },
+  "110": {
+    "id": 110,
+    "name_fr": "Epée{[~1]?s:} (Une main)",
+    "name_en": "Sword{[~1]?s:} (One-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": true
+  },
+  "111": {
+    "id": 111,
+    "name_fr": "Pelle{[~1]?s:} (Deux mains)",
+    "name_en": "Shovel{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "112": {
+    "id": 112,
+    "name_fr": "Dague{[~1]?s:} (Seconde main)",
+    "name_en": "Dagger{[~1]?s:} (Second hand)",
+    "positions": [
+      "SECOND_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 520,
+    "is_recyclable": true
+  },
+  "113": {
+    "id": 113,
+    "name_fr": "Bâton{[~1]?s:} (Une main)",
+    "name_en": "Staff{[~1]?s:} (One-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": true
+  },
+  "114": {
+    "id": 114,
+    "name_fr": "Marteau{[~1]?x:} (Deux mains)",
+    "name_en": "Hammer{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "115": {
+    "id": 115,
+    "name_fr": "Aiguille{[~1]?s:} (Une main)",
+    "name_en": "Needle{[~1]?s:} (One-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": true
+  },
+  "117": {
+    "id": 117,
+    "name_fr": "Arc{[~1]?s:} (Deux mains)",
+    "name_en": "Bow{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "119": {
+    "id": 119,
+    "name_fr": "Bottes",
+    "name_en": "Boots",
+    "positions": [
+      "LEGS"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "120": {
+    "id": 120,
+    "name_fr": "Amulette{[~1]?s:}",
+    "name_en": "Amulet{[~1]?s:}",
+    "positions": [
+      "NECK"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "132": {
+    "id": 132,
+    "name_fr": "Cape{[~1]?s:}",
+    "name_en": "Cloak{[~1]?s:}",
+    "positions": [
+      "BACK"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "133": {
+    "id": 133,
+    "name_fr": "Ceinture{[~1]?s:}",
+    "name_en": "Belt{[~1]?s:}",
+    "positions": [
+      "BELT"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "134": {
+    "id": 134,
+    "name_fr": "Casque{[~1]?s:}",
+    "name_en": "Helmet{[~1]?s:}",
+    "positions": [
+      "HEAD"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "136": {
+    "id": 136,
+    "name_fr": "Plastron{[~1]?s:}",
+    "name_en": "Breastplate{[~1]?s:}",
+    "positions": [
+      "CHEST"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "138": {
+    "id": 138,
+    "name_fr": "Epaulettes",
+    "name_en": "Epaulettes",
+    "positions": [
+      "SHOULDERS"
+    ],
+    "disabled_positions": [],
+    "parent_id": 118,
+    "is_recyclable": true
+  },
+  "189": {
+    "id": 189,
+    "name_fr": "Bouclier{[~1]?s:} (Seconde main)",
+    "name_en": "Shield{[~1]?s:} (Second hand)",
+    "positions": [
+      "SECOND_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 520,
+    "is_recyclable": true
+  },
+  "219": {
+    "id": 219,
+    "name_fr": "Poing",
+    "name_en": "Fist",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": false
+  },
+  "223": {
+    "id": 223,
+    "name_fr": "Epée{[~1]?s:} (Deux mains)",
+    "name_en": "Sword{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "253": {
+    "id": 253,
+    "name_fr": "Bâton{[~1]?s:} (Deux mains)",
+    "name_en": "Staff{[~1]?s:} (Two-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 519,
+    "is_recyclable": true
+  },
+  "254": {
+    "id": 254,
+    "name_fr": "Carte{[~1]?s:} (Une main)",
+    "name_en": "Card{[~1]?s:} (One-handed)",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 518,
+    "is_recyclable": true
+  },
+  "480": {
+    "id": 480,
+    "name_fr": "Torche{[~1]?s:}",
+    "name_en": "Torch{[~1]?es:}",
+    "positions": [
+      "ACCESSORY"
+    ],
+    "disabled_positions": [],
+    "parent_id": 521,
+    "is_recyclable": false
+  },
+  "518": {
+    "id": 518,
+    "name_fr": "Arme{[~1]?s:} 1 Main",
+    "name_en": "One-Handed Weapon{[~1]?s:}",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 100,
+    "is_recyclable": false
+  },
+  "519": {
+    "id": 519,
+    "name_fr": "Arme{[~1]?s:} 2 Mains",
+    "name_en": "Two-Handed Weapon{[~1]?s:}",
+    "positions": [
+      "FIRST_WEAPON"
+    ],
+    "disabled_positions": [
+      "SECOND_WEAPON"
+    ],
+    "parent_id": 100,
+    "is_recyclable": false
+  },
+  "520": {
+    "id": 520,
+    "name_fr": "Seconde Main",
+    "name_en": "Second Hand",
+    "positions": [
+      "SECOND_WEAPON"
+    ],
+    "disabled_positions": [],
+    "parent_id": 100,
+    "is_recyclable": false
+  },
+  "537": {
+    "id": 537,
+    "name_fr": "Outil{[~1]?s:}",
+    "name_en": "Tool{[~1]?s:}",
+    "positions": [
+      "ACCESSORY"
+    ],
+    "disabled_positions": [],
+    "parent_id": 521,
+    "is_recyclable": false
+  },
+  "582": {
+    "id": 582,
+    "name_fr": "Familier{[~1]?s:}",
+    "name_en": "Pet{[~1]?s:}",
+    "positions": [
+      "PET"
+    ],
+    "disabled_positions": [],
+    "parent_id": 420,
+    "is_recyclable": false
+  },
+  "611": {
+    "id": 611,
+    "name_fr": "Monture{[~1]?s:}",
+    "name_en": "Mount{[~1]?s:}",
+    "positions": [],
+    "disabled_positions": [],
+    "parent_id": 420,
+    "is_recyclable": false
+  },
+  "646": {
+    "id": 646,
+    "name_fr": "Emblème{[~1]?s:}",
+    "name_en": "Emblem{[~1]?s:}",
+    "positions": [
+      "ACCESSORY"
+    ],
+    "disabled_positions": [],
+    "parent_id": 521,
+    "is_recyclable": false
+  },
+  "647": {
+    "id": 647,
+    "name_fr": "Costume{[~1]?s:}",
+    "name_en": "Costume{[~1]?s:}",
+    "positions": [
+      "COSTUME"
+    ],
+    "disabled_positions": [],
+    "parent_id": 525,
+    "is_recyclable": false
+  }
+}

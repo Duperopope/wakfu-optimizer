@@ -213,3 +213,206 @@
 [2026-03-13 11:10:15] [engine.double] [INFO] Passe-Passe: Sram6 echange avec Double ((5, 5) <-> (8, 5))
 [2026-03-13 11:10:15] [engine.double] [INFO] Sram6 invoque le Double en (5, 5)! PV=3568, Tacle=358, PA Sram restants: 11
 [2026-03-13 11:10:15] [engine.double] [INFO] Passe-Passe fin de tour: Sram6 <-> Double ((8, 5) <-> (5, 5))
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] GET https://wakfu.cdn.ankama.com/gamedata/config.json
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] Version CDN distante: 1.91.1.53
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] Telechargement de 16 fichiers JSON (v1.91.1.53)...
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/actions.json
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/blueprints.json
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/collectibleResources.json
+[2026-03-13 11:25:19] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/equipmentItemTypes.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/harvestLoots.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemProperties.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK actions.json (21.6 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK blueprints.json (4.8 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemTypes.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK equipmentItemTypes.json (8.6 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/items.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK collectibleResources.json (202.6 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/jobsItems.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK itemProperties.json (1.0 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeCategories.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK itemTypes.json (26.6 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeIngredients.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK harvestLoots.json (215.5 Ko)
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeResults.json
+[2026-03-13 11:25:20] [scripts.data_sync] [INFO]   OK recipeCategories.json (2.5 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipes.json
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resourceTypes.json
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK recipeIngredients.json (2243.9 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK recipeResults.json (459.9 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resources.json
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/states.json
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK jobsItems.json (6022.6 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK items.json (15095.5 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK resourceTypes.json (0.7 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK resources.json (55.8 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK states.json (34.9 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO]   OK recipes.json (502.2 Ko)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] Telechargement termine: 16/16 OK en 1.9s, 0 erreur(s)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] Actions parsees: 71 effets (47 connus)
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] States parses: 290 etats
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] Equipment types parses: 31 types
+[2026-03-13 11:25:21] [scripts.data_sync] [INFO] Parsing items.json (cela peut prendre quelques secondes)...
+[2026-03-13 11:25:22] [scripts.data_sync] [INFO] Items parses: 8324 objets
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET https://wakfu.cdn.ankama.com/gamedata/config.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] Version CDN distante: 1.91.1.53
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] Telechargement de 16 fichiers JSON (v1.91.1.53)...
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/actions.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/blueprints.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/collectibleResources.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/equipmentItemTypes.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/harvestLoots.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemProperties.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemTypes.json
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO]   OK blueprints.json (4.8 Ko)
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO]   OK actions.json (21.6 Ko)
+[2026-03-13 11:28:34] [scripts.data_sync] [INFO]   OK equipmentItemTypes.json (8.6 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/items.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK collectibleResources.json (202.6 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/jobsItems.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeCategories.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK itemProperties.json (1.0 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK itemTypes.json (26.6 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeIngredients.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK harvestLoots.json (215.5 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeResults.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK recipeCategories.json (2.5 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipes.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK recipeIngredients.json (2243.9 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resourceTypes.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK recipeResults.json (459.9 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resources.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK jobsItems.json (6022.6 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/states.json
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK resourceTypes.json (0.7 Ko)
+[2026-03-13 11:28:35] [scripts.data_sync] [INFO]   OK recipes.json (502.2 Ko)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO]   OK items.json (15095.5 Ko)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO]   OK resources.json (55.8 Ko)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO]   OK states.json (34.9 Ko)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] Telechargement termine: 16/16 OK en 1.3s, 0 erreur(s)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] Actions parsees: 71 effets (47 connus)
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] States parses: 290 etats
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] Equipment types parses: 31 types
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] Parsing items.json (cela peut prendre quelques secondes)...
+[2026-03-13 11:28:36] [scripts.data_sync] [INFO] Items parses: 8324 objets
+[2026-03-13 11:28:36] [scripts.data_sync] [WARNING] Validation: 4 probleme(s) detecte(s):
+[2026-03-13 11:28:36] [scripts.data_sync] [WARNING]   - Action critique manquante: 2
+[2026-03-13 11:28:36] [scripts.data_sync] [WARNING]   - Action critique manquante: 3
+[2026-03-13 11:28:36] [scripts.data_sync] [WARNING]   - Action critique manquante: 4
+[2026-03-13 11:28:36] [scripts.data_sync] [WARNING]   - Action critique manquante: 5
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] ======================================================================
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] WAKFU DATA SYNC PIPELINE V5.0
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] ======================================================================
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] 
+--- Phase 1: Detection de version ---
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET https://wakfu.cdn.ankama.com/gamedata/config.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] Version CDN distante: 1.91.1.53
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] Aucune version locale trouvee
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] Mise a jour necessaire: none -> 1.91.1.53
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] 
+--- Phase 2: Telechargement CDN ---
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] Telechargement de 16 fichiers JSON (v1.91.1.53)...
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/actions.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/blueprints.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/collectibleResources.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/equipmentItemTypes.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/harvestLoots.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO]   OK actions.json (21.6 Ko)
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemProperties.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemTypes.json
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO]   OK blueprints.json (4.8 Ko)
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO]   OK equipmentItemTypes.json (8.6 Ko)
+[2026-03-13 11:29:30] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/items.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK collectibleResources.json (202.6 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/jobsItems.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeCategories.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK harvestLoots.json (215.5 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeIngredients.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK itemProperties.json (1.0 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK itemTypes.json (26.6 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeResults.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK recipeCategories.json (2.5 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipes.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK recipeIngredients.json (2243.9 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resourceTypes.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK recipeResults.json (459.9 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resources.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK jobsItems.json (6022.6 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/states.json
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK resourceTypes.json (0.7 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK resources.json (55.8 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK recipes.json (502.2 Ko)
+[2026-03-13 11:29:31] [scripts.data_sync] [INFO]   OK states.json (34.9 Ko)
+[2026-03-13 11:29:32] [scripts.data_sync] [INFO]   OK items.json (15095.5 Ko)
+[2026-03-13 11:29:32] [scripts.data_sync] [INFO] Telechargement termine: 16/16 OK en 1.3s, 0 erreur(s)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] ======================================================================
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] WAKFU DATA SYNC PIPELINE V5.0
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] ======================================================================
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] 
+--- Phase 1: Detection de version ---
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET https://wakfu.cdn.ankama.com/gamedata/config.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] Version CDN distante: 1.91.1.53
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] Aucune version locale trouvee
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] Mise a jour necessaire: none -> 1.91.1.53
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] 
+--- Phase 2: Telechargement CDN ---
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] Telechargement de 16 fichiers JSON (v1.91.1.53)...
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/actions.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/blueprints.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/collectibleResources.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/equipmentItemTypes.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/harvestLoots.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemProperties.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK blueprints.json (4.8 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/itemTypes.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK actions.json (21.6 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK equipmentItemTypes.json (8.6 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/items.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK collectibleResources.json (202.6 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/jobsItems.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK itemTypes.json (26.6 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeCategories.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK itemProperties.json (1.0 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeIngredients.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK harvestLoots.json (215.5 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipeResults.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK recipeCategories.json (2.5 Ko)
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/recipes.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resourceTypes.json
+[2026-03-13 11:30:11] [scripts.data_sync] [INFO]   OK jobsItems.json (6022.6 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK recipeResults.json (459.9 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/resources.json
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK recipeIngredients.json (2243.9 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] GET (raw) https://wakfu.cdn.ankama.com/gamedata/1.91.1.53/states.json
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK items.json (15095.5 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK resourceTypes.json (0.7 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK resources.json (55.8 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK states.json (34.9 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO]   OK recipes.json (502.2 Ko)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] Telechargement termine: 16/16 OK en 1.4s, 0 erreur(s)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] Swap atomique: .raw_tmp -> raw OK
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] 
+--- Phase 3: Parsing et normalisation ---
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] Actions parsees: 71 effets (47 connus)
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] States parses: 290 etats
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] Equipment types parses: 31 types
+[2026-03-13 11:30:12] [scripts.data_sync] [INFO] Parsing items.json (cela peut prendre quelques secondes)...
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Items parses: 8324 objets
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] 
+--- Phase 5: Ecriture des fichiers parses ---
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Ecrit: H:\Code\Ankama Dev\wakfu-optimizer\data\parsed\action_map.json (17.3 Ko) - 71 actions
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Ecrit: H:\Code\Ankama Dev\wakfu-optimizer\data\parsed\state_map.json (41.8 Ko) - 290 etats
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Ecrit: H:\Code\Ankama Dev\wakfu-optimizer\data\parsed\equipment_types.json (7.2 Ko) - 31 types
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Ecrit: H:\Code\Ankama Dev\wakfu-optimizer\data\parsed\all_items.json (20589.1 Ko) - 8324 items
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] 
+--- Phase 6: Validation ---
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Validation: tous les checks passent
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Version locale mise a jour: 1.91.1.53
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Manifeste ecrit: H:\Code\Ankama Dev\wakfu-optimizer\data\sync_manifest.json
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] 
+======================================================================
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] SYNC TERMINEE en 2.7s
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Version: 1.91.1.53
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Items: 8324 | Actions: 71 | States: 290 | Types: 31
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] Validation: SUCCES
+[2026-03-13 11:30:13] [scripts.data_sync] [INFO] ======================================================================

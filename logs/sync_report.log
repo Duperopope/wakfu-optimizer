@@ -1,0 +1,29 @@
+
+======================================================================
+Sync: 2026-03-13T10:30:13.812463+00:00
+Version: none -> 1.91.1.53
+Items: 8324
+Actions: 71
+States: 290
+Equip types: 31
+Erreurs DL: 0
+Validation: OK
+Stats: {
+  "total_actions": 71,
+  "known_actions": 47,
+  "total_states": 290,
+  "total_equip_types": 31,
+  "total_items": 8324,
+  "items_by_rarity": {
+    "uncommon": 451,
+    "rare": 1926,
+    "mythic": 3373,
+    "legendary": 2239,
+    "relic": 98,
+    "epic": 116,
+    "common": 17,
+    "souvenir": 104
+  },
+  "items_level_200_plus": 2026,
+  "validation_errors": []
+}
