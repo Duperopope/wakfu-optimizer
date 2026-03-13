@@ -1,0 +1,135 @@
+{
+  "logs\\file_hashes.json": {
+    "role": "Auto-detecte par scan (modify)",
+    "last_modified": "2026-03-13",
+    "action": "modify",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "scripts\\auto_log.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "scripts\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\classes\\base_class.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\classes\\common.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\classes\\sram.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\classes\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\items\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\monsters\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\profiles\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "data\\stats\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "engine\\damage.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "engine\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "interface\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "logs\\module_registry.json": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "optimizer\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "tests\\test_sram_load.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  },
+  "tests\\__init__.py": {
+    "role": "Auto-detecte par scan (create)",
+    "last_modified": "2026-03-13",
+    "action": "create",
+    "version": "5.0.0",
+    "depends_on": []
+  }
+}
