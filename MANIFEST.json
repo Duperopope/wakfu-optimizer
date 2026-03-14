@@ -103,7 +103,8 @@
   ],
   "protected_dirs": [
     "decompiled",
-    "logs"
+    "logs",
+    "reference"
   ],
   "local_only": [
     "scripts/autopush.py",
