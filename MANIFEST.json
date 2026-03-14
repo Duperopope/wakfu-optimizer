@@ -115,7 +115,8 @@
     "tools/cfr.jar",
     "utils/__init__.py",
     "utils/changelog.py",
-    "utils/logger.py"
+    "utils/logger.py",
+    "CHANGELOG.md"
   ],
   "protected_dirs": [
     "decompiled",
