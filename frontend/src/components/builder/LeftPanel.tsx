@@ -290,7 +290,7 @@ export function LeftPanel() {
                   : "bg-bg-lighter border-border text-neutral-500 hover:text-primary hover:border-border-light"
               }`}>
               <img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} className="w-5 h-5" style={{ transform: `scale(${b.iconScale})`, transformOrigin: "center" }} />
-              <span className="hidden xl:inline">{b.shortLabel}</span>
+              
             </button>
           ))}
         </div>
@@ -418,6 +418,7 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 
 
