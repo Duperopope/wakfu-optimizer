@@ -58,6 +58,42 @@ export function RightPanel() {
         {activeTab === "spells" && <PlaceholderTab label="Sorts" />}
         {activeTab === "notes" && <PlaceholderTab label="Notes" />}
       </div>
+
+      <RingSlotModal />
+    </div>
+  );
+}
+
+function RingSlotModal() {
+  const { pendingRingItem, setPendingRingItem, equipItem } = useBuild();
+  if (!pendingRingItem) return null;
+
+  const handlePick = (slot: "ring-left" | "ring-right") => {
+    equipItem(slot, pendingRingItem as unknown as Record<string, unknown>);
+    setPendingRingItem(null);
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={() => setPendingRingItem(null)}>
+      <div className="bg-bg-dark rounded-lg p-6 border border-gray-700 flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
+        <h3 className="text-lg font-bagnard text-primary">Choisir le slot d anneau</h3>
+        <div className="flex items-center gap-2 mb-2">
+          <img width={32} height={32} alt={pendingRingItem.name} className="h-8 w-8" src={`https://cdn.wakfuli.com/items/${pendingRingItem.image_id}.webp`} />
+          <span className="text-sm text-primary">{pendingRingItem.name}</span>
+        </div>
+        <div className="flex gap-6">
+          <button onClick={() => handlePick("ring-left")}
+            className="flex flex-col items-center gap-2 p-4 rounded-lg bg-bg-light hover:bg-cyan-wakfuli/10 border border-gray-700 hover:border-cyan-wakfuli/50 cursor-pointer transition-all">
+            <img width={50} height={50} alt="ring-left" className="h-12 w-12" src="https://cdn.wakfuli.com/placeholders/ring-left.webp" />
+            <span className="text-sm text-primary/80">Anneau gauche</span>
+          </button>
+          <button onClick={() => handlePick("ring-right")}
+            className="flex flex-col items-center gap-2 p-4 rounded-lg bg-bg-light hover:bg-cyan-wakfuli/10 border border-gray-700 hover:border-cyan-wakfuli/50 cursor-pointer transition-all">
+            <img width={50} height={50} alt="ring-right" className="h-12 w-12" src="https://cdn.wakfuli.com/placeholders/ring-right.webp" />
+            <span className="text-sm text-primary/80">Anneau droit</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -71,8 +107,7 @@ function EquipmentSlotIcon({ slot }: { slot: EquipmentSlot }) {
     <div className="relative bg-bg-dark group">
       <div className={`relative flex items-center justify-center rounded-sm border-2 transition-colors duration-200 h-13 w-13 cursor-pointer ${equipped ? "border-cyan-wakfuli/60 bg-cyan-wakfuli/10" : "border-transparent hover:border-primary/80 hover:bg-bg-light/30"}`}
         onClick={() => equipped && unequipItem(slot)}
-        title={equipped ? `${equippedItem?.name || slot} - clic pour retirer` : slot}
-      >
+        title={equipped ? `${equippedItem?.name || slot} - clic pour retirer` : slot}>
         <span className="flex items-center justify-center h-13 w-13">
           <div className="h-full aspect-square flex items-center justify-center rounded bg-bg-dark p-1 border border-gray-700 transition-colors duration-200 hover:border-primary/80 hover:bg-bg-light/30">
             <div className="h-full w-full relative">
@@ -181,7 +216,7 @@ function ItemsTab() {
       </div>
 
       <div className="flex-1 overflow-y-auto no-scrollbar">
-        {loading && <div className="flex items-center justify-center py-20 gap-3 text-primary/50"><Loader2 className="h-6 w-6 animate-spin" /><span>Chargement de {allItems ? allItems.length : "..."} items...</span></div>}
+        {loading && <div className="flex items-center justify-center py-20 gap-3 text-primary/50"><Loader2 className="h-6 w-6 animate-spin" /><span>Chargement des items...</span></div>}
         {error && <div className="text-center text-red-400 py-20">Erreur: {error}<br /><span className="text-sm text-primary/40">Verifie que data/wakfuli/all_items.json existe</span></div>}
         {!loading && !error && (
           <>
@@ -200,14 +235,22 @@ function ItemsTab() {
 }
 
 function ItemCard({ item, index }: { item: WakfuItem; index: number }) {
-  const { equipItem } = useBuild();
+  const { equipItem, setPendingRingItem } = useBuild();
   const rc = RARITY_CSS[item.rarity] || "text-gray-400";
   const rl = RARITY_LABELS[item.rarity] || item.rarity;
   const bg = index % 2 === 0 ? "bg-bg-dark" : "bg-bg-light";
 
   const handleEquip = () => {
     if (!item.equipment_position || item.equipment_position.length === 0) return;
-    const pos = item.equipment_position[0];
+    const positions = item.equipment_position;
+
+    // Si l item va sur LEFT_HAND ou RIGHT_HAND (anneau), ouvrir le choix
+    if (positions.includes("LEFT_HAND") && positions.includes("RIGHT_HAND")) {
+      setPendingRingItem(item);
+      return;
+    }
+
+    const pos = positions[0];
     const slot = POSITION_TO_SLOT[pos];
     if (slot) {
       equipItem(slot, item as unknown as Record<string, unknown>);
