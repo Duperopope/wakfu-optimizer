@@ -39,3 +39,1040 @@ $projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
 # ---------------------------------------------------------------
 $buildMemoryContent = @'...
 [2026-03-14 20:15:42] [RESULT] Code: 0 | Duree: 5.24s | Stdout: 444 chars | Stderr: 0 chars
+[2026-03-14 20:37:45] [BLOCKED] Commande bloquee par pattern: Invoke-RestMethod | Commande: # === DIAGNOSTIC SYSTEME & OLLAMA ===
+$projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
+$report = @()
+$report += "=== DIAGNOSTIC $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ==="
+$report += ""
+
+# 1. RAM
+[2026-03-14 20:39:36] [BLOCKED] Commande bloquee par pattern: Invoke-WebRequest | Commande: $projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
+$serverPath = "$projectDir\scripts\dev_server.py"
+$content = @'
+"""
+dev_server.py v1.2 - Serveur local d'execution pour le workflow Genspark
+Ecoute s
+[2026-03-14 20:43:43] [BLOCKED] Commande bloquee par pattern: Invoke-WebRequest | Commande: $projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
+$extDir = "H:\Code\Ankama Dev\wakfu-dev-extension"
+
+# ============================================================
+# 1. DEV SERVER v1.2 (localhost au
+[2026-03-14 20:44:05] [STOP] Serveur arrete par l'utilisateur
+[2026-03-14 20:44:09] [START] Dev Server v1.2 sur 127.0.0.1:8091
+[2026-03-14 20:45:42] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 20:45:42] [EXEC] Commande (1841 chars): $report = @()
+$report += "=== DIAGNOSTIC SYSTEME $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ==="
+$os = Get-CimInstance Win32_OperatingSystem
+$totalGB = [math]::Round($os.TotalVisibleMemorySize / 1MB, 1)
+$freeGB = [math]::Round($os.FreePhysicalMemory / 1MB, 1)
+$report += "RAM : $([math]::Round($totalG...
+[2026-03-14 20:45:47] [RESULT] Code: 0 | 4.37s | Out: 711 chars
+[2026-03-14 20:47:56] [BLOCKED] Chemin hors projet: H:\Code\Ankama Dev\wakfu-dev-extension | Cmd: $extDir = "H:\Code\Ankama Dev\wakfu-dev-extension"
+$contentPath = "$extDir\content.js"
+$old = Get-Content -Path $contentPath -Raw -Encoding UTF8
+
+$oldFunction = @'
+function clickSendButton() {
+  const
+[2026-03-14 20:48:45] [EXEC] Commande (353 chars): Write-Host "=== TEST AUTO-ENVOI ===" -ForegroundColor Cyan
+Write-Host "Timestamp : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Green
+Write-Host "Server : v1.2 OK" -ForegroundColor Green
+Write-Host "Extension : v3.0 OK" -ForegroundColor Green
+Write-Host "Si tu vois ce message sans avo...
+[2026-03-14 20:48:46] [RESULT] Code: 0 | 0.23s | Out: 152 chars
+[2026-03-14 20:51:15] [BLOCKED] Commande bloquee par pattern: shutdown | Cmd: $report = @()
+$report += "=== TEST SENTINEL (qwen2.5-coder:7b) ==="
+$report += "Date : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += ""
+
+# Test 1 : Classification d'un bloc EXECUTABLE
+$prompt1
+[2026-03-14 20:51:44] [BLOCKED] Commande bloquee par pattern: system32 | Cmd: $report = @()
+$report += "=== TEST SENTINEL (qwen2.5-coder:7b) ==="
+$report += "Date : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += ""
+
+$sysPrompt = "You are SENTINEL. Classify code blocks. R
+[2026-03-14 20:52:13] [BLOCKED] Commande bloquee par pattern: Start-Process | Cmd: $serverPath = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content -Path $serverPath -Raw -Encoding UTF8
+
+$oldBlock = @'
+BLOCKED_PATTERNS = [
+    r"Start-Process",
+    r"R
+[2026-03-14 20:55:28] [EXEC] Commande (2104 chars): $b64 = "aW1wb3J0IHBhdGhsaWIsIHJlLCBiYXNlNjQKCnBhdGggPSBwYXRobGliLlBhdGgocidIOlxDb2RlXEFua2FtYSBEZXZcd2FrZnUtb3B0aW1pemVyXHNjcmlwdHNcZGV2X3NlcnZlci5weScpCmNvZGUgPSBwYXRoLnJlYWRfdGV4dCgndXRmLTgnKQoKIyBSZW1wbGFjZXIgbGEgYmxhY2tsaXN0IHBhciB1bmUgdmVyc2lvbiBjb250ZXh0dWVsbGUKIyBPbiBjaGVyY2hlIGxlIGJsb2MgQkxP...
+[2026-03-14 20:55:28] [RESULT] Code: 0 | 0.46s | Out: 157 chars
+[2026-03-14 20:55:48] [STOP] Arrete
+[2026-03-14 21:06:11] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:06:48] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:06:48] [BLOCKED] Invoke-WebRequest vers URL externe bloque: http://evil.com/x.exe | Cmd: $report = @()
+$report += "=== TEST SENTINEL (qwen2.5-coder:7b) ==="
+$report += "Date : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += ""
+
+$sysPrompt = "You are SENTINEL. Classify code. Reply ON
+[2026-03-14 21:07:08] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:07:08] [BLOCKED] Chemin hors projet: H:\Code\project\MANIFEST.json | Cmd: $report = @()
+$report += "=== TEST SENTINEL (qwen2.5-coder:7b) ==="
+$report += "Date : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += ""
+
+$sysPrompt = "You are SENTINEL. Classify code. Reply ON
+[2026-03-14 21:07:24] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:07:24] [EXEC] Commande (2118 chars): $report = @()
+$report += "=== TEST SENTINEL (qwen2.5-coder:7b) ==="
+$report += "Date : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += ""
+
+$sysPrompt = "You are SENTINEL. Classify code. Reply ONLY one word: EXEC_SAFE or NO_EXEC or EXEC_DANGER. EXEC_SAFE means PowerShell to run on dev machine. ...
+[2026-03-14 21:07:41] [RESULT] Code: 0 | 17.08s | Out: 415 chars
+[2026-03-14 21:08:34] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:08:34] [EXEC] Commande (208 chars): Invoke-RestMethod -Uri "http://localhost:8091/restart" -Method POST -Body "{}" -ContentType "application/json" -TimeoutSec 5
+Write-Host "Restart envoye - le serveur redemarrera dans 1s" -ForegroundColor Green
+[2026-03-14 21:08:39] [RESULT] Code: 0 | 5.31s | Out: 48 chars
+[2026-03-14 21:08:51] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:08:51] [EXEC] Commande (857 chars): $health = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Serveur : $($health.status) - Version : $($health.version)" -ForegroundColor Green
+Write-Host "Patch applique : $(if ((Get-Content 'H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py' -Raw) -m...
+[2026-03-14 21:08:56] [RESULT] Code: 0 | 5.33s | Out: 297 chars
+[2026-03-14 21:09:54] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:09:54] [EXEC] Commande (1207 chars): $code = Get-Content -Path "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py" -Raw -Encoding UTF8
+$target = 'self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))'
+if ($code.Contains($target)) {
+    $replacement = @"
+try:
+            self.wfile.write(json.dumps(data, ensure_a...
+[2026-03-14 21:09:59] [RESULT] Code: 0 | 5.33s | Out: 38 chars
+[2026-03-14 21:10:09] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:10:09] [EXEC] Commande (478 chars): Start-Sleep -Seconds 2
+$health = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Serveur : $($health.status) | Version : $($health.version)" -ForegroundColor Green
+Write-Host "Patch ConnectionAborted : $(if ((Get-Content 'H:\Code\Ankama Dev\wakfu-optimizer...
+[2026-03-14 21:10:17] [RESULT] Code: 0 | 7.3s | Out: 75 chars
+[2026-03-14 21:10:30] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:10:30] [EXEC] Commande (559 chars): $raw = (Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5)
+Write-Host "Type: $($raw.GetType().Name)" -ForegroundColor Cyan
+Write-Host "Raw: $raw" -ForegroundColor Gray
+Write-Host "Status: [$($raw.status)]" -ForegroundColor Green
+Write-Host "Version: [$($raw.version)]" -...
+[2026-03-14 21:12:15] [RESULT] Code: 0 | 105.33s | Out: 77 chars
+[2026-03-14 21:12:58] [EXEC] Commande (187 chars): Write-Host "=== TEST RAPIDE ===" -ForegroundColor Cyan
+Write-Host "Timestamp: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor Green
+Write-Host "Serveur repond: OK" -ForegroundColor Green
+[2026-03-14 21:12:58] [RESULT] Code: 0 | 0.21s | Out: 59 chars
+[2026-03-14 21:13:26] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:13:26] [EXEC] Commande (4595 chars): # 1. Patch du dev_server.py via base64 (remplacement complet de _json)
+python -c "
+import pathlib, re
+p = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py')
+c = p.read_text('utf-8')
+# Trouver et remplacer la methode _json
+old = '''    def _json(self, data, status=200):
+       ...
+[2026-03-14 21:13:32] [RESULT] Code: 0 | 5.5s | Out: 277 chars
+[2026-03-14 21:13:43] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:13:43] [EXEC] Commande (621 chars): Start-Sleep -Seconds 2
+$h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Health: $($h | ConvertTo-Json -Compress)" -ForegroundColor Green
+Write-Host "Patch present: $(if ((Get-Content 'H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py' -Raw) -mat...
+[2026-03-14 21:13:50] [RESULT] Code: 0 | 7.31s | Out: 137 chars
+[2026-03-14 21:14:03] [EXEC] Commande (791 chars): # 1. Voir exactement ce que le serveur renvoie
+$webClient = New-Object System.Net.WebClient
+$webClient.Encoding = [System.Text.Encoding]::UTF8
+try {
+    $raw = $webClient.DownloadString("http://127.0.0.1:8091/health")
+    Write-Host "Health brut: $raw" -ForegroundColor Green
+} catch {
+    Write-Host...
+[2026-03-14 21:15:44] [RESULT] Code: 0 | 100.29s | Out: 1918 chars
+[2026-03-14 21:15:52] [STOP] Arrete
+[2026-03-14 21:15:55] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:16:07] [EXEC] Commande (315 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = Get-Content $file -Encoding UTF8
+$report = @()
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match 'def _json|wfile|send_response|_cors|end_headers') {
+        $report += "L$($i+1): $($lines[$i])"
+    }
+}
+$re...
+[2026-03-14 21:16:08] [RESULT] Code: 0 | 0.2s | Out: 321 chars
+[2026-03-14 21:16:29] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:16:29] [EXEC] Commande (2022 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+# Afficher les lignes 243-253 avant modif
+Write-Host "=== AVANT ===" -ForegroundColor Yellow
+for ($i = 243; $i -lt [math]::Min(253, $lines.Count); $i++) {
+  ...
+[2026-03-14 21:16:34] [RESULT] Code: 0 | 5.37s | Out: 1151 chars
+[2026-03-14 21:16:35] [RESTART] Redemarrage du serveur...
+[2026-03-14 21:17:40] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:18:24] [EXEC] Commande (287 chars): Write-Host "Heure systeme Windows : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Fuseau horaire : $((Get-TimeZone).DisplayName)" -ForegroundColor Cyan
+Write-Host "UTC : $((Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm:ss'))" -ForegroundColor Gray
+[2026-03-14 21:18:25] [RESULT] Code: 0 | 0.26s | Out: 136 chars
+[2026-03-14 21:18:38] [EXEC] Commande (418 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = Get-Content $file -Encoding UTF8
+$report = @()
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match 'def restart_server|execv|_exit|RESTART|restart') {
+        $report += "L$($i+1): $($lines[$i])"
+    }
+}
+Writ...
+[2026-03-14 21:18:38] [RESULT] Code: 0 | 0.24s | Out: 475 chars
+[2026-03-14 21:18:54] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:18:54] [EXEC] Commande (1148 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+# Remplacer lignes 233-237 (index 232-236)
+$lines[232] = 'def restart_server():'
+$lines[233] = '    """Arrete le serveur - le launcher le relancera automatiq...
+[2026-03-14 21:19:00] [RESULT] Code: 0 | 6.38s | Out: 462 chars
+[2026-03-14 21:19:01] [RESTART] Redemarrage du serveur...
+[2026-03-14 21:20:10] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:20:14] [STOP] Arrete
+[2026-03-14 21:20:28] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:20:50] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:20:50] [EXEC] Commande (1198 chars): Start-Sleep -Seconds 1
+Write-Host "=== TEST RESTART AUTOMATIQUE ===" -ForegroundColor Cyan
+Write-Host "Envoi du signal restart..." -ForegroundColor Yellow
+try {
+    Invoke-RestMethod -Uri "http://localhost:8091/restart" -Method POST -Body "{}" -ContentType "application/json" -TimeoutSec 5
+    Write-...
+[2026-03-14 21:21:16] [RESULT] Code: 0 | 26.29s | Out: 221 chars
+[2026-03-14 21:21:17] [RESTART] Signal envoye au launcher - arret dans 1s...
+[2026-03-14 21:21:19] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:21:58] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:21:58] [EXEC] Commande (1051 chars): $h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Serveur OK - tentative 2 active" -ForegroundColor Green
+Write-Host ""
+Write-Host "=== BILAN SYSTEME AUTO-REGENERANT ===" -ForegroundColor Cyan
+Write-Host "  Launcher v2 : detecte crash + signal restart" ...
+[2026-03-14 21:22:03] [RESULT] Code: 0 | 5.29s | Out: 495 chars
+[2026-03-14 21:23:07] [BLOCKED] Commande bloquee par pattern: Format-Volume | Cmd: $agentContent = @"
+"""
+local_agent.py v1.0 - Agent local pour le consortium IA
+Orchestre SENTINEL (classification), ResourceGovernor (RAM/CPU), et Ollama.
+Appele par le dev_server.py via des routes de
+[2026-03-14 21:27:36] [EXEC] Commande (11793 chars): $agentB64 = "IiIiCmxvY2FsX2FnZW50LnB5IHYxLjAgLSBBZ2VudCBsb2NhbCBwb3VyIGxlIGNvbnNvcnRpdW0gSUEKT3JjaGVzdHJlIFNFTlRJTkVMIChjbGFzc2lmaWNhdGlvbiksIFJlc291cmNlR292ZXJub3IgKFJBTS9DUFUpLCBldCBPbGxhbWEuCiIiIgppbXBvcnQganNvbiwgdGltZSwgc3VicHJvY2Vzcywgb3MsIHJlCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApmcm9tIGRhdGV0aW1...
+[2026-03-14 21:27:52] [RESULT] Code: 0 | 15.98s | Out: 1393 chars
+[2026-03-14 21:28:48] [EXEC] Commande (740 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\local_agent.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+$content = $content.Replace(
+    "elif cpu > 70 or ram_free < 8: self.current_mode = 'ECO'",
+    "elif cpu > 70 or ram_free < 6: self.current_mode = 'ECO'"
+)
+$content = $content.Repla...
+[2026-03-14 21:28:54] [RESULT] Code: 0 | 5.95s | Out: 1443 chars
+[2026-03-14 21:29:20] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:29:20] [EXEC] Commande (1051 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\local_agent.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+$content = $content.Replace(
+    "if ram_free < model_size_gb + 3: return False",
+    "if ram_free < model_size_gb + 1: return False"
+)
+Set-Content -Path $file -Value $content -Encodi...
+[2026-03-14 21:29:47] [RESULT] Code: 0 | 27.77s | Out: 1374 chars
+[2026-03-14 21:30:45] [EXEC] Commande (1493 chars): Write-Host "=== FIN DE SESSION - BILAN COMPLET ===" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "INFRASTRUCTURE OPERATIONNELLE :" -ForegroundColor Yellow
+Write-Host "  Dev Server v1.3 + patch OSError + restart distant" -ForegroundColor White
+Write-Host "  Launcher v2 autosurvivant (crash > relanc...
+[2026-03-14 21:30:50] [RESULT] Code: 0 | 4.81s | Out: 1036 chars
+[2026-03-14 21:33:02] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:33:02] [BLOCKED] Chemin hors projet: H:\Code\Ankama Dev\wakfu-dev-extension | Cmd: # 1. Ajouter la route /classify dans dev_server.py
+$file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+# Trou
+[2026-03-14 21:33:32] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:33:32] [BLOCKED] Chemin hors projet: H:\Code\Ankama Dev\wakfu-dev-extension\content.js | Cmd: # 1. Ajouter la route /classify dans dev_server.py
+$file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+$ollam
+[2026-03-14 21:34:36] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:34:36] [EXEC] Commande (5350 chars): # 1. Route /classify dans dev_server.py (dans le projet = OK)
+$file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+$ollamaIdx = -1
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match 'elif path ...
+[2026-03-14 21:34:51] [RESULT] Code: 0 | 15.47s | Out: 206 chars
+[2026-03-14 21:34:52] [RESTART] Signal envoye au launcher - arret dans 1s...
+[2026-03-14 21:34:53] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:35:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:35:17] [BLOCKED] Chemin hors projet: H:\Code\Ankama Dev\wakfu-dev-extension\content.js | Cmd: Start-Sleep -Seconds 3
+
+# 1. Verifier le serveur
+try {
+    $h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+    Write-Host "Serveur: OK ($($h.version))" -Foreground
+[2026-03-14 21:36:48] [EXEC] Commande (992 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+# Trouver la ligne qui definit ALLOWED_PATHS ou les chemins autorises
+$found = $false
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match 'AL...
+[2026-03-14 21:36:48] [RESULT] Code: 0 | 0.23s | Out: 372 chars
+[2026-03-14 21:37:01] [EXEC] Commande (207 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = Get-Content $file -Encoding UTF8
+for ($i = 85; $i -lt 100; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor Cyan
+}
+[2026-03-14 21:37:02] [RESULT] Code: 0 | 0.22s | Out: 820 chars
+[2026-03-14 21:37:22] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:37:22] [EXEC] Commande (1472 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+$old = '                "\\.venv\\" in p_clean or "\\.ollama\\" in p_clean or
+                "\\appdata\\" in p_clean): continue'
+
+$new = '                "\\.venv\\" in p_clean or "...
+[2026-03-14 21:37:37] [RESULT] Code: 0 | 14.38s | Out: 494 chars
+[2026-03-14 21:37:38] [RESTART] Signal envoye au launcher - arret dans 1s...
+[2026-03-14 21:37:39] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:38:16] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:38:16] [EXEC] Commande (2503 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+# Trouver la ligne exacte avant laquelle inserer /classify (juste avant /ollama)
+$lines = Get-Content $file -Encoding UTF8
+$ollamaLine = -1
+for ($i = 0; $i -lt $lines.Count; $i++) {
+ ...
+[2026-03-14 21:38:55] [RESULT] Code: 0 | 39.4s | Out: 125 chars
+[2026-03-14 21:38:56] [RESTART] Signal envoye au launcher - arret dans 1s...
+[2026-03-14 21:40:51] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:41:16] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:41:16] [EXEC] Commande (550 chars): # Test health
+$h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Health: OK" -ForegroundColor Green
+
+# Test classify simple
+Write-Host ""
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$body = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Js...
+[2026-03-14 21:43:38] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:44:12] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:44:12] [BLOCKED] Chemin hors projet: C:\Users | Cmd: Write-Host "=== TEST CLASSIFY (serveur multi-thread) ===" -ForegroundColor Cyan
+Write-Host ""
+
+# Test 1 : PowerShell safe
+$body1 = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Json
+Write-Host "T
+[2026-03-14 21:44:27] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:44:27] [EXEC] Commande (1771 chars): Write-Host "=== TEST CLASSIFY (serveur multi-thread) ===" -ForegroundColor Cyan
+Write-Host ""
+
+# Test 1 : PowerShell safe
+$body1 = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Json
+Write-Host "Test 1 - PowerShell safe..." -ForegroundColor Yellow
+$start = Get-Date
+$res1 = Invoke-RestMethod -Uri...
+[2026-03-14 21:44:42] [STOP] Arrete
+[2026-03-14 21:45:39] [STOP] Arrete
+[2026-03-14 21:45:49] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 21:46:00] [EXEC] Commande (4371 chars): # === PATCH FULL-AUTO : content.js v3.1 ===
+$extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# 1. Ajouter la fonction classifyCode qui appelle /classify
+$classifyFunc = @'
+
+// === SENTINEL CLASSIFICATION ===
+async functio...
+[2026-03-14 21:46:00] [RESULT] Code: 0 | 0.27s | Out: 517 chars
+[2026-03-14 21:46:32] [EXEC] Commande (1236 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Brancher l'auto-exec sur la bonne ligne
+$old = "element.parentElement.insertBefore(wrapper, element.nextSibling);"
+$new = @'
+element.parentElement.insertBefore(wrapper, e...
+[2026-03-14 21:46:32] [RESULT] Code: 0 | 0.22s | Out: 199 chars
+[2026-03-14 21:46:57] [EXEC] Commande (524 chars): Write-Host "=== FULL AUTO MODE ACTIF ===" -ForegroundColor Green
+Write-Host "Date: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Si tu vois ce message SANS avoir clique Executer..." -ForegroundColor Yellow
+Write-Host "...le systeme est 100% autonome !" -ForegroundColor...
+[2026-03-14 21:46:57] [RESULT] Code: 0 | 0.35s | Out: 182 chars
+[2026-03-14 21:48:17] [EXEC] Commande (432 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = Get-Content $extensionFile -Encoding UTF8
+
+Write-Host "=== ZONE addExecButtons ===" -ForegroundColor Cyan
+for ($i = 185; $i -lt 260; $i++) {
+    $line = $lines[$i]
+    if ($line -match 'function addExec|btn|button|execBtn|...
+[2026-03-14 21:48:17] [RESULT] Code: 0 | 0.23s | Out: 1469 chars
+[2026-03-14 21:48:31] [EXEC] Commande (1076 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+$old = 'if (state.autoMode !== false) { setTimeout(() => autoExecBlock(element, btn), 2000); }'
+$new = 'if (state.autoMode !== false) { setTimeout(() => autoExecBlock(eleme...
+[2026-03-14 21:48:31] [RESULT] Code: 0 | 0.25s | Out: 1226 chars
+[2026-03-14 21:48:46] [EXEC] Commande (279 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = Get-Content $extensionFile -Encoding UTF8
+
+Write-Host "=== LIGNES 190-250 ===" -ForegroundColor Cyan
+for ($i = 189; $i -lt 250; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor White
+}
+[2026-03-14 21:48:46] [RESULT] Code: 0 | 0.24s | Out: 2549 chars
+[2026-03-14 21:49:07] [EXEC] Commande (2182 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Supprimer les lignes 243-244 (l'ancien auto-exec mal place)
+$lines.RemoveAt(243)  # ligne 244: if (state.autoMode...
+$lines.RemoveAt(242)  # lig...
+[2026-03-14 21:49:07] [RESULT] Code: 0 | 0.29s | Out: 806 chars
+[2026-03-14 21:49:32] [EXEC] Commande (1120 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Supprimer les lignes 226-227 (auto-exec mal place, hors du if)
+$lines.RemoveAt(226)  # if (state.autoMode...
+$lines.RemoveAt(225)  # // SENTINEL...
+[2026-03-14 21:49:32] [RESULT] Code: 0 | 0.27s | Out: 499 chars
+[2026-03-14 21:49:47] [EXEC] Commande (1356 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Remplacer le pattern exact : appendChild(execBtn) suivi de la fermeture }
+$old = '    wrapper.appendChild(execBtn);
+  }
+      // SENTINEL auto-exec pour PowerShell
+      ...
+[2026-03-14 21:49:47] [RESULT] Code: 0 | 0.24s | Out: 490 chars
+[2026-03-14 21:50:55] [BLOCKED] Chemin hors projet: H:\Code\Ankama | Cmd: (.venv) PS H:\Code\Ankama Dev\wakfu-optimizer> $lines = Get-Content "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py" -Encoding UTF8
+>> for ($i = 300; $i -lt 330; $i++) { Write-Host "L$($i+1)
+[2026-03-14 21:50:55] [EXEC] Commande (992 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+
+# Trouver la ligne qui definit ALLOWED_PATHS ou les chemins autorises
+$found = $false
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match 'AL...
+[2026-03-14 21:50:55] [RESULT] Code: 0 | 0.21s | Out: 364 chars
+[2026-03-14 21:50:55] [EXEC] Commande (207 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = Get-Content $file -Encoding UTF8
+for ($i = 85; $i -lt 100; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor Cyan
+}
+[2026-03-14 21:50:55] [RESULT] Code: 0 | 0.21s | Out: 759 chars
+[2026-03-14 21:50:55] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:50:55] [EXEC] Commande (1472 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+$old = '                "\\.venv\\" in p_clean or "\\.ollama\\" in p_clean or
+                "\\appdata\\" in p_clean): continue'
+
+$new = '                "\\.venv\\" in p_clean or "...
+[2026-03-14 21:50:55] [RESULT] Code: 0 | 0.21s | Out: 390 chars
+[2026-03-14 21:50:55] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:50:55] [EXEC] Commande (2503 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+# Trouver la ligne exacte avant laquelle inserer /classify (juste avant /ollama)
+$lines = Get-Content $file -Encoding UTF8
+$ollamaLine = -1
+for ($i = 0; $i -lt $lines.Count; $i++) {
+ ...
+[2026-03-14 21:51:08] [RESULT] Code: 0 | 12.58s | Out: 125 chars
+[2026-03-14 21:51:08] [EXEC] Commande (214 chars): Write-Host "=== TEST FULL-AUTO ===" -ForegroundColor Green
+Write-Host "Heure: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Ce message prouve que le mode auto fonctionne" -ForegroundColor Yellow
+[2026-03-14 21:51:08] [RESULT] Code: 0 | 0.19s | Out: 85 chars
+[2026-03-14 21:51:08] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:08] [EXEC] Commande (1020 chars): # Test 1 : health check
+$h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Health: $($h | ConvertTo-Json -Compress)" -ForegroundColor Cyan
+
+# Test 2 : classify avec timeout long (SENTINEL charge le modele)
+Write-Host ""
+Write-Host "Test classify (timeout...
+[2026-03-14 21:51:17] [RESULT] Code: 0 | 8.51s | Out: 1024 chars
+[2026-03-14 21:51:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:17] [EXEC] Commande (1028 chars): Start-Sleep -Seconds 5
+Write-Host "=== DIAGNOSTIC RAPIDE ===" -ForegroundColor Cyan
+
+# Health check
+try {
+    $h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+    Write-Host "Serveur: OK" -ForegroundColor Green
+} catch {
+    Write-Host "Serveur: DOWN - verifier la...
+[2026-03-14 21:51:28] [RESULT] Code: 0 | 10.92s | Out: 1528 chars
+[2026-03-14 21:51:28] [EXEC] Commande (190 chars): $lines = Get-Content "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py" -Encoding UTF8
+for ($i = 300; $i -lt 330; $i++) { Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor Cyan }
+[2026-03-14 21:51:28] [RESULT] Code: 0 | 0.26s | Out: 1763 chars
+[2026-03-14 21:51:28] [EXEC] Commande (676 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$lines = [System.Collections.ArrayList]@(Get-Content $file -Encoding UTF8)
+Write-Host "Avant: $($lines.Count) lignes" -ForegroundColor Yellow
+
+# Supprimer lignes 308 a 325 (index 307 a 324 = 18 lignes)
+$lines.RemoveRange(307, 18)
+
+$l...
+[2026-03-14 21:51:28] [RESULT] Code: 0 | 0.26s | Out: 877 chars
+[2026-03-14 21:51:28] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:28] [EXEC] Commande (550 chars): # Test health
+$h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 5
+Write-Host "Health: OK" -ForegroundColor Green
+
+# Test classify simple
+Write-Host ""
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$body = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Js...
+[2026-03-14 21:51:37] [RESULT] Code: 0 | 8.46s | Out: 41 chars
+[2026-03-14 21:51:37] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:37] [EXEC] Commande (434 chars): # Precharger SENTINEL dans Ollama
+$body = @{ model = "qwen2.5-coder:7b"; prompt = "hello"; stream = $false; options = @{ num_predict = 1 } } | ConvertTo-Json -Depth 3
+Write-Host "Prechargement SENTINEL..." -ForegroundColor Yellow
+$r = Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Met...
+[2026-03-14 21:51:39] [RESULT] Code: 0 | 2.47s | Out: 56 chars
+[2026-03-14 21:51:39] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:39] [EXEC] Commande (1150 chars): # Test classify rapide (modele deja charge)
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$body = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Json
+$res = Invoke-RestMethod -Uri "http://localhost:8091/classify" -Method POST -Body $body -ContentType "application/json" -TimeoutSec 30
+Wr...
+[2026-03-14 21:51:44] [RESULT] Code: 0 | 4.44s | Out: 207 chars
+[2026-03-14 21:51:44] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:44] [EXEC] Commande (1771 chars): Write-Host "=== TEST CLASSIFY (serveur multi-thread) ===" -ForegroundColor Cyan
+Write-Host ""
+
+# Test 1 : PowerShell safe
+$body1 = @{ code = 'Write-Host "Hello World"' } | ConvertTo-Json
+Write-Host "Test 1 - PowerShell safe..." -ForegroundColor Yellow
+$start = Get-Date
+$res1 = Invoke-RestMethod -Uri...
+[2026-03-14 21:51:56] [RESULT] Code: 0 | 12.58s | Out: 249 chars
+[2026-03-14 21:51:56] [EXEC] Commande (4371 chars): # === PATCH FULL-AUTO : content.js v3.1 ===
+$extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# 1. Ajouter la fonction classifyCode qui appelle /classify
+$classifyFunc = @'
+
+// === SENTINEL CLASSIFICATION ===
+async functio...
+[2026-03-14 21:51:56] [RESULT] Code: 0 | 0.22s | Out: 494 chars
+[2026-03-14 21:51:56] [EXEC] Commande (1236 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Brancher l'auto-exec sur la bonne ligne
+$old = "element.parentElement.insertBefore(wrapper, element.nextSibling);"
+$new = @'
+element.parentElement.insertBefore(wrapper, e...
+[2026-03-14 21:51:57] [RESULT] Code: 0 | 0.19s | Out: 34 chars
+[2026-03-14 21:51:57] [EXEC] Commande (524 chars): Write-Host "=== FULL AUTO MODE ACTIF ===" -ForegroundColor Green
+Write-Host "Date: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Si tu vois ce message SANS avoir clique Executer..." -ForegroundColor Yellow
+Write-Host "...le systeme est 100% autonome !" -ForegroundColor...
+[2026-03-14 21:51:57] [RESULT] Code: 0 | 0.32s | Out: 182 chars
+[2026-03-14 21:51:57] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:51:57] [EXEC] Commande (618 chars): Write-Host "Test /classify direct..." -ForegroundColor Yellow
+$start = Get-Date
+$body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+try {
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/classify" -Method POST -Body $body -ContentType "application/json" -TimeoutSec 30
+    $dur = [math]:...
+[2026-03-14 21:52:01] [RESULT] Code: 0 | 4.4s | Out: 79 chars
+[2026-03-14 21:52:01] [EXEC] Commande (432 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = Get-Content $extensionFile -Encoding UTF8
+
+Write-Host "=== ZONE addExecButtons ===" -ForegroundColor Cyan
+for ($i = 185; $i -lt 260; $i++) {
+    $line = $lines[$i]
+    if ($line -match 'function addExec|btn|button|execBtn|...
+[2026-03-14 21:52:01] [RESULT] Code: 0 | 0.21s | Out: 1490 chars
+[2026-03-14 21:52:01] [EXEC] Commande (1076 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+$old = 'if (state.autoMode !== false) { setTimeout(() => autoExecBlock(element, btn), 2000); }'
+$new = 'if (state.autoMode !== false) { setTimeout(() => autoExecBlock(eleme...
+[2026-03-14 21:52:02] [RESULT] Code: 0 | 0.22s | Out: 1280 chars
+[2026-03-14 21:52:09] [EXEC] Commande (279 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = Get-Content $extensionFile -Encoding UTF8
+
+Write-Host "=== LIGNES 190-250 ===" -ForegroundColor Cyan
+for ($i = 189; $i -lt 250; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor White
+}
+[2026-03-14 21:52:09] [RESULT] Code: 0 | 0.23s | Out: 2557 chars
+[2026-03-14 21:52:14] [EXEC] Commande (2182 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Supprimer les lignes 243-244 (l'ancien auto-exec mal place)
+$lines.RemoveAt(243)  # ligne 244: if (state.autoMode...
+$lines.RemoveAt(242)  # lig...
+[2026-03-14 21:52:15] [RESULT] Code: 0 | 0.26s | Out: 892 chars
+[2026-03-14 21:52:20] [EXEC] Commande (1120 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Supprimer les lignes 226-227 (auto-exec mal place, hors du if)
+$lines.RemoveAt(226)  # if (state.autoMode...
+$lines.RemoveAt(225)  # // SENTINEL...
+[2026-03-14 21:52:21] [RESULT] Code: 0 | 0.25s | Out: 585 chars
+[2026-03-14 21:52:29] [EXEC] Commande (1356 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Remplacer le pattern exact : appendChild(execBtn) suivi de la fermeture }
+$old = '    wrapper.appendChild(execBtn);
+  }
+      // SENTINEL auto-exec pour PowerShell
+      ...
+[2026-03-14 21:52:29] [RESULT] Code: 0 | 0.21s | Out: 595 chars
+[2026-03-14 21:52:35] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:52:35] [EXEC] Commande (1430 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:52:39] [RESULT] Code: 0 | 4.38s | Out: 273 chars
+[2026-03-14 21:53:16] [EXEC] Commande (60 chars): Write-Host "=== DIAGNOSTIC AUTO<span class="cursor">█</span>
+[2026-03-14 21:53:16] [RESULT] Code: 1 | 0.22s | Out: 0 chars
+[2026-03-14 21:53:16] [EXEC] Commande (102 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Ver<span class="cursor">█</span>
+[2026-03-14 21:53:16] [RESULT] Code: 0 | 0.18s | Out: 29 chars
+[2026-03-14 21:53:16] [EXEC] Commande (159 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..."<span class="cursor">█</span>
+[2026-03-14 21:53:16] [RESULT] Code: 1 | 0.18s | Out: 0 chars
+[2026-03-14 21:53:16] [EXEC] Commande (222 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{<span class="cursor">█</span>
+[2026-03-14 21:53:16] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 21:53:16] [EXEC] Commande (248 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"<span class="cursor">█</span>
+[2026-03-14 21:53:17] [RESULT] Code: 1 | 0.18s | Out: 0 chars
+[2026-03-14 21:53:17] [EXEC] Commande (291 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-Rest<span class="cursor">█</span>
+[2026-03-14 21:53:17] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 21:53:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:17] [EXEC] Commande (392 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:17] [RESULT] Code: 1 | 0.21s | Out: 0 chars
+[2026-03-14 21:53:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:17] [EXEC] Commande (470 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:17] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-14 21:53:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:17] [EXEC] Commande (527 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:17] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-14 21:53:17] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:17] [EXEC] Commande (609 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:18] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-14 21:53:18] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:18] [EXEC] Commande (710 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:18] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 21:53:18] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:18] [EXEC] Commande (787 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:22] [RESULT] Code: 0 | 4.35s | Out: 103 chars
+[2026-03-14 21:53:22] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:22] [EXEC] Commande (856 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:22] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-14 21:53:22] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:22] [EXEC] Commande (901 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:22] [RESULT] Code: 1 | 0.18s | Out: 0 chars
+[2026-03-14 21:53:22] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:22] [EXEC] Commande (993 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:23] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 21:53:23] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:23] [EXEC] Commande (1039 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:23] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 21:53:23] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:23] [EXEC] Commande (1091 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:27] [RESULT] Code: 1 | 4.57s | Out: 169 chars
+[2026-03-14 21:53:27] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:27] [EXEC] Commande (1147 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:28] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-14 21:53:28] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:28] [EXEC] Commande (1196 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:32] [RESULT] Code: 0 | 4.35s | Out: 169 chars
+[2026-03-14 21:53:35] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 21:53:35] [EXEC] Commande (1242 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 21:53:35] [RESULT] Code: 1 | 0.24s | Out: 0 chars
+[2026-03-14 21:54:40] [STOP] Arrete
+[2026-03-14 21:58:12] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 22:01:52] [STOP] Arrete
+[2026-03-14 22:02:00] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 22:02:01] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:02:01] [EXEC] Commande (1430 chars): Write-Host "=== DIAGNOSTIC AUTO-EXEC ===" -ForegroundColor Cyan
+
+# 1. Verifier que /classify repond
+Write-Host "Test /classify..." -ForegroundColor Yellow
+$start = Get-Date
+try {
+    $body = @{ code = 'Write-Host "test"' } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/cla...
+[2026-03-14 22:02:05] [RESULT] Code: 0 | 4.38s | Out: 273 chars
+[2026-03-14 22:02:05] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:02:05] [EXEC] Commande (605 chars): # Verifier si le serveur repond
+try {
+    $h = Invoke-RestMethod -Uri "http://localhost:8091/health" -Method GET -TimeoutSec 3
+    Write-Host "Serveur: OK" -ForegroundColor Green
+} catch {
+    Write-Host "Serveur: DOWN" -ForegroundColor Red
+}
+
+# Verifier s'il y a un doublon /classify
+$lines = Get-Co...
+[2026-03-14 22:02:05] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 22:02:05] [EXEC] Commande (1035 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+# 1. Remplacer HTTPServer par ThreadingHTTPServer pour le multi-thread
+$content = $content.Replace(
+    'server = HTTPServer((HOST, PORT), DevHandler)',
+    'server = ThreadingHTTPSer...
+[2026-03-14 22:02:06] [RESULT] Code: 1 | 0.18s | Out: 0 chars
+[2026-03-14 22:02:06] [BLOCKED] Chemin hors projet: H:\Code\Ankama | Cmd: (.venv) PS H:\Code\Ankama Dev\wakfu-optimizer> $lines = Get-Content "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py" -Encoding UTF8
+>> for ($i = 300; $i -lt 330; $i++) { Write-Host "L$($i+1)
+[2026-03-14 22:02:06] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:02:06] [EXEC] Commande (2503 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+# Trouver la ligne exacte avant laquelle inserer /classify (juste avant /ollama)
+$lines = Get-Content $file -Encoding UTF8
+$ollamaLine = -1
+for ($i = 0; $i -lt $lines.Count; $i++) {
+ ...
+[2026-03-14 22:02:18] [RESULT] Code: 0 | 12.52s | Out: 125 chars
+[2026-03-14 22:02:18] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:02:18] [EXEC] Commande (1472 chars): $file = "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py"
+$content = Get-Content $file -Raw -Encoding UTF8
+
+$old = '                "\\.venv\\" in p_clean or "\\.ollama\\" in p_clean or
+                "\\appdata\\" in p_clean): continue'
+
+$new = '                "\\.venv\\" in p_clean or "...
+[2026-03-14 22:02:18] [RESULT] Code: 0 | 0.21s | Out: 390 chars
+[2026-03-14 22:02:18] [EXEC] Commande (2182 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Supprimer les lignes 243-244 (l'ancien auto-exec mal place)
+$lines.RemoveAt(243)  # ligne 244: if (state.autoMode...
+$lines.RemoveAt(242)  # lig...
+[2026-03-14 22:02:19] [RESULT] Code: 0 | 0.27s | Out: 920 chars
+[2026-03-14 22:02:19] [EXEC] Commande (683 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Supprimer les doublons - garder une seule copie
+$old = '    // SENTINEL auto-exec pour PowerShell
+      // SENTINEL auto-exec pour PowerShell
+      if (state.autoMode !==...
+[2026-03-14 22:02:19] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 22:02:19] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:02:19] [EXEC] Commande (1426 chars): # 1. Nettoyer les doublons dans content.js
+$extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+# Trouver et nettoyer la zone auto-exec
+$cleaned = [System.Collections.ArrayList]::new()
+$skipNext = $f...
+[2026-03-14 22:02:25] [RESULT] Code: 0 | 6.37s | Out: 617 chars
+[2026-03-14 22:02:25] [EXEC] Commande (1770 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Remplacer l'appel direct autoExecBlock par une version qui attend la fin de generation
+$old = '    // SENTINEL auto-exec pour PowerShell
+    if (state.autoMode !== false)...
+[2026-03-14 22:02:25] [RESULT] Code: 0 | 0.3s | Out: 966 chars
+[2026-03-14 22:02:26] [EXEC] Commande (6056 chars): # === CONTENT.JS v3.2 - FULL AUTO avec detection fin de generation ===
+# On remplace uniquement la logique auto-exec, pas tout le fichier
+
+$extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Remplacer la fonction autoExecB...
+[2026-03-14 22:02:26] [RESULT] Code: 0 | 0.22s | Out: 250 chars
+[2026-03-14 22:02:26] [EXEC] Commande (2168 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$content = Get-Content $extensionFile -Raw -Encoding UTF8
+
+# Remplacer la detection generique par la detection SVG exacte
+$oldDetect = @'
+  // 1. Bouton stop visible
+  const stopBtns = document.querySelectorAll('button, div');
+  fo...
+[2026-03-14 22:02:26] [RESULT] Code: 0 | 0.23s | Out: 248 chars
+[2026-03-14 22:02:26] [EXEC] Commande (288 chars): Write-Host "=== FULL AUTO v2 ===" -ForegroundColor Green
+Write-Host "Heure: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Genere par Genspark, classifie par SENTINEL, execute automatiquement" -ForegroundColor Yellow
+Write-Host "Zero clic humain" -ForegroundColor Green
+[2026-03-14 22:02:26] [RESULT] Code: 0 | 0.19s | Out: 123 chars
+[2026-03-14 22:02:26] [EXEC] Commande (253 chars): $lines = Get-Content "H:\Code\Ankama Dev\wakfu-dev-extension\content.js" -Encoding UTF8
+Write-Host "Total: $($lines.Count) lignes" -ForegroundColor Cyan
+for ($i = 189; $i -lt 250; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor White
+}
+[2026-03-14 22:02:26] [RESULT] Code: 0 | 0.24s | Out: 2750 chars
+[2026-03-14 22:02:26] [EXEC] Commande (188 chars): $lines = Get-Content "H:\Code\Ankama Dev\wakfu-dev-extension\content.js" -Encoding UTF8
+for ($i = 250; $i -lt 300; $i++) {
+    Write-Host "L$($i+1): $($lines[$i])" -ForegroundColor White
+}
+[2026-03-14 22:02:27] [RESULT] Code: 0 | 0.24s | Out: 2228 chars
+[2026-03-14 22:02:27] [EXEC] Commande (1659 chars): $extensionFile = "H:\Code\Ankama Dev\wakfu-dev-extension\content.js"
+$lines = [System.Collections.ArrayList]@(Get-Content $extensionFile -Encoding UTF8)
+
+Write-Host "Avant: $($lines.Count) lignes" -ForegroundColor Yellow
+
+# 1. Supprimer les doublons (lignes 275-276, index 274-275)
+$lines.RemoveAt(27...
+[2026-03-14 22:02:27] [RESULT] Code: 0 | 0.3s | Out: 1341 chars
+[2026-03-14 22:03:14] [STOP] Arrete
+[2026-03-14 22:19:33] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 22:20:26] [BLOCKED] Chemin hors projet: H:\Code\Ankama | Cmd: (.venv) PS H:\Code\Ankama Dev\wakfu-optimizer> $lines = Get-Content "H:\Code\Ankama Dev\wakfu-optimizer\scripts\dev_server.py" -Encoding UTF8
+>> for ($i = 300; $i -lt 330; $i++) { Write-Host "L$($i+1)
+[2026-03-14 22:28:14] [EXEC] Commande (47 chars): Copy@"
+import path<span class="cursor">█</span>
+[2026-03-14 22:28:14] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 22:32:17] [STOP] Arrete
+[2026-03-14 22:32:40] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 22:34:04] [EXEC] Commande (403 chars): CopyWrite-Host "=== TEST SENTINEL + AUTO-EXEC v4.1 ===" -ForegroundColor Cyan
+Write-Host "Heure: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor White
+Write-Host "Si ce message apparait SANS cliquer = pipeline 100% fonctionnel" -ForegroundColor Green
+Write-Host "Serveur: dev_server v1.3 ThreadingHT...
+[2026-03-14 22:34:05] [RESULT] Code: 1 | 0.18s | Out: 0 chars
+[2026-03-14 22:34:05] [EXEC] Commande (665 chars): CopyWrite-Host "=== TEST SENTINEL + AUTO-EXEC v4.1 ===" -ForegroundColor Cyan
+Write-Host "Heure: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor White
+Write-Host "Si ce message apparait SANS cliquer = pipeline 100% fonctionnel" -ForegroundColor Green
+Write-Host "Serveur: dev_server v1.3 ThreadingHT...
+[2026-03-14 22:34:05] [RESULT] Code: 0 | 0.42s | Out: 222 chars
+[2026-03-14 22:34:06] [EXEC] Commande (665 chars): CopyWrite-Host "=== TEST SENTINEL + AUTO-EXEC v4.1 ===" -ForegroundColor Cyan
+Write-Host "Heure: $(Get-Date -Format 'HH:mm:ss')" -ForegroundColor White
+Write-Host "Si ce message apparait SANS cliquer = pipeline 100% fonctionnel" -ForegroundColor Green
+Write-Host "Serveur: dev_server v1.3 ThreadingHT...
+[2026-03-14 22:34:06] [RESULT] Code: 0 | 0.41s | Out: 222 chars
+[2026-03-14 22:39:27] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:39:27] [BLOCKED] Chemin hors projet: H:\Code\Ankama Dev\wakfu-dev-extension | Cmd: CopyWrite-Host "=== DIAGNOSTIC COMPLET INFRASTRUCTURE ===" -ForegroundColor Cyan
+Write-Host ""
+
+# 1. Structure du projet
+Write-Host "--- STRUCTURE PROJET ---" -ForegroundColor Yellow
+$projectRoot = "H
+[2026-03-14 22:41:29] [EXEC] Commande (858 chars): Copypip install flask psutil gitpython
+Write-Host ""
+Write-Host "--- VERIFICATION ---" -ForegroundColor Cyan
+python -c "import flask; print('flask', flask.__version__)"
+python -c "import psutil; print('psutil', psutil.__version__)"
+python -c "import git; print('gitpython', git.__version__)"
+Write-Ho...
+[2026-03-14 22:41:29] [RESULT] Code: 1 | 0.19s | Out: 0 chars
+[2026-03-14 22:43:11] [STOP] Arrete
+[2026-03-14 22:45:08] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 22:45:49] [EXEC] Commande (662 chars): CopyWrite-Host "=== LECTURE AGENTS EXISTANTS ===" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "--- local_agent.py (premieres 40 lignes) ---" -ForegroundColor Yellow
+Get-Content "H:\Code\Ankama Dev\wakfu-optimizer\scripts\local_agent.py" -Encoding UTF8 -TotalCount 40
+Write-Host ""
+Write-Host "--- ...
+[2026-03-14 22:45:49] [RESULT] Code: 0 | 0.33s | Out: 4471 chars
+[2026-03-14 22:46:34] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 22:46:34] [EXEC] Commande (663 chars): Copy$files = @("scripts\local_agent.py", "scripts\autopush.py", "scripts\build_memory.py")
+foreach ($f in $files) {
+    Write-Host "=== $f ===" -ForegroundColor Cyan
+    $body = @{ path = $f } | ConvertTo-Json
+    $res = Invoke-RestMethod -Uri "http://localhost:8091/read-file" -Method POST -Body $bo...
+[2026-03-14 22:46:35] [RESULT] Code: 1 | 0.3s | Out: 0 chars
+[2026-03-14 23:09:25] [STOP] Arrete
+[2026-03-14 23:12:45] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 23:13:30] [EXEC] Commande (36 chars): Write-Host "Memory Manager connecte"
+[2026-03-14 23:13:30] [RESULT] Code: 0 | 0.19s | Out: 24 chars
+[2026-03-14 23:16:38] [STOP] Arrete
+[2026-03-14 23:17:12] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 23:17:21] [EXEC] Commande (29 chars): Write-Host "Test memory hook"
+[2026-03-14 23:17:21] [RESULT] Code: 0 | 0.19s | Out: 17 chars
+[2026-03-14 23:21:48] [STOP] Arrete
+[2026-03-14 23:21:58] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 23:22:11] [EXEC] Commande (29 chars): Write-Host "Pipeline test OK"
+[2026-03-14 23:22:11] [RESULT] Code: 0 | 0.19s | Out: 17 chars
+[2026-03-14 23:22:13] [WRITE] memory/test_review.txt (38 chars)
+[2026-03-14 23:26:07] [SECURITY] Invoke-RestMethod vers localhost autorise
+[2026-03-14 23:26:07] [EXEC] Commande (1672 chars): Copy# === PIPELINE REEL : Creation SaveButton.tsx ===
+$component = @'
+'use client';
+import { useState } from 'react';
+
+interface SaveButtonProps {
+  buildName: string;
+  onSave?: () => void;
+}
+
+export function SaveButton({ buildName, onSave }: SaveButtonProps) {
+  const [saved, setSaved] = useState(...
+[2026-03-14 23:26:41] [RESULT] Code: 1 | 33.9s | Out: 78 chars
+[2026-03-14 23:26:41] [WRITE] frontend/src/components/builder/SaveButton.tsx (909 chars)
+[2026-03-14 23:28:53] [SESSION] SESSION_HANDOFF.md (32 lignes)
+[2026-03-14 23:28:56] [SESSION] Memoire consolidee (episodique + procedurale + briefing)
+[2026-03-14 23:28:56] [SESSION] CHANGELOG.md maj
+[2026-03-14 23:28:56] [EXEC] Commande (30 chars): python scripts/build_memory.py
+[2026-03-14 23:29:02] [RESULT] Code: 0 | 5.53s | Out: 278 chars
+[2026-03-14 23:37:04] [STOP] Arrete
+[2026-03-14 23:37:15] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-14 23:41:56] [STOP] Arrete
+[2026-03-14 23:42:00] [START] Dev Server v1.3 sur 127.0.0.1:8091
+[2026-03-15 00:18:27] [EXEC] Commande (346 chars): Copypython -c "
+import urllib.request, json
+data = json.dumps({'message': 'test direct python', 'type': 'test'}).encode()
+req = urllib.request.Request('http://localhost:8091/ext-log', data=data, headers={'Content-Type': 'application/json'}, method='POST')
+resp = urllib.request.urlopen(req, timeout=1...
+[2026-03-15 00:18:27] [RESULT] Code: 1 | 0.36s | Out: 0 chars
+[2026-03-15 00:19:43] [EXEC] Commande (98 chars): CopyWrite-Host "Pipeline v5.0 test" -ForegroundColor Green
+Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+[2026-03-15 00:19:44] [RESULT] Code: 0 | 0.28s | Out: 20 chars
+[2026-03-15 00:20:04] [EXEC] Commande (400 chars): Copypython -c "
+import pathlib, json
+f = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\memory\episodes.jsonl')
+lines = f.read_text('utf-8').strip().split('\n')
+print('Total episodes:', len(lines))
+last = json.loads(lines[-1])
+print('Dernier:', last.get('context','')[:60])
+print('Action:', last.g...
+[2026-03-15 00:20:05] [RESULT] Code: 1 | 0.26s | Out: 0 chars
+[2026-03-15 00:21:36] [EXEC] Commande (82 chars): CopyGet-Content "H:\Code\Ankama Dev\wakfu-optimizer\logs\dev_server.log" -Tail 15
+
+[2026-03-15 00:21:36] [RESULT] Code: 1 | 0.24s | Out: 0 chars
+[2026-03-15 00:24:12] [EXEC] Commande (31 chars): CopyWrite-Host "test v5 clean"
+
+[2026-03-15 00:24:13] [RESULT] Code: 1 | 0.24s | Out: 0 chars
+[2026-03-15 00:25:00] [EXEC] Commande (799 chars): Copy@'
+import pathlib
+
+f = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-dev-extension\content.js')
+c = f.read_text('utf-8')
+
+# Remplacer l'extraction de code par une version qui nettoie le prefix Copy
+old = "var code = codeEl2.textContent || '';"
+new = """var rawCode = codeEl2.textContent || '';
+    var ...
+[2026-03-15 00:25:01] [RESULT] Code: 1 | 0.2s | Out: 0 chars
+[2026-03-15 00:25:59] [EXEC] Commande (29 chars): Write-Host "v5 no copy test"
+
+[2026-03-15 00:25:59] [RESULT] Code: 0 | 0.2s | Out: 16 chars
+[2026-03-15 00:26:23] [EXEC] Commande (615 chars): python -c "import pathlib,json;ep=pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\memory\episodes.jsonl');lines=ep.read_text('utf-8').strip().split('\n');print('Episodes:',len(lines));last=json.loads(lines[-1]);print('Dernier:',last.get('context','')[:60]);print('Success:',last.get('success'));ses...
+[2026-03-15 00:26:23] [RESULT] Code: 0 | 0.4s | Out: 112 chars
+[2026-03-15 00:26:45] [EXEC] Commande (163 chars): cd "H:\Code\Ankama Dev\wakfu-optimizer"
+git add -A
+git commit -m "v5.0: content.js rewrite - fixed Copy prefix, last-assistant-only scan, clean pipeline"
+git push
+

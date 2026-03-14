@@ -1,5 +1,5 @@
 # PROJECT MEMORY - wakfu-optimizer
-> Derniere mise a jour : 2026-03-14 20:15:37
+> Derniere mise a jour : 2026-03-14 23:28:56
 > CERVEAU du projet - A LIRE EN PREMIER par toute IA
 
 ## REGLES
@@ -31,6 +31,7 @@
 - ClassSelector.tsx : 115 lignes
 - LeftPanel.tsx v5 : 396 lignes
 - RightPanel.tsx : 470 lignes
+- SaveButton.tsx : 33 lignes
 - lib/BuildContext.tsx : 217 lignes
 - lib/useWakfuData.ts : 40 lignes
 
@@ -79,11 +80,11 @@
 - Raretes : cdn.wakfuli.com/rarity/{RARITY}.webp
 
 ## COMMITS RECENTS
+- e963119 auto 20:15:46: RIEFING.md, dev_server.log
+- de69725 auto 20:15:39: ANIFEST.json, PROJECT_MEMORY.md, dev_server.log +2
 - 0cd53e0 auto 20:12:36: dev_server.log
 - 7e6f540 auto 20:08:57: dev_server.log
 - ac248dc auto 20:08:51: dev_server.log
-- e4db809 auto 20:07:54: dev_server.log
-- cacc847 auto 20:07:47: dev_server.log
 
 ## FICHIERS ACTIFS
 - frontend/src/components/builder/LeftPanel.tsx

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Wakfu Dev Assistant",
+  "version": "5.0.0",
+  "description": "Pipeline Genspark -> Dev Server pour wakfu-optimizer",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8091/*",
+    "http://localhost:8091/*",
+    "https://www.genspark.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.genspark.ai/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

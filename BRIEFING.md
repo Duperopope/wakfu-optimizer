@@ -1,5 +1,5 @@
 # BRIEFING - wakfu-optimizer
-> Auto-genere le 2026-03-14 20:15:37 par build_memory.py v3
+> Auto-genere le 2026-03-14 23:28:56 par build_memory.py v3
 > INJECTE AUTOMATIQUEMENT PAR L'EXTENSION CHROME WAKFU DEV ASSISTANT
 
 ---
@@ -36,6 +36,7 @@ Creer des builds : classe, level, items, stats en temps reel.
 - ClassSelector.tsx (115 lignes)
 - LeftPanel.tsx v5 (396 lignes)
 - RightPanel.tsx (470 lignes)
+- SaveButton.tsx (33 lignes)
 - BuildContext.tsx : useBuild(), computeStats(), BASE_STATS (HP=50,AP=6,MP=3,WP=6,FEROCITY=3)
 - useWakfuData.ts : chargement JSON
 - wakfu.ts : types et constantes
@@ -71,9 +72,9 @@ Creer des builds : classe, level, items, stats en temps reel.
 ## CDN : cdn.wakfuli.com/stats|breeds|items|rarity/{KEY}.webp
 
 ## COMMITS RECENTS
+- e963119 auto 20:15:46: RIEFING.md, dev_server.log
 - de69725 auto 20:15:39: ANIFEST.json, PROJECT_MEMORY.md, dev_server.log +2
 - 0cd53e0 auto 20:12:36: dev_server.log
-- 7e6f540 auto 20:08:57: dev_server.log
 
 ## SCRIPTS : autopush.py, build_memory.py, session_end.py, dev_server.py, sync_wakfuli.py
 ## DOCS : PROJECT_MEMORY.md, ARCHITECTURE.md, CHANGELOG.md, SESSION_HANDOFF.md
