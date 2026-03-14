@@ -122,6 +122,10 @@
     "data/wakfuli/sync_report.json",
     "data/wakfuli/version.json",
     "PROJECT_MEMORY.md",
-    "scripts/init_memory.py"
+    "scripts/init_memory.py",
+    "scripts/build_memory.py",
+    "scripts/diagnostic.py",
+    "README.md",
+    ".gitignore"
   ]
 }
