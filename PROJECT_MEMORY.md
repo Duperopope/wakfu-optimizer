@@ -1,8 +1,10 @@
 # PROJECT MEMORY - Wakfu Optimizer
 
 > Derniere mise a jour : 2026-03-14 18:26:00
-> Memoire persistante entre sessions Claude
+> Memoire persistante entre sessions - CERVEAU (court terme)
 > GitHub : https://github.com/Duperopope/wakfu-optimizer
+> Archive long terme : voir CHANGELOG.md (historique complet avec liens commits)
+> Raw : https://raw.githubusercontent.com/Duperopope/wakfu-optimizer/main/CHANGELOG.md
 
 ## WORKFLOW CLAUDE - A LIRE EN PREMIER
 
@@ -139,5 +141,6 @@ A la fin de chaque session de travail, toute IA doit :
 - frontend/public/icons/bonuses/gem.png (805 bytes - Havre-Monde, pixelise)
 - frontend/public/icons/bonuses/mount.png (Monture)
 - frontend/public/icons/stats/*.webp (28 fichiers telecharges depuis cdn.wakfuli.com/stats/)
+
 
 
