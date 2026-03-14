@@ -43,6 +43,23 @@ export const RARITY_FADE: Record<Rarity, string> = {
   RELIC: "bg-rarity-relic-fade",
 };
 
+// Mapping equipment_position API -> slot interne
+export const POSITION_TO_SLOT: Record<string, EquipmentSlot> = {
+  HEAD: "helmet",
+  NECK: "amulet",
+  CHEST: "chestplate",
+  LEFT_HAND: "ring-left",
+  RIGHT_HAND: "ring-right",
+  LEGS: "boots",
+  BACK: "cape",
+  SHOULDERS: "shoulderguard",
+  BELT: "belt",
+  FIRST_WEAPON: "weapon-left",
+  SECOND_WEAPON: "weapon-right",
+  ACCESSORY: "accessory",
+  PET: "pet",
+};
+
 export type EquipmentSlot =
   | "helmet" | "amulet" | "chestplate" | "ring-left" | "ring-right"
   | "boots" | "cape" | "shoulderguard" | "belt"
@@ -71,11 +88,11 @@ export const SLOT_LABELS: Record<EquipmentSlot, string> = {
 };
 
 export interface ItemEffect {
-  id: string;
-  label: string;
+  id: number;
+  type: string;
+  format: string;
   value: number;
-  icon: string;
-  elements?: string[];
+  elementCount?: number;
 }
 
 export interface WakfuItem {
@@ -83,12 +100,17 @@ export interface WakfuItem {
   name: string;
   level: number;
   rarity: Rarity;
-  equipment_position: string;
+  image_id: string;
+  types: number[];
   item_type_label: string;
-  imageId: number;
+  equipment_position: string[];
+  equipment_disabled_position: string[];
+  encyclopedia_link: string;
   effects: ItemEffect[];
-  totalMastery: number;
-  totalResistance: number;
+  total_mastery: number;
+  total_resistance: number;
+  total_secondary_masteries: number;
+  is_unraveling: boolean;
 }
 
 export interface StatLine {
