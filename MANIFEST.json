@@ -86,6 +86,7 @@
     "scripts/combat_validator.py",
     "scripts/data_sync.py",
     "scripts/decompile_client.py",
+    "scripts/dev_server.py",
     "scripts/diagnose_v3.py",
     "scripts/diagnostic.py",
     "scripts/download_and_parse_items.py",
