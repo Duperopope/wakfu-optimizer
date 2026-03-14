@@ -1,4 +1,4 @@
-﻿"""
+"""
 local_agent.py v1.0 - Agent local pour le consortium IA
 Orchestre SENTINEL (classification), ResourceGovernor (RAM/CPU), et Ollama.
 """
@@ -51,8 +51,8 @@ class ResourceGovernor:
         cpu = info.get('cpu_load', 50) or 50
         ram_free = info.get('ram_free_gb', 10)
         if is_gaming: self.current_mode = 'ECO'
-        elif cpu > 70 or ram_free < 6: self.current_mode = 'ECO'
-        elif cpu > 40 or ram_free < 9: self.current_mode = 'NORMAL'
+        elif cpu > 80 or ram_free < 3: self.current_mode = 'ECO'
+        elif cpu > 60 or ram_free < 5: self.current_mode = 'NORMAL'
         else: self.current_mode = 'TURBO'
         log('GOVERNOR', f'Mode: {self.current_mode} (CPU {cpu}% | RAM libre {ram_free} GB | Gaming: {is_gaming})')
 
@@ -113,6 +113,23 @@ def sentinel_classify(code_block):
 
 def sentinel_heuristic(code_block):
     code = code_block.strip()
+    # Detection prioritaire: commandes executables
+    cmd_starts = ['python ', 'python3 ', 'pip ', 'npm ', 'node ', 'git ',
+                  'cd ', 'dir ', 'ls ', 'mkdir ', 'Write-Host', 'Get-',
+                  'Set-', 'New-', 'Remove-', 'Invoke-', 'Start-', 'Stop-',
+                  'Test-Path', '@\'', '$']
+    first_line = code.split(chr(10))[0].strip()
+    for cmd in cmd_starts:
+        if first_line.startswith(cmd):
+            # Verifier danger
+            danger_patterns = ['Remove-Item.*-Recurse.*-Force', 'Stop-Process.*-Force',
+                               'Format-Volume', 'Clear-Disk', 'rm -rf']
+            import re as _re
+            for dp in danger_patterns:
+                if _re.search(dp, code):
+                    return {'verdict': 'EXEC_DANGER', 'reason': 'Destructive command (heuristic)', 'type': 'powershell'}
+            return {'verdict': 'EXEC_SAFE', 'reason': 'Command executable (heuristic)', 'type': 'powershell'}
+    # Suite de l'heuristique originale pour le code source...
     ps_markers = ['Write-Host','Get-Content','Set-Content','Get-ChildItem',
                   'Get-CimInstance','ConvertTo-Json','ForEach-Object',
                   '-ForegroundColor','New-Item','Test-Path','Invoke-RestMethod']

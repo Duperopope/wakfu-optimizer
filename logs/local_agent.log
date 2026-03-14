@@ -505,3 +505,77 @@
 [2026-03-15 00:26:21] [AGENT/SENTINEL] EXEC_SAFE | python | 83.8 tok/s | The code is a Python script that reads and processes JSONL f
 [2026-03-15 00:26:39] [AGENT/GOVERNOR] Mode: NORMAL (CPU 28% | RAM libre 8 GB | Gaming: False)
 [2026-03-15 00:26:43] [AGENT/SENTINEL] EXEC_SAFE | powershell | 84.1 tok/s | The code is a PowerShell script for running on the developer
+[2026-03-15 00:28:21] [AGENT/GOVERNOR] Mode: NORMAL (CPU 10% | RAM libre 8.5 GB | Gaming: False)
+[2026-03-15 00:28:25] [AGENT/SENTINEL] EXEC_SAFE | python | 84.5 tok/s | The code reads a Python script file and prints its contents,
+[2026-03-15 00:28:38] [AGENT/GOVERNOR] Mode: NORMAL (CPU 24% | RAM libre 8.5 GB | Gaming: False)
+[2026-03-15 00:28:42] [AGENT/SENTINEL] EXEC_SAFE | python | 85.6 tok/s | The code reads a Python script file and prints its contents,
+[2026-03-15 00:28:57] [AGENT/GOVERNOR] Mode: NORMAL (CPU 19% | RAM libre 8.3 GB | Gaming: False)
+[2026-03-15 00:29:01] [AGENT/SENTINEL] EXEC_SAFE | python | 84.0 tok/s | The code reads a Python script file and prints its contents,
+[2026-03-15 00:29:48] [AGENT/GOVERNOR] Mode: NORMAL (CPU 20% | RAM libre 8 GB | Gaming: False)
+[2026-03-15 00:29:53] [AGENT/SENTINEL] EXEC_SAFE | python | 81.3 tok/s | The code is a Python script that runs on the developer machi
+[2026-03-15 00:30:28] [AGENT/GOVERNOR] Mode: NORMAL (CPU 14% | RAM libre 8.3 GB | Gaming: False)
+[2026-03-15 00:30:34] [AGENT/SENTINEL] EXEC_SAFE | python | 81.4 tok/s | The code is a Python script that generates another Python sc
+[2026-03-15 00:30:55] [AGENT/GOVERNOR] Mode: NORMAL (CPU 5% | RAM libre 8.3 GB | Gaming: False)
+[2026-03-15 00:30:59] [AGENT/SENTINEL] EXEC_SAFE | python | 83.9 tok/s | The code is a Python script meant to run on the developer ma
+[2026-03-15 00:31:00] [AGENT/GOVERNOR] Mode: NORMAL (CPU 16% | RAM libre 8.3 GB | Gaming: False)
+[2026-03-15 00:31:04] [AGENT/SENTINEL] EXEC_SAFE | python | 86.0 tok/s | The code is a Python script path intended for execution on t
+[2026-03-15 00:31:34] [AGENT/GOVERNOR] Mode: NORMAL (CPU 20% | RAM libre 8.1 GB | Gaming: False)
+[2026-03-15 00:31:39] [AGENT/SENTINEL] EXEC_SAFE | python | 80.9 tok/s | The code is a Python script that generates and writes anothe
+[2026-03-15 00:32:27] [AGENT/GOVERNOR] Mode: ECO (CPU 26% | RAM libre 3.9 GB | Gaming: False)
+[2026-03-15 00:32:27] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:32:27] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:33:34] [AGENT/GOVERNOR] Mode: ECO (CPU 23% | RAM libre 4.6 GB | Gaming: False)
+[2026-03-15 00:33:34] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:33:34] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:34:13] [AGENT/GOVERNOR] Mode: ECO (CPU 1% | RAM libre 4.6 GB | Gaming: False)
+[2026-03-15 00:34:13] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:34:13] [AGENT/SENTINEL] NO_EXEC (heuristic) | python | Source code (heuristic)
+[2026-03-15 00:34:58] [AGENT/GOVERNOR] Mode: ECO (CPU 21% | RAM libre 3.9 GB | Gaming: False)
+[2026-03-15 00:34:58] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:34:58] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:36:51] [AGENT/GOVERNOR] Mode: NORMAL (CPU 8% | RAM libre 8.8 GB | Gaming: False)
+[2026-03-15 00:37:09] [AGENT/SENTINEL] EXEC_SAFE | python | 22.9 tok/s | The code is a Python script that performs file operations an
+[2026-03-15 00:38:32] [AGENT/GOVERNOR] Mode: NORMAL (CPU 33% | RAM libre 6.3 GB | Gaming: False)
+[2026-03-15 00:38:40] [AGENT/SENTINEL] EXEC_SAFE | python | 15.6 tok/s | The code is a Python script that modifies a JavaScript file 
+[2026-03-15 00:39:00] [AGENT/GOVERNOR] Mode: NORMAL (CPU 56% | RAM libre 11.4 GB | Gaming: False)
+[2026-03-15 00:39:05] [AGENT/SENTINEL] EXEC_SAFE | python | 83.1 tok/s | The code is a Python script that modifies another Python scr
+[2026-03-15 00:39:59] [AGENT/GOVERNOR] Mode: TURBO (CPU 10% | RAM libre 10.8 GB | Gaming: False)
+[2026-03-15 00:40:03] [AGENT/SENTINEL] EXEC_SAFE | powershell | 84.4 tok/s | The code is a PowerShell script that outputs a message to th
+[2026-03-15 00:40:28] [AGENT/GOVERNOR] Mode: ECO (CPU 4% | RAM libre 2.9 GB | Gaming: False)
+[2026-03-15 00:40:28] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:40:28] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:41:22] [AGENT/GOVERNOR] Mode: ECO (CPU 8% | RAM libre 5.2 GB | Gaming: False)
+[2026-03-15 00:41:22] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:41:22] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:41:56] [AGENT/GOVERNOR] Mode: ECO (CPU 9% | RAM libre 5 GB | Gaming: False)
+[2026-03-15 00:41:56] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:41:56] [AGENT/SENTINEL] NO_EXEC (heuristic) | python | Source code (heuristic)
+[2026-03-15 00:43:03] [AGENT/GOVERNOR] Mode: ECO (CPU 27% | RAM libre 5.5 GB | Gaming: False)
+[2026-03-15 00:43:03] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:43:03] [AGENT/SENTINEL] EXEC_DANGER (heuristic) | powershell | Destructive command (heuristic)
+[2026-03-15 00:43:36] [AGENT/GOVERNOR] Mode: ECO (CPU 15% | RAM libre 5.5 GB | Gaming: False)
+[2026-03-15 00:43:36] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:43:36] [AGENT/SENTINEL] EXEC_SAFE (heuristic) | powershell | 2 PS markers (heuristic)
+[2026-03-15 00:44:19] [AGENT/SENTINEL] EXEC_SAFE | powershell | 1.7 tok/s | The code is a simple PowerShell command to output text and d
+[2026-03-15 00:44:26] [AGENT/SENTINEL] Erreur: timed out
+[2026-03-15 00:44:59] [AGENT/GOVERNOR] Mode: ECO (CPU 34% | RAM libre 5.1 GB | Gaming: False)
+[2026-03-15 00:44:59] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:44:59] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:45:13] [AGENT/GOVERNOR] Mode: ECO (CPU 14% | RAM libre 4.6 GB | Gaming: False)
+[2026-03-15 00:45:13] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:45:13] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:45:45] [AGENT/GOVERNOR] Mode: ECO (CPU 28% | RAM libre 5.6 GB | Gaming: False)
+[2026-03-15 00:45:45] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:45:45] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:46:09] [AGENT/GOVERNOR] Mode: ECO (CPU 27% | RAM libre 5.7 GB | Gaming: False)
+[2026-03-15 00:46:09] [AGENT/AGENT] Mode ECO ou RAM insuffisante - heuristique
+[2026-03-15 00:46:09] [AGENT/SENTINEL] NO_EXEC (heuristic) | other | Unknown - blocked (heuristic)
+[2026-03-15 00:46:56] [AGENT/GOVERNOR] Mode: TURBO (CPU 7% | RAM libre 10 GB | Gaming: False)
+[2026-03-15 00:47:13] [AGENT/SENTINEL] EXEC_SAFE | python | 3.2 tok/s | The code is a Python script meant to run on the developer ma
+[2026-03-15 00:47:48] [AGENT/GOVERNOR] Mode: NORMAL (CPU 47% | RAM libre 10 GB | Gaming: False)
+[2026-03-15 00:48:03] [AGENT/SENTINEL] EXEC_SAFE | python | 3.5 tok/s | The code is a Python script meant to run on the developer ma
+[2026-03-15 00:48:04] [AGENT/GOVERNOR] Mode: TURBO (CPU 34% | RAM libre 10 GB | Gaming: False)
+[2026-03-15 00:48:23] [AGENT/SENTINEL] EXEC_SAFE | python | 3.4 tok/s | The code is a Python script that modifies another Python fil
+[2026-03-15 00:49:00] [AGENT/GOVERNOR] Mode: TURBO (CPU 26% | RAM libre 9.4 GB | Gaming: False)
+[2026-03-15 00:49:18] [AGENT/SENTINEL] EXEC_SAFE | powershell | 3.5 tok/s | The code is a PowerShell script for file operations and vers
+[2026-03-15 00:49:57] [AGENT/GOVERNOR] Mode: TURBO (CPU 23% | RAM libre 9.7 GB | Gaming: False)

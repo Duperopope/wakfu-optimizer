@@ -11,6 +11,13 @@ try:
 except Exception as e:
     print(f"Memory Manager non disponible: {e}")
     HAS_MEMORY = False
+
+try:
+    from conductor import ask_conductor, format_message
+    HAS_CONDUCTOR = True
+except Exception as e:
+    print('Conductor non disponible:', e)
+    HAS_CONDUCTOR = False
 from datetime import datetime
 from http.server import HTTPServer, ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
@@ -356,6 +363,22 @@ class DevHandler(BaseHTTPRequestHandler):
                 })
             else:
                 self._json({"success": False, "error": "Memory Manager non disponible"})
+        elif path == "/conductor":
+            cmd = body.get("command", "")
+            output = body.get("output", "")
+            returncode = body.get("returncode", 0)
+            task = body.get("task_context", "")
+            if HAS_CONDUCTOR:
+                try:
+                    decision = ask_conductor(cmd, output, returncode, task)
+                    message = format_message(decision)
+                    decision["formatted_message"] = message
+                    self._json(decision)
+                except Exception as e:
+                    log("CONDUCTOR", "Erreur: " + str(e))
+                    self._json({"action": "continue", "formatted_message": "Continue avec la prochaine etape.", "error": str(e)})
+            else:
+                self._json({"action": "continue", "formatted_message": "Conductor non disponible. Continue.", "error": "not loaded"})
         elif path == "/ollama":
             action = body.get("action", "")
             if not action: self._json({"error": "'action' manquant"}, 400); return
@@ -409,7 +432,7 @@ if __name__ == "__main__":
     print(f"  Invoke-RestMethod: localhost SEULEMENT")
     print(f"  Routes: /health /status /system /logs /read-file")
     print(f"          /execute /write-file /voice-note")
-    print(f"          /build-memory /session-end /ollama /restart")
+    print(f"          /conductor /build-memory /session-end /ollama /restart")
     print(f"  {len(BLOCKED_PATTERNS)} patterns bloques | Ctrl+C pour arreter")
     print("=" * 60)
     server = HTTPServer((HOST, PORT), DevHandler)

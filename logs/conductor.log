@@ -1,0 +1,7 @@
+[2026-03-15 00:32:14] [CONDUCTOR] Erreur Ollama: timed out
+[2026-03-15 00:33:40] [CONDUCTOR] Decision: fix | 9.4 tok/s | 11.2s
+[2026-03-15 00:33:40] [CONDUCTOR] Message: There seems to be an issue with the Python script execution. Please check the Python script and ensu
+[2026-03-15 00:40:13] [CONDUCTOR] Decision: continue | 81.9 tok/s | 8.1s
+[2026-03-15 00:40:13] [CONDUCTOR] Message: Le test d'auto-réparation du Conductor a réussi.
+[2026-03-15 00:44:58] [CONDUCTOR] Erreur Ollama: timed out
+[2026-03-15 00:47:46] [CONDUCTOR] Erreur Ollama: timed out

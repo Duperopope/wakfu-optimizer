@@ -42,3 +42,29 @@
 [2026-03-15 00:25:03] [MEMORY/EPISODIC] Episode enregistre: Lecture de fichier -> FAIL
 [2026-03-15 00:26:01] [MEMORY/EPISODIC] Episode enregistre: Affichage/diagnostic PowerShell -> OK
 [2026-03-15 00:26:25] [MEMORY/EPISODIC] Episode enregistre: Lecture de fichier -> OK
+[2026-03-15 00:26:49] [MEMORY/EPISODIC] Episode enregistre: Operation git -> OK
+[2026-03-15 00:28:29] [MEMORY/EPISODIC] Episode enregistre: Lecture de fichier -> FAIL
+[2026-03-15 00:28:46] [MEMORY/EPISODIC] Episode enregistre: Lecture de fichier -> OK
+[2026-03-15 00:29:05] [MEMORY/EPISODIC] Episode enregistre: Lecture de fichier -> OK
+[2026-03-15 00:31:06] [MEMORY/EPISODIC] Episode enregistre: Execution script Python -> FAIL
+[2026-03-15 00:31:08] [MEMORY/EPISODIC] Episode enregistre: Execution script Python -> FAIL
+[2026-03-15 00:32:16] [MEMORY/EPISODIC] Episode enregistre: Commande: @'
+import pathlib, json
+
+def gen():
+    lines = [] -> FAIL
+[2026-03-15 00:36:48] [MEMORY/EPISODIC] Charge 21 episodes
+[2026-03-15 00:36:48] [MEMORY/PROCEDURAL] Charge 2 procedures
+[2026-03-15 00:36:48] [MEMORY/MANAGER] Memory Manager v1.0 initialise
+[2026-03-15 00:36:48] [MEMORY/MANAGER] Episodes: 21 | Procedures: 2
+[2026-03-15 00:39:36] [MEMORY/EPISODIC] Charge 21 episodes
+[2026-03-15 00:39:36] [MEMORY/PROCEDURAL] Charge 2 procedures
+[2026-03-15 00:39:36] [MEMORY/MANAGER] Memory Manager v1.0 initialise
+[2026-03-15 00:39:36] [MEMORY/MANAGER] Episodes: 21 | Procedures: 2
+[2026-03-15 00:40:21] [MEMORY/EPISODIC] Episode enregistre: Affichage/diagnostic PowerShell -> OK
+[2026-03-15 00:44:30] [MEMORY/EPISODIC] Episode enregistre: Affichage/diagnostic PowerShell -> OK
+[2026-03-15 00:46:41] [MEMORY/EPISODIC] Charge 23 episodes
+[2026-03-15 00:46:41] [MEMORY/PROCEDURAL] Charge 2 procedures
+[2026-03-15 00:46:41] [MEMORY/MANAGER] Memory Manager v1.0 initialise
+[2026-03-15 00:46:41] [MEMORY/MANAGER] Episodes: 23 | Procedures: 2
+[2026-03-15 00:47:18] [MEMORY/EPISODIC] Episode enregistre: Execution script Python -> FAIL
