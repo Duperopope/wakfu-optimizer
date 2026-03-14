@@ -179,3 +179,6 @@
 2026-03-14 09:56:22,705 [INFO] EXTRACTION DES BUILDS PUBLICS
 2026-03-14 09:56:22,705 [INFO] ============================================================
 2026-03-14 09:56:22,705 [INFO] [Builds] Requete page 1...
+2026-03-14 09:56:24,918 [INFO] [Builds] Total: 939 entrees sur 19 pages
+2026-03-14 09:56:24,918 [INFO] [Builds] Page 1/19 -- 50/939 recuperes
+2026-03-14 09:56:25,233 [INFO] [Builds] Requete page 2/19...
