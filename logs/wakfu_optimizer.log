@@ -416,3 +416,669 @@
 [2026-03-13 11:30:13] [scripts.data_sync] [INFO] Items: 8324 | Actions: 71 | States: 290 | Types: 31
 [2026-03-13 11:30:13] [scripts.data_sync] [INFO] Validation: SUCCES
 [2026-03-13 11:30:13] [scripts.data_sync] [INFO] ======================================================================
+[2026-03-13 23:43:35] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 23:43:35] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | B | monster | unknown L179 | PV:1840/1840 PA:6 PM:3 PW:6
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 1.0 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 20 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=418.3
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=645.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 25 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=522.9
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 25 base | water | mastery 2294 | FRONT x1.0 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=807.4
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=3403.6
+[2026-03-13 23:43:38] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5023.5
+[2026-03-13 23:46:51] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 23:46:51] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | B | monster | unknown L179 | PV:1840/1840 PA:6 PM:3 PW:6
+[2026-03-13 23:46:54] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-13 23:46:54] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-13 23:46:54] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:46:54] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9987 armure:0
+[2026-03-13 23:46:54] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:46:54] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9973 armure:0
+[2026-03-13 23:48:22] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | A | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-13 23:48:22] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | B | monster | unknown L179 | PV:1840/1840 PA:6 PM:3 PW:6
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9987 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9973 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9987 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FACE x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:9973 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1486 | FACE x1.0 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=23.4
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 23 degats: armure -0 | PV -23 | restant PV:9977 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1486 | FACE x1.0 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=23.4
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 23 degats: armure -0 | PV -23 | restant PV:9953 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1615 | REAR x1.25 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1615 | REAR x1.25 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.3
+[2026-03-13 23:48:25] [engine.fighter] [INFO]   Dummy recoit 25 degats: armure -0 | PV -25 | restant PV:9949 armure:0
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=418.3
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1045.8
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2091.5
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=645.9
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1614.8
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=3229.6
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=680.7
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1701.8
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=3403.6
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1004.7
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2511.7
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5023.5
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=418.3
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1045.8
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2091.5
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | water | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1004.7
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | water | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2511.7
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | water | mastery 2879 | REAR x1.25 | crit=True | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5023.5
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 20 base | air | mastery 425 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=113.3
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 50 base | air | mastery 425 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=283.3
+[2026-03-13 23:48:25] [engine.damage] [INFO] DMG: 100 base | air | mastery 425 | FRONT x1.0 | crit=False | DI=18% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=566.6
+[2026-03-14 00:12:02] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:12:02] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:14:51] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | Team_Sram | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-14 00:16:07] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | Team_Sram | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-14 00:16:07] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=333.3
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 333 degats: armure -0 | PV -333 | restant PV:9667 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=426.7
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 427 degats: armure -0 | PV -427 | restant PV:9240 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1000.7
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 1001 degats: armure -0 | PV -1001 | restant PV:8239 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1280.9
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 1281 degats: armure -0 | PV -1281 | restant PV:6958 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=400.0
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 400 degats: armure -0 | PV -400 | restant PV:6558 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=533.4
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 533 degats: armure -0 | PV -533 | restant PV:6025 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1200.8
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 1201 degats: armure -0 | PV -1201 | restant PV:4824 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1601.1
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 1601 degats: armure -0 | PV -1601 | restant PV:3223 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=266.7
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 267 degats: armure -0 | PV -267 | restant PV:2956 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=333.3
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 333 degats: armure -0 | PV -333 | restant PV:2623 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=800.6
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 801 degats: armure -0 | PV -801 | restant PV:1822 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1000.7
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 1001 degats: armure -0 | PV -1001 | restant PV:822 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:808 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=13.3
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 13 degats: armure -0 | PV -13 | restant PV:795 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 40 degats: armure -0 | PV -40 | restant PV:755 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 40 degats: armure -0 | PV -40 | restant PV:715 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 0.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=266.7
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 267 degats: armure -0 | PV -267 | restant PV:449 armure:0
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=800.6
+[2026-03-14 00:16:07] [engine.fighter] [INFO]   Dummy recoit 801 degats: armure -0 | PV -449 | restant PV:0 armure:0 | K.O.!
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=354.5
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=886.2
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1772.5
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=547.4
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1368.5
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2294 | FRONT x1.0 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2736.9
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=576.9
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1442.2
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2423 | REAR x1.25 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2884.4
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=851.4
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=2128.6
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | fire | mastery 2879 | REAR x1.25 | crit=True | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=4257.2
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=354.5
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=886.2
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | water | mastery 1838 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1772.5
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 20 base | air | mastery 1455 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=284.4
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 50 base | air | mastery 1455 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=711.1
+[2026-03-14 00:16:07] [engine.damage] [INFO] DMG: 100 base | air | mastery 1455 | FRONT x1.0 | crit=False | DI=0% | Res=8.54% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1422.2
+[2026-03-14 00:20:13] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | Team_Sram | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-14 00:20:13] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:20:16] [engine.fighter] [INFO] Fighter cree: Dummy2 (ID:3) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:21:08] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | Team_Sram | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-14 00:21:08] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:21:11] [engine.fighter] [INFO] Fighter cree: Dummy2 (ID:3) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:22:12] [engine.fighter] [INFO] Fighter cree: L'Immortel (ID:1) | Team_Sram | player | sram L179 | PV:8920/8920 PA:13 PM:5 PW:8
+[2026-03-14 00:22:12] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=11.3
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy recoit 11 degats: armure -0 | PV -11 | restant PV:9989 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=11.3
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy recoit 11 degats: armure -0 | PV -11 | restant PV:9977 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=113.0
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy recoit 113 degats: armure -0 | PV -113 | restant PV:9864 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=113.0
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy recoit 113 degats: armure -0 | PV -113 | restant PV:9751 armure:0
+[2026-03-14 00:22:15] [engine.fighter] [INFO] Fighter cree: Dummy2 (ID:3) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=113.0
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy2 recoit 113 degats: armure -0 | PV -113 | restant PV:9887 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=113.0
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy2 recoit 113 degats: armure -0 | PV -113 | restant PV:9774 armure:0
+[2026-03-14 00:22:15] [engine.fighter] [INFO] Fighter cree: Dummy3 (ID:4) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=33.9
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy3 recoit 34 degats: armure -0 | PV -34 | restant PV:9966 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=33.9
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy3 recoit 34 degats: armure -0 | PV -34 | restant PV:9932 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=339.2
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy3 recoit 339 degats: armure -0 | PV -339 | restant PV:9593 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 10 base | neutral | mastery 2071 | REAR x1.25 | crit=True | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=339.2
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy3 recoit 339 degats: armure -0 | PV -339 | restant PV:9254 armure:0
+[2026-03-14 00:22:15] [engine.fighter] [INFO] Fighter cree: Dummy4 (ID:5) | Team_Monsters | player | monster L200 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=333.3
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy4 recoit 333 degats: armure -0 | PV -333 | restant PV:9667 armure:0
+[2026-03-14 00:22:15] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 1030 | FRONT x1.0 | crit=False | DI=18% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=426.7
+[2026-03-14 00:22:15] [engine.fighter] [INFO]   Dummy4 recoit 427 degats: armure -0 | PV -427 | restant PV:9240 armure:0
+[2026-03-14 00:55:16] [engine.fighter] [INFO] Fighter cree: L'Immortel_Base (ID:1) | Team_Heroes | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 00:55:16] [engine.fighter] [INFO] Fighter cree: Dummy_Base (ID:2) | Team_Monsters | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 00:55:16] [engine.fighter] [INFO] Fighter cree: L'Immortel_Equipped (ID:3) | Team_Heroes | player | sram L179 | PV:7305.0/7305.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 00:55:16] [engine.fighter] [INFO] Fighter cree: Dummy_Eq (ID:4) | Team_Monsters | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 00:58:24] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | Team_H | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 00:58:24] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | Team_H | player | sram L179 | PV:7305.0/7305.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 00:58:24] [engine.fighter] [INFO] Fighter cree: Dummy1 (ID:3) | Team_M | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 00:58:24] [engine.fighter] [INFO] Fighter cree: Dummy2 (ID:4) | Team_M | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 00:58:24] [engine.fighter] [INFO] Fighter cree: D1 (ID:5) | Team_M | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 00:58:27] [engine.fighter] [INFO] Fighter cree: D2 (ID:6) | Team_M | player | monster L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:04:42] [fighter] [INFO] Fighter cree: Sram_Base (ID:1) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:04:42] [fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:04:42] [fighter] [INFO] Fighter cree: Dummy_40pct (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:04:42] [fighter] [INFO] Fighter cree: Dummy_Base (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 30 degats: armure -0 | PV -30 | restant PV:9913 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 40 degats: armure -0 | PV -40 | restant PV:9873 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 20 degats: armure -0 | PV -20 | restant PV:9853 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 25 degats: armure -0 | PV -25 | restant PV:9828 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 20 degats: armure -0 | PV -20 | restant PV:9808 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 1 degats: armure -0 | PV -1 | restant PV:9807 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 1 degats: armure -0 | PV -1 | restant PV:9806 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 25 degats: armure -0 | PV -25 | restant PV:9781 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Base recoit 25 degats: armure -0 | PV -25 | restant PV:9756 armure:0
+[2026-03-14 01:04:45] [fighter] [INFO] Fighter cree: Dummy_Equipped (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 30 degats: armure -0 | PV -30 | restant PV:9913 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 40 degats: armure -0 | PV -40 | restant PV:9873 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 20 degats: armure -0 | PV -20 | restant PV:9853 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 25 degats: armure -0 | PV -25 | restant PV:9828 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 20 degats: armure -0 | PV -20 | restant PV:9808 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 1 degats: armure -0 | PV -1 | restant PV:9807 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 1 degats: armure -0 | PV -1 | restant PV:9806 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 25 degats: armure -0 | PV -25 | restant PV:9781 armure:0
+[2026-03-14 01:04:45] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:04:45] [fighter] [INFO]   Dummy_Equipped recoit 25 degats: armure -0 | PV -25 | restant PV:9756 armure:0
+[2026-03-14 01:07:47] [fighter] [INFO] Fighter cree: Test_Equipped (ID:1) | A | player | sram L179 | PV:7000/7000 PA:12 PM:4 PW:8
+[2026-03-14 01:07:47] [fighter] [INFO] Fighter cree: Sram_Test (ID:2) | A | player | sram L179 | PV:7000/7000 PA:12 PM:4 PW:8
+[2026-03-14 01:07:47] [fighter] [INFO] Fighter cree: Dummy_Test (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=143.8
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_Test recoit 144 degats: armure -0 | PV -144 | restant PV:9856 armure:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=184.0
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_Test recoit 184 degats: armure -0 | PV -184 | restant PV:9672 armure:0
+[2026-03-14 01:07:50] [fighter] [INFO] Fighter cree: Dummy_3101 (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=172.5
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_3101 recoit 172 degats: armure -0 | PV -172 | restant PV:9828 armure:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=230.0
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_3101 recoit 230 degats: armure -0 | PV -230 | restant PV:9598 armure:0
+[2026-03-14 01:07:50] [fighter] [INFO] Fighter cree: Dummy_3116 (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=115.0
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_3116 recoit 115 degats: armure -0 | PV -115 | restant PV:9885 armure:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=143.8
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_3116 recoit 144 degats: armure -0 | PV -144 | restant PV:9741 armure:0
+[2026-03-14 01:07:50] [fighter] [INFO] Fighter cree: Dummy_3146 (ID:6) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:07:50] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=115.0
+[2026-03-14 01:07:50] [fighter] [INFO]   Dummy_3146 recoit 115 degats: armure -0 | PV -115 | restant PV:9885 armure:0
+[2026-03-14 01:07:59] [fighter] [INFO] Fighter cree: Test_Equipped (ID:1) | A | player | sram L179 | PV:7000/7000 PA:12 PM:4 PW:8
+[2026-03-14 01:07:59] [fighter] [INFO] Fighter cree: Sram_Test (ID:2) | A | player | sram L179 | PV:7000/7000 PA:12 PM:4 PW:8
+[2026-03-14 01:07:59] [fighter] [INFO] Fighter cree: Dummy_Test (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=143.8
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_Test recoit 144 degats: armure -0 | PV -144 | restant PV:9856 armure:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=184.0
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_Test recoit 184 degats: armure -0 | PV -184 | restant PV:9672 armure:0
+[2026-03-14 01:08:02] [fighter] [INFO] Fighter cree: Dummy_3101 (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=172.5
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_3101 recoit 172 degats: armure -0 | PV -172 | restant PV:9828 armure:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=230.0
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_3101 recoit 230 degats: armure -0 | PV -230 | restant PV:9598 armure:0
+[2026-03-14 01:08:02] [fighter] [INFO] Fighter cree: Dummy_3116 (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=115.0
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_3116 recoit 115 degats: armure -0 | PV -115 | restant PV:9885 armure:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=143.8
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_3116 recoit 144 degats: armure -0 | PV -144 | restant PV:9741 armure:0
+[2026-03-14 01:08:02] [fighter] [INFO] Fighter cree: Dummy_3146 (ID:6) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:08:02] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 400 | FRONT x1.0 | crit=False | DI=15% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=115.0
+[2026-03-14 01:08:02] [fighter] [INFO]   Dummy_3146 recoit 115 degats: armure -0 | PV -115 | restant PV:9885 armure:0
+[2026-03-14 01:16:19] [fighter] [INFO] Fighter cree: Sram_Base (ID:1) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:16:19] [fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:16:19] [fighter] [INFO] Fighter cree: D_b_3115 (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3115 recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3115 recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_b_3101 (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3101 recoit 30 degats: armure -0 | PV -30 | restant PV:9970 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3101 recoit 40 degats: armure -0 | PV -40 | restant PV:9930 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_b_3116 (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3116 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3116 recoit 25 degats: armure -0 | PV -25 | restant PV:9955 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_b_3146 (ID:6) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_3146 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_b_4581 (ID:7) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9973 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_b_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9948 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_e_3115 (ID:8) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3115 recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3115 recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_e_3101 (ID:9) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3101 recoit 30 degats: armure -0 | PV -30 | restant PV:9970 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3101 recoit 40 degats: armure -0 | PV -40 | restant PV:9930 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_e_3116 (ID:10) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3116 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3116 recoit 25 degats: armure -0 | PV -25 | restant PV:9955 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_e_3146 (ID:11) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_3146 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_e_4581 (ID:12) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9973 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_e_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9948 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_r_3115 (ID:13) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3115 recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3115 recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_r_3101 (ID:14) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3101 recoit 30 degats: armure -0 | PV -30 | restant PV:9970 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3101 recoit 40 degats: armure -0 | PV -40 | restant PV:9930 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_r_3116 (ID:15) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3116 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3116 recoit 25 degats: armure -0 | PV -25 | restant PV:9955 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_r_3146 (ID:16) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_3146 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:16:22] [fighter] [INFO] Fighter cree: D_r_4581 (ID:17) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9973 armure:0
+[2026-03-14 01:16:22] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:16:22] [fighter] [INFO]   D_r_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9948 armure:0
+[2026-03-14 01:18:08] [damage] [INFO] DMG: 25 base | fire | mastery 1200 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=325.0
+[2026-03-14 01:18:08] [damage] [INFO] DMG: 25 base | fire | mastery 1200 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=325.0
+[2026-03-14 01:20:08] [fighter] [INFO] Fighter cree: Sram_Base (ID:1) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:20:08] [fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | A | player | sram L179 | PV:7305.0/7305.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:20:08] [fighter] [INFO] Fighter cree: D_3115 (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3115 recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3115 recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3101 (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3101 recoit 30 degats: armure -0 | PV -30 | restant PV:9970 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3101 recoit 40 degats: armure -0 | PV -40 | restant PV:9930 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3116 (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3116 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3116 recoit 25 degats: armure -0 | PV -25 | restant PV:9955 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3146 (ID:6) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3146 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_4581 (ID:7) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9973 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9948 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3115 (ID:8) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3115 recoit 130 degats: armure -0 | PV -130 | restant PV:9870 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=166.4
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3115 recoit 166 degats: armure -0 | PV -166 | restant PV:9704 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3101 (ID:9) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=156.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3101 recoit 156 degats: armure -0 | PV -156 | restant PV:9844 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=208.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3101 recoit 208 degats: armure -0 | PV -208 | restant PV:9636 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3116 (ID:10) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3116 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3116 recoit 130 degats: armure -0 | PV -130 | restant PV:9766 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_3146 (ID:11) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_3146 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_4581 (ID:12) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9860 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9730 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_r_3115 (ID:13) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3115 recoit 130 degats: armure -0 | PV -130 | restant PV:9870 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=166.4
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3115 recoit 166 degats: armure -0 | PV -166 | restant PV:9704 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_r_3101 (ID:14) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=156.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3101 recoit 156 degats: armure -0 | PV -156 | restant PV:9844 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=208.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3101 recoit 208 degats: armure -0 | PV -208 | restant PV:9636 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_r_3116 (ID:15) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3116 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3116 recoit 130 degats: armure -0 | PV -130 | restant PV:9766 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_r_3146 (ID:16) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_3146 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:12] [fighter] [INFO] Fighter cree: D_r_4581 (ID:17) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9860 armure:0
+[2026-03-14 01:20:12] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:12] [fighter] [INFO]   D_r_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9730 armure:0
+[2026-03-14 01:20:24] [fighter] [INFO] Fighter cree: Sram_Base (ID:1) | A | player | sram L179 | PV:4800/4800 PA:6 PM:3 PW:6
+[2026-03-14 01:20:24] [fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | A | player | sram L179 | PV:7305.0/7305.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:20:24] [fighter] [INFO] Fighter cree: D_3115 (ID:3) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3115 recoit 25 degats: armure -0 | PV -25 | restant PV:9975 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=32.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3115 recoit 32 degats: armure -0 | PV -32 | restant PV:9943 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3101 (ID:4) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=30.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3101 recoit 30 degats: armure -0 | PV -30 | restant PV:9970 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=40.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3101 recoit 40 degats: armure -0 | PV -40 | restant PV:9930 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3116 (ID:5) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3116 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3116 recoit 25 degats: armure -0 | PV -25 | restant PV:9955 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3146 (ID:6) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=20.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3146 recoit 20 degats: armure -0 | PV -20 | restant PV:9980 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_4581 (ID:7) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9973 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=25.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 25 degats: armure -0 | PV -25 | restant PV:9948 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3115 (ID:8) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3115 recoit 130 degats: armure -0 | PV -130 | restant PV:9870 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=166.4
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3115 recoit 166 degats: armure -0 | PV -166 | restant PV:9704 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3101 (ID:9) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=156.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3101 recoit 156 degats: armure -0 | PV -156 | restant PV:9844 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=208.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3101 recoit 208 degats: armure -0 | PV -208 | restant PV:9636 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3116 (ID:10) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3116 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3116 recoit 130 degats: armure -0 | PV -130 | restant PV:9766 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_3146 (ID:11) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_3146 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_4581 (ID:12) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9860 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9730 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_r_3115 (ID:13) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3115 recoit 130 degats: armure -0 | PV -130 | restant PV:9870 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 32.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=166.4
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3115 recoit 166 degats: armure -0 | PV -166 | restant PV:9704 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_r_3101 (ID:14) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 30.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=156.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3101 recoit 156 degats: armure -0 | PV -156 | restant PV:9844 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=208.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3101 recoit 208 degats: armure -0 | PV -208 | restant PV:9636 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_r_3116 (ID:15) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3116 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3116 recoit 130 degats: armure -0 | PV -130 | restant PV:9766 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_r_3146 (ID:16) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 20.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=104.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_3146 recoit 104 degats: armure -0 | PV -104 | restant PV:9896 armure:0
+[2026-03-14 01:20:28] [fighter] [INFO] Fighter cree: D_r_4581 (ID:17) | B | monster | dummy L179 | PV:10000/10000 PA:0 PM:0 PW:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_4581 recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9860 armure:0
+[2026-03-14 01:20:28] [engine.damage] [INFO] DMG: 25 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=130.0
+[2026-03-14 01:20:28] [fighter] [INFO]   D_r_4581 recoit 130 degats: armure -0 | PV -130 | restant PV:9730 armure:0
+[2026-03-14 01:43:39] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | ally | player | sram L179 | PV:4895/4895 PA:6 PM:3 PW:6
+[2026-03-14 01:43:39] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | ally | player | sram L179 | PV:7400.0/7400.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:43:39] [engine.fighter] [INFO] Fighter cree: Dummy_Target (ID:3) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 01:45:25] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | ally | player | sram L179 | PV:4895/4895 PA:6 PM:3 PW:6
+[2026-03-14 01:45:25] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | ally | player | sram L179 | PV:7400.0/7400.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:45:25] [engine.fighter] [INFO] Fighter cree: Dummy_Target (ID:3) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 01:45:29] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:45:29] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:48:20] [engine.fighter] [INFO] Fighter cree: Test (ID:1) | ally | player | feca L179 | PV:1840/1840 PA:6 PM:3 PW:6
+[2026-03-14 01:48:20] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | enemy | monster | dummy L179 | PV:1840/1840 PA:6 PM:3 PW:6
+[2026-03-14 01:49:41] [engine.fighter] [INFO] Fighter cree: Sram (ID:1) | ally | player | sram L179 | PV:7400/7400 PA:12 PM:4 PW:8
+[2026-03-14 01:49:41] [engine.fighter] [INFO] Fighter cree: Dummy (ID:2) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 5 degats: armure -0 | PV -5 | restant PV:9984 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 40.0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=208.0
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 208 degats: armure -0 | PV -208 | restant PV:9792 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 1.0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 5 degats: armure -0 | PV -5 | restant PV:9787 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 3.0 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.6
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 16 degats: armure -0 | PV -16 | restant PV:9984 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 3.75 base | neutral | mastery 420 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=19.5
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 20 degats: armure -0 | PV -20 | restant PV:9965 armure:0
+[2026-03-14 01:49:43] [engine.damage] [INFO] DMG: 2.0 base | earth | mastery 1267 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=27.3
+[2026-03-14 01:49:43] [engine.fighter] [INFO]   Dummy recoit 27 degats: armure -0 | PV -27 | restant PV:9973 armure:0
+[2026-03-14 01:51:01] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | ally | player | sram L179 | PV:4895/4895 PA:6 PM:3 PW:6
+[2026-03-14 01:51:01] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | ally | player | sram L179 | PV:7400.0/7400.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:51:01] [engine.fighter] [INFO] Fighter cree: Dummy_Target (ID:3) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 01:51:05] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:28] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | ally | player | sram L179 | PV:4895/4895 PA:6 PM:3 PW:6
+[2026-03-14 01:53:28] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | ally | player | sram L179 | PV:7400.0/7400.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 01:53:28] [engine.fighter] [INFO] Fighter cree: Dummy_Target (ID:3) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9997 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9985 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9970 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9985 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9970 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9984 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 01:53:32] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 01:53:32] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0
+[2026-03-14 02:03:30] [engine.fighter] [INFO] Fighter cree: Sram_Base (ID:1) | ally | player | sram L179 | PV:4895/4895 PA:6 PM:3 PW:6
+[2026-03-14 02:03:30] [engine.fighter] [INFO] Fighter cree: Sram_Equipped (ID:2) | ally | player | sram L179 | PV:7400.0/7400.0 PA:12.0 PM:4.0 PW:8.0
+[2026-03-14 02:03:30] [engine.fighter] [INFO] Fighter cree: Dummy_Target (ID:3) | enemy | monster | dummy L179 | PV:10000/10000 PA:6 PM:3 PW:6
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9999 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9998 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=1.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 1 degats: armure -0 | PV -1 | restant PV:9997 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9985 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9970 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9985 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=15.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 15 degats: armure -0 | PV -15 | restant PV:9970 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9995 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9990 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 1 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=5.2
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 5 degats: armure -0 | PV -5 | restant PV:9984 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 0 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9922 armure:0
+[2026-03-14 02:03:34] [engine.damage] [INFO] DMG: 15 base | neutral | mastery 420.0 | FRONT x1.0 | crit=False | DI=0% | Res=0.0% | fixed=0 | barrier=0 | block=none | df=[] | FINAL=78.0
+[2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armure:0

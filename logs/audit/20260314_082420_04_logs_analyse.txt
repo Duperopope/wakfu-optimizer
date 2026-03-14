@@ -1,0 +1,478 @@
+ANALYSE FICHIERS LOGS (63 fichiers)
+============================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app.log
+   Taille: 3,073 octets | Modifie: 2026-03-14 08:06
+   Lignes: 43
+   Premiere ligne: 2026-03-14 07:55:08,177 [INFO] Charge: all_items.json (8324 entrees)
+   Derniere ligne: 2026-03-14 08:06:43,716 [INFO] NiceGUI: http://localhost:8080
+   Niveaux: ERROR=0, WARNING=0, INFO=43, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_074351.log
+   Taille: 2,690 octets | Modifie: 2026-03-14 07:43
+   Lignes: 35
+   Premiere ligne: 2026-03-14 07:43:51,242 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 07:43:55,787 [INFO] Sorts indexes : 18 classes, 4079 sorts
+   Niveaux: ERROR=0, WARNING=0, INFO=35, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_074242.log
+   Taille: 2,690 octets | Modifie: 2026-03-14 07:42
+   Lignes: 35
+   Premiere ligne: 2026-03-14 07:42:42,871 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 07:42:47,441 [INFO] Sorts indexes : 18 classes, 4079 sorts
+   Niveaux: ERROR=0, WARNING=0, INFO=35, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_074115.log
+   Taille: 2,690 octets | Modifie: 2026-03-14 07:41
+   Lignes: 35
+   Premiere ligne: 2026-03-14 07:41:15,962 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 07:41:20,558 [INFO] Sorts indexes : 18 classes, 4079 sorts
+   Niveaux: ERROR=0, WARNING=0, INFO=35, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\validation_20260314_021721.log
+   Taille: 1,487 octets | Modifie: 2026-03-14 02:17
+   Lignes: 21
+   Premiere ligne: 2026-03-14 02:17:21,993 [INFO] Chargement du moteur de simulation...
+   Derniere ligne: 2026-03-14 02:17:22,203 [INFO]
+   Niveaux: ERROR=0, WARNING=0, INFO=21, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_020315.log
+   Taille: 15,617 octets | Modifie: 2026-03-14 02:03
+   Lignes: 160
+   Premiere ligne: 2026-03-14 02:03:15,299 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 02:03:34,163 [INFO] RESULTATS : Base=63, Equipe=328, Ratio=x5.20 (+420%)
+   Niveaux: ERROR=0, WARNING=0, INFO=160, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_020321.log
+   Taille: 0 octets | Modifie: 2026-03-14 02:03
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\wakfu_optimizer.log
+   Taille: 143,482 octets | Modifie: 2026-03-14 02:03
+   Lignes: 1084
+   Premiere ligne: [2026-03-13 10:23:59] [__main__] [INFO] DMG: 100 base | fire | mastery 1838 | FRONT x1.0 | crit=False | DI=18% | Res=0.0
+   Derniere ligne: [2026-03-14 02:03:34] [engine.fighter] [INFO]   Dummy_Target recoit 78 degats: armure -0 | PV -78 | restant PV:9844 armu
+   Niveaux: ERROR=0, WARNING=8, INFO=1048, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_015313.log
+   Taille: 15,721 octets | Modifie: 2026-03-14 01:53
+   Lignes: 156
+   Premiere ligne: 2026-03-14 01:53:13,572 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 01:53:32,037 [INFO] RESULTATS : Base=63, Equipe=328, Ratio=x5.20 (+420%)
+   Niveaux: ERROR=0, WARNING=0, INFO=156, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_015320.log
+   Taille: 0 octets | Modifie: 2026-03-14 01:53
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_015047.log
+   Taille: 5,894 octets | Modifie: 2026-03-14 01:51
+   Lignes: 75
+   Premiere ligne: 2026-03-14 01:50:47,889 [INFO] Import des modules engine...
+   Derniere ligne: NameError: name 'SPELL_BY_ID' is not defined
+   Niveaux: ERROR=2, WARNING=1, INFO=67, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_015054.log
+   Taille: 0 octets | Modifie: 2026-03-14 01:50
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014507.log
+   Taille: 5,759 octets | Modifie: 2026-03-14 01:45
+   Lignes: 70
+   Premiere ligne: 2026-03-14 01:45:07,835 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 01:45:29,256 [INFO] RESULTATS : Base=0, Equipe=0, Ratio=x0.00 (+0%)
+   Niveaux: ERROR=0, WARNING=1, INFO=69, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014514.log
+   Taille: 0 octets | Modifie: 2026-03-14 01:45
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014320.log
+   Taille: 5,186 octets | Modifie: 2026-03-14 01:43
+   Lignes: 65
+   Premiere ligne: 2026-03-14 01:43:20,304 [INFO] Import des modules engine...
+   Derniere ligne: TypeError: SpellExecutor.__init__() takes 1 positional argument but 4 were given
+   Niveaux: ERROR=2, WARNING=0, INFO=60, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014327.log
+   Taille: 0 octets | Modifie: 2026-03-14 01:43
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\equipment_v2.log
+   Taille: 20,234 octets | Modifie: 2026-03-14 01:42
+   Lignes: 343
+   Premiere ligne: 2026-03-14 00:52:58,164 [INFO] ============================================================
+   Derniere ligne: 2026-03-14 01:42:12,977 [INFO]          weapon_2h: 382
+   Niveaux: ERROR=0, WARNING=0, INFO=299, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014021.log
+   Taille: 4,386 octets | Modifie: 2026-03-14 01:40
+   Lignes: 61
+   Premiere ligne: 2026-03-14 01:40:21,821 [INFO] Import des modules engine...
+   Derniere ligne: TypeError: Fighter.__init__() got an unexpected keyword argument 'breed_id'
+   Niveaux: ERROR=2, WARNING=0, INFO=56, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_014028.log
+   Taille: 0 octets | Modifie: 2026-03-14 01:40
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_013922.log
+   Taille: 985 octets | Modifie: 2026-03-14 01:39
+   Lignes: 14
+   Premiere ligne: 2026-03-14 01:39:22,754 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 01:39:27,347 [INFO] Sorts indexes par classe : 15 classes
+   Niveaux: ERROR=0, WARNING=0, INFO=14, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\run_optimizer_20260314_013915.log
+   Taille: 1,138 octets | Modifie: 2026-03-14 01:39
+   Lignes: 23
+   Premiere ligne: 01:39:15 [INFO] Projet     : H:\Code\Ankama Dev\wakfu-optimizer
+   Derniere ligne: 01:39:29 [INFO] Log complet : H:\Code\Ankama Dev\wakfu-optimizer\logs\run_optimizer_20260314_013915.log
+   Niveaux: ERROR=0, WARNING=0, INFO=7, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\app_20260314_013217.log
+   Taille: 300 octets | Modifie: 2026-03-14 01:32
+   Lignes: 3
+   Premiere ligne: 2026-03-14 01:32:17,278 [INFO] Import des modules engine...
+   Derniere ligne: 2026-03-14 01:32:17,288 [ERROR] Verifie que le dossier 'engine/' contient fighter.py, effect_bridge.py, equipment.py, it
+   Niveaux: ERROR=2, WARNING=0, INFO=1, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\run_optimizer_20260314_013135.log
+   Taille: 1,319 octets | Modifie: 2026-03-14 01:32
+   Lignes: 26
+   Premiere ligne: 01:31:35 [INFO] Projet     : H:\Code\Ankama Dev\wakfu-optimizer
+   Derniere ligne: 01:32:17 [INFO] Pour relancer : .\run_optimizer.ps1
+   Niveaux: ERROR=0, WARNING=0, INFO=9, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_v3_20260314_012004.log
+   Taille: 26,048 octets | Modifie: 2026-03-14 01:20
+   Lignes: 304
+   Premiere ligne: 2026-03-14 01:20:04,116 [INFO]
+   Derniere ligne: === 1 ÉCHEC(S) RESTANT(S) ===
+   Niveaux: ERROR=0, WARNING=0, INFO=278, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_v3_20260314_012020.log
+   Taille: 26,048 octets | Modifie: 2026-03-14 01:20
+   Lignes: 304
+   Premiere ligne: 2026-03-14 01:20:20,089 [INFO]
+   Derniere ligne: === 1 ÉCHEC(S) RESTANT(S) ===
+   Niveaux: ERROR=0, WARNING=0, INFO=278, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_v2_20260314_011614.log
+   Taille: 25,637 octets | Modifie: 2026-03-14 01:16
+   Lignes: 300
+   Premiere ligne: 2026-03-14 01:16:14,885 [INFO]
+   Derniere ligne: === 4 ÉCHEC(S) RESTANT(S) ===
+   Niveaux: ERROR=0, WARNING=0, INFO=272, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_v2_20260314_011247.log
+   Taille: 2,544 octets | Modifie: 2026-03-14 01:12
+   Lignes: 40
+   Premiere ligne: 2026-03-14 01:12:47,151 [INFO]
+   Derniere ligne: 2026-03-14 01:12:51,755 [INFO]          weapon_2h: 382
+   Niveaux: ERROR=0, WARNING=0, INFO=40, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_v2_20260314_011027.log
+   Taille: 2,544 octets | Modifie: 2026-03-14 01:10
+   Lignes: 40
+   Premiere ligne: 2026-03-14 01:10:27,417 [INFO]
+   Derniere ligne: 2026-03-14 01:10:32,103 [INFO]          weapon_2h: 382
+   Niveaux: ERROR=0, WARNING=0, INFO=40, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diag_fighter_cast_20260314_010759.log
+   Taille: 26,188 octets | Modifie: 2026-03-14 01:08
+   Lignes: 398
+   Premiere ligne: 2026-03-14 01:07:59,701 [INFO]
+   Derniere ligne: 2026-03-14 01:08:02,227 [INFO]   3. L'appel correct à ItemRecommender
+   Niveaux: ERROR=0, WARNING=0, INFO=189, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diag_fighter_cast_20260314_010747.log
+   Taille: 26,188 octets | Modifie: 2026-03-14 01:07
+   Lignes: 398
+   Premiere ligne: 2026-03-14 01:07:47,628 [INFO]
+   Derniere ligne: 2026-03-14 01:07:50,177 [INFO]   3. L'appel correct à ItemRecommender
+   Niveaux: ERROR=0, WARNING=0, INFO=189, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral_fixed_20260314_010437.log
+   Taille: 20,509 octets | Modifie: 2026-03-14 01:04
+   Lignes: 242
+   Premiere ligne: 2026-03-14 01:04:37,796 [INFO]
+   Derniere ligne: 2026-03-14 01:04:45,443 [INFO]   FIN DU TEST INTÉGRAL
+   Niveaux: ERROR=2, WARNING=0, INFO=211, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diagnostic_deep_20260314_010119.log
+   Taille: 18,878 octets | Modifie: 2026-03-14 01:01
+   Lignes: 322
+   Premiere ligne: 2026-03-14 01:01:19,484 [INFO] ======================================================================
+   Derniere ligne: 2026-03-14 01:01:23,649 [INFO]   FIN DU DIAGNOSTIC
+   Niveaux: ERROR=1, WARNING=0, INFO=148, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\test_integral.log
+   Taille: 17,550 octets | Modifie: 2026-03-14 00:58
+   Lignes: 231
+   Premiere ligne: 2026-03-14 00:58:19,940 [INFO] ======================================================================
+   Derniere ligne: DONE
+   Niveaux: ERROR=12, WARNING=0, INFO=157, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\full_pipeline.log
+   Taille: 8,372 octets | Modifie: 2026-03-14 00:55
+   Lignes: 129
+   Premiere ligne: 2026-03-14 00:55:16,162 [INFO] ============================================================
+   Derniere ligne: DONE
+   Niveaux: ERROR=0, WARNING=2, INFO=79, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\fix_slots.log
+   Taille: 22,938 octets | Modifie: 2026-03-14 00:50
+   Lignes: 359
+   Premiere ligne: 2026-03-14 00:50:29,111 [INFO] Loaded 8324 items
+   Derniere ligne: DONE
+   Niveaux: ERROR=0, WARNING=0, INFO=325, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\equipment_system.log
+   Taille: 18,379 octets | Modifie: 2026-03-14 00:49
+   Lignes: 322
+   Premiere ligne: 2026-03-14 00:49:09,742 [INFO] ============================================================
+   Derniere ligne: DONE
+   Niveaux: ERROR=0, WARNING=0, INFO=240, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\rebuild_items.log
+   Taille: 16,350 octets | Modifie: 2026-03-14 00:43
+   Lignes: 305
+   Premiere ligne: 2026-03-14 00:43:32,560 [INFO] Loaded 71 actions
+   Derniere ligne: 2026-03-14 00:43:33,873 [INFO] DONE
+   Niveaux: ERROR=0, WARNING=0, INFO=272, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\inspect_items.log
+   Taille: 16,295 octets | Modifie: 2026-03-14 00:39
+   Lignes: 520
+   Premiere ligne: 2026-03-14 00:39:20,252 [INFO] Loading H:\Code\Ankama Dev\wakfu-optimizer\data\cdn\1.91.1.53_items.json
+   Derniere ligne: DONE
+   Niveaux: ERROR=0, WARNING=0, INFO=80, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\items_parser.log
+   Taille: 5,083 octets | Modifie: 2026-03-14 00:36
+   Lignes: 87
+   Premiere ligne: 2026-03-14 00:36:08,728 [INFO] ============================================================
+   Derniere ligne: DONE
+   Niveaux: ERROR=0, WARNING=0, INFO=75, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_final.log
+   Taille: 0 octets | Modifie: 2026-03-14 00:25
+   Lignes: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_states.log
+   Taille: 1,785 octets | Modifie: 2026-03-14 00:07
+   Lignes: 23
+   Premiere ligne: 2026-03-14 00:05:39,210 INFO BinaryReader methods: ['get_pos', 'get_size', 'rb', 'rbool', 'rest', 'rf', 'rfa', 'ri', 'ri
+   Derniere ligne: Saved 5984 states -> H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\all_states.json (2.2 MB)
+   Niveaux: ERROR=1, WARNING=0, INFO=20, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_effects_v2.log
+   Taille: 1,321 octets | Modifie: 2026-03-13 23:27
+   Lignes: 25
+   Premiere ligne: ============================================================
+   Derniere ligne: DONE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_static_effects.log
+   Taille: 2,803 octets | Modifie: 2026-03-13 22:53
+   Lignes: 50
+   Premiere ligne: ============================================================
+   Derniere ligne: WARN row 635 id=72587: consumed=1573387 expected=214 delta=1573173
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_effects_final.log
+   Taille: 2,654 octets | Modifie: 2026-03-13 22:24
+   Lignes: 80
+   Premiere ligne: ============================================================
+   Derniere ligne: DONE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_effects.log
+   Taille: 2,874 octets | Modifie: 2026-03-13 22:20
+   Lignes: 158
+   Premiere ligne: === Finding class for file 29 (States) ===
+   Derniere ligne: DONE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\parse_breeds.log
+   Taille: 853 octets | Modifie: 2026-03-13 22:06
+   Lignes: 36
+   Premiere ligne: AvatarBreed: 18 rows, buf=3154
+   Derniere ligne: Saved: H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\breeds.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diagnose_v3.log
+   Taille: 2,742 octets | Modifie: 2026-03-13 15:17
+   Lignes: 56
+   Premiere ligne: Rows: 4079, buf: 823374
+   Derniere ligne: Saved: H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_v3.json
+   Niveaux: ERROR=3, WARNING=0, INFO=0, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diagnose_v2.log
+   Taille: 1,927 octets | Modifie: 2026-03-13 15:13
+   Lignes: 35
+   Premiere ligne: Fichier: H:\Games\Wakfu\contents\bdata\66.jar
+   Derniere ligne: Diagnostic: H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_v2.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diagnose_errors.log
+   Taille: 1,612 octets | Modifie: 2026-03-13 15:12
+   Lignes: 30
+   Premiere ligne: Fichier: H:\Games\Wakfu\contents\bdata\66.jar, taille brute: 958270
+   Derniere ligne: Diagnostic sauvegarde: H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_rows.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_reader_v3.log
+   Taille: 2,913 octets | Modifie: 2026-03-13 14:49
+   Lignes: 40
+   Premiere ligne: 2026-03-13 14:49:34,129 [INFO] ============================================================
+   Derniere ligne: 2026-03-13 14:49:36,417 [INFO] DONE
+   Niveaux: ERROR=22, WARNING=0, INFO=16, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_reader_v2.log
+   Taille: 7,450 octets | Modifie: 2026-03-13 14:21
+   Lignes: 94
+   Premiere ligne: 2026-03-13 14:21:12,157 [INFO] ============================================================
+   Derniere ligne: 2026-03-13 14:21:16,998 [INFO] ============================================================
+   Niveaux: ERROR=35, WARNING=0, INFO=46, DEBUG=18
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_final_20260313_135105.log
+   Taille: 64,852 octets | Modifie: 2026-03-13 13:52
+   Lignes: 717
+   Premiere ligne: 2026-03-13 13:51:05,163 [INFO] ============================================================
+   Derniere ligne: 2026-03-13 13:52:47,256 [INFO]   ID= 19 HUPPERMAGE           HP=50 AP=6 MP=3 WP=6
+   Niveaux: ERROR=23, WARNING=20, INFO=82, DEBUG=608
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_final_20260313_134513.log
+   Taille: 64,852 octets | Modifie: 2026-03-13 13:46
+   Lignes: 717
+   Premiere ligne: 2026-03-13 13:45:13,115 [INFO] ============================================================
+   Derniere ligne: 2026-03-13 13:46:58,839 [INFO]   ID= 19 HUPPERMAGE           HP=50 AP=6 MP=3 WP=6
+   Niveaux: ERROR=23, WARNING=20, INFO=82, DEBUG=608
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_v5.log
+   Taille: 4,803 octets | Modifie: 2026-03-13 13:27
+   Lignes: 77
+   Premiere ligne: 2026-03-13 13:27:17,933 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 13:27:19,345 [INFO] DONE
+   Niveaux: ERROR=5, WARNING=5, INFO=61, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_v4_4.log
+   Taille: 6,353 octets | Modifie: 2026-03-13 12:53
+   Lignes: 87
+   Premiere ligne: 2026-03-13 12:45:18,820 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:53:17,256 [INFO] ======================================================================
+   Niveaux: ERROR=5, WARNING=0, INFO=87, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\diag_fails.log
+   Taille: 40,868 octets | Modifie: 2026-03-13 12:28
+   Lignes: 355
+   Premiere ligne: 2026-03-13 12:28:20,407 [INFO] ============================================================
+   Derniere ligne: 2026-03-13 12:28:21,507 [INFO] ============================================================
+   Niveaux: ERROR=1, WARNING=18, INFO=333, DEBUG=2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_reader_v4_2.log
+   Taille: 9,718,022 octets | Modifie: 2026-03-13 12:26
+   Lignes: 112034
+   Premiere ligne: 2026-03-13 12:23:39,883 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:26:14,390 [INFO] DONE
+   Niveaux: ERROR=6, WARNING=64, INFO=104, DEBUG=111866
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_diag_v4.log
+   Taille: 5,653 octets | Modifie: 2026-03-13 12:20
+   Lignes: 79
+   Premiere ligne: 2026-03-13 12:20:38,222 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:20:38,692 [INFO] DONE
+   Niveaux: ERROR=6, WARNING=0, INFO=79, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_diag_v3.log
+   Taille: 14,705 octets | Modifie: 2026-03-13 12:15
+   Lignes: 206
+   Premiere ligne: 2026-03-13 12:15:11,272 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:15:11,522 [INFO]   Total consumed: 15306/138 bytes
+   Niveaux: ERROR=0, WARNING=2, INFO=193, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_diag_v2.log
+   Taille: 19,317 octets | Modifie: 2026-03-13 12:12
+   Lignes: 132
+   Premiere ligne: 2026-03-13 12:12:54,670 [INFO] ======================================================================
+   Derniere ligne: Results saved to H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diag_v2_results.json
+   Niveaux: ERROR=0, WARNING=0, INFO=115, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_diagnostic.log
+   Taille: 26,589 octets | Modifie: 2026-03-13 12:10
+   Lignes: 288
+   Premiere ligne: 2026-03-13 12:10:54,430 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:10:54,520 [INFO] I will identify the new fields and fix the reader.
+   Niveaux: ERROR=1, WARNING=10, INFO=268, DEBUG=0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\bdata_reader.log
+   Taille: 11,236 octets | Modifie: 2026-03-13 12:07
+   Lignes: 170
+   Premiere ligne: 2026-03-13 12:07:00,199 [INFO] ======================================================================
+   Derniere ligne: 2026-03-13 12:07:01,382 [WARNING]   Error reading spell row 7: unpack requires a buffer of 4 bytes
+   Niveaux: ERROR=18, WARNING=18, INFO=141, DEBUG=11
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\sync_report.log
+   Taille: 618 octets | Modifie: 2026-03-13 11:30
+   Lignes: 29
+   Premiere ligne: 
+   Derniere ligne: }
+   Niveaux: ERROR=1, WARNING=0, INFO=0, DEBUG=0

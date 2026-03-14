@@ -1,0 +1,649 @@
+ANALYSE FICHIERS JSON (72 fichiers)
+============================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\app\config.json
+   Taille: 946 octets | Modifie: 2026-03-07 19:46
+   Type: Dictionnaire (5 cles)
+   Cles: window_title, capture_fps, sequences, detection_threshold, nms_overlap
+     window_title: L'Immortel - WAKFU
+     capture_fps: 61
+     sequences: list(1 elements)
+     detection_threshold: 0.7699999809265137
+     nms_overlap: 0.32899999618530273
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\app\config.json
+   Taille: 896 octets | Modifie: 2026-03-07 13:18
+   Type: Dictionnaire (17 cles)
+   Cles: confidence_threshold, scan_interval_ms, action_delay_ms, hover_delay_ms, calibration_offset_x, calibration_offset_y, calibration_points, selected_process, categories, templates, sequences, name_history, grid, grid_conditions, custom_categories
+     confidence_threshold: 0.75
+     scan_interval_ms: 500
+     action_delay_ms: 300
+     hover_delay_ms: 150
+     calibration_offset_x: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\cdn\1.91.1.53_actions.json
+   Taille: 22,139 octets | Modifie: 2026-03-14 00:36
+   Type: Liste de 71 elements
+   Cles (1er element): definition, description
+     definition: {'id': 1, 'effect': 'Dommage : Neutre'}
+     description: {'fr': 'Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\cdn\1.91.1.53_items.json
+   Taille: 15,457,774 octets | Modifie: 2026-03-14 00:36
+   Type: Liste de 8324 elements
+   Cles (1er element): definition, title, description
+     definition: {'item': {'id': 2021, 'level': 6, 'baseParameters': {'itemTypeId': 120, 'itemSet
+     title: {'fr': 'Amulette du Bouftou', 'en': 'Gobball Amulet', 'es': 'Amuleto de jalató',
+     description: {'fr': "Attention mesdemoiselles, il paraît qu'elle bouffe tout, même les bouton
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\action_map.json
+   Taille: 13,871 octets | Modifie: 2026-03-14 00:36
+   Type: Dictionnaire (71 cles)
+   Cles: 1, 20, 21, 24, 26, 31, 39, 40, 41, 56, 57, 71, 80, 82, 83
+     1: dict(3 elements)
+     20: dict(3 elements)
+     21: dict(3 elements)
+     24: dict(3 elements)
+     26: dict(3 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_aptitudes.json
+   Taille: 2 octets | Modifie: 2026-03-13 12:26
+   Type: Liste de 0 elements
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_effect_groups.json
+   Taille: 1,118,408,202 octets | Modifie: 2026-03-13 13:52
+   Type: Liste de 586 elements
+   Cles (1er element): m_id, m_actionId, m_params
+     m_id: 90976
+     m_actionId: 4
+     m_params: [2.0175895289348716e-40, 2.31456671247923e-40, 1.264587786145288e-40, 1.37295019
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_items.json
+   Taille: 9,018,331 octets | Modifie: 2026-03-14 00:43
+   Type: Liste de 8324 elements
+   Cles (1er element): id, name_fr, name_en, level, rarity, rarity_name, itemTypeId, item_type, itemSetId, equipEffects
+     id: 2021
+     name_fr: Amulette du Bouftou
+     name_en: Gobball Amulet
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_spells.json
+   Taille: 6,553,257 octets | Modifie: 2026-03-13 15:22
+   Type: Liste de 4079 elements
+   Cles (1er element): id, scriptId, gfxId, breedId, maxLevel, castMaxPerTarget, castMaxPerTurn, castMaxPerTurnIncr, castMinInterval, testLineOfSight
+     id: 5689
+     scriptId: -1799056890
+     gfxId: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_spells_including_warns.json
+   Taille: 6,553,257 octets | Modifie: 2026-03-13 15:22
+   Type: Liste de 4079 elements
+   Cles (1er element): id, scriptId, gfxId, breedId, maxLevel, castMaxPerTarget, castMaxPerTurn, castMaxPerTurnIncr, castMinInterval, testLineOfSight
+     id: 5689
+     scriptId: -1799056890
+     gfxId: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_spells_summary.json
+   Taille: 4,149,940 octets | Modifie: 2026-03-13 12:53
+   Type: Liste de 4079 elements
+   Cles (1er element): id, name, breedId, elementId, maxLevel, PA_base, isPassive, effectIds
+     id: 5689
+     name: 
+     breedId: -34
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_states.json
+   Taille: 2,324,174 octets | Modifie: 2026-03-14 00:07
+   Type: Liste de 5984 elements
+   Cles (1er element): id, stateType, esI, durationParams, esJ, esK, esL, esM, esN, gfxString
+     id: 3
+     stateType: 20
+     esI: []
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\all_static_effects.json
+   Taille: 261,164,992 octets | Modifie: 2026-03-13 12:53
+   Type: Liste de 173626 elements
+   Cles (1er element): m_effectId, m_actionId, m_parentId, m_areaOrder, m_areaShape, m_areaSize, m_params, m_conditionsCriterion, m_isAffectedByLocalisation, m_durationBase
+     m_effectId: 308529
+     m_actionId: 843
+     m_parentId: 308528
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\breeds.json
+   Taille: 13,144 octets | Modifie: 2026-03-13 22:06
+   Type: Liste de 18 elements
+   Cles (1er element): id, name, ehg, ehh, ehi, ehj, ehk, ehl, ehm, ehn
+     id: 5
+     name: XELOR
+     ehg: 6001025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\cdn_actions.json
+   Taille: 27,338 octets | Modifie: 2026-03-13 13:27
+   Type: Liste de 71 elements
+   Cles (1er element): definition, description
+     definition: {'id': 1, 'effect': 'Dommage : Neutre'}
+     description: {'fr': 'Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\cdn_states.json
+   Taille: 58,584 octets | Modifie: 2026-03-13 13:27
+   Type: Liste de 290 elements
+   Cles (1er element): definition, title
+     definition: {'id': 6712}
+     title: {'fr': 'Renaissance', 'en': 'Rebirth', 'es': 'Resurrección', 'pt': 'Renascimento
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diag_final_results.json
+   Taille: 434 octets | Modifie: 2026-03-13 13:52
+   Type: Dictionnaire (7 cles)
+   Cles: version, date, reader_version, breeds, spells, effect_groups, sram
+     version: unknown
+     date: 2026-03-13T13:52:47.251727
+     reader_version: FINAL (WakBox exact)
+     breeds: dict(3 elements)
+     spells: dict(3 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diag_v2.json
+   Taille: 174 octets | Modifie: 2026-03-13 14:21
+   Type: Dictionnaire (6 cles)
+   Cles: timestamp, breeds_java_ok, breeds_wakbox_ok, spells_java_ok, spells_wakbox_ok, total_spells
+     timestamp: 2026-03-13 14:21:16.998312
+     breeds_java_ok: 0
+     breeds_wakbox_ok: 0
+     spells_java_ok: 0
+     spells_wakbox_ok: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diag_v2_results.json
+   Taille: 366 octets | Modifie: 2026-03-13 12:12
+   Type: Dictionnaire (3 cles)
+   Cles: breed_results, spell_results, breed_best
+     breed_results: dict(7 elements)
+     spell_results: dict(5 elements)
+     breed_best: seed_as_hoo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diag_v4_results.json
+   Taille: 327 octets | Modifie: 2026-03-13 12:53
+   Type: Dictionnaire (13 cles)
+   Cles: version, date, breeds, breeds_with_name, spells_total, spells_ok, spells_err, spells_sram, static_effects, states, effect_groups, cdn_spell_names, cdn_state_names
+     version: 4.4
+     date: 2026-03-13T12:53:17.254342
+     breeds: 18
+     breeds_with_name: 16
+     spells_total: 4079
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diag_v5_results.json
+   Taille: 444 octets | Modifie: 2026-03-13 13:27
+   Type: Dictionnaire (4 cles)
+   Cles: version, date, game_version, results
+     version: 5.2
+     date: 2026-03-13T13:27:19.344821
+     game_version: 1.91.1.53
+     results: dict(3 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diagnostic_rows.json
+   Taille: 764,672 octets | Modifie: 2026-03-13 15:12
+   Type: Dictionnaire (3 cles)
+   Cles: ok, warn, error
+     ok: list(0 elements)
+     warn: list(0 elements)
+     error: list(4079 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diagnostic_v2.json
+   Taille: 5,923 octets | Modifie: 2026-03-13 15:13
+   Type: Dictionnaire (4 cles)
+   Cles: summary, sample_ok, warnings, errors
+     summary: dict(4 elements)
+     sample_ok: list(0 elements)
+     warnings: list(0 elements)
+     errors: list(50 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\diagnostic_v3.json
+   Taille: 59,857 octets | Modifie: 2026-03-13 15:17
+   Type: Dictionnaire (3 cles)
+   Cles: summary, warnings, errors
+     summary: dict(4 elements)
+     warnings: list(100 elements)
+     errors: list(100 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\effect_groups.json
+   Taille: 1,503,813 octets | Modifie: 2026-03-13 22:23
+   Type: Liste de 32432 elements
+   Cles (1er element): id, effectIds
+     id: 237038
+     effectIds: [237039, 237040]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\format_diagnostic.json
+   Taille: 31,629 octets | Modifie: 2026-03-13 12:10
+   Type: Dictionnaire (3 cles)
+   Cles: date, breed, spell
+     date: 2026-03-13T12:10:54.517493
+     breed: dict(6 elements)
+     spell: dict(6 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\items_index.json
+   Taille: 1,973,883 octets | Modifie: 2026-03-14 00:43
+   Type: Dictionnaire (8324 cles)
+   Cles: 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2044
+     2021: dict(5 elements)
+     2022: dict(5 elements)
+     2023: dict(5 elements)
+     2024: dict(5 elements)
+     2025: dict(5 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\spell_names.json
+   Taille: 14,663 octets | Modifie: 2026-03-14 02:02
+   Type: Dictionnaire (73 cles)
+   Cles: 2839, 754, 775, 772, 7323, 7309, 7316, 7319, 4604, 4586, 4585, 4595, 914, 918, 925
+     2839: dict(8 elements)
+     754: dict(8 elements)
+     775: dict(8 elements)
+     772: dict(8 elements)
+     7323: dict(8 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\sram_calibration.json
+   Taille: 3,330 octets | Modifie: 2026-03-14 07:40
+   Type: Dictionnaire (8 cles)
+   Cles: calibration_date, calibration_version, player, class, level, real_stats, formula, spells
+     calibration_date: 2026-03-14
+     calibration_version: 2.0
+     player: L'Immortel
+     class: Sram
+     level: 179
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\sram_complete.json
+   Taille: 2 octets | Modifie: 2026-03-13 14:49
+   Type: Liste de 0 elements
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\sram_spells.json
+   Taille: 2 octets | Modifie: 2026-03-13 15:22
+   Type: Liste de 0 elements
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\extracted\static_effects.json
+   Taille: 189,472,049 octets | Modifie: 2026-03-13 23:27
+   Type: Liste de 173626 elements
+   Cles (1er element): id, actionId, areaId, areaShape, areaSize, areaMinSize, paramsCount, params, execCount, durationBase
+     id: 308529
+     actionId: 843
+     areaId: 308528
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\parsed\action_map.json
+   Taille: 17,752 octets | Modifie: 2026-03-13 11:30
+   Type: Dictionnaire (71 cles)
+   Cles: 1, 20, 21, 24, 26, 31, 39, 40, 41, 56, 57, 71, 80, 82, 83
+     1: dict(5 elements)
+     20: dict(5 elements)
+     21: dict(5 elements)
+     24: dict(5 elements)
+     26: dict(5 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\parsed\all_items.json
+   Taille: 21,083,265 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 8324 elements
+   Cles (1er element): id, level, name_fr, name_en, description_fr, type_id, type_name_fr, type_name_en, positions, disabled_positions
+     id: 2021
+     level: 6
+     name_fr: Amulette du Bouftou
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\parsed\equipment_types.json
+   Taille: 7,364 octets | Modifie: 2026-03-13 11:30
+   Type: Dictionnaire (31 cles)
+   Cles: 101, 103, 108, 110, 111, 112, 113, 114, 115, 117, 119, 120, 132, 133, 134
+     101: dict(7 elements)
+     103: dict(7 elements)
+     108: dict(7 elements)
+     110: dict(7 elements)
+     111: dict(7 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\parsed\state_map.json
+   Taille: 42,829 octets | Modifie: 2026-03-13 11:30
+   Type: Dictionnaire (290 cles)
+   Cles: 6712, 8393, 8375, 6001, 6031, 8493, 2512, 5984, 8381, 9067, 1611, 9072, 7863, 3416, 6014
+     6712: dict(5 elements)
+     8393: dict(5 elements)
+     8375: dict(5 elements)
+     6001: dict(5 elements)
+     6031: dict(5 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\actions.json
+   Taille: 22,139 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 71 elements
+   Cles (1er element): definition, description
+     definition: {'id': 1, 'effect': 'Dommage : Neutre'}
+     description: {'fr': 'Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\blueprints.json
+   Taille: 4,942 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 109 elements
+   Cles (1er element): blueprintId, recipeId
+     blueprintId: 15992
+     recipeId: [3796]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\collectibleResources.json
+   Taille: 207,413 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 666 elements
+   Cles (1er element): id, skillId, resourceId, resourceIndex, collectItemId, resourceNextIndex, skillLevelRequired, simultaneousPlayer, visualFeedbackId, duration
+     id: 1507
+     skillId: 75
+     resourceId: 402
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\equipmentItemTypes.json
+   Taille: 8,776 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 31 elements
+   Cles (1er element): definition, title
+     definition: {'id': 101, 'parentId': 519, 'equipmentPositions': ['FIRST_WEAPON'], 'equipmentD
+     title: {'fr': 'Hache{[~1]?s:} (Deux mains)', 'en': 'Axe{[~1]?s:} (Two-handed)', 'es': '
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\harvestLoots.json
+   Taille: 220,644 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 1221 elements
+   Cles (1er element): id, itemId, quantity, requiredProspection, dropRate, listId, quantityPerItem, quantityMin, quantityMax, maxRoll
+     id: 993
+     itemId: 1718
+     quantity: 1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\itemProperties.json
+   Taille: 1,001 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 9 elements
+   Cles (1er element): id, name, description
+     id: 1
+     name: TREASURE
+     description: Objet trésor (interface spéciale)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\itemTypes.json
+   Taille: 27,251 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 96 elements
+   Cles (1er element): definition, title
+     definition: {'id': 100, 'parentId': 109, 'equipmentPositions': [], 'equipmentDisabledPositio
+     title: {'fr': 'Arme{[~1]?s:} & Bouclier{[~1]?s:}', 'en': 'Weapon{[~1]?s:} & Shield{[~1]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\items.json
+   Taille: 15,457,774 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 8324 elements
+   Cles (1er element): definition, title, description
+     definition: {'item': {'id': 2021, 'level': 6, 'baseParameters': {'itemTypeId': 120, 'itemSet
+     title: {'fr': 'Amulette du Bouftou', 'en': 'Gobball Amulet', 'es': 'Amuleto de jalató',
+     description: {'fr': "Attention mesdemoiselles, il paraît qu'elle bouffe tout, même les bouton
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\jobsItems.json
+   Taille: 6,167,113 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 8576 elements
+   Cles (1er element): definition, title, description
+     definition: {'id': 1718, 'level': 15, 'rarity': 1, 'itemTypeId': 306, 'graphicParameters': {
+     title: {'fr': 'Bois de Pommier', 'en': 'Apiwood', 'es': 'Madera de ñiamzamo', 'pt': 'Ma
+     description: {'fr': 'Le bois du Pommier est quelconque. Les artisans sculpteurs parviennent à
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\recipeCategories.json
+   Taille: 2,581 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 14 elements
+   Cles (1er element): definition, title
+     definition: {'id': 40, 'isArchive': False, 'isNoCraft': False, 'isHidden': False, 'xpFactor'
+     title: {'fr': 'Boulanger', 'en': 'Baker', 'es': 'Panadero', 'pt': 'Padeiro'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\recipeIngredients.json
+   Taille: 2,297,755 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 34571 elements
+   Cles (1er element): recipeId, itemId, quantity, ingredientOrder
+     recipeId: 1160
+     itemId: 5439
+     quantity: 3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\recipeResults.json
+   Taille: 470,916 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 5543 elements
+   Cles (1er element): recipeId, productedItemId, productOrder, productedItemQuantity
+     recipeId: 1160
+     productedItemId: 12464
+     productOrder: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\recipes.json
+   Taille: 514,246 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 5543 elements
+   Cles (1er element): id, categoryId, level, xpRatio, isUpgrade, upgradeItemId
+     id: 1160
+     categoryId: 76
+     level: 45
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\resourceTypes.json
+   Taille: 761 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 6 elements
+   Cles (1er element): definition, title
+     definition: {'id': 1, 'affectWakfu': True}
+     title: {'fr': 'Arbres', 'en': 'Trees', 'es': 'Árboles', 'pt': 'Árvores'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\resources.json
+   Taille: 57,150 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 170 elements
+   Cles (1er element): definition, title
+     definition: {'id': 6, 'resourceType': 1, 'isBlocking': True, 'idealRainRangeMin': 0, 'idealR
+     title: {'fr': 'Pommier', 'en': 'Api Tree', 'es': 'Ñiamzamo', 'pt': 'Árvore de Api'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw\states.json
+   Taille: 35,705 octets | Modifie: 2026-03-13 11:30
+   Type: Liste de 290 elements
+   Cles (1er element): definition, title
+     definition: {'id': 6712}
+     title: {'fr': 'Renaissance', 'en': 'Rebirth', 'es': 'Resurrección', 'pt': 'Renascimento
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\actions.json
+   Taille: 22,139 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 71 elements
+   Cles (1er element): definition, description
+     definition: {'id': 1, 'effect': 'Dommage : Neutre'}
+     description: {'fr': 'Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\blueprints.json
+   Taille: 4,942 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 109 elements
+   Cles (1er element): blueprintId, recipeId
+     blueprintId: 15992
+     recipeId: [3796]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\collectibleResources.json
+   Taille: 207,413 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 666 elements
+   Cles (1er element): id, skillId, resourceId, resourceIndex, collectItemId, resourceNextIndex, skillLevelRequired, simultaneousPlayer, visualFeedbackId, duration
+     id: 1507
+     skillId: 75
+     resourceId: 402
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\equipmentItemTypes.json
+   Taille: 8,776 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 31 elements
+   Cles (1er element): definition, title
+     definition: {'id': 101, 'parentId': 519, 'equipmentPositions': ['FIRST_WEAPON'], 'equipmentD
+     title: {'fr': 'Hache{[~1]?s:} (Deux mains)', 'en': 'Axe{[~1]?s:} (Two-handed)', 'es': '
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\harvestLoots.json
+   Taille: 220,644 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 1221 elements
+   Cles (1er element): id, itemId, quantity, requiredProspection, dropRate, listId, quantityPerItem, quantityMin, quantityMax, maxRoll
+     id: 993
+     itemId: 1718
+     quantity: 1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\itemProperties.json
+   Taille: 1,001 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 9 elements
+   Cles (1er element): id, name, description
+     id: 1
+     name: TREASURE
+     description: Objet trésor (interface spéciale)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\itemTypes.json
+   Taille: 27,251 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 96 elements
+   Cles (1er element): definition, title
+     definition: {'id': 100, 'parentId': 109, 'equipmentPositions': [], 'equipmentDisabledPositio
+     title: {'fr': 'Arme{[~1]?s:} & Bouclier{[~1]?s:}', 'en': 'Weapon{[~1]?s:} & Shield{[~1]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\items.json
+   Taille: 15,457,774 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 8324 elements
+   Cles (1er element): definition, title, description
+     definition: {'item': {'id': 2021, 'level': 6, 'baseParameters': {'itemTypeId': 120, 'itemSet
+     title: {'fr': 'Amulette du Bouftou', 'en': 'Gobball Amulet', 'es': 'Amuleto de jalató',
+     description: {'fr': "Attention mesdemoiselles, il paraît qu'elle bouffe tout, même les bouton
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\jobsItems.json
+   Taille: 6,167,113 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 8576 elements
+   Cles (1er element): definition, title, description
+     definition: {'id': 1718, 'level': 15, 'rarity': 1, 'itemTypeId': 306, 'graphicParameters': {
+     title: {'fr': 'Bois de Pommier', 'en': 'Apiwood', 'es': 'Madera de ñiamzamo', 'pt': 'Ma
+     description: {'fr': 'Le bois du Pommier est quelconque. Les artisans sculpteurs parviennent à
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\recipeCategories.json
+   Taille: 2,581 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 14 elements
+   Cles (1er element): definition, title
+     definition: {'id': 40, 'isArchive': False, 'isNoCraft': False, 'isHidden': False, 'xpFactor'
+     title: {'fr': 'Boulanger', 'en': 'Baker', 'es': 'Panadero', 'pt': 'Padeiro'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\recipeIngredients.json
+   Taille: 2,297,755 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 34571 elements
+   Cles (1er element): recipeId, itemId, quantity, ingredientOrder
+     recipeId: 1160
+     itemId: 5439
+     quantity: 3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\recipeResults.json
+   Taille: 470,916 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 5543 elements
+   Cles (1er element): recipeId, productedItemId, productOrder, productedItemQuantity
+     recipeId: 1160
+     productedItemId: 12464
+     productOrder: 0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\recipes.json
+   Taille: 514,246 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 5543 elements
+   Cles (1er element): id, categoryId, level, xpRatio, isUpgrade, upgradeItemId
+     id: 1160
+     categoryId: 76
+     level: 45
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\resourceTypes.json
+   Taille: 761 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 6 elements
+   Cles (1er element): definition, title
+     definition: {'id': 1, 'affectWakfu': True}
+     title: {'fr': 'Arbres', 'en': 'Trees', 'es': 'Árboles', 'pt': 'Árvores'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\resources.json
+   Taille: 57,150 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 170 elements
+   Cles (1er element): definition, title
+     definition: {'id': 6, 'resourceType': 1, 'isBlocking': True, 'idealRainRangeMin': 0, 'idealR
+     title: {'fr': 'Pommier', 'en': 'Api Tree', 'es': 'Ñiamzamo', 'pt': 'Árvore de Api'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\raw_backup_none\.tmp\states.json
+   Taille: 35,705 octets | Modifie: 2026-03-13 11:29
+   Type: Liste de 290 elements
+   Cles (1er element): definition, title
+     definition: {'id': 6712}
+     title: {'fr': 'Renaissance', 'en': 'Rebirth', 'es': 'Resurrección', 'pt': 'Renascimento
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\sync_manifest.json
+   Taille: 1,114 octets | Modifie: 2026-03-13 11:30
+   Type: Dictionnaire (4 cles)
+   Cles: version, sync_date, files, stats
+     version: 1.91.1.53
+     sync_date: 2026-03-13T10:30:13.813470+00:00
+     files: dict(4 elements)
+     stats: dict(8 elements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\version.json
+   Taille: 138 octets | Modifie: 2026-03-13 11:30
+   Type: Dictionnaire (3 cles)
+   Cles: version, last_sync, cdn_base
+     version: 1.91.1.53
+     last_sync: 2026-03-13T10:30:13.812463+00:00
+     cdn_base: https://wakfu.cdn.ankama.com/gamedata
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\file_hashes.json
+   Taille: 5,009 octets | Modifie: 2026-03-13 11:31
+   Type: Dictionnaire (70 cles)
+   Cles: config.py, DESIGN_DOC.md, data\sync_manifest.json, data\version.json, data\__init__.py, data\classes\base_class.py, data\classes\common.py, data\classes\sram.py, data\classes\__init__.py, data\items\__init__.py, data\monsters\__init__.py, data\parsed\action_map.json, data\parsed\all_items.json, data\parsed\equipment_types.json, data\parsed\state_map.json
+     config.py: 9af401f4faad74ccca0658c34abf67b1
+     DESIGN_DOC.md: 49786faaf35da139da06832daff0c64f
+     data\sync_manifest.json: d3c3d50a0a9c1c082579f14fedd8c312
+     data\version.json: 85d5ab9381888959abf0e41c97bb6099
+     data\__init__.py: 81051bcc2cf1bedf378224b0a93e2877
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 logs\module_registry.json
+   Taille: 13,138 octets | Modifie: 2026-03-13 11:31
+   Type: Dictionnaire (66 cles)
+   Cles: logs\file_hashes.json, scripts\auto_log.py, scripts\__init__.py, data\__init__.py, data\classes\base_class.py, data\classes\common.py, data\classes\sram.py, data\classes\__init__.py, data\items\__init__.py, data\monsters\__init__.py, data\profiles\__init__.py, data\stats\__init__.py, engine\damage.py, engine\__init__.py, interface\__init__.py
+     logs\file_hashes.json: dict(5 elements)
+     scripts\auto_log.py: dict(5 elements)
+     scripts\__init__.py: dict(5 elements)
+     data\__init__.py: dict(5 elements)
+     data\classes\base_class.py: dict(5 elements)

@@ -1,0 +1,35 @@
+2026-03-14 07:42:42,871 [INFO] Import des modules engine...
+2026-03-14 07:42:42,880 [INFO]   engine.fighter.Fighter OK
+2026-03-14 07:42:42,881 [INFO]   engine.effect_bridge.SpellExecutor OK (83 handlers)
+2026-03-14 07:42:42,882 [INFO]   engine.equipment.EquipmentManager OK
+2026-03-14 07:42:42,882 [INFO]   engine.equipment.ItemRecommender OK
+2026-03-14 07:42:42,882 [INFO] Tous les modules engine importes avec succes.
+2026-03-14 07:42:42,882 [INFO] Chargement des donnees...
+2026-03-14 07:42:43,029 [INFO]   all_items.json : 8324 entrees
+2026-03-14 07:42:43,077 [INFO]   all_spells.json : 4079 entrees
+2026-03-14 07:42:47,266 [INFO]   all_static_effects.json : 173626 entrees
+2026-03-14 07:42:47,435 [INFO]   all_states.json : 5984 entrees
+2026-03-14 07:42:47,436 [INFO]   action_map.json : 71 entrees
+2026-03-14 07:42:47,436 [INFO]   spell_names.json : 73 entrees
+2026-03-14 07:42:47,436 [INFO] Noms de sorts charges : 73
+2026-03-14 07:42:47,437 [INFO] Donnees chargees : 8324 items, 4079 sorts, 173626 effets statiques
+2026-03-14 07:42:47,439 [INFO] breeds.json charge : 18 classes
+2026-03-14 07:42:47,439 [INFO]   Xelor (id=5): 4 sorts - [2839, 754, 775, 772]
+2026-03-14 07:42:47,439 [INFO]   Osamodas (id=2): 4 sorts - [7323, 7309, 7316, 7319]
+2026-03-14 07:42:47,439 [INFO]   Sram (id=4): 4 sorts - [4604, 4586, 4585, 4595]
+2026-03-14 07:42:47,440 [INFO]   Sadida (id=10): 4 sorts - [914, 918, 925, 919]
+2026-03-14 07:42:47,440 [INFO]   Cra (id=9): 4 sorts - [4774, 4819, 4816, 4813]
+2026-03-14 07:42:47,440 [INFO]   Huppermage (id=18): 4 sorts - [7199, 4691, 4668, 4700]
+2026-03-14 07:42:47,440 [INFO]   Roublard (id=13): 4 sorts - [6492, 6466, 6472, 6474]
+2026-03-14 07:42:47,440 [INFO]   Zobal (id=14): 4 sorts - [7084, 7070, 7075, 7078]
+2026-03-14 07:42:47,440 [INFO]   Iop (id=8): 4 sorts - [4790, 4779, 4783, 4789]
+2026-03-14 07:42:47,440 [INFO]   Sacrier (id=11): 4 sorts - [5045, 5032, 5037, 5040]
+2026-03-14 07:42:47,441 [INFO]   Ouginak (id=15): 4 sorts - [6284, 6260, 6263, 6270]
+2026-03-14 07:42:47,441 [INFO]   Enutrof (id=3): 4 sorts - [6324, 2019, 2016, 2011]
+2026-03-14 07:42:47,441 [INFO]   ? (id=19): 5 sorts - [5577, 5561, 5591, 5594, 5590]
+2026-03-14 07:42:47,441 [INFO]   Steamer (id=16): 4 sorts - [6920, 6902, 6907, 6912]
+2026-03-14 07:42:47,441 [INFO]   Ecaflip (id=6): 4 sorts - [7225, 2050, 2073, 2047]
+2026-03-14 07:42:47,441 [INFO]   Eniripsa (id=7): 4 sorts - [1535, 638, 780, 1540]
+2026-03-14 07:42:47,441 [INFO]   Feca (id=1): 4 sorts - [6982, 6971, 6973, 6979]
+2026-03-14 07:42:47,441 [INFO]   Pandawa (id=12): 4 sorts - [4720, 4704, 4710, 4713]
+2026-03-14 07:42:47,441 [INFO] Sorts indexes : 18 classes, 4079 sorts

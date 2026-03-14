@@ -1,0 +1,2195 @@
+ANALYSE FICHIERS PYTHON (216 fichiers)
+============================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Combo\Combofinder copy.py
+   Taille: 60,493 octets | Modifie: 2026-03-13 07:29
+   Lignes: 1377
+   Syntaxe: OK
+   Fonctions: _d, manhattan, cap_wp, cap_mp, init_worker, handle_armor_interaction, trigger_sublimations_on_armor_break, calc_dmg, apply_pf_generation, apply_pf_consumption, apply_kill_rewards, can_cast, apply_spell, move_toward, find_best_action, run_turn, simulate_one, gen_all_loadouts, format_action, print_detailed_run, main
+   Imports: from collections, from copy, from multiprocessing, math, os, random, sys, time
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Combo\Combofinder.py
+   Taille: 77,439 octets | Modifie: 2026-03-13 07:51
+   Lignes: 1729
+   Syntaxe: OK
+   Fonctions: _interp, manhattan, cap_wp, cap_mp, init_worker, handle_armor_interaction, trigger_sublimations_on_armor_break, calc_dmg, apply_pf_generation, apply_pf_consumption, apply_kill_rewards, can_cast, apply_spell, simulate_double_turn, move_toward, find_best_action, run_turn, simulate_one, gen_all_loadouts, format_action, print_detailed_run, main
+   Imports: from collections, from copy, from multiprocessing, math, os, random, sys, time
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\_diag.py
+   Taille: 3,097 octets | Modifie: 2026-03-04 17:07
+   Lignes: 108
+   Syntaxe: OK
+   Imports: ctypes, ctypes.wintypes, cv2, dxcam, from vision_automator_v5.modules.m01_capture.capture_engine, numpy, os, sys, time
+   Debut: import time, sys, os, cv2, numpy as np
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\__main__.py
+   Taille: 145 octets | Modifie: 2026-03-03 22:17
+   Lignes: 7
+   Syntaxe: OK
+   Imports: from vision_automator_v5.hub
+   Debut: """Vision Automator v5 — Point d'entree."""
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\hub.py
+   Taille: 7,709 octets | Modifie: 2026-03-07 15:41
+   Lignes: 191
+   Syntaxe: OK
+   Classes: Hub
+   Fonctions: __init__, _load_config, save_config, _load_modules, _switch_module, _build_ui, _cleanup, run
+   Imports: dearpygui.dearpygui, from __future__, from pathlib, from vision_automator_v5.module_base, from vision_automator_v5.module_registry, from vision_automator_v5.shared, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, json
+   Debut: """Hub  Fenetre principale modulaire.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\module_base.py
+   Taille: 1,475 octets | Modifie: 2026-03-03 22:17
+   Lignes: 56
+   Syntaxe: OK
+   Classes: ModuleBase
+   Fonctions: name, version, description, icon, initialize, build_ui, on_show, on_hide, cleanup
+   Imports: from __future__, from abc, from typing
+   Debut: """Contrat de base pour tous les modules.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\module_registry.py
+   Taille: 1,901 octets | Modifie: 2026-03-03 22:17
+   Lignes: 52
+   Syntaxe: OK
+   Fonctions: discover_modules
+   Imports: from __future__, from pathlib, from typing, from vision_automator_v5.module_base, from vision_automator_v5.shared.logger, importlib, pkgutil
+   Debut: """Auto-decouverte et chargement des modules.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m01_capture\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m01_capture\capture_engine.py
+   Taille: 3,957 octets | Modifie: 2026-03-04 16:27
+   Lignes: 124
+   Syntaxe: OK
+   Classes: CaptureEngine
+   Fonctions: __init__, running, width, height, fps, frame_id, list_windows, start, stop, get_frame, _run, cb, on_frame_arrived, on_closed
+   Imports: from __future__, from vision_automator_v5.shared.logger, from windows_capture, numpy, threading, time, win32gui
+   Debut: """Moteur WGC v3.0.0 FINAL — ascontiguousarray dans le callback.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m01_capture\module.py
+   Taille: 18,188 octets | Modifie: 2026-03-07 19:46
+   Lignes: 516
+   Syntaxe: OK
+   Classes: Module
+   Fonctions: name, version, description, icon, initialize, build_ui, _build_layout, _build_preview_panel, _build_splitter, _build_right_panel, _on_frame_start, _on_resize, _apply_sizes, _on_split_click, _on_split_drag, _on_split_release, _update_texture, _refresh_overlay, _refresh_table, _refresh_mouse, _on_start, _on_stop, _cap_loop, _det_loop, _on_f6, _on_reload_templates, _reload_templates, cleanup, _find
+   Imports: cv2, dearpygui.dearpygui, from __future__, from pathlib, from typing, from vision_automator_v5.module_base, from vision_automator_v5.modules.m01_capture.capture_engine, from vision_automator_v5.modules.m02_detection.detection_engine, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, keyboard, numpy, threading, time, win32gui
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m02_detection\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m02_detection\detection_engine.py
+   Taille: 6,740 octets | Modifie: 2026-03-07 14:10
+   Lignes: 183
+   Syntaxe: OK
+   Classes: Template, DetectionEngine
+   Fonctions: __init__, load_templates, _load_single, detect, _nms
+   Imports: cv2, from __future__, from dataclasses, from pathlib, from vision_automator_v5.shared.logger, numpy
+   Debut: """Moteur de detection par template matching OpenCV multi-echelle.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m02_detection\module.py
+   Taille: 894 octets | Modifie: 2026-03-07 15:24
+   Lignes: 33
+   Syntaxe: OK
+   Classes: Module
+   Fonctions: name, version, icon, initialize, build_ui, cleanup
+   Imports: from __future__, from vision_automator_v5.module_base, from vision_automator_v5.shared.logger
+   Debut: """Module Detection v2.0.0 - Backend uniquement.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m07_library\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m07_library\module.py
+   Taille: 19,042 octets | Modifie: 2026-03-07 13:05
+   Lignes: 522
+   Syntaxe: OK
+   Classes: Module
+   Fonctions: _pil_to_dpg_float, name, version, description, icon, initialize, build_ui, _scan_templates, _get_folders, _reload, _on_reload_event, _on_filter_changed, _apply_filter, _rebuild_grid, _get_or_create_thumb, _on_thumb_clicked, _show_detail, _clear_preview, _get_selected, _rename_selected, _move_selected, _delete_selected, _set_status, on_show, on_hide, cleanup
+   Imports: dearpygui.dearpygui, from PIL, from __future__, from pathlib, from vision_automator_v5.module_base, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, numpy, shutil
+   Debut: """Module Library v1.0.0  Navigateur de templates.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m08_sequencer\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m08_sequencer\constants.py
+   Taille: 2,483 octets | Modifie: 2026-03-04 16:44
+   Lignes: 69
+   Syntaxe: OK
+   Fonctions: parse_step_type
+   Imports: from __future__
+   Debut: """Constantes du sequencer.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m08_sequencer\module.py
+   Taille: 34,608 octets | Modifie: 2026-03-07 13:51
+   Lignes: 813
+   Syntaxe: OK
+   Classes: Module
+   Fonctions: name, version, description, icon, initialize, _on_toggle, build_ui, _refresh_all, _refresh_tree, _refresh_template_combos, _refresh_steps, _refresh_conditions, _on_templates_reloaded, _filter_step_tpl, _pick_step_tpl, _filter_cond_tpl, _pick_cond_tpl, _ensure_seq_ids, _next_seq_id, _get_flat_list, _get_active_seq, _find_seq_by_id, _get_parent_list, _save, _seq_log, _on_seq_selected, _add_seq, _add_child, _rename_seq, _delete_seq, _toggle_enabled, _move_seq_up, _move_seq_down, _copy_seq, _add_condition, _del_condition, _on_step_type_changed, _on_key_picked, _build_step, _sel_step_idx, _add_step, _edit_step, _del_step, _move_step_up, _move_step_down, _copy_step, _start_exec, _stop_exec, _toggle_pause, _exec_loop, on_show, on_hide, cleanup, walk, walk_sub, walk, walk, walk, _do, reid
+   Imports: dearpygui.dearpygui, from __future__, from copy, from pathlib, from typing, from vision_automator_v5.module_base, from vision_automator_v5.modules.m08_sequencer.constants, from vision_automator_v5.modules.m08_sequencer.sequencer_engine, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, threading, time
+   Debut: """Module Sequencer v1.4.0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m08_sequencer\sequencer_engine.py
+   Taille: 16,488 octets | Modifie: 2026-03-07 14:23
+   Lignes: 445
+   Syntaxe: OK
+   Classes: SequencerEngine
+   Fonctions: _tpl_stem, _find_wakfu_hwnd, _make_lparam, _click_in_window, _set_cursor, _mouse_click_absolute, cb, __init__, set_log_callback, _log, on_detection_result, on_frame, get_det_map, _lookup, _get_hwnd, get_screen_offset, _do_click, execute_all, _run_seq, _check_conditions, _execute_steps, _exec_step, _find_seq_by_id
+   Imports: ctypes, from __future__, from typing, from vision_automator_v5.modules.m08_sequencer.constants, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, keyboard, numpy, sys, threading, time, win32api, win32con, win32gui
+   Debut: """Moteur d execution des sequences v1.3.0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m10_tagger\__init__.py
+   Taille: 0 octets | Modifie: 2026-03-07 11:17
+   Lignes: 1
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\modules\m10_tagger\module.py
+   Taille: 15,636 octets | Modifie: 2026-03-07 12:40
+   Lignes: 377
+   Syntaxe: OK
+   Classes: Module
+   Fonctions: _load_config, _save_config, _pil_to_dpg_float, name, version, description, icon, initialize, build_ui, _paste_image, _clear_image, _save_template, _add_to_history, _rebuild_history_ui, _get_folders, _filter_folders, _pick_folder, _add_folder, _get_categories, _filter_categories, _pick_category, _add_category, _get_types, _filter_types, _pick_type, _add_type, _set_status, on_show, on_hide, cleanup
+   Imports: dearpygui.dearpygui, from PIL, from __future__, from pathlib, from vision_automator_v5.module_base, from vision_automator_v5.shared.bus, from vision_automator_v5.shared.logger, json, numpy
+   Debut: """Module Tagger v1.2.0 — Capture et annotation de templates."""
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\shared\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-03 22:17
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\shared\bus.py
+   Taille: 2,457 octets | Modifie: 2026-03-03 22:17
+   Lignes: 75
+   Syntaxe: OK
+   Classes: EventBus
+   Fonctions: __init__, on, once, off, emit, clear, list_events
+   Imports: from __future__, from collections, from typing, from vision_automator_v5.shared.logger
+   Debut: """Event Bus — communication inter-modules par publish/subscribe.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\shared\constants.py
+   Taille: 743 octets | Modifie: 2026-03-03 22:17
+   Lignes: 33
+   Syntaxe: OK
+   Debut: """Constantes partagees.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\shared\logger.py
+   Taille: 749 octets | Modifie: 2026-03-03 22:17
+   Lignes: 30
+   Syntaxe: OK
+   Fonctions: get_logger
+   Imports: from __future__, from datetime, logging, sys
+   Debut: """Logger centralise pour tous les modules.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\Vision\vision_automator_v5\shared\types.py
+   Taille: 1,239 octets | Modifie: 2026-03-03 22:17
+   Lignes: 52
+   Syntaxe: OK
+   Classes: FrameData, DetectionResult, GridCell, GridState
+   Imports: from __future__, from dataclasses, from typing, numpy
+   Debut: """Types partages entre tous les modules.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 _archive\wakfu_vision.py
+   Taille: 134,257 octets | Modifie: 2026-03-07 02:19
+   Lignes: 2607
+   Syntaxe: OK
+   Classes: WakfuVisionApp
+   Fonctions: load_config, save_config, capture_window, pil_to_cv, find_template, find_template_multi, compare_images_multi, get_flat_types, parse_step_type, __init__, _build_styles, _build_ui, _build_capture_tab, _on_tpl_cat_changed, _add_dynamic_category, _add_dynamic_type, _add_dynamic_folder, _build_library_tab, _build_sequences_tab, _build_scan_tab, _build_calibration_tab, _build_calib_mouse_subtab, _build_calib_grid_subtab, _refresh_procs, _on_proc_selected, _grab_clipboard, _try_recognize, _on_name_typing, _accept_suggestion, _save_template, _add_variant, _load_library, _refresh_category_combos, _refresh_template_combos, _refresh_library_view, _on_lib_select, _add_category, _rename_selected, _move_selected, _change_type_selected, _delete_selected, _sort_tree, _get_seq_by_id, _get_seq_parent_list, _next_seq_id, _ensure_seq_ids, _refresh_seq_tree, _on_seq_tree_select, _get_active_seq, _refresh_steps_list, _add_sequence, _add_child_sequence, _rename_sequence, _delete_sequence, _toggle_seq_enabled, _move_seq_up, _move_seq_down, _copy_sequence, _update_seq_template_refs, _refresh_conditions_list, _add_condition, _delete_condition, _check_conditions, _on_step_type_changed, _on_key_picked, _capture_key_press, _update_value_hint, _add_step, _edit_step, _delete_step, _move_step_up, _move_step_down, _copy_step, _calib_capture, _calib_redraw, _canvas_to_img, _find_nearest_point, _calib_click, _calib_drag, _calib_release, _calib_double_click, _calib_delete_point, _calib_clear, _calib_test_all, _calib_save, _img_to_screen, _save_grid, _on_grid_param_change, _grid_to_pixel, _pixel_to_grid, _draw_grid_overlay, _save_offsets, _reset_offsets, _grid_capture, _grid_canvas_click, _grid_canvas_motion, _grid_canvas_to_img, _grid_canvas_redraw, _on_thresh_changed, _toggle_scan, _start_live_preview, _live_preview_loop, _toggle_pause, _scan_show_no_signal, _scan_update_display, _execute_all_sequences, _execute_sequence_steps, _setup_hotkeys, _log, _clear_log, _copy_log, _on_close, run, enum_cb, do, do, walk, walk, insert, walk_names, reassign_ids, walk, on_key, run, run_seq, timeout
+   Imports: ctypes, ctypes.wintypes, cv2, from PIL, from collections, from copy, from datetime, from tkinter, glob, json, keyboard, numpy, os, psutil, shutil, subprocess, sys, threading, time, tkinter, traceback, win32api, win32con, win32gui, win32process, win32ui
+   Debut: # -*- coding: utf-8 -*-
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 app.py
+   Taille: 38,530 octets | Modifie: 2026-03-14 08:06
+   Lignes: 617
+   Syntaxe: OK
+   Fonctions: load_json, calc_dmg, get_mults, sim_rotation, res_pct, build_sidebar_html, main_page, sl, rpct
+   Imports: from collections, from datetime, from nicegui, from pathlib, json, logging, os, re, sys
+   Chemins en dur (2):
+     L19: PROJECT_ROOT = Path(r'H:\Code\Ankama Dev\wakfu-optimizer')
+     L533: lp = Path(r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log')
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 config.py
+   Taille: 1,942 octets | Modifie: 2026-03-13 10:23
+   Lignes: 74
+   Syntaxe: OK
+   Imports: os
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\classes\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\classes\base_class.py
+   Taille: 2,286 octets | Modifie: 2026-03-13 09:06
+   Lignes: 71
+   Syntaxe: OK
+   Classes: BaseClass
+   Fonctions: get_spell, get_passive, get_all_spells_flat, list_spell_names, list_passive_names
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\classes\common.py
+   Taille: 4,675 octets | Modifie: 2026-03-13 09:20
+   Lignes: 132
+   Syntaxe: OK
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\classes\sram.py
+   Taille: 42,621 octets | Modifie: 2026-03-13 09:31
+   Lignes: 1025
+   Syntaxe: OK
+   Classes: Sram
+   Imports: from data.classes.base_class
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\items\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\monsters\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\profiles\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\profiles\limmortel.py
+   Taille: 1,327 octets | Modifie: 2026-03-13 08:58
+   Lignes: 67
+   Syntaxe: OK
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 data\stats\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\combat.py
+   Taille: 22,947 octets | Modifie: 2026-03-13 10:50
+   Lignes: 592
+   Syntaxe: OK
+   Classes: Combat
+   Fonctions: __init__, _compute_turn_order, _sram_start_of_combat, _is_velocity_round, _get_velocity_available, _choose_velocity_bonus, _apply_velocity_bonus, run, _play_turn, _apply_start_of_turn_effects, _apply_end_of_turn_effects, _execute_action, _check_win_condition, _log_event, get_alive_fighters, get_enemies, get_allies, get_combat_summary, kill_action
+   Imports: config, copy, from data.profiles.limmortel, from engine.damage, from engine.fighter, from engine.grid, from utils.logger, os, random, sys, time
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\damage.py
+   Taille: 23,186 octets | Modifie: 2026-03-13 10:19
+   Lignes: 654
+   Syntaxe: OK
+   Fonctions: profile_to_stats, flat_res_to_percent, percent_res_to_flat, compute_effective_resistance, compute_total_mastery, compute_total_di, calculate_damage, calculate_heal, calculate_armor, compute_ehp, compute_em, compute_hp
+   Imports: config, from data.profiles.limmortel, from utils.logger, math, os, sys
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\double.py
+   Taille: 40,581 octets | Modifie: 2026-03-13 11:10
+   Lignes: 1086
+   Syntaxe: OK
+   Classes: SramDouble, DoubleManager, MockFighter
+   Fonctions: __init__, reset_turn, can_cast_spell, cast_spell, take_damage, get_summary, __init__, double_on_field, can_summon, can_take_control, summon_double, take_control, on_double_destroyed, on_sram_turn_start, on_sram_turn_end, on_sram_damaged, is_target_isolated_or_adjacent_to_double, get_summary, __init__
+   Imports: from utils.logger, logging, math, os, sys
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\effect_bridge.py
+   Taille: 40,526 octets | Modifie: 2026-03-14 00:22
+   Lignes: 1017
+   Syntaxe: OK
+   Classes: SpellExecutor
+   Fonctions: _load_json, get_effects_index, get_spells_index, get_breeds, get_states_index, get_state, get_breed_spell_ids, fp, _resolve_element, _get_target_res, register_action, _do_damage, action_hp_loss, action_hp_loss_indirect, action_hp_loss_earth, action_hp_loss_fire, action_hp_loss_water, action_hp_loss_air, action_hp_loss_stasis, action_hp_loss_level_based, action_heal, _do_steal, action_hp_steal, action_hp_steal_fire, action_hp_steal_water, action_hp_steal_earth, action_hp_steal_air, action_add_ap, action_add_mp, action_add_wp, action_remove_ap, action_remove_mp, action_remove_wp, _apply_state, action_set_state, action_apply_state, action_apply_state_level, action_remove_state, action_remove_state_level, action_modify_state_level, _stat_mod, action_add_mastery_all, action_remove_mastery, action_add_resist, action_add_mastery_fire, action_add_mastery_earth, action_add_mastery_water, action_add_mastery_air, action_add_resist_fire, action_add_resist_earth, action_add_resist_water, action_add_resist_air, action_add_di, action_add_heal_perf, action_add_dodge, action_add_lock, action_remove_dodge, action_remove_lock, action_add_crit_mastery, action_add_crit, action_add_init, action_add_willpower, action_add_block, action_add_mastery_melee, action_add_mastery_dist, action_add_mastery_rear, action_add_mastery_heal, action_add_mastery_berserk, action_add_mastery_crit, action_add_resist_crit, action_modify_char, action_push, action_pull, action_teleport, action_add_range, action_remove_range, action_add_armor, action_trigger, action_effect_on_target, action_effect_on_caster, action_custom, action_summon, action_set_hp_pct, action_dynamic, action_sram_double, action_sram_trap, action_special, action_sublimation, action_area, action_swap_position, action_conditional_effect, action_trap_activate, action_add_ap_gain, action_add_hp, action_add_control, action_effect_on_state, action_steal_stat, action_damage_reflect, action_swap_position, action_conditional_effect, action_trap_activate, action_add_ap_gain, action_add_hp, action_add_control, action_effect_on_state, action_steal_stat, action_damage_reflect, decorator, __init__, _ensure_loaded, get_spell, get_effect, get_spell_effects, cast, describe_spell, resolve_state, describe_state
+   Imports: from collections, from engine.damage, json, logging, math, os
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\equipment.py
+   Taille: 18,583 octets | Modifie: 2026-03-14 00:52
+   Lignes: 427
+   Syntaxe: OK
+   Classes: EquipmentManager, ItemRecommender
+   Fonctions: __init__, get_slot_for_item, can_equip, equip, calculate_stats, get_fighter_profile, summary, __init__, score_item, recommend, recommend_full_build
+   Imports: copy, from collections, json, logging, os, sys
+   Chemins en dur (1):
+     L14: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\fighter.py
+   Taille: 24,938 octets | Modifie: 2026-03-13 10:30
+   Lignes: 697
+   Syntaxe: OK
+   Classes: StateManager, Fighter
+   Fonctions: get_relative_position, __init__, add_state, remove_state, has_state, get_level, get_duration, tick_end_of_turn, list_states, clear, __init__, _init_from_profile, _init_from_monster, _init_default, place, move, turn_to_face, distance_to, is_adjacent, get_orientation_from, spend_ap, spend_mp, spend_wp, gain_ap, gain_mp, gain_wp, start_of_turn, end_of_turn, take_damage, heal, gain_armor, add_weak_point, consume_weak_point, can_use_spell, register_spell_use, get_effective_will, is_berserk, is_isolated, resurrect, summary, __repr__
+   Imports: config, copy, from data.profiles.limmortel, from engine.damage, from utils.logger, os, sys
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\grid.py
+   Taille: 18,551 octets | Modifie: 2026-03-13 10:42
+   Lignes: 539
+   Syntaxe: OK
+   Classes: Cell, Grid
+   Fonctions: __init__, is_walkable, is_teleportable, blocks_los, __repr__, __init__, get_cell, is_valid, is_walkable, is_teleportable, set_cell_type, add_cell, remove_cell, place_fighter, move_fighter, remove_fighter, get_fighter_position, swap_fighters, manhattan_distance, get_neighbors, get_adjacent_fighters, get_cells_in_range, has_line_of_sight, _bresenham, get_path, get_reachable_cells, place_trap, remove_trap, get_traps_at, render
+   Imports: from collections, from data.profiles.limmortel, from engine.fighter, from utils.logger, math, os, sys
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\invisibility.py
+   Taille: 33,463 octets | Modifie: 2026-03-13 11:04
+   Lignes: 848
+   Syntaxe: OK
+   Classes: InvisibilityManager, MockFighter
+   Fonctions: compute_invisibility_value, __init__, is_invisible, is_apparent, can_cast_invisibility, has_shadow_master, cast_invisibility, on_spell_cast, on_damage_received, on_turn_start, on_turn_end, get_combat_modifiers, get_optimal_rotation_advice, get_summary, __init__
+   Imports: from utils.logger, logging, os, sys
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 engine\orientation.py
+   Taille: 40,642 octets | Modifie: 2026-03-13 10:59
+   Lignes: 1092
+   Syntaxe: OK
+   Classes: MockFighter, MockFighter2
+   Fonctions: get_direction_vector, facing_to_vector, determine_orientation, get_orientation_multiplier, compute_combined_lock, compute_orientation_factor, compute_dodge_losses, manhattan_distance, is_in_range, is_melee, turn_to_face, auto_orient_on_cast, get_back_position, get_side_positions, compute_removal, can_be_displaced, apply_stabilized, __init__, __init__
+   Imports: config, from utils.logger, logging, math, os, sys
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 interface\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 optimizer\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:01
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\analyse_effects.py
+   Taille: 3,577 octets | Modifie: 2026-03-14 07:35
+   Lignes: 114
+   Syntaxe: OK
+   Fonctions: load_json
+   Imports: json, os, sys
+   Chemins en dur (2):
+     L2: sys.path.insert(0, r'H:\Code\Ankama Dev\wakfu-optimizer')
+     L4: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\analyse_effects2.py
+   Taille: 4,256 octets | Modifie: 2026-03-14 07:36
+   Lignes: 126
+   Syntaxe: OK
+   Imports: from collections, json, os, struct
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os, struct
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\analyze_spells.py
+   Taille: 1,643 octets | Modifie: 2026-03-13 21:24
+   Lignes: 51
+   Syntaxe: OK
+   Imports: from collections, json, os
+   Chemins en dur (1):
+     L7: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\all_spells.json"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\audit.py
+   Taille: 7,914 octets | Modifie: 2026-03-14 08:18
+   Lignes: 209
+   Syntaxe: OK
+   Imports: ast, from datetime, from pathlib, json, os, sys
+   Chemins en dur (1):
+     L9: ROOT = Path(r'H:\Code\Ankama Dev\wakfu-optimizer')
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\audit_bridge_for_states.py
+   Taille: 6,096 octets | Modifie: 2026-03-14 00:08
+   Lignes: 177
+   Syntaxe: OK
+   Imports: json, os, re
+   Chemins en dur (3):
+     L10: BRIDGE_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\effect_bridge.py"
+     L11: FIGHTER_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\fighter.py"
+     L12: STATES_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\all_states.json"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\audit_engine_for_bridge.py
+   Taille: 5,797 octets | Modifie: 2026-03-13 23:35
+   Lignes: 171
+   Syntaxe: OK
+   Fonctions: analyze_file
+   Imports: os, re
+   Chemins en dur (3):
+     L12: ENGINE = r"H:\Code\Ankama Dev\wakfu-optimizer\engine"
+     L13: CLASSES = r"H:\Code\Ankama Dev\wakfu-optimizer\data\classes"
+     L14: PROFILES = r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\audit_v2.py
+   Taille: 14,077 octets | Modifie: 2026-03-14 08:22
+   Lignes: 351
+   Syntaxe: OK
+   Fonctions: write_report
+   Imports: ast, from collections, from datetime, from pathlib, json, os, sys
+   Chemins en dur (2):
+     L9: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+     L137: if any(p in line.lower() for p in ["c:\\users", "h:\\code", "c:/users", "h:/code"]):
+   Debut: import os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\auto_log.py
+   Taille: 835 octets | Modifie: 2026-03-13 09:01
+   Lignes: 34
+   Syntaxe: OK
+   Fonctions: auto_log
+   Imports: from utils.changelog, os, sys
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diag_fails.py
+   Taille: 18,988 octets | Modifie: 2026-03-13 12:28
+   Lignes: 540
+   Syntaxe: OK
+   Classes: WS
+   Fonctions: inspect_i18n, check_spell_stats, inspect_breeds, search_aptitudes, main, __init__, _i8, _calc, set_pos, set_hoo, remaining, ri, rl, rs, rb, rf, rstr, ria, rall
+   Imports: from datetime, json, logging, os, struct, zipfile
+   Chemins en dur (2):
+     L21: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L22: LOG_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\logs"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diagnostic.py
+   Taille: 23,241 octets | Modifie: 2026-03-13 12:10
+   Lignes: 618
+   Syntaxe: OK
+   Classes: RawStream, XorStream
+   Fonctions: parse_header, diagnose_file, decode_breed_fields, decode_spell_fields, main, __init__, pos, seek, remaining, read_raw, read_i32, read_i64, read_i16, read_i8, read_u8, read_f32, read_all_from_here, __init__, _i8, _i16, _i32, _i64, pos, seek, remaining, _calc_hoo, read_raw, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_byte_array, read_short_array, read_long_array, read_field, read_field, clean_for_json
+   Imports: from datetime, from io, from pathlib, glob, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L22: OUTPUT_DIR = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted")
+     L23: LOG_DIR    = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\logs")
+   Debut: # ============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diagnostic_v2.py
+   Taille: 21,410 octets | Modifie: 2026-03-13 12:12
+   Lignes: 559
+   Syntaxe: OK
+   Classes: XorStream
+   Fonctions: parse_header, try_read_breed, try_read_spell, is_valid_breed, is_valid_spell, main, __init__, _i8, _i16, _i32, _i64, pos, seek, remaining, _calc_hoo, read_raw, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_byte_array, read_short_array, read_long_array, read_string_array
+   Imports: from datetime, from io, from pathlib, glob, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L21: OUTPUT_DIR = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted")
+     L22: LOG_DIR    = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\logs")
+   Debut: # ============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diagnostic_v3.py
+   Taille: 21,386 octets | Modifie: 2026-03-13 12:15
+   Lignes: 545
+   Syntaxe: OK
+   Classes: XorStream
+   Fonctions: parse_header, analyze_spells_deeply, analyze_breeds_extras, main, __init__, _i8, _i16, _i32, _i64, pos, seek, save_state, restore_state, _calc_hoo, read_raw, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_byte_array, read_short_array, read_long_array, rf
+   Imports: from datetime, from io, from pathlib, glob, json, logging, math, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L22: OUTPUT_DIR = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted")
+     L23: LOG_DIR    = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\logs")
+   Debut: # ============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diagnostic_v4.py
+   Taille: 31,318 octets | Modifie: 2026-03-13 12:45
+   Lignes: 869
+   Syntaxe: OK
+   Classes: WakfuStream
+   Fonctions: parse_bdata_file, parse_bdata_file_v2, load_i18n_cdn, load_bin_files, read_breed_row, _read_spell_core, _validate_spell, read_spell_adaptive, read_static_effect_row, read_state_row, read_effect_group_row, process_file, main, __init__, _i8, _calc, set_position, set_hoo, remaining, save_state, restore_state, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_short_array, read_long_array, read_byte_array, read_string_array, read_all_from_current_pos, save, check
+   Imports: from datetime, json, logging, os, struct, urllib.request, zipfile
+   Chemins en dur (2):
+     L25: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L26: LOG_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\logs"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_diagnostic_v5.py
+   Taille: 18,919 octets | Modifie: 2026-03-13 13:27
+   Lignes: 545
+   Syntaxe: OK
+   Classes: RowReader, HeaderReader
+   Fonctions: get_data_buffer, read_breed, read_spell, read_effect_group, load_jars, process_file, get_version, cdn_fetch, main, __init__, _ch, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_byte_array, __init__, _ch, read_int, read_long, read_byte, parse_rows, save
+   Imports: from ctypes, from datetime, json, logging, os, struct, urllib.request, zipfile
+   Chemins en dur (2):
+     L23: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L24: LOG_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\logs"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_reader.py
+   Taille: 38,045 octets | Modifie: 2026-03-13 12:06
+   Lignes: 933
+   Syntaxe: OK
+   Classes: WakfuBinaryStream, BDataFile
+   Fonctions: read_spell, read_static_effect, read_state, read_aptitude, read_avatar_breed, load_i18n, find_bin_in_jars, read_bin_file, main, __init__, _to_int8, _to_int32, _to_int16, _to_int64, position, seek, _calc_hoo, read_int, read_short, read_byte, read_bool, read_long, read_float, read_string, read_int_array, read_float_array, read_byte_array, read_short_array, read_long_array, read_string_array, remaining, __init__, _read_header, get_row_reader, test
+   Imports: from datetime, from io, from pathlib, glob, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L26: OUTPUT_DIR = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted")
+     L27: LOG_DIR    = Path(r"H:\Code\Ankama Dev\wakfu-optimizer\logs")
+   Debut: # ============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_reader_final.py
+   Taille: 12,230 octets | Modifie: 2026-03-13 15:22
+   Lignes: 375
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_aOz, read_aOA, read_aOy, read_spell, parse_file, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rsa, rstra, rest, get_size
+   Imports: from datetime, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L18: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L19: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\bdata_final.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_reader_v2.py
+   Taille: 16,990 octets | Modifie: 2026-03-13 14:21
+   Lignes: 461
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: read_header, read_spell_row, read_breed_row, extract_bin_from_jar, parse_file, main, __init__, _to_int8, _to_int16, _to_int32, set_buffer_position, set_hoo, calc_hoo, _read_raw, read_int, read_short, read_byte, read_bool, read_float, read_long, read_string, read_int_array, read_float_array, read_all_from_current_pos, get_size, get_pos, get_hoo
+   Imports: from datetime, from pathlib, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L25: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L26: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\bdata_reader_v2.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bdata_reader_v3.py
+   Taille: 15,363 octets | Modifie: 2026-03-13 14:49
+   Lignes: 449
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_breed_row, read_spell_row, parse_file, main, __init__, _to_byte, set_position, set_hoo, bGQ, read_int, read_short, read_byte, read_bool, read_float, read_double, read_long, read_string, read_int_array, read_float_array, read_short_array, read_string_array, read_long_array, read_byte_array, read_all_from_current_pos, get_size, get_pos
+   Imports: from datetime, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L49: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L50: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\bdata_reader_v3.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\bootstrap.py
+   Taille: 21,979 octets | Modifie: 2026-03-14 08:18
+   Lignes: 402
+   Syntaxe: OK
+   Imports: from pathlib, json, os
+   Chemins en dur (2):
+     L8: ROOT = Path(r'H:\Code\Ankama Dev\wakfu-optimizer')
+     L33: DATA_DIR = Path(r'H:\Code\Ankama Dev\wakfu-optimizer\data\extracted')
+   Debut: # =============================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\build_equipment_system.py
+   Taille: 28,045 octets | Modifie: 2026-03-14 00:49
+   Lignes: 694
+   Syntaxe: OK
+   Classes: EquipmentManager, ItemRecommender
+   Fonctions: __init__, get_slot_for_item, can_equip, equip, unequip, calculate_stats, get_fighter_profile, summary, __init__, score_item, recommend, recommend_full_build
+   Imports: copy, from collections, from datetime, json, logging, os, sys
+   Chemins en dur (1):
+     L27: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\calibrate.py
+   Taille: 6,130 octets | Modifie: 2026-03-14 07:37
+   Lignes: 153
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\calibrate_v2.py
+   Taille: 6,915 octets | Modifie: 2026-03-14 07:40
+   Lignes: 183
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\calibration.py
+   Taille: 5,019 octets | Modifie: 2026-03-14 07:33
+   Lignes: 119
+   Syntaxe: OK
+   Imports: json, os, sys
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\check_effects.py
+   Taille: 2,361 octets | Modifie: 2026-03-14 07:35
+   Lignes: 64
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\check_effects_data.py
+   Taille: 4,429 octets | Modifie: 2026-03-13 22:16
+   Lignes: 118
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (3):
+     L7: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L8: RAW = r"H:\Code\Ankama Dev\wakfu-optimizer\data\raw"
+     L9: PARSED = r"H:\Code\Ankama Dev\wakfu-optimizer\data\parsed"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\check_fix.py
+   Taille: 853 octets | Modifie: 2026-03-14 01:51
+   Lignes: 25
+   Syntaxe: OK
+   Chemins en dur (1):
+     L1: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+   Debut: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\combat_validator.py
+   Taille: 9,632 octets | Modifie: 2026-03-14 02:18
+   Lignes: 268
+   Syntaxe: OK
+   Classes: CombatSession
+   Fonctions: load_json, simulate_spell, tail_log, __init__, on_cast, on_damage, on_buff, on_end
+   Imports: from collections, from datetime, from engine.effect_bridge, from engine.fighter, json, logging, os, re, sys, time
+   Chemins en dur (2):
+     L5: LOG_PATH = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+     L6: PROJECT_ROOT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import re, time, os, sys, json, logging
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\compare_parsers.py
+   Taille: 1,475 octets | Modifie: 2026-03-13 15:15
+   Lignes: 41
+   Syntaxe: OK
+   Imports: os, struct, sys, zipfile
+   Chemins en dur (3):
+     L10: final_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\bdata_reader_final.py"
+     L26: scripts_dir = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L34: root = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\data_sync.py
+   Taille: 38,617 octets | Modifie: 2026-03-13 11:30
+   Lignes: 972
+   Syntaxe: OK
+   Classes: VersionChecker, CDNDownloader, ActionParser, StateParser, EquipmentTypeParser, ItemParser, SyncWriter, DataSyncPipeline, ItemSearcher
+   Fonctions: sha256_file, sha256_bytes, ensure_dir, http_get_json, http_get_raw, run_tests, get_remote_version, get_local_version, save_local_version, needs_update, __init__, _download_one, download_all, __init__, parse, __init__, parse, __init__, parse, __init__, _resolve_effect, parse, _rarity_name, __init__, write_json, write_manifest, validate, __init__, run, __init__, search_by_name, search_by_level_range, search_by_position, search_by_rarity, search_by_effect, get_best_for_slot
+   Imports: from concurrent.futures, from datetime, from pathlib, from utils.logger, hashlib, json, logging, os, shutil, sys, tempfile, time, urllib.error, urllib.request
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_breed_raw.py
+   Taille: 5,289 octets | Modifie: 2026-03-13 21:52
+   Lignes: 168
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rsa, rstra, rest, get_size
+   Imports: os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_breed_row0.py
+   Taille: 6,733 octets | Modifie: 2026-03-13 21:39
+   Lignes: 197
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, tracked_read, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rd, rl, rstr, ria, rsa, rstra, rest, get_size
+   Imports: os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_effect_absolute.py
+   Taille: 6,183 octets | Modifie: 2026-03-13 22:50
+   Lignes: 194
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rest, get_size
+   Imports: os, struct, zipfile
+   Chemins en dur (1):
+     L175: final_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\bdata_reader_final.py"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_file68_header.py
+   Taille: 3,673 octets | Modifie: 2026-03-13 22:39
+   Lignes: 135
+   Syntaxe: OK
+   Fonctions: to_byte, calc_ri_A, calc_rb_A, calc_ri_B, calc_rb_B
+   Imports: os, struct, sys, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_file68_raw.py
+   Taille: 4,895 octets | Modifie: 2026-03-13 22:41
+   Lignes: 125
+   Syntaxe: OK
+   Fonctions: to_byte
+   Imports: os, struct, zipfile
+   Chemins en dur (2):
+     L100: final_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\bdata_reader_final.py"
+     L114: scan_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\parse_effects_states.py"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header.py
+   Taille: 4,306 octets | Modifie: 2026-03-13 13:09
+   Lignes: 161
+   Syntaxe: OK
+   Fonctions: calc_hoo, read_int, read_long, read_byte, read_string, read_float, read_int_array, read_byte_array, read_float_array
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header2.py
+   Taille: 9,959 octets | Modifie: 2026-03-13 13:12
+   Lignes: 289
+   Syntaxe: OK
+   Fonctions: calc_hoo, read_int, read_long, read_byte, read_string, read_float, read_int_array, read_byte_array, read_float_array
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header3.py
+   Taille: 7,126 octets | Modifie: 2026-03-13 13:14
+   Lignes: 230
+   Syntaxe: OK
+   Fonctions: calc_hoo, read_int, read_long, read_byte, read_string, read_float, read_int_array, read_byte_array, read_float_array, calc_hoo_relative, static_read_int, static_read_string
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header4.py
+   Taille: 9,005 octets | Modifie: 2026-03-13 13:16
+   Lignes: 239
+   Syntaxe: OK
+   Fonctions: calc_hoo_local, read_int_local, read_string_local, read_float_local, read_byte_local, read_int_array_local, read_byte_array_local, read_float_array_local
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header5.py
+   Taille: 4,160 octets | Modifie: 2026-03-13 13:18
+   Lignes: 143
+   Syntaxe: OK
+   Fonctions: calc_hoo, read_int, read_long, read_byte, make_reader, ch, ri, rf, rb, rs, ria, rba, rfa
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_header_only.py
+   Taille: 3,840 octets | Modifie: 2026-03-13 15:14
+   Lignes: 118
+   Syntaxe: OK
+   Fonctions: to_byte, calc_hoo_and_read_int, calc_hoo_and_read_byte
+   Imports: os, struct, zipfile
+   Chemins en dur (1):
+     L102: final_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\bdata_reader_final.py"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_hoo_minimal.py
+   Taille: 4,154 octets | Modifie: 2026-03-13 14:22
+   Lignes: 115
+   Syntaxe: OK
+   Fonctions: extract_bin, to_int8
+   Imports: os, struct, zipfile
+   Debut: import struct, os, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_hoo_v2.py
+   Taille: 6,210 octets | Modifie: 2026-03-13 14:25
+   Lignes: 220
+   Syntaxe: OK
+   Fonctions: extract_bin, to_int8, to_int16, to_int32, calc_hoo, read_int, read_long, read_short, read_byte, read_float, read_string, read_int_array
+   Imports: os, struct, zipfile
+   Debut: import struct, os, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_hoo_v3.py
+   Taille: 5,244 octets | Modifie: 2026-03-13 14:27
+   Lignes: 175
+   Syntaxe: OK
+   Fonctions: extract_bin, ri, rl, rs, rb, rf, rstr, ria
+   Imports: os, struct, zipfile
+   Debut: import struct, os, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_one_effect.py
+   Taille: 9,596 octets | Modifie: 2026-03-13 22:49
+   Lignes: 314
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, traced_ri, traced_rs, traced_rb, traced_rbool, traced_rf, traced_ria, traced_rla, traced_rfa, traced_rstr, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rest, get_size
+   Imports: os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_anchor.py
+   Taille: 11,697 octets | Modifie: 2026-03-13 14:11
+   Lignes: 306
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, __init__, sp, sh, ch, ri, rs, rb, rf, rbl, rl, rstr, ria, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_final.py
+   Taille: 7,374 octets | Modifie: 2026-03-13 13:54
+   Lignes: 186
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, __init__, sp, sh, ch, ri, rs, rb, rbl, rf, rl, rstr, ria, rfa, rba, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_final2.py
+   Taille: 9,239 octets | Modifie: 2026-03-13 13:57
+   Lignes: 238
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, try_parse_spell, __init__, sp, sh, ch, ri, rs, rb, rbl, rf, rl, rstr, ria, rfa, rba, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_final3.py
+   Taille: 9,091 octets | Modifie: 2026-03-13 14:00
+   Lignes: 238
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, read_spell_prefix, try_tail, __init__, clone, sp, sh, ch, ri, rs, rb, rbl, rf, rl, rstr, ria, rfa, rba, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_rawtail.py
+   Taille: 10,985 octets | Modifie: 2026-03-13 14:06
+   Lignes: 274
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, read_prefix, __init__, sp, sh, ch, ri, rs, rb, rf, rbl, rl, rstr, ria, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_reverse.py
+   Taille: 10,570 octets | Modifie: 2026-03-13 14:03
+   Lignes: 299
+   Syntaxe: OK
+   Classes: R, R2
+   Fonctions: parse_hdr, read_prefix, __init__, sp, sh, ch, ri, rs, rb, rf, rbl, rl, rstr, ria, rfa, rba, rest, rstr
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spell_types.py
+   Taille: 9,034 octets | Modifie: 2026-03-13 14:08
+   Lignes: 247
+   Syntaxe: OK
+   Classes: R
+   Fonctions: parse_hdr, read_prefix, try_combo, mass_test, __init__, sp, sh, ch, ri, rs, rb, rf, rbl, rl, rstr, ria, rest
+   Imports: from ctypes, os, struct, zipfile
+   Debut: import struct, zipfile, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells.py
+   Taille: 7,121 octets | Modifie: 2026-03-13 13:19
+   Lignes: 236
+   Syntaxe: OK
+   Fonctions: calc_hoo, hread_int, hread_long, hread_byte, make_reader, ch, ri, rs2, rf, rb, rbool, rstr, ria
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells10.py
+   Taille: 9,508 octets | Modifie: 2026-03-13 13:36
+   Lignes: 240
+   Syntaxe: OK
+   Classes: TracedR
+   Fonctions: ch, hri, hrl, hrb, __init__, _ch, ri, rs, rf, rb, rbool, rstr, ria
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells2.py
+   Taille: 6,549 octets | Modifie: 2026-03-13 13:21
+   Lignes: 178
+   Syntaxe: OK
+   Fonctions: calc_hoo, hri, hrl, hrb, make_reader, ch, ri, rs2, rf, rb, rbool, rstr, ria, log_field
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells3.py
+   Taille: 7,116 octets | Modifie: 2026-03-13 13:22
+   Lignes: 220
+   Syntaxe: OK
+   Fonctions: ch, hri, hrl, hrb, show_hex, ch_r, ri, rs2, rf, rb, rbool
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells4.py
+   Taille: 6,513 octets | Modifie: 2026-03-13 13:24
+   Lignes: 191
+   Syntaxe: OK
+   Fonctions: ch, hri, hrl, hrb, trace_ch, trace_ri, trace_rs2, trace_rf, trace_rb, trace_rbool
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells5.py
+   Taille: 6,573 octets | Modifie: 2026-03-13 13:28
+   Lignes: 197
+   Syntaxe: OK
+   Classes: TracingReader
+   Fonctions: ch, hri, hrl, hrb, __init__, _ch, read_int, read_short, read_float, read_byte, read_bool, read_string, read_int_array
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells6.py
+   Taille: 6,901 octets | Modifie: 2026-03-13 13:30
+   Lignes: 209
+   Syntaxe: OK
+   Classes: TestReader
+   Fonctions: ch, hri, hrl, hrb, __init__, _ch, ri, rs, rf_noxor, rf_xor, rb, rbool, rstr
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells7.py
+   Taille: 7,296 octets | Modifie: 2026-03-13 13:31
+   Lignes: 213
+   Syntaxe: OK
+   Classes: R
+   Fonctions: ch, hri, hrl, hrb, p, __init__, _ch, ri, rs, rf, rb, rbool, rstr, ria
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells8.py
+   Taille: 9,150 octets | Modifie: 2026-03-13 13:33
+   Lignes: 262
+   Syntaxe: OK
+   Classes: R
+   Fonctions: ch, hri, hrl, hrb, trace, __init__, _ch, ri, rs, rf, rb, rbool, rstr, ria
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\debug_spells9.py
+   Taille: 7,268 octets | Modifie: 2026-03-13 13:34
+   Lignes: 201
+   Syntaxe: OK
+   Classes: R
+   Fonctions: ch, hri, hrl, hrb, read_known_good, __init__, _ch, ri, rs, rf, rb, rbool, rstr, ria
+   Imports: from ctypes, struct, zipfile
+   Debut: import struct, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_all_structures.py
+   Taille: 6,061 octets | Modifie: 2026-03-13 15:01
+   Lignes: 139
+   Syntaxe: OK
+   Imports: os, re, subprocess, zipfile
+   Chemins en dur (2):
+     L8: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L11: OUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\all_aqz"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_and_parse_effects.py
+   Taille: 7,100 octets | Modifie: 2026-03-13 22:20
+   Lignes: 164
+   Syntaxe: OK
+   Imports: json, logging, os, re, struct, subprocess, sys, zipfile
+   Chemins en dur (6):
+     L10: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L12: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L13: TMP = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\temp_effects"
+     L14: OUT = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\effects"
+     L15: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_effects.log"
+     ... et 1 autres
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_aqH.py
+   Taille: 6,466 octets | Modifie: 2026-03-13 14:37
+   Lignes: 180
+   Syntaxe: OK
+   Imports: os, subprocess, zipfile
+   Chemins en dur (2):
+     L14: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L15: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_breed_real.py
+   Taille: 1,477 octets | Modifie: 2026-03-13 22:04
+   Lignes: 43
+   Syntaxe: OK
+   Imports: os, subprocess, zipfile
+   Chemins en dur (3):
+     L8: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L9: TMP = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\temp_breed_real"
+     L10: OUT = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\breed_real"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_breed_subs.py
+   Taille: 2,714 octets | Modifie: 2026-03-13 21:30
+   Lignes: 76
+   Syntaxe: OK
+   Imports: os, subprocess, zipfile
+   Chemins en dur (2):
+     L8: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L9: OUT_DIR   = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\breed_submaps"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_breeds_spells.py
+   Taille: 5,476 octets | Modifie: 2026-03-13 14:55
+   Lignes: 152
+   Syntaxe: OK
+   Imports: os, shutil, struct, subprocess, zipfile
+   Chemins en dur (2):
+     L9: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L12: OUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\structures"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_client.py
+   Taille: 12,208 octets | Modifie: 2026-03-13 14:34
+   Lignes: 343
+   Syntaxe: OK
+   Imports: os, shutil, struct, subprocess, sys, urllib.request, zipfile
+   Chemins en dur (2):
+     L19: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L20: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_hoo_classes.py
+   Taille: 6,381 octets | Modifie: 2026-03-13 14:35
+   Lignes: 186
+   Syntaxe: OK
+   Fonctions: priority
+   Imports: os, struct, subprocess, zipfile
+   Chemins en dur (2):
+     L14: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L15: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_item_reader.py
+   Taille: 4,403 octets | Modifie: 2026-03-14 00:30
+   Lignes: 145
+   Syntaxe: OK
+   Fonctions: decompile
+   Imports: os, re, subprocess, sys, zipfile
+   Chemins en dur (2):
+     L12: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L14: ITEMS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\items"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_parent.py
+   Taille: 8,538 octets | Modifie: 2026-03-13 14:47
+   Lignes: 205
+   Syntaxe: OK
+   Fonctions: resolve_class
+   Imports: os, shutil, struct, subprocess, zipfile
+   Chemins en dur (2):
+     L14: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L15: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\decompile_submaps.py
+   Taille: 3,183 octets | Modifie: 2026-03-13 15:20
+   Lignes: 92
+   Syntaxe: OK
+   Imports: os, shutil, subprocess, sys, zipfile
+   Chemins en dur (2):
+     L10: TOOLS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools"
+     L11: OUT_DIR   = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\spell_submaps"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_build_output.py
+   Taille: 3,249 octets | Modifie: 2026-03-14 01:14
+   Lignes: 96
+   Syntaxe: OK
+   Imports: from equipment, from pathlib, inspect, json, sys
+   Chemins en dur (1):
+     L16: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_spell_names.py
+   Taille: 2,041 octets | Modifie: 2026-03-14 01:59
+   Lignes: 62
+   Syntaxe: OK
+   Imports: json, os, sys
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_spells.py
+   Taille: 1,114 octets | Modifie: 2026-03-14 01:47
+   Lignes: 32
+   Syntaxe: OK
+   Imports: json, sys
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_spells2.py
+   Taille: 1,737 octets | Modifie: 2026-03-14 01:47
+   Lignes: 48
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, json, os, sys
+   Debut: import json, sys, os
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_spells3.py
+   Taille: 2,092 octets | Modifie: 2026-03-14 01:48
+   Lignes: 65
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, from engine.fighter, json, sys
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_spells4.py
+   Taille: 3,039 octets | Modifie: 2026-03-14 01:49
+   Lignes: 92
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, from engine.fighter, json, sys
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diag_stats_bridge.py
+   Taille: 3,615 octets | Modifie: 2026-03-14 01:18
+   Lignes: 104
+   Syntaxe: OK
+   Imports: damage, from effect_bridge, from equipment, from pathlib, inspect, json, sys
+   Chemins en dur (1):
+     L18: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnose_effects.py
+   Taille: 8,874 octets | Modifie: 2026-03-13 22:46
+   Lignes: 276
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, try_read_fields, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rsa, rest, get_size
+   Imports: from collections, json, os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnose_errors.py
+   Taille: 12,327 octets | Modifie: 2026-03-13 15:12
+   Lignes: 368
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: read_header, read_spell_detailed, main, __init__, set_row, position, remaining, calc_hoo, read_int, read_short, read_float, read_bool, read_byte, read_string, read_int_array, read_float_array, read_short_array, track
+   Imports: json, logging, os, struct, zipfile
+   Chemins en dur (2):
+     L10: LOG_FILE  = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\diagnose_errors.log"
+     L11: OUTPUT    = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_rows.json"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnose_errors_v2.py
+   Taille: 13,052 octets | Modifie: 2026-03-13 15:13
+   Lignes: 403
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: read_bdata, read_spell, main, __init__, set_row, position, calc_hoo, _to_byte, _check, read_int, read_short, read_float, read_bool, read_byte, read_string, read_int_array, read_float_array, read_short_array, track
+   Imports: json, logging, os, struct, zipfile
+   Chemins en dur (2):
+     L9: LOG_FILE  = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\diagnose_v2.log"
+     L10: OUTPUT    = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_v2.json"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnose_v3.py
+   Taille: 9,898 octets | Modifie: 2026-03-13 15:17
+   Lignes: 311
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_spell_tracked, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rsa, rstra, rest, get_size, t
+   Imports: json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L8: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L9: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\diagnose_v3.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnostic_deep.py
+   Taille: 17,366 octets | Modifie: 2026-03-14 01:01
+   Lignes: 407
+   Syntaxe: OK
+   Fonctions: section, inspect_json_structure, inspect_fighter_class, inspect_spell_executor, inspect_spells_data, inspect_static_effects, inspect_effect_bridge, main
+   Imports: effect_bridge, from datetime, from fighter, from pathlib, inspect, json, logging, os, sys
+   Chemins en dur (1):
+     L24: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\diagnostic_fighter_cast.py
+   Taille: 13,210 octets | Modifie: 2026-03-14 01:07
+   Lignes: 364
+   Syntaxe: OK
+   Fonctions: section
+   Imports: damage, fighter, from datetime, from effect_bridge, from equipment, from fighter, from pathlib, inspect, json, logging, sys, traceback
+   Chemins en dur (1):
+     L25: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\download_and_parse_items.py
+   Taille: 13,166 octets | Modifie: 2026-03-14 00:36
+   Lignes: 349
+   Syntaxe: OK
+   Fonctions: get_version, download_json, build_action_map, parse_equip_effect, parse_items
+   Imports: from datetime, json, logging, os, sys, time, urllib.request
+   Chemins en dur (1):
+     L14: PROJECT    = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\engine_deep_audit.py
+   Taille: 2,254 octets | Modifie: 2026-03-13 22:15
+   Lignes: 66
+   Syntaxe: OK
+   Imports: os
+   Chemins en dur (1):
+     L7: ROOT = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\engine_status.py
+   Taille: 3,861 octets | Modifie: 2026-03-13 22:14
+   Lignes: 116
+   Syntaxe: OK
+   Fonctions: analyze_py
+   Imports: ast, os
+   Chemins en dur (3):
+     L7: ENGINE = r"H:\Code\Ankama Dev\wakfu-optimizer\engine"
+     L8: DATA_CLASSES = r"H:\Code\Ankama Dev\wakfu-optimizer\data\classes"
+     L9: DATA_PROFILES = r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_and_decompile_effects.py
+   Taille: 2,796 octets | Modifie: 2026-03-13 22:21
+   Lignes: 75
+   Syntaxe: OK
+   Imports: os, subprocess, zipfile
+   Chemins en dur (3):
+     L10: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L11: TMP = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\temp_effects2"
+     L12: OUT = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\effects"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_breed_class.py
+   Taille: 4,723 octets | Modifie: 2026-03-13 21:59
+   Lignes: 111
+   Syntaxe: OK
+   Imports: os, subprocess, zipfile
+   Chemins en dur (2):
+     L10: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+     L12: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_breed_spell.py
+   Taille: 3,897 octets | Modifie: 2026-03-13 14:56
+   Lignes: 94
+   Syntaxe: OK
+   Imports: os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_client_jars.py
+   Taille: 5,568 octets | Modifie: 2026-03-13 14:28
+   Lignes: 160
+   Syntaxe: OK
+   Imports: os, re, zipfile
+   Chemins en dur (1):
+     L144: cfr_path = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_fast.py
+   Taille: 2,881 octets | Modifie: 2026-03-13 15:03
+   Lignes: 75
+   Syntaxe: OK
+   Imports: os, re, subprocess, zipfile
+   Chemins en dur (2):
+     L5: CFR_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L6: OUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\key_classes"
+   Debut: import zipfile, re, os, subprocess
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_items_jar.py
+   Taille: 9,983 octets | Modifie: 2026-03-14 00:25
+   Lignes: 283
+   Syntaxe: OK
+   Imports: json, os, re, struct, sys, zipfile
+   Chemins en dur (2):
+     L17: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L18: DECOMPILED_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_missing_groups.py
+   Taille: 6,273 octets | Modifie: 2026-03-13 23:30
+   Lignes: 195
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: read_header_ids, __init__, _b, _hoo, ri, rb, rl, rstr, ria
+   Imports: from collections, json, os, struct, zipfile
+   Chemins en dur (1):
+     L12: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_ozX_class.py
+   Taille: 768 octets | Modifie: 2026-03-13 22:02
+   Lignes: 25
+   Syntaxe: OK
+   Imports: zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_real_effect_class.py
+   Taille: 4,824 octets | Modifie: 2026-03-13 22:27
+   Lignes: 123
+   Syntaxe: OK
+   Imports: os, subprocess, tempfile, zipfile
+   Chemins en dur (2):
+     L13: CFR_JAR   = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L14: OUT_DIR   = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\effects_real"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_state_classes.py
+   Taille: 9,836 octets | Modifie: 2026-03-13 23:54
+   Lignes: 250
+   Syntaxe: OK
+   Imports: from bdata_reader_final, os, re, struct, sys, zipfile
+   Chemins en dur (3):
+     L13: DECOMPILED_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+     L61: pes_path = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\parse_effects_states.py"
+     L136: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer\scripts")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_state_reader.py
+   Taille: 13,884 octets | Modifie: 2026-03-13 23:55
+   Lignes: 403
+   Syntaxe: OK
+   Classes: QuickReader
+   Fonctions: __init__, _hoo, ri, rs, rb, rbool, rl, rf, rstr, ria, set_pos, set_cRa
+   Imports: glob, os, re, struct, sys, traceback, zipfile
+   Chemins en dur (2):
+     L15: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+     L17: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_state_subclass.py
+   Taille: 11,320 octets | Modifie: 2026-03-13 23:58
+   Lignes: 318
+   Syntaxe: OK
+   Imports: os, re, struct, subprocess, sys, zipfile
+   Chemins en dur (3):
+     L12: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L13: STATES_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\states"
+     L14: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_state_v3.py
+   Taille: 10,059 octets | Modifie: 2026-03-13 23:59
+   Lignes: 300
+   Syntaxe: OK
+   Fonctions: decompile
+   Imports: os, re, subprocess, sys, zipfile
+   Chemins en dur (2):
+     L17: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L18: STATES_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\states"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\find_state_v4.py
+   Taille: 12,551 octets | Modifie: 2026-03-14 00:02
+   Lignes: 359
+   Syntaxe: OK
+   Fonctions: decompile
+   Imports: glob, os, re, subprocess, sys, zipfile
+   Chemins en dur (3):
+     L14: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L15: STATES_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\states"
+     L16: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_index.py
+   Taille: 3,877 octets | Modifie: 2026-03-14 01:52
+   Lignes: 81
+   Syntaxe: OK
+   Chemins en dur (1):
+     L1: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+   Debut: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_is_distance.py
+   Taille: 6,961 octets | Modifie: 2026-03-14 00:22
+   Lignes: 184
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, from engine.fighter, from limmortel, os, re, sys, traceback
+   Chemins en dur (4):
+     L8: BRIDGE_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\effect_bridge.py"
+     L11: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+     L12: damage_path = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\damage.py"
+     L75: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_log.py
+   Taille: 1,444 octets | Modifie: 2026-03-14 07:42
+   Lignes: 32
+   Syntaxe: OK
+   Imports: pathlib
+   Chemins en dur (1):
+     L3: app = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\app.py')
+   Debut: import pathlib
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_lvlbased_and_states.py
+   Taille: 18,230 octets | Modifie: 2026-03-14 00:21
+   Lignes: 486
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, from engine.fighter, from limmortel, os, re, sys, traceback
+   Chemins en dur (3):
+     L11: BRIDGE_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\effect_bridge.py"
+     L368: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+     L390: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_names.py
+   Taille: 1,567 octets | Modifie: 2026-03-14 02:03
+   Lignes: 39
+   Syntaxe: OK
+   Chemins en dur (1):
+     L1: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+   Debut: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_slot_mapping.py
+   Taille: 6,907 octets | Modifie: 2026-03-14 00:50
+   Lignes: 196
+   Syntaxe: OK
+   Imports: from collections, json, logging, os
+   Chemins en dur (1):
+     L12: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_spells.py
+   Taille: 6,373 octets | Modifie: 2026-03-14 01:50
+   Lignes: 166
+   Syntaxe: OK
+   Imports: json, sys
+   Chemins en dur (1):
+     L4: path = r'H:\Code\Ankama Dev\wakfu-optimizer\app.py'
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_stats.py
+   Taille: 2,085 octets | Modifie: 2026-03-14 07:41
+   Lignes: 62
+   Syntaxe: OK
+   Imports: json, os, re, sys
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os, sys, re
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\fix_ui.py
+   Taille: 2,007 octets | Modifie: 2026-03-14 07:43
+   Lignes: 56
+   Syntaxe: OK
+   Imports: pathlib
+   Chemins en dur (1):
+     L3: app = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\app.py')
+   Debut: import pathlib
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\gen_spell_names.py
+   Taille: 3,177 octets | Modifie: 2026-03-14 02:02
+   Lignes: 86
+   Syntaxe: OK
+   Imports: json, sys
+   Debut: import json, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\inject_calibration.py
+   Taille: 8,384 octets | Modifie: 2026-03-14 07:39
+   Lignes: 241
+   Syntaxe: OK
+   Imports: json, os, re, sys
+   Chemins en dur (1):
+     L3: PROJECT = r'H:\Code\Ankama Dev\wakfu-optimizer'
+   Debut: import json, os, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\inspect_app.py
+   Taille: 868 octets | Modifie: 2026-03-14 07:44
+   Lignes: 28
+   Syntaxe: OK
+   Imports: pathlib
+   Chemins en dur (1):
+     L3: app = pathlib.Path(r'H:\Code\Ankama Dev\wakfu-optimizer\app.py')
+   Debut: import pathlib
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\inspect_items_structure.py
+   Taille: 8,296 octets | Modifie: 2026-03-14 00:39
+   Lignes: 188
+   Syntaxe: OK
+   Fonctions: find_item_by_approx_level, deep_search
+   Imports: json, logging, os
+   Chemins en dur (1):
+     L10: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_breeds.py
+   Taille: 9,123 octets | Modifie: 2026-03-13 21:34
+   Lignes: 318
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_aNw, read_aNs, read_aNu, read_aNt, read_aNv, read_aNr, read_aNq, read_aNp, read_aNo, read_array, read_breed, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rd, rl, rstr, ria, rsa, rstra, rest, get_size
+   Imports: json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L8: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L9: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_breeds.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_breeds_real.py
+   Taille: 7,163 octets | Modifie: 2026-03-13 22:06
+   Lignes: 244
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_fuI, read_aLh, test_reader, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rba, rfa, rsa, rest, get_size
+   Imports: json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L8: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L9: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_breeds.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_effects_final.py
+   Taille: 11,686 octets | Modifie: 2026-03-13 22:23
+   Lignes: 359
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_effect_group, read_static_effect_fyb, read_static_effect_aOC, parse_file, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rba, rsa, rla, rstra, rest, get_size
+   Imports: from datetime, json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L9: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L10: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_effects_final.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_effects_states.py
+   Taille: 7,369 octets | Modifie: 2026-03-13 22:18
+   Lignes: 217
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rba, rsa, rstra, rest, get_size
+   Imports: json, logging, os, struct, sys, zipfile
+   Chemins en dur (2):
+     L9: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L11: LOG_FILE = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_effects.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_effects_v2.py
+   Taille: 8,811 octets | Modifie: 2026-03-13 23:27
+   Lignes: 276
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_effect, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rest, get_size, sanitize
+   Imports: from datetime, json, logging, os, struct, zipfile
+   Chemins en dur (2):
+     L14: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L15: LOG_FILE   = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_effects_v2.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_kanjedo.py
+   Taille: 4,693 octets | Modifie: 2026-03-14 02:16
+   Lignes: 133
+   Syntaxe: OK
+   Imports: from collections, json, os, re, sys
+   Chemins en dur (1):
+     L4: LOG_PATH = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re, json, os, sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_log.py
+   Taille: 2,220 octets | Modifie: 2026-03-14 02:11
+   Lignes: 56
+   Syntaxe: OK
+   Imports: re
+   Chemins en dur (1):
+     L3: path = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_session.py
+   Taille: 5,254 octets | Modifie: 2026-03-14 02:12
+   Lignes: 126
+   Syntaxe: OK
+   Imports: from collections, json, re
+   Chemins en dur (1):
+     L4: path = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re, json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_states_discovery.py
+   Taille: 12,871 octets | Modifie: 2026-03-13 23:57
+   Lignes: 327
+   Syntaxe: OK
+   Imports: os, re, struct, subprocess, sys, traceback, zipfile
+   Chemins en dur (7):
+     L15: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+     L17: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L159: r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar",
+     L160: r"H:\Code\Ankama Dev\wakfu-optimizer\cfr.jar",
+     L161: r"H:\Code\Ankama Dev\cfr.jar",
+     ... et 2 autres
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_states_final.py
+   Taille: 8,755 octets | Modifie: 2026-03-14 00:07
+   Lignes: 243
+   Syntaxe: OK
+   Fonctions: read_state, jsonify
+   Imports: from datetime, json, logging, os, struct, sys, zipfile
+   Chemins en dur (3):
+     L18: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L19: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L20: LOG_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\logs"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_states_found.py
+   Taille: 9,995 octets | Modifie: 2026-03-14 00:04
+   Lignes: 319
+   Syntaxe: OK
+   Fonctions: decompile, jsonify
+   Imports: json, os, re, struct, subprocess, sys, zipfile
+   Chemins en dur (4):
+     L15: CFR_JAR = r"H:\Code\Ankama Dev\wakfu-optimizer\tools\cfr.jar"
+     L17: STATES_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\states"
+     L18: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L286: out_dir = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_states_v2.py
+   Taille: 9,309 octets | Modifie: 2026-03-14 00:05
+   Lignes: 265
+   Syntaxe: OK
+   Imports: from datetime, json, logging, os, struct, sys, traceback, zipfile
+   Chemins en dur (3):
+     L16: SCRIPTS_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\scripts"
+     L17: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L18: LOG_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\logs"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\parse_static_effects.py
+   Taille: 13,256 octets | Modifie: 2026-03-13 22:53
+   Lignes: 381
+   Syntaxe: OK
+   Classes: BinaryReader
+   Fonctions: extract_bin, read_header, read_effect_aOC, read_effect_fyb, parse_file, main, __init__, _b, set_pos, set_hoo, get_pos, _hoo, ri, rs, rb, rbool, rf, rl, rstr, ria, rfa, rla, rsa, rest, get_size, sanitize
+   Imports: from collections, from datetime, json, logging, os, struct, zipfile
+   Chemins en dur (2):
+     L16: OUTPUT_DIR = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L17: LOG_FILE   = r"H:\Code\Ankama Dev\wakfu-optimizer\logs\parse_static_effects.log"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\project_milestone.py
+   Taille: 5,716 octets | Modifie: 2026-03-13 23:32
+   Lignes: 151
+   Syntaxe: OK
+   Imports: from collections, from datetime, json, os
+   Chemins en dur (2):
+     L10: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+     L123: engine_path = r"H:\Code\Ankama Dev\wakfu-optimizer\engine"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\project_status.py
+   Taille: 4,887 octets | Modifie: 2026-03-13 22:12
+   Lignes: 133
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (1):
+     L7: ROOT = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\rapport_mannequin.py
+   Taille: 5,665 octets | Modifie: 2026-03-14 02:20
+   Lignes: 160
+   Syntaxe: OK
+   Imports: from collections, re
+   Chemins en dur (1):
+     L4: LOG_PATH = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\rapport_mannequin2.py
+   Taille: 5,244 octets | Modifie: 2026-03-14 07:30
+   Lignes: 174
+   Syntaxe: OK
+   Fonctions: get_data
+   Imports: from collections, re
+   Chemins en dur (1):
+     L4: LOG_PATH = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\rapport_mannequin3.py
+   Taille: 4,962 octets | Modifie: 2026-03-14 07:31
+   Lignes: 160
+   Syntaxe: OK
+   Fonctions: normalize, get_data
+   Imports: from collections, re
+   Chemins en dur (1):
+     L4: LOG_PATH = r'C:\Users\Smedj\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log'
+   Debut: import re
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\read_aOx.py
+   Taille: 4,631 octets | Modifie: 2026-03-13 15:19
+   Lignes: 112
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (2):
+     L7: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+     L75: diag_path = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\diagnostic_v3.json"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\read_breeds.py
+   Taille: 2,854 octets | Modifie: 2026-03-13 21:26
+   Lignes: 74
+   Syntaxe: OK
+   Imports: os
+   Chemins en dur (1):
+     L7: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\rebuild_equipment_fixed.py
+   Taille: 22,754 octets | Modifie: 2026-03-14 00:52
+   Lignes: 521
+   Syntaxe: OK
+   Classes: EquipmentManager, ItemRecommender
+   Fonctions: __init__, get_slot_for_item, can_equip, equip, calculate_stats, get_fighter_profile, summary, __init__, score_item, recommend, recommend_full_build
+   Imports: copy, from collections, json, logging, os, sys
+   Chemins en dur (1):
+     L14: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\rebuild_items_fixed.py
+   Taille: 10,210 octets | Modifie: 2026-03-14 00:43
+   Lignes: 271
+   Syntaxe: OK
+   Fonctions: parse_effect
+   Imports: from collections, json, logging, os
+   Chemins en dur (1):
+     L14: PROJECT  = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\show_aNn_method.py
+   Taille: 787 octets | Modifie: 2026-03-13 21:26
+   Lignes: 33
+   Syntaxe: OK
+   Imports: os
+   Chemins en dur (1):
+     L6: fpath = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\key_classes\aNn.java"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\show_both_headers.py
+   Taille: 1,783 octets | Modifie: 2026-03-13 22:42
+   Lignes: 60
+   Syntaxe: OK
+   Imports: os
+   Chemins en dur (2):
+     L8: r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\bdata_reader_final.py",
+     L9: r"H:\Code\Ankama Dev\wakfu-optimizer\scripts\parse_effects_states.py",
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\show_fighter_init.py
+   Taille: 1,596 octets | Modifie: 2026-03-13 23:42
+   Lignes: 46
+   Syntaxe: OK
+   Imports: os
+   Chemins en dur (3):
+     L8: fpath = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\fighter.py"
+     L27: ppath = r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles\limmortel.py"
+     L34: dpath = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\damage.py"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\show_full_aOC.py
+   Taille: 4,365 octets | Modifie: 2026-03-13 22:28
+   Lignes: 141
+   Syntaxe: OK
+   Fonctions: show_method, extract_reads
+   Imports: os
+   Chemins en dur (1):
+     L7: DECOMPILED = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled\effects_real"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\sram_full_trace.py
+   Taille: 5,562 octets | Modifie: 2026-03-13 23:31
+   Lignes: 186
+   Syntaxe: OK
+   Imports: json, os
+   Chemins en dur (1):
+     L8: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_bridge_integration.py
+   Taille: 6,731 octets | Modifie: 2026-03-13 23:39
+   Lignes: 206
+   Syntaxe: OK
+   Imports: from collections, from data.profiles.limmortel, from engine.damage, from engine.effect_bridge, from engine.fighter, logging, os, sys, traceback
+   Chemins en dur (1):
+     L10: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_e2e_states.py
+   Taille: 12,006 octets | Modifie: 2026-03-14 00:16
+   Lignes: 341
+   Syntaxe: OK
+   Imports: from engine.damage, from engine.effect_bridge, from engine.fighter, from limmortel, json, os, sys
+   Chemins en dur (3):
+     L8: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+     L24: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer\data\profiles")
+     L82: spells_path = os.path.join(r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted", "all_spells.json")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_e2e_v2.py
+   Taille: 6,998 octets | Modifie: 2026-03-13 23:48
+   Lignes: 180
+   Syntaxe: OK
+   Fonctions: show_results
+   Imports: from collections, from data.profiles.limmortel, from engine.damage, from engine.effect_bridge, from engine.fighter, logging, os, sys
+   Chemins en dur (2):
+     L5: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+     L172: fpath = os.path.join(r"H:\Code\Ankama Dev\wakfu-optimizer", f)
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_end_to_end.py
+   Taille: 8,093 octets | Modifie: 2026-03-13 23:43
+   Lignes: 230
+   Syntaxe: OK
+   Imports: from data.profiles.limmortel, from engine.damage, from engine.effect_bridge, from engine.fighter, logging, os, sys
+   Chemins en dur (1):
+     L9: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_endian.py
+   Taille: 5,716 octets | Modifie: 2026-03-13 14:51
+   Lignes: 154
+   Syntaxe: OK
+   Fonctions: extract_bin, to_byte, calc_hoo
+   Imports: os, struct, zipfile
+   Chemins en dur (1):
+     L109: decompiled_dir = r"H:\Code\Ankama Dev\wakfu-optimizer\decompiled"
+   Debut: import struct, os, zipfile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_exact_hoo.py
+   Taille: 8,369 octets | Modifie: 2026-03-13 14:54
+   Lignes: 251
+   Syntaxe: OK
+   Fonctions: extract_bin, to_byte, bGQ, bGI, bGK, aTf, bGL, bGM, bGG
+   Imports: os, struct, zipfile
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_full_pipeline.py
+   Taille: 10,903 octets | Modifie: 2026-03-14 00:55
+   Lignes: 248
+   Syntaxe: OK
+   Imports: from engine.effect_bridge, from engine.equipment, from engine.fighter, json, logging, os, sys
+   Chemins en dur (1):
+     L14: PROJECT = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_integral.py
+   Taille: 21,954 octets | Modifie: 2026-03-14 00:58
+   Lignes: 518
+   Syntaxe: OK
+   Imports: engine.effect_bridge, from engine.equipment, from engine.fighter, inspect, json, logging, os, re, sys, traceback
+   Chemins en dur (1):
+     L14: PROJECT = r"H:\Code\Ankama Dev\wakfu-optimizer"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_integral_fixed.py
+   Taille: 23,820 octets | Modifie: 2026-03-14 01:04
+   Lignes: 644
+   Syntaxe: OK
+   Fonctions: test, section
+   Imports: from datetime, from effect_bridge, from equipment, from fighter, from pathlib, json, logging, os, sys, traceback
+   Chemins en dur (1):
+     L29: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_integral_v2.py
+   Taille: 17,495 octets | Modifie: 2026-03-14 01:16
+   Lignes: 442
+   Syntaxe: OK
+   Fonctions: test, section
+   Imports: from collections, from datetime, from effect_bridge, from equipment, from fighter, from pathlib, json, logging, sys
+   Chemins en dur (1):
+     L29: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\test_integral_v3.py
+   Taille: 17,957 octets | Modifie: 2026-03-14 01:20
+   Lignes: 467
+   Syntaxe: OK
+   Fonctions: test, section, run_combat
+   Imports: from collections, from datetime, from effect_bridge, from equipment, from fighter, from pathlib, json, logging, sys
+   Chemins en dur (1):
+     L26: PROJECT_ROOT = Path(r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: ###############################################################################
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\trace_spell_chain.py
+   Taille: 4,805 octets | Modifie: 2026-03-13 23:29
+   Lignes: 121
+   Syntaxe: OK
+   Imports: from collections, json, os
+   Chemins en dur (1):
+     L9: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\upgrade_bridge_states.py
+   Taille: 15,854 octets | Modifie: 2026-03-14 00:10
+   Lignes: 411
+   Syntaxe: OK
+   Classes: MockFighter
+   Fonctions: __init__
+   Imports: from engine.effect_bridge, from engine.fighter, os, re, sys, traceback
+   Chemins en dur (2):
+     L11: BRIDGE_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\effect_bridge.py"
+     L310: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\upgrade_bridge_v2.py
+   Taille: 14,176 octets | Modifie: 2026-03-14 00:11
+   Lignes: 375
+   Syntaxe: OK
+   Classes: MockFighter
+   Fonctions: __init__
+   Imports: from engine.effect_bridge, from engine.fighter, os, sys, traceback
+   Chemins en dur (2):
+     L8: BRIDGE_PATH = r"H:\Code\Ankama Dev\wakfu-optimizer\engine\effect_bridge.py"
+     L275: sys.path.insert(0, r"H:\Code\Ankama Dev\wakfu-optimizer")
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 scripts\verify_effects.py
+   Taille: 5,016 octets | Modifie: 2026-03-13 22:58
+   Lignes: 131
+   Syntaxe: OK
+   Imports: from collections, json, os
+   Chemins en dur (1):
+     L8: DATA = r"H:\Code\Ankama Dev\wakfu-optimizer\data\extracted"
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 tests\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 09:02
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 tests\test_sram_load.py
+   Taille: 805 octets | Modifie: 2026-03-13 09:33
+   Lignes: 24
+   Syntaxe: OK
+   Imports: from data.classes.sram, os, sys
+   Debut: import sys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 utils\__init__.py
+   Taille: 2 octets | Modifie: 2026-03-13 08:58
+   Lignes: 2
+   Syntaxe: OK
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 utils\changelog.py
+   Taille: 4,102 octets | Modifie: 2026-03-13 09:00
+   Lignes: 133
+   Syntaxe: OK
+   Fonctions: _ensure_dirs, _file_hash, _load_json, _save_json, log_modification, scan_changes, print_registry
+   Imports: config, hashlib, json, os, sys, time
+   Debut: """
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 utils\logger.py
+   Taille: 1,034 octets | Modifie: 2026-03-13 08:58
+   Lignes: 37
+   Syntaxe: OK
+   Fonctions: setup_logger
+   Imports: config, logging, os, sys
+   Debut: """

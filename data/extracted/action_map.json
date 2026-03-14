@@ -1,0 +1,357 @@
+{
+  "1": {
+    "effect": "Dommage : Neutre",
+    "desc_en": "[el0] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of caster:{[7<3]? of target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+    "desc_fr": "Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  "20": {
+    "effect": "Boost : Point de vie (PV)",
+    "desc_en": "[#charac HP] [#1] HP",
+    "desc_fr": "[#charac HP] [#1] PV"
+  },
+  "21": {
+    "effect": "Deboost : Point de vie (PV)",
+    "desc_en": "[#charac HP] -[#1] Health Point{[>1]?s:}",
+    "desc_fr": "[#charac HP] -[#1] Point{[>1]?s:} de Vie"
+  },
+  "24": {
+    "effect": "Soin : Neutre (Vol de vie)",
+    "desc_en": "[el0]  Heal (Health Steal): [#1]{[-2]?{[0=2]? [ecnbi]:}:}",
+    "desc_fr": "Soin [el0] (Vol de vie) : [#1]{[-2]?{[0=2]? [ecnbi]:}:}"
+  },
+  "26": {
+    "effect": "Gain : Maîtrise Soin",
+    "desc_en": "[#charac HEAL_IN_PERCENT] [#1] Healing Mastery",
+    "desc_fr": "[#charac HEAL_IN_PERCENT] [#1] Maîtrise Soin"
+  },
+  "31": {
+    "effect": "Boost : PA",
+    "desc_en": "[#charac AP] [#1] AP",
+    "desc_fr": "[#charac AP] [#1] PA"
+  },
+  "39": {
+    "effect": "Gain : charac passée en paramètre",
+    "desc_en": "[#1]{[~2]?%:} [#3]",
+    "desc_fr": "[#1]{[~2]?%:} [#3]"
+  },
+  "40": {
+    "effect": "Perte : charac passée en paramètre",
+    "desc_en": "-[#1]{[~2]?%:} [#3]",
+    "desc_fr": "-[#1]{[~2]? %:} [#3]"
+  },
+  "41": {
+    "effect": "Boost : PM",
+    "desc_en": "[#charac MP] [#1] MP",
+    "desc_fr": "[#charac MP] [#1] PM"
+  },
+  "56": {
+    "effect": "Deboost : PA",
+    "desc_en": "[#charac AP] -[#1] max AP",
+    "desc_fr": "[#charac AP] -[#1] PA max"
+  },
+  "57": {
+    "effect": "Deboost : PM",
+    "desc_en": "[#charac MP] -[#1] max MP",
+    "desc_fr": "[#charac MP] -[#1] PM max"
+  },
+  "71": {
+    "effect": "Gain : Résistance Dos",
+    "desc_en": "[#charac RES_BACKSTAB] [#1] Rear Resistance",
+    "desc_fr": "[#charac RES_BACKSTAB] [#1] Résistance Dos"
+  },
+  "80": {
+    "effect": "Gain : Résistance Élémentaire",
+    "desc_en": "[#charac RES_IN_PERCENT] [#1] Elemental Resistance",
+    "desc_fr": "[#charac RES_IN_PERCENT] [#1] Résistance Élémentaire"
+  },
+  "82": {
+    "effect": "Gain : Résistance Feu",
+    "desc_en": "[#charac RES_FIRE_PERCENT] [#1] Fire Resistance",
+    "desc_fr": "[#charac RES_FIRE_PERCENT] [#1] Résistance Feu"
+  },
+  "83": {
+    "effect": "Gain : Résistance Eau",
+    "desc_en": "[#charac RES_WATER_PERCENT] [#1] Water Resistance",
+    "desc_fr": "[#charac RES_WATER_PERCENT] [#1] Résistance Eau"
+  },
+  "84": {
+    "effect": "Gain : Résistance Terre",
+    "desc_en": "[#charac RES_EARTH_PERCENT] [#1] Earth Resistance",
+    "desc_fr": "[#charac RES_EARTH_PERCENT] [#1] Résistance Terre"
+  },
+  "85": {
+    "effect": "Gain : Résistance Air",
+    "desc_en": "[#charac RES_AIR_PERCENT] [#1] Air Resistance",
+    "desc_fr": "[#charac RES_AIR_PERCENT] [#1] Résistance Air"
+  },
+  "90": {
+    "effect": "Perte : Résistance Élémentaire",
+    "desc_en": "[#charac RES_IN_PERCENT] -[#1] Elemental Resistance",
+    "desc_fr": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire"
+  },
+  "96": {
+    "effect": "Perte : Résistance Terre (sans cap)",
+    "desc_en": "[#charac RES_EARTH_PERCENT] -[#1] Earth Resistance",
+    "desc_fr": "[#charac RES_EARTH_PERCENT] -[#1] Résistance Terre"
+  },
+  "97": {
+    "effect": "Perte : Résistance Feu (sans cap)",
+    "desc_en": "[#charac RES_FIRE_PERCENT] -[#1] Fire Resistance",
+    "desc_fr": "[#charac RES_FIRE_PERCENT] -[#1] Résistance Feu"
+  },
+  "98": {
+    "effect": "Perte : Résistance Eau (sans cap)",
+    "desc_en": "[#charac RES_WATER_PERCENT] -[#1] Water Resistance",
+    "desc_fr": "[#charac RES_WATER_PERCENT] -[#1] Résistance Eau"
+  },
+  "100": {
+    "effect": "Perte : Résistance Élémentaire (sans cap)",
+    "desc_en": "[#charac RES_IN_PERCENT] -[#1] Elemental Resistance",
+    "desc_fr": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire"
+  },
+  "120": {
+    "effect": "Gain : Maîtrise Élémentaire",
+    "desc_en": "[#charac DMG_IN_PERCENT] [#1] Elemental Mastery",
+    "desc_fr": "[#charac DMG_IN_PERCENT] [#1] Maîtrise Élémentaire"
+  },
+  "122": {
+    "effect": "Gain : Maîtrise Feu",
+    "desc_en": "[#charac DMG_FIRE_PERCENT] [#1] Fire Mastery",
+    "desc_fr": "[#charac DMG_FIRE_PERCENT] [#1] Maîtrise Feu"
+  },
+  "123": {
+    "effect": "Gain : Maîtrise Terre",
+    "desc_en": "[#charac DMG_EARTH_PERCENT] [#1] Earth Mastery",
+    "desc_fr": "[#charac DMG_EARTH_PERCENT] [#1] Maîtrise Terre"
+  },
+  "124": {
+    "effect": "Gain : Maîtrise Eau",
+    "desc_en": "[#charac DMG_WATER_PERCENT] [#1] Water Mastery",
+    "desc_fr": "[#charac DMG_WATER_PERCENT] [#1] Maîtrise Eau"
+  },
+  "125": {
+    "effect": "Gain : Maîtrise Air",
+    "desc_en": "[#charac DMG_AIR_PERCENT] [#1] Air Mastery",
+    "desc_fr": "[#charac DMG_AIR_PERCENT] [#1] Maîtrise Air"
+  },
+  "130": {
+    "effect": "Perte : Maîtrise Élémentaire",
+    "desc_en": "[#charac DMG_IN_PERCENT] -[#1] Elemental Mastery",
+    "desc_fr": "[#charac DMG_IN_PERCENT] -[#1] Maîtrise Élémentaire"
+  },
+  "132": {
+    "effect": "Perte : Maîtrise Feu",
+    "desc_en": "[#charac DMG_FIRE_PERCENT] -[#1] Fire Mastery",
+    "desc_fr": "[#charac DMG_FIRE_PERCENT] -[#1] Maîtrise Feu"
+  },
+  "149": {
+    "effect": "Gain : Maîtrise Critique",
+    "desc_en": "[#charac CRITICAL_BONUS] [#1] Critical Mastery",
+    "desc_fr": "[#charac CRITICAL_BONUS] [#1] Maîtrise Critique"
+  },
+  "150": {
+    "effect": "Gain : Coup Critique (%)",
+    "desc_en": "[#charac FEROCITY] [#1]% Critical Hit",
+    "desc_fr": "[#charac FEROCITY] [#1] % Coup critique"
+  },
+  "160": {
+    "effect": "Gain : Portée",
+    "desc_en": "[#charac RANGE] [#1] Range",
+    "desc_fr": "[#charac RANGE] [#1] Portée"
+  },
+  "161": {
+    "effect": "Perte : Portée",
+    "desc_en": "[#charac RANGE] -[#1] Range",
+    "desc_fr": "[#charac RANGE] -[#1] Portée"
+  },
+  "162": {
+    "effect": "Gain : Prospection",
+    "desc_en": "[#charac PROSPECTION] [#1] Prospecting",
+    "desc_fr": "[#charac PROSPECTION] [#1] Prospection"
+  },
+  "166": {
+    "effect": "Gain : Sagesse",
+    "desc_en": "[#charac WISDOM] [#1] Wisdom",
+    "desc_fr": "[#charac WISDOM] [#1] Sagesse"
+  },
+  "168": {
+    "effect": "Perte : Coup Critique (%)",
+    "desc_en": "[#charac FEROCITY] -[#1]% Critical Hit",
+    "desc_fr": "[#charac FEROCITY] -[#1] % Coup critique"
+  },
+  "171": {
+    "effect": "Gain : Initiative",
+    "desc_en": "[#charac INIT] [#1] Initiative",
+    "desc_fr": "[#charac INIT] [#1] Initiative"
+  },
+  "172": {
+    "effect": "Perte : Initiative",
+    "desc_en": "[#charac INIT] -[#1] Initiative",
+    "desc_fr": "[#charac INIT] -[#1] Initiative"
+  },
+  "173": {
+    "effect": "Gain : Tacle",
+    "desc_en": "[#charac TACKLE] [#1] Lock",
+    "desc_fr": "[#charac TACKLE] [#1] Tacle"
+  },
+  "174": {
+    "effect": "Perte : Tacle",
+    "desc_en": "[#charac TACKLE] -[#1] Lock",
+    "desc_fr": "[#charac TACKLE] -[#1] Tacle"
+  },
+  "175": {
+    "effect": "Gain : Esquive",
+    "desc_en": "[#charac DODGE] [#1] Dodge",
+    "desc_fr": "[#charac DODGE] [#1] Esquive"
+  },
+  "176": {
+    "effect": "Perte : Esquive",
+    "desc_en": "[#charac DODGE] -[#1] Dodge",
+    "desc_fr": "[#charac DODGE] -[#1] Esquive"
+  },
+  "177": {
+    "effect": "Gain : Volonté",
+    "desc_en": "[#charac WILLPOWER] [#1] Force of Will",
+    "desc_fr": "[#charac WILLPOWER] [#1] Volonté"
+  },
+  "180": {
+    "effect": "Gain : Maîtrise Dos",
+    "desc_en": "[#charac BACKSTAB_BONUS] [#1] Rear Mastery",
+    "desc_fr": "[#charac BACKSTAB_BONUS] [#1] Maîtrise Dos"
+  },
+  "181": {
+    "effect": "Perte : Maîtrise Dos",
+    "desc_en": "[#charac BACKSTAB_BONUS] -[#1] Rear Mastery",
+    "desc_fr": "[#charac BACKSTAB_BONUS] -[#1] Maîtrise Dos"
+  },
+  "191": {
+    "effect": "Boost : PW",
+    "desc_en": "[#charac WP] [#1] WP",
+    "desc_fr": "[#charac WP] [#1] PW"
+  },
+  "192": {
+    "effect": "Deboost : PW",
+    "desc_en": "[#charac WP] -[#1] max WP",
+    "desc_fr": "[#charac WP] -[#1] PW max"
+  },
+  "193": {
+    "effect": "Gain : PW",
+    "desc_en": "[#charac WP] [#1] WP",
+    "desc_fr": "[#charac WP] [#1] PW"
+  },
+  "304": {
+    "effect": "State : Applique un état",
+    "desc_en": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3]%):}}}",
+    "desc_fr": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3] %):}}}"
+  },
+  "330": {
+    "effect": "REG : execute le groupe d'effets",
+    "desc_en": "",
+    "desc_fr": ""
+  },
+  "400": {
+    "effect": "NullEffect : Effet Vide",
+    "desc_en": "",
+    "desc_fr": ""
+  },
+  "843": {
+    "effect": "Area : Retire une zone en sélectionnant la zone comme cible",
+    "desc_en": "",
+    "desc_fr": ""
+  },
+  "865": {
+    "effect": "REG : valeur du second effet fonction de celle du premier (2 effets enfants max)",
+    "desc_en": "",
+    "desc_fr": ""
+  },
+  "875": {
+    "effect": "Gain : Parade",
+    "desc_en": "[#charac BLOCK] [#1]% Block",
+    "desc_fr": "[#charac BLOCK] [#1] % Parade"
+  },
+  "876": {
+    "effect": "Perte : Parade",
+    "desc_en": "[#charac BLOCK] -[#1]% Block",
+    "desc_fr": "[#charac BLOCK] -[#1] % Parade"
+  },
+  "988": {
+    "effect": "Gain : Résistance Critique",
+    "desc_en": "[#charac CRITICAL_RES] [#1] Critical Resistance",
+    "desc_fr": "[#charac CRITICAL_RES] [#1] Résistance Critique"
+  },
+  "1020": {
+    "effect": "REG : niveau des enfants fonction de la valeur de l'effet déclencheur",
+    "desc_en": "",
+    "desc_fr": ""
+  },
+  "1052": {
+    "effect": "Gain : Maîtrise Mêlée",
+    "desc_en": "[#charac MELEE_DMG] [#1] Melee Mastery",
+    "desc_fr": "[#charac MELEE_DMG] [#1] Maîtrise Mêlée"
+  },
+  "1053": {
+    "effect": "Gain : Maîtrise Distance",
+    "desc_en": "[#charac RANGED_DMG] [#1] Distance Mastery",
+    "desc_fr": "[#charac RANGED_DMG] [#1] Maîtrise Distance"
+  },
+  "1055": {
+    "effect": "Gain : Maîtrise Berserk",
+    "desc_en": "[#charac BERSERK_DMG] [#1] Berserk Mastery",
+    "desc_fr": "[#charac BERSERK_DMG] [#1] Maîtrise Berserk"
+  },
+  "1056": {
+    "effect": "Perte : Maîtrise Critique",
+    "desc_en": "[#charac CRITICAL_BONUS] -[#1] Critical Mastery",
+    "desc_fr": "[#charac CRITICAL_BONUS] -[#1] Maîtrise Critique"
+  },
+  "1059": {
+    "effect": "Perte : Maîtrise Mêlée",
+    "desc_en": "[#charac MELEE_DMG] -[#1] Melee Mastery",
+    "desc_fr": "[#charac MELEE_DMG] -[#1] Maîtrise Mêlée"
+  },
+  "1060": {
+    "effect": "Perte : Maîtrise Distance",
+    "desc_en": "[#charac RANGED_DMG] -[#1] Distance Mastery",
+    "desc_fr": "[#charac RANGED_DMG] -[#1] Maîtrise Distance"
+  },
+  "1061": {
+    "effect": "Perte : Maîtrise Berserk",
+    "desc_en": "[#charac BERSERK_DMG] -[#1] Berserk Mastery",
+    "desc_fr": "[#charac BERSERK_DMG] -[#1] Maîtrise Berserk"
+  },
+  "1062": {
+    "effect": "Perte : Résistance Critique",
+    "desc_en": "[#charac CRITICAL_RES] -[#1] Critical Resistance",
+    "desc_fr": "[#charac CRITICAL_RES] -[#1] Résistance Critique"
+  },
+  "1063": {
+    "effect": "Perte : Résistance Dos",
+    "desc_en": "[#charac RES_BACKSTAB] -[#1] Rear Resistance",
+    "desc_fr": "[#charac RES_BACKSTAB] -[#1] Résistance Dos"
+  },
+  "1068": {
+    "effect": "Gain : Maîtrise Élémentaire dans un nombre variable d'éléments",
+    "desc_en": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Mastery [#3]:[#1] Mastery with [#2] element{[>2]?s:}}",
+    "desc_fr": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Maîtrise [#3]:[#1] Maîtrise sur [#2] élément{[>2]?s:}}"
+  },
+  "1069": {
+    "effect": "Gain : Résistance Élémentaire dans un nombre variable d'éléments",
+    "desc_en": "[#charac RES_IN_PERCENT] {[~3]?[#1] Resistance [#3]:[#1] Resistance to [#2] element{[>2]?s:}}",
+    "desc_fr": "[#charac RES_IN_PERCENT] {[~3]?[#1] Résistance [#3]:[#1] Résistance sur [#2] élément{[>2]?s:}}"
+  },
+  "1083": {
+    "effect": "Dommage : Lumière",
+    "desc_en": "[el6] Damage: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of caster:{[7<3]? of target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+    "desc_fr": "Dommage [el6] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  "1084": {
+    "effect": "Soin : Lumière",
+    "desc_en": "[el6] Healing: [#1]{[+3]?% of HP:}{[+3]?{[1=3]? max:{[2=3]? current:{[3=3]? lost:{[4=3]? max:{[5=3]? current:{[6=3]? lost:}}}}}}:}{[+3]?{[4<3]? of the caster:{[7<3]? of the target:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}",
+    "desc_fr": "Soin [el6] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  "2001": {
+    "effect": "Job : Modifie la quantité d'objets récoltée",
+    "desc_en": "[#1]% Harvesting Quantity{[~2]? as [#2]:}",
+    "desc_fr": "[#1] % Quantité Récolte{[~2]? en [#2]:}"
+  }
+}

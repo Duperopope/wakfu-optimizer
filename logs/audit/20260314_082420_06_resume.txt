@@ -1,0 +1,87 @@
+RESUME AUDIT WAKFU-OPTIMIZER
+============================================================
+Date : 2026-03-14 08:24:44
+Racine : H:\Code\Ankama Dev\wakfu-optimizer
+
+--- PAR EXTENSION ---
+  .json           72 fichiers   1611.48 MB
+  .log            63 fichiers     10.03 MB
+  .java          523 fichiers      3.14 MB
+  .jar             1 fichiers      2.06 MB
+  .py            216 fichiers      2.01 MB
+  .class         510 fichiers      1.78 MB
+  .xml             1 fichiers      0.23 MB
+  .png             7 fichiers      0.14 MB
+  .bak_fix_lvl     1 fichiers      0.04 MB
+  .md              5 fichiers      0.03 MB
+  (sans ext)       2 fichiers      0.03 MB
+  .bak_before_states     1 fichiers      0.02 MB
+  .bak_v2          1 fichiers      0.02 MB
+  .jsonl           1 fichiers      0.02 MB
+
+  TOTAL         1404 fichiers   1631.04 MB
+
+--- PAR DOSSIER RACINE ---
+  data                              78 fichiers   1611.51 MB
+  logs                              66 fichiers     10.06 MB
+  tools                            488 fichiers      3.75 MB
+  decompiled                       546 fichiers      3.24 MB
+  scripts                          158 fichiers      1.27 MB
+  _archive                          44 fichiers      0.81 MB
+  engine                            13 fichiers      0.34 MB
+  (racine)                           4 fichiers      0.06 MB
+  utils                              3 fichiers      0.00 MB
+  tests                              2 fichiers      0.00 MB
+  interface                          1 fichiers      0.00 MB
+  optimizer                          1 fichiers      0.00 MB
+
+--- TOP 20 PLUS GROS FICHIERS ---
+   1066.60 MB  data\extracted\all_effect_groups.json
+    249.07 MB  data\extracted\all_static_effects.json
+    180.69 MB  data\extracted\static_effects.json
+     20.11 MB  data\parsed\all_items.json
+     14.74 MB  data\cdn\1.91.1.53_items.json
+     14.74 MB  data\raw\items.json
+     14.74 MB  data\raw_backup_none\.tmp\items.json
+      9.27 MB  logs\bdata_reader_v4_2.log
+      8.60 MB  data\extracted\all_items.json
+      6.25 MB  data\extracted\all_spells.json
+      6.25 MB  data\extracted\all_spells_including_warns.json
+      5.88 MB  data\raw\jobsItems.json
+      5.88 MB  data\raw_backup_none\.tmp\jobsItems.json
+      3.96 MB  data\extracted\all_spells_summary.json
+      2.22 MB  data\extracted\all_states.json
+      2.19 MB  data\raw\recipeIngredients.json
+      2.19 MB  data\raw_backup_none\.tmp\recipeIngredients.json
+      2.06 MB  tools\cfr.jar
+      1.88 MB  data\extracted\items_index.json
+      1.43 MB  data\extracted\effect_groups.json
+
+--- 20 FICHIERS LES PLUS RECENTS ---
+  2026-03-14 08:22  scripts\audit_v2.py
+  2026-03-14 08:18  scripts\audit.py
+  2026-03-14 08:18  scripts\bootstrap.py
+  2026-03-14 08:06  app.py
+  2026-03-14 08:06  logs\app.log
+  2026-03-14 07:44  scripts\inspect_app.py
+  2026-03-14 07:43  logs\app_20260314_074351.log
+  2026-03-14 07:43  scripts\fix_ui.py
+  2026-03-14 07:42  logs\app_20260314_074242.log
+  2026-03-14 07:42  scripts\fix_log.py
+  2026-03-14 07:41  logs\app_20260314_074115.log
+  2026-03-14 07:41  scripts\fix_stats.py
+  2026-03-14 07:40  data\extracted\sram_calibration.json
+  2026-03-14 07:40  scripts\calibrate_v2.py
+  2026-03-14 07:39  scripts\inject_calibration.py
+  2026-03-14 07:37  scripts\calibrate.py
+  2026-03-14 07:36  scripts\analyse_effects2.py
+  2026-03-14 07:35  scripts\analyse_effects.py
+  2026-03-14 07:35  scripts\check_effects.py
+  2026-03-14 07:33  scripts\calibration.py
+
+--- FICHIERS RAPPORTS GENERES ---
+  20260314_082420_01_arborescence.txt
+  20260314_082420_02_python_analyse.txt
+  20260314_082420_03_json_analyse.txt
+  20260314_082420_04_logs_analyse.txt
+  20260314_082420_05_doublons_archives.txt

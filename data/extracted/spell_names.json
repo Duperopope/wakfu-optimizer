@@ -1,0 +1,732 @@
+{
+  "2839": {
+    "id": 2839,
+    "name_fr": "Xelor Support #2 (4PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 4.0,
+    "breed_id": 5,
+    "ui_position": 1
+  },
+  "754": {
+    "id": 754,
+    "name_fr": "Xelor Feu #5 (4PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 5,
+    "ui_position": 4
+  },
+  "775": {
+    "id": 775,
+    "name_fr": "Xelor Eau #3 (1PA 1PW)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 1.0,
+    "pw": 1.0,
+    "breed_id": 5,
+    "ui_position": 2
+  },
+  "772": {
+    "id": 772,
+    "name_fr": "Xelor Air #5 (3PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 5,
+    "ui_position": 4
+  },
+  "7323": {
+    "id": 7323,
+    "name_fr": "Osamodas Support #3 (3PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 3.0,
+    "breed_id": 2,
+    "ui_position": 2
+  },
+  "7309": {
+    "id": 7309,
+    "name_fr": "Osamodas Feu #4 (4PA 1PW)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 1.0,
+    "breed_id": 2,
+    "ui_position": 3
+  },
+  "7316": {
+    "id": 7316,
+    "name_fr": "Osamodas Feu+Eau #6 (4PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 2,
+    "ui_position": 5
+  },
+  "7319": {
+    "id": 7319,
+    "name_fr": "Osamodas Air #4 (3PA 1PW)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 2,
+    "ui_position": 3
+  },
+  "4604": {
+    "id": 4604,
+    "name_fr": "Double",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 2.0,
+    "breed_id": 4,
+    "ui_position": 1
+  },
+  "4586": {
+    "id": 4586,
+    "name_fr": "Mise a mort",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 6.0,
+    "pw": 0.0,
+    "breed_id": 4,
+    "ui_position": 5
+  },
+  "4585": {
+    "id": 4585,
+    "name_fr": "Attaque perfide",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 4,
+    "ui_position": 4
+  },
+  "4595": {
+    "id": 4595,
+    "name_fr": "Fourberie",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 4,
+    "ui_position": 2
+  },
+  "914": {
+    "id": 914,
+    "name_fr": "Sadida Support #7 (3PA 1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 10,
+    "ui_position": 6
+  },
+  "918": {
+    "id": 918,
+    "name_fr": "Sadida Eau #3 (3PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 10,
+    "ui_position": 2
+  },
+  "925": {
+    "id": 925,
+    "name_fr": "Sadida Feu+Eau #2 (3PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 10,
+    "ui_position": 1
+  },
+  "919": {
+    "id": 919,
+    "name_fr": "Sadida Air #3 (2PA 2PW)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 2.0,
+    "pw": 2.0,
+    "breed_id": 10,
+    "ui_position": 2
+  },
+  "4774": {
+    "id": 4774,
+    "name_fr": "Cra Support #2 (2PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 2.0,
+    "breed_id": 9,
+    "ui_position": 1
+  },
+  "4819": {
+    "id": 4819,
+    "name_fr": "Cra Feu #6 (5PA 1PW)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 5.0,
+    "pw": 1.0,
+    "breed_id": 9,
+    "ui_position": 5
+  },
+  "4816": {
+    "id": 4816,
+    "name_fr": "Cra Feu+Eau #2 (3PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 9,
+    "ui_position": 1
+  },
+  "4813": {
+    "id": 4813,
+    "name_fr": "Cra Air #2 (2PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 9,
+    "ui_position": 1
+  },
+  "7199": {
+    "id": 7199,
+    "name_fr": "Huppermage Support #2 (2PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 18,
+    "ui_position": 1
+  },
+  "4691": {
+    "id": 4691,
+    "name_fr": "Huppermage Eau #2 (4PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 18,
+    "ui_position": 1
+  },
+  "4668": {
+    "id": 4668,
+    "name_fr": "Huppermage Feu+Eau #3 (3PA 1PW)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 18,
+    "ui_position": 2
+  },
+  "4700": {
+    "id": 4700,
+    "name_fr": "Huppermage Air #5 (5PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 5.0,
+    "pw": 0.0,
+    "breed_id": 18,
+    "ui_position": 4
+  },
+  "6492": {
+    "id": 6492,
+    "name_fr": "Roublard Support #4 (1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 1.0,
+    "breed_id": 13,
+    "ui_position": 3
+  },
+  "6466": {
+    "id": 6466,
+    "name_fr": "Roublard Feu #5 (3PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 13,
+    "ui_position": 4
+  },
+  "6472": {
+    "id": 6472,
+    "name_fr": "Roublard Feu+Eau #6 (2PA 1PW)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 2.0,
+    "pw": 1.0,
+    "breed_id": 13,
+    "ui_position": 5
+  },
+  "6474": {
+    "id": 6474,
+    "name_fr": "Roublard Air #3 (3PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 13,
+    "ui_position": 2
+  },
+  "7084": {
+    "id": 7084,
+    "name_fr": "Zobal Support #2 (4PA 1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 4.0,
+    "pw": 1.0,
+    "breed_id": 14,
+    "ui_position": 1
+  },
+  "7070": {
+    "id": 7070,
+    "name_fr": "Zobal Feu #6 (6PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 6.0,
+    "pw": 0.0,
+    "breed_id": 14,
+    "ui_position": 5
+  },
+  "7075": {
+    "id": 7075,
+    "name_fr": "Zobal Eau #6 (5PA 1PW)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 5.0,
+    "pw": 1.0,
+    "breed_id": 14,
+    "ui_position": 5
+  },
+  "7078": {
+    "id": 7078,
+    "name_fr": "Zobal Air #4 (2PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 14,
+    "ui_position": 3
+  },
+  "4790": {
+    "id": 4790,
+    "name_fr": "Iop Support #2 (2PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 8,
+    "ui_position": 1
+  },
+  "4779": {
+    "id": 4779,
+    "name_fr": "Iop Feu #6 (6PA 1PW)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 6.0,
+    "pw": 1.0,
+    "breed_id": 8,
+    "ui_position": 5
+  },
+  "4783": {
+    "id": 4783,
+    "name_fr": "Iop Feu+Eau #5 (1PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 1.0,
+    "pw": 0.0,
+    "breed_id": 8,
+    "ui_position": 4
+  },
+  "4789": {
+    "id": 4789,
+    "name_fr": "Iop Air #6 (3PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 8,
+    "ui_position": 5
+  },
+  "5045": {
+    "id": 5045,
+    "name_fr": "Sacrier Support #3 (3PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 11,
+    "ui_position": 2
+  },
+  "5032": {
+    "id": 5032,
+    "name_fr": "Sacrier Feu #6 (3PW)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 0.0,
+    "pw": 3.0,
+    "breed_id": 11,
+    "ui_position": 5
+  },
+  "5037": {
+    "id": 5037,
+    "name_fr": "Sacrier Feu+Eau #5 (5PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 5.0,
+    "pw": 0.0,
+    "breed_id": 11,
+    "ui_position": 4
+  },
+  "5040": {
+    "id": 5040,
+    "name_fr": "Sacrier Air #4 (1PA 1PW)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 1.0,
+    "pw": 1.0,
+    "breed_id": 11,
+    "ui_position": 3
+  },
+  "6284": {
+    "id": 6284,
+    "name_fr": "Ouginak Support #1 (2PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 15,
+    "ui_position": 0
+  },
+  "6260": {
+    "id": 6260,
+    "name_fr": "Ouginak Eau #1 (3PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 15,
+    "ui_position": 0
+  },
+  "6263": {
+    "id": 6263,
+    "name_fr": "Ouginak Feu+Eau #2 (3PA 1PW)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 15,
+    "ui_position": 1
+  },
+  "6270": {
+    "id": 6270,
+    "name_fr": "Ouginak Air #5 (6PA 1PW)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 6.0,
+    "pw": 1.0,
+    "breed_id": 15,
+    "ui_position": 4
+  },
+  "6324": {
+    "id": 6324,
+    "name_fr": "Enutrof Support #2 (2PA 1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 1.0,
+    "breed_id": 3,
+    "ui_position": 1
+  },
+  "2019": {
+    "id": 2019,
+    "name_fr": "Enutrof Feu #3 (2PA 1PW)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 2.0,
+    "pw": 1.0,
+    "breed_id": 3,
+    "ui_position": 2
+  },
+  "2016": {
+    "id": 2016,
+    "name_fr": "Enutrof Eau #5 (4PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 3,
+    "ui_position": 4
+  },
+  "2011": {
+    "id": 2011,
+    "name_fr": "Enutrof Feu+Eau #4 (3PA 1PW)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 3,
+    "ui_position": 3
+  },
+  "5577": {
+    "id": 5577,
+    "name_fr": "Huppermage Support #6 (2PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 19,
+    "ui_position": 5
+  },
+  "5561": {
+    "id": 5561,
+    "name_fr": "Huppermage Feu #4 (4PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 19,
+    "ui_position": 3
+  },
+  "5591": {
+    "id": 5591,
+    "name_fr": "Huppermage Feu #6 (4PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 19,
+    "ui_position": 5
+  },
+  "5594": {
+    "id": 5594,
+    "name_fr": "Huppermage Eau #4 (6PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 6.0,
+    "pw": 0.0,
+    "breed_id": 19,
+    "ui_position": 3
+  },
+  "5590": {
+    "id": 5590,
+    "name_fr": "Huppermage Air #4 (3PA)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 19,
+    "ui_position": 3
+  },
+  "6920": {
+    "id": 6920,
+    "name_fr": "Steamer Support #5 (3PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 16,
+    "ui_position": 4
+  },
+  "6902": {
+    "id": 6902,
+    "name_fr": "Steamer Feu #2 (2PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 16,
+    "ui_position": 1
+  },
+  "6907": {
+    "id": 6907,
+    "name_fr": "Steamer Eau #2 (3PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 16,
+    "ui_position": 1
+  },
+  "6912": {
+    "id": 6912,
+    "name_fr": "Steamer Feu+Eau #2 (3PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 16,
+    "ui_position": 1
+  },
+  "7225": {
+    "id": 7225,
+    "name_fr": "Ecaflip Support #7 (3PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 6,
+    "ui_position": 6
+  },
+  "2050": {
+    "id": 2050,
+    "name_fr": "Ecaflip Feu #3 (3PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 6,
+    "ui_position": 2
+  },
+  "2073": {
+    "id": 2073,
+    "name_fr": "Ecaflip Eau #6 (4PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 6,
+    "ui_position": 5
+  },
+  "2047": {
+    "id": 2047,
+    "name_fr": "Ecaflip Feu+Eau #3 (1PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 1.0,
+    "pw": 0.0,
+    "breed_id": 6,
+    "ui_position": 2
+  },
+  "1535": {
+    "id": 1535,
+    "name_fr": "Eniripsa Support #2 (2PA 1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 1.0,
+    "breed_id": 7,
+    "ui_position": 1
+  },
+  "638": {
+    "id": 638,
+    "name_fr": "Eniripsa Feu #4 (4PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 7,
+    "ui_position": 3
+  },
+  "780": {
+    "id": 780,
+    "name_fr": "Eniripsa Eau #5 (3PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 3.0,
+    "pw": 0.0,
+    "breed_id": 7,
+    "ui_position": 4
+  },
+  "1540": {
+    "id": 1540,
+    "name_fr": "Eniripsa Air #3 (3PA 1PW)",
+    "element": 4,
+    "element_name": "Air",
+    "pa": 3.0,
+    "pw": 1.0,
+    "breed_id": 7,
+    "ui_position": 2
+  },
+  "6982": {
+    "id": 6982,
+    "name_fr": "Feca Support #2 (2PA)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 1,
+    "ui_position": 1
+  },
+  "6971": {
+    "id": 6971,
+    "name_fr": "Feca Feu #6 (4PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 1,
+    "ui_position": 5
+  },
+  "6973": {
+    "id": 6973,
+    "name_fr": "Feca Eau #3 (2PA)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 1,
+    "ui_position": 2
+  },
+  "6979": {
+    "id": 6979,
+    "name_fr": "Feca Feu+Eau #4 (2PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 1,
+    "ui_position": 3
+  },
+  "4720": {
+    "id": 4720,
+    "name_fr": "Pandawa Support #6 (1PW)",
+    "element": 9,
+    "element_name": "Support",
+    "pa": 0.0,
+    "pw": 1.0,
+    "breed_id": 12,
+    "ui_position": 5
+  },
+  "4704": {
+    "id": 4704,
+    "name_fr": "Pandawa Feu #4 (2PA)",
+    "element": 1,
+    "element_name": "Feu",
+    "pa": 2.0,
+    "pw": 0.0,
+    "breed_id": 12,
+    "ui_position": 3
+  },
+  "4710": {
+    "id": 4710,
+    "name_fr": "Pandawa Eau #5 (6PA 1PW)",
+    "element": 2,
+    "element_name": "Eau",
+    "pa": 6.0,
+    "pw": 1.0,
+    "breed_id": 12,
+    "ui_position": 4
+  },
+  "4713": {
+    "id": 4713,
+    "name_fr": "Pandawa Feu+Eau #3 (4PA)",
+    "element": 3,
+    "element_name": "Feu+Eau",
+    "pa": 4.0,
+    "pw": 0.0,
+    "breed_id": 12,
+    "ui_position": 2
+  }
+}

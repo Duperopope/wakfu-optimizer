@@ -1,0 +1,143 @@
+{
+  "calibration_date": "2026-03-14",
+  "calibration_version": "2.0",
+  "player": "L'Immortel",
+  "class": "Sram",
+  "level": 179,
+  "real_stats": {
+    "hp": 8928,
+    "ap": 13,
+    "mp": 5,
+    "wp": 8,
+    "level": 179,
+    "mastery_fire": 808,
+    "mastery_water": 808,
+    "mastery_earth": 190,
+    "mastery_air": 425,
+    "mastery_melee": 1030,
+    "mastery_distance": 0,
+    "mastery_critical": 456,
+    "mastery_rear": 585,
+    "mastery_berserk": -90,
+    "mastery_healing": 0,
+    "mastery_single_target": 0,
+    "mastery_area": 0,
+    "critical_hit": 72,
+    "damage_inflicted": 18,
+    "block": 0,
+    "dodge": 502,
+    "lock": 252,
+    "initiative": 142,
+    "wisdom": 40,
+    "prospecting": 40,
+    "res_fire": 564,
+    "res_water": 452,
+    "res_earth": 335,
+    "res_air": 546,
+    "res_fire_pct": 71,
+    "res_water_pct": 63,
+    "res_earth_pct": 52,
+    "res_air_pct": 70,
+    "res_critical": 0,
+    "res_rear": 25
+  },
+  "formula": {
+    "description": "Degats = Base * (1 + TotalMastery/100) * CritMult * (1 + DI/100) * ResMult",
+    "mastery_crit": "ElemMastery + MeleeMastery + CritMastery",
+    "mastery_normal": "ElemMastery + MeleeMastery",
+    "crit_mult": 1.25,
+    "di_base": 18
+  },
+  "spells": {
+    "Mise a mort": {
+      "base": 576,
+      "elem": "Feu",
+      "pa": 6,
+      "dot_ratio": 0,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Premier Sang": {
+      "base": 99,
+      "elem": "Feu",
+      "pa": 3,
+      "dot_ratio": 21,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Attaque perfide": {
+      "base": 209,
+      "elem": "Eau",
+      "pa": 3,
+      "dot_ratio": 25,
+      "armor_ratio": 40,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Saignee mortelle": {
+      "base": 149,
+      "elem": "Feu",
+      "pa": 4,
+      "dot_ratio": 106,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Kleptosram": {
+      "base": 106,
+      "elem": "Eau",
+      "pa": 4,
+      "dot_ratio": 27,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Replique Saignee": {
+      "base": 171,
+      "elem": "Feu",
+      "pa": 0,
+      "dot_ratio": 39,
+      "armor_ratio": 0,
+      "multiplier_crit": null,
+      "multiplier_normal": 22.868
+    },
+    "Arnaque": {
+      "base": 177,
+      "elem": "Eau",
+      "pa": 4,
+      "dot_ratio": 37,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    },
+    "Fourberie": {
+      "base": 122,
+      "elem": "Air",
+      "pa": 3,
+      "dot_ratio": 50,
+      "armor_ratio": 0,
+      "multiplier_crit": null,
+      "multiplier_normal": 18.349
+    },
+    "Effroi": {
+      "base": 189,
+      "elem": "Air",
+      "pa": 4,
+      "dot_ratio": 40,
+      "armor_ratio": 0,
+      "multiplier_crit": 29.662,
+      "multiplier_normal": null
+    },
+    "Ouvrir les veines": {
+      "base": 106,
+      "elem": "Feu",
+      "pa": 3,
+      "dot_ratio": 40,
+      "armor_ratio": 0,
+      "multiplier_crit": 35.312,
+      "multiplier_normal": null
+    }
+  }
+}

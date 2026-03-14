@@ -1,0 +1,218 @@
+DETECTION DOUBLONS ET FICHIERS SUSPECTS
+============================================================
+
+--- FICHIERS ARCHIVES (60) ---
+  _archive\CONTEXT_START.md (9,777 octets, 2026-03-07 12:52)
+  _archive\Combo\Combofinder copy.py (60,493 octets, 2026-03-13 07:29)
+  _archive\Combo\Combofinder.py (77,439 octets, 2026-03-13 07:51)
+  _archive\Combo\Sram (31,407 octets, 2026-03-13 05:05)
+  _archive\PROJECT_MAP.md (3,516 octets, 2026-03-07 12:46)
+  _archive\SESSION_LOG.md (3,093 octets, 2026-03-07 12:50)
+  _archive\Vision\_diag.py (3,097 octets, 2026-03-04 17:07)
+  _archive\Vision\app\config.json (946 octets, 2026-03-07 19:46)
+  _archive\Vision\vision_automator_v5\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\__main__.py (145 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\hub.py (7,709 octets, 2026-03-07 15:41)
+  _archive\Vision\vision_automator_v5\module_base.py (1,475 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\module_registry.py (1,901 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\m01_capture\README.md (473 octets, 2026-03-03 22:19)
+  _archive\Vision\vision_automator_v5\modules\m01_capture\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\m01_capture\capture_engine.py (3,957 octets, 2026-03-04 16:27)
+  _archive\Vision\vision_automator_v5\modules\m01_capture\module.py (18,188 octets, 2026-03-07 19:46)
+  _archive\Vision\vision_automator_v5\modules\m02_detection\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\m02_detection\detection_engine.py (6,740 octets, 2026-03-07 14:10)
+  _archive\Vision\vision_automator_v5\modules\m02_detection\module.py (894 octets, 2026-03-07 15:24)
+  _archive\Vision\vision_automator_v5\modules\m07_library\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\m07_library\module.py (19,042 octets, 2026-03-07 13:05)
+  _archive\Vision\vision_automator_v5\modules\m08_sequencer\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\modules\m08_sequencer\constants.py (2,483 octets, 2026-03-04 16:44)
+  _archive\Vision\vision_automator_v5\modules\m08_sequencer\module.py (34,608 octets, 2026-03-07 13:51)
+  _archive\Vision\vision_automator_v5\modules\m08_sequencer\sequencer_engine.py (16,488 octets, 2026-03-07 14:23)
+  _archive\Vision\vision_automator_v5\modules\m10_tagger\__init__.py (0 octets, 2026-03-07 11:17)
+  _archive\Vision\vision_automator_v5\modules\m10_tagger\module.py (15,636 octets, 2026-03-07 12:40)
+  _archive\Vision\vision_automator_v5\shared\__init__.py (2 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\shared\bus.py (2,457 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\shared\constants.py (743 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\shared\logger.py (749 octets, 2026-03-03 22:17)
+  _archive\Vision\vision_automator_v5\shared\types.py (1,239 octets, 2026-03-03 22:17)
+  _archive\app\config.json (896 octets, 2026-03-07 13:18)
+  _archive\app\templates\Wakfu\Frene.png (31,964 octets, 2026-03-07 12:43)
+  _archive\app\templates\Wakfu\Menthe sauvage.png (6,761 octets, 2026-03-07 12:33)
+  _archive\app\templates\Wakfu\Recolter.png (3,776 octets, 2026-03-07 14:03)
+  _archive\app\templates\Wakfu\Tuberbulbe Mur.png (13,571 octets, 2026-03-07 14:04)
+  _archive\captures\cap_20260306_125948_781.png (23,544 octets, 2026-03-06 12:59)
+  _archive\captures\cap_20260306_130623_289.png (23,284 octets, 2026-03-06 13:06)
+  _archive\captures\cap_20260306_133834_738.png (44,295 octets, 2026-03-06 13:38)
+  _archive\repomix-output.xml (237,869 octets, 2026-03-07 10:12)
+  _archive\wakfu_vision.py (134,257 octets, 2026-03-07 02:19)
+  data\raw_backup_none\.tmp\actions.json (22,139 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\blueprints.json (4,942 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\collectibleResources.json (207,413 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\equipmentItemTypes.json (8,776 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\harvestLoots.json (220,644 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\itemProperties.json (1,001 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\itemTypes.json (27,251 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\items.json (15,457,774 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\jobsItems.json (6,167,113 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\recipeCategories.json (2,581 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\recipeIngredients.json (2,297,755 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\recipeResults.json (470,916 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\recipes.json (514,246 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\resourceTypes.json (761 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\resources.json (57,150 octets, 2026-03-13 11:29)
+  data\raw_backup_none\.tmp\states.json (35,705 octets, 2026-03-13 11:29)
+
+--- SCRIPTS PYTHON POTENTIELLEMENT DUPLIQUES ---
+
+  Groupe '__init__.py':
+    data\__init__.py (2 octets, 2026-03-13 09:02)
+    data\classes\__init__.py (2 octets, 2026-03-13 09:02)
+    data\items\__init__.py (2 octets, 2026-03-13 09:02)
+    data\monsters\__init__.py (2 octets, 2026-03-13 09:02)
+    data\profiles\__init__.py (2 octets, 2026-03-13 09:02)
+    data\stats\__init__.py (2 octets, 2026-03-13 09:02)
+    engine\__init__.py (2 octets, 2026-03-13 09:02)
+    interface\__init__.py (2 octets, 2026-03-13 09:02)
+    optimizer\__init__.py (2 octets, 2026-03-13 09:02)
+    scripts\__init__.py (2 octets, 2026-03-13 09:01)
+    tests\__init__.py (2 octets, 2026-03-13 09:02)
+    utils\__init__.py (2 octets, 2026-03-13 08:58)
+    _archive\Vision\vision_automator_v5\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\m01_capture\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\m02_detection\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\m07_library\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\m08_sequencer\__init__.py (2 octets, 2026-03-03 22:17)
+    _archive\Vision\vision_automator_v5\modules\m10_tagger\__init__.py (0 octets, 2026-03-07 11:17)
+    _archive\Vision\vision_automator_v5\shared\__init__.py (2 octets, 2026-03-03 22:17)
+
+  Groupe 'audit.py':
+    scripts\audit.py (7,914 octets, 2026-03-14 08:18)
+    scripts\audit_v2.py (14,077 octets, 2026-03-14 08:22)
+
+  Groupe 'bdata_diagnostic.py':
+    scripts\bdata_diagnostic.py (23,241 octets, 2026-03-13 12:10)
+    scripts\bdata_diagnostic_v2.py (21,410 octets, 2026-03-13 12:12)
+    scripts\bdata_diagnostic_v3.py (21,386 octets, 2026-03-13 12:15)
+    scripts\bdata_diagnostic_v4.py (31,318 octets, 2026-03-13 12:45)
+    scripts\bdata_diagnostic_v5.py (18,919 octets, 2026-03-13 13:27)
+
+  Groupe 'bdata_reader.py':
+    scripts\bdata_reader.py (38,045 octets, 2026-03-13 12:06)
+    scripts\bdata_reader_v2.py (16,990 octets, 2026-03-13 14:21)
+    scripts\bdata_reader_v3.py (15,363 octets, 2026-03-13 14:49)
+
+  Groupe 'calibrate.py':
+    scripts\calibrate.py (6,130 octets, 2026-03-14 07:37)
+    scripts\calibrate_v2.py (6,915 octets, 2026-03-14 07:40)
+
+  Groupe 'constants.py':
+    _archive\Vision\vision_automator_v5\modules\m08_sequencer\constants.py (2,483 octets, 2026-03-04 16:44)
+    _archive\Vision\vision_automator_v5\shared\constants.py (743 octets, 2026-03-03 22:17)
+
+  Groupe 'debug_hoo.py':
+    scripts\debug_hoo_v2.py (6,210 octets, 2026-03-13 14:25)
+    scripts\debug_hoo_v3.py (5,244 octets, 2026-03-13 14:27)
+
+  Groupe 'diagnose_errors.py':
+    scripts\diagnose_errors.py (12,327 octets, 2026-03-13 15:12)
+    scripts\diagnose_errors_v2.py (13,052 octets, 2026-03-13 15:13)
+
+  Groupe 'find_state.py':
+    scripts\find_state_v3.py (10,059 octets, 2026-03-13 23:59)
+    scripts\find_state_v4.py (12,551 octets, 2026-03-14 00:02)
+
+  Groupe 'logger.py':
+    utils\logger.py (1,034 octets, 2026-03-13 08:58)
+    _archive\Vision\vision_automator_v5\shared\logger.py (749 octets, 2026-03-03 22:17)
+
+  Groupe 'module.py':
+    _archive\Vision\vision_automator_v5\modules\m01_capture\module.py (18,188 octets, 2026-03-07 19:46)
+    _archive\Vision\vision_automator_v5\modules\m02_detection\module.py (894 octets, 2026-03-07 15:24)
+    _archive\Vision\vision_automator_v5\modules\m07_library\module.py (19,042 octets, 2026-03-07 13:05)
+    _archive\Vision\vision_automator_v5\modules\m08_sequencer\module.py (34,608 octets, 2026-03-07 13:51)
+    _archive\Vision\vision_automator_v5\modules\m10_tagger\module.py (15,636 octets, 2026-03-07 12:40)
+
+  Groupe 'test_integral.py':
+    scripts\test_integral.py (21,954 octets, 2026-03-14 00:58)
+    scripts\test_integral_v2.py (17,495 octets, 2026-03-14 01:16)
+    scripts\test_integral_v3.py (17,957 octets, 2026-03-14 01:20)
+
+--- FICHIERS JSON POTENTIELLEMENT DUPLIQUES ---
+
+  'action_map.json':
+    data\extracted\action_map.json (13,871 octets, 2026-03-14 00:36)
+    data\parsed\action_map.json (17,752 octets, 2026-03-13 11:30)
+
+  'actions.json':
+    data\raw\actions.json (22,139 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\actions.json (22,139 octets, 2026-03-13 11:29)
+
+  'all_items.json':
+    data\extracted\all_items.json (9,018,331 octets, 2026-03-14 00:43)
+    data\parsed\all_items.json (21,083,265 octets, 2026-03-13 11:30)
+
+  'blueprints.json':
+    data\raw\blueprints.json (4,942 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\blueprints.json (4,942 octets, 2026-03-13 11:29)
+
+  'collectibleresources.json':
+    data\raw\collectibleResources.json (207,413 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\collectibleResources.json (207,413 octets, 2026-03-13 11:29)
+
+  'config.json':
+    _archive\app\config.json (896 octets, 2026-03-07 13:18)
+    _archive\Vision\app\config.json (946 octets, 2026-03-07 19:46)
+
+  'equipmentitemtypes.json':
+    data\raw\equipmentItemTypes.json (8,776 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\equipmentItemTypes.json (8,776 octets, 2026-03-13 11:29)
+
+  'harvestloots.json':
+    data\raw\harvestLoots.json (220,644 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\harvestLoots.json (220,644 octets, 2026-03-13 11:29)
+
+  'itemproperties.json':
+    data\raw\itemProperties.json (1,001 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\itemProperties.json (1,001 octets, 2026-03-13 11:29)
+
+  'items.json':
+    data\raw\items.json (15,457,774 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\items.json (15,457,774 octets, 2026-03-13 11:29)
+
+  'itemtypes.json':
+    data\raw\itemTypes.json (27,251 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\itemTypes.json (27,251 octets, 2026-03-13 11:29)
+
+  'jobsitems.json':
+    data\raw\jobsItems.json (6,167,113 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\jobsItems.json (6,167,113 octets, 2026-03-13 11:29)
+
+  'recipecategories.json':
+    data\raw\recipeCategories.json (2,581 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\recipeCategories.json (2,581 octets, 2026-03-13 11:29)
+
+  'recipeingredients.json':
+    data\raw\recipeIngredients.json (2,297,755 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\recipeIngredients.json (2,297,755 octets, 2026-03-13 11:29)
+
+  'reciperesults.json':
+    data\raw\recipeResults.json (470,916 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\recipeResults.json (470,916 octets, 2026-03-13 11:29)
+
+  'recipes.json':
+    data\raw\recipes.json (514,246 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\recipes.json (514,246 octets, 2026-03-13 11:29)
+
+  'resources.json':
+    data\raw\resources.json (57,150 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\resources.json (57,150 octets, 2026-03-13 11:29)
+
+  'resourcetypes.json':
+    data\raw\resourceTypes.json (761 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\resourceTypes.json (761 octets, 2026-03-13 11:29)
+
+  'states.json':
+    data\raw\states.json (35,705 octets, 2026-03-13 11:30)
+    data\raw_backup_none\.tmp\states.json (35,705 octets, 2026-03-13 11:29)
