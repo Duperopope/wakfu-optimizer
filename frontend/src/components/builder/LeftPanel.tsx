@@ -52,11 +52,11 @@ const STAT_GROUPS: StatGroup[] = [
       { key: "DODGE",       label: "Esquive" },
       { key: "TACKLE",      label: "Tacle" },
       { key: "INIT",        label: "Initiative" },
-      { key: "BLOCK",       label: "Parade", suffix: "%" },
+      { key: "BLOCK",       label: "% Parade", suffix: "%" },
       { key: "WILLPOWER",   label: "Volonté" },
       { key: "WISDOM",      label: "Sagesse" },
       { key: "PROSPECTION", label: "Prospection" },
-      { key: "FEROCITY",    label: "Férocité" },
+      { key: "FEROCITY",    label: "% Coup Crit." },
     ],
   },
   {
@@ -64,7 +64,7 @@ const STAT_GROUPS: StatGroup[] = [
     label: "Maîtrise",
     columns: 4,
     stats: [
-      { key: "DMG_IN_PERCENT",  label: "Maîtrise Élem." },
+      { key: "DMG_IN_PERCENT",  label: "% Dommages infligés" },
       { key: "HEAL_IN_PERCENT", label: "Maîtrise Soin" },
       { key: "CRITICAL_BONUS",  label: "Maîtrise Crit." },
       { key: "BACKSTAB_BONUS",  label: "Maîtrise Dos" },
@@ -500,3 +500,4 @@ export function LeftPanel() {
     </aside>
   );
 }
+
