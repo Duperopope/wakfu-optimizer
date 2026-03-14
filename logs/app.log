@@ -41,3 +41,18 @@
 2026-03-14 08:06:43,716 [INFO] Calibration: 10 sorts | Mult crit: x35.31 | Mult norm: x22.87
 2026-03-14 08:06:43,716 [INFO] Items: 8324 | Spells: 4079 | Effects: 173626
 2026-03-14 08:06:43,716 [INFO] NiceGUI: http://localhost:8080
+2026-03-14 09:24:56,844 [INFO] all_items.json: 8324 entrees
+2026-03-14 09:24:56,893 [INFO] all_spells.json: 4079 entrees
+2026-03-14 09:24:56,893 [WARNING] Introuvable: H:\Code\Ankama Dev\wakfu-optimizer\data\extracted\all_static_effects.json
+2026-03-14 09:24:56,915 [INFO] all_states.json: 5984 entrees
+2026-03-14 09:24:56,916 [INFO] breeds.json: 18 entrees
+2026-03-14 09:24:56,917 [INFO] spell_names.json: 73 entrees
+2026-03-14 09:24:56,917 [INFO] action_map.json: 71 entrees
+2026-03-14 09:24:56,917 [INFO] Calibration: 10 sorts
+2026-03-14 09:24:56,918 [INFO] ============================================================
+2026-03-14 09:24:56,918 [INFO]   WAKFU OPTIMIZER v3.2 — Pierre Noire x Wakfuli
+2026-03-14 09:24:56,918 [INFO] ============================================================
+2026-03-14 09:24:56,918 [INFO] Joueur: L'Immortel (Sram Niv.179)
+2026-03-14 09:24:56,919 [INFO] Calibration: 10 sorts | Mult crit: x35.31 | Mult norm: x22.87
+2026-03-14 09:24:56,919 [INFO] Items: 8324 | Spells: 4079 | Effects: 0
+2026-03-14 09:24:56,919 [INFO] NiceGUI: http://localhost:8080
