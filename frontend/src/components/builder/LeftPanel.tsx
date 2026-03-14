@@ -289,7 +289,7 @@ export function LeftPanel() {
                   ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
                   : "bg-bg-lighter border-border text-neutral-500 hover:text-primary hover:border-border-light"
               }`}>
-              <span className="w-5 h-5 flex items-center justify-center flex-shrink-0"><img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} width={b.iconSize} height={b.iconSize} className="object-contain" /></span>
+              <span className="w-5 h-5 flex items-center justify-center flex-shrink-0 overflow-visible"><img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} width={b.iconSize} height={b.iconSize} className="object-contain" /></span>
               <span className="hidden xl:inline">{b.shortLabel}</span>
             </button>
           ))}
@@ -418,6 +418,7 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 
 
