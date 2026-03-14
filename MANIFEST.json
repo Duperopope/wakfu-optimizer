@@ -109,5 +109,17 @@
   "local_only": [
     "scripts/autopush.py",
     "data/extracted/static_effects.json"
+  ],
+  "allowed_files": [
+    "scripts/install_spells.py",
+    "scripts/sync_wakfuli.py",
+    "data/wakfuli/all_spells.json",
+    "data/wakfuli/spells_report.json",
+    "data/wakfuli/all_items.json",
+    "data/wakfuli/all_actions.json",
+    "data/wakfuli/all_builds.json",
+    "data/wakfuli/spell_index_from_builds.json",
+    "data/wakfuli/sync_report.json",
+    "data/wakfuli/version.json"
   ]
 }
