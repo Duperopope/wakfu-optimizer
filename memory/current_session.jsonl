@@ -1,0 +1,5 @@
+{"type": "command", "time": "2026-03-14T23:08:11.191856", "command": "Write-Host Hello", "success": true, "duration": 0.3}
+{"type": "command", "time": "2026-03-14T23:17:21.985284", "command": "Write-Host \"Test memory hook\"", "success": true, "duration": 0.19}
+{"type": "command", "time": "2026-03-14T23:22:11.721399", "command": "Write-Host \"Pipeline test OK\"", "success": true, "duration": 0.19}
+{"type": "command", "time": "2026-03-14T23:26:41.394707", "command": "Copy# === PIPELINE REEL : Creation SaveButton.tsx ===\n$component = @'\n'use client';\nimport { useState } from 'react';\n\ninterface SaveButtonProps {\n  buildName: string;\n  onSave?: () => void;\n}\n\nexport", "success": false, "duration": 33.9}
+{"type": "command", "time": "2026-03-14T23:29:02.062128", "command": "python scripts/build_memory.py", "success": true, "duration": 5.53}
