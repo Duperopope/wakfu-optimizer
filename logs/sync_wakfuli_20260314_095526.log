@@ -1,0 +1,2 @@
+2026-03-14 09:55:26,586 [ERROR] Le module 'requests' n'est pas installe.
+2026-03-14 09:55:26,586 [ERROR] Installe-le avec : pip install requests
