@@ -7,6 +7,9 @@ os.chdir(PROJECT)
 MANIFEST = PROJECT / "MANIFEST.json"
 SKIP = {".venv", ".git", "__pycache__", "node_modules"}
 
+# Fix CRLF warnings
+subprocess.run(["git", "config", "core.autocrlf", "true"], capture_output=True)
+
 def load_manifest():
     if not MANIFEST.exists():
         return set(), set()
@@ -21,10 +24,8 @@ def clean():
         return 0
     removed = 0
     for root, dirs, files in os.walk(PROJECT):
-        # Ne jamais entrer dans .git .venv __pycache__
         dirs[:] = [d for d in dirs if d not in SKIP]
         rel_root = Path(root).relative_to(PROJECT)
-        # Skip si on est dans un dossier protege
         top = str(rel_root).replace("\\", "/").split("/")[0]
         if top in allowed_dirs or top == ".":
             if str(rel_root) != ".":
@@ -38,7 +39,12 @@ def clean():
                 removed += 1
     return removed
 
-print("AUTOPUSH + AUTOCLEAN actif")
+def get_changed_files():
+    s = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+    lines = [l for l in s.stdout.strip().splitlines() if l.strip()]
+    return [l[3:] for l in lines if len(l) > 3]
+
+print("AUTOPUSH v2 actif (temps reel + fix CRLF)")
 print("Ctrl+C pour arreter")
 
 cycle = 0
@@ -48,19 +54,29 @@ while True:
             n = clean()
             if n > 0:
                 print(f"  Nettoye {n} fichier(s) hors manifest")
-        s = subprocess.run(["git","status","--porcelain"], capture_output=True, text=True)
-        if s.stdout.strip():
+
+        files = get_changed_files()
+        if files:
             now = datetime.now().strftime("%H:%M:%S")
-            n = len(s.stdout.strip().splitlines())
-            subprocess.run(["git","add","-A"])
-            subprocess.run(["git","commit","-m",f"auto {now} ({n} fichiers)"], capture_output=True)
-            r = subprocess.run(["git","push"], capture_output=True, text=True)
+            names = ", ".join([f.split("/")[-1] for f in files[:3]])
+            if len(files) > 3:
+                names += f" +{len(files)-3}"
+            subprocess.run(["git", "add", "-A"], capture_output=True)
+            subprocess.run(["git", "commit", "-m", f"auto {now}: {names}"], capture_output=True)
+            r = subprocess.run(["git", "push"], capture_output=True, text=True)
             if r.returncode == 0:
-                print(f"[{now}] Push OK - {n} fichier(s)")
+                print(f"[{now}] Push OK - {len(files)} fichier(s): {names}")
             else:
                 print(f"[{now}] ERREUR: {r.stderr.strip()[:100]}")
+
         time.sleep(5)
         cycle += 1
     except KeyboardInterrupt:
+        files = get_changed_files()
+        if files:
+            subprocess.run(["git", "add", "-A"], capture_output=True)
+            subprocess.run(["git", "commit", "-m", "auto: push final"], capture_output=True)
+            subprocess.run(["git", "push"], capture_output=True)
+            print("Push final OK")
         print("Arrete.")
         break
