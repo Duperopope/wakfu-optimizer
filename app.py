@@ -162,3 +162,205 @@ class BuildState:
             "active": class_data.get("active", []),
             "passive": class_data.get("passive", []),
         }
+
+
+# =============================================================
+# INTERFACE NICEGUI
+# =============================================================
+@ui.page("/")
+def main_page():
+    state = BuildState()
+    slot_containers = {}
+    item_panel_visible = {"value": False}
+    current_slot = {"value": None}
+    search_input = {"value": ""}
+    rarity_select = {"value": None}
+
+    ui.dark_mode(True)
+
+    # --- CSS ---
+    ui.add_head_html("""
+    <style>
+        .slot-card { cursor: pointer; transition: all 0.2s; border: 2px solid #333; border-radius: 8px; padding: 8px; min-height: 80px; }
+        .slot-card:hover { border-color: #FFD700; transform: scale(1.02); }
+        .slot-card.equipped { border-color: #44AA44; }
+        .item-row { cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.15s; }
+        .item-row:hover { background: rgba(255, 215, 0, 0.1); }
+        .rarity-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+        .stat-bar { background: #1a1a2e; border-radius: 4px; padding: 4px 8px; margin: 2px 0; }
+        .spell-card { border: 1px solid #444; border-radius: 6px; padding: 6px; transition: border-color 0.2s; }
+        .spell-card:hover { border-color: #FFD700; }
+        .element-fire { color: #FF4444; } .element-water { color: #4488FF; }
+        .element-air { color: #44DD44; } .element-earth { color: #CC8833; }
+        .tab-active { border-bottom: 3px solid #FFD700 !important; }
+        body { font-family: 'Segoe UI', sans-serif; }
+    </style>
+    """)
+
+    # ==========================================================
+    # FONCTIONS DE MISE A JOUR
+    # ==========================================================
+    def refresh_stats():
+        stats_container.clear()
+        stats = state.get_total_stats()
+        with stats_container:
+            ui.label("Stats totales").classes("text-lg font-bold text-yellow-400 mb-2")
+            primary = [("HP", stats["HP"]), ("AP", stats["AP"]), ("MP", stats["MP"]),
+                       ("WP", stats["WP"]), ("Range", stats["RANGE"])]
+            for name, val in primary:
+                if val != 0:
+                    with ui.row().classes("stat-bar w-full justify-between"):
+                        ui.label(name).classes("text-white text-sm")
+                        ui.label(str(val)).classes("text-yellow-300 text-sm font-bold")
+
+            if stats["MASTERY"] > 0:
+                ui.separator()
+                ui.label("Maitrises").classes("text-sm font-bold text-blue-300 mt-1")
+                masteries = [("Elementaire", stats["MASTERY"]), ("Critique", stats["CRITICAL_MASTERY"]),
+                             ("Dos", stats["BACK_MASTERY"]), ("Berserk", stats["BERSERK_MASTERY"]),
+                             ("Soin", stats["HEAL_MASTERY"]), ("Distance", stats["DISTANCE_MASTERY"]),
+                             ("Melee", stats["MELEE_MASTERY"])]
+                for name, val in masteries:
+                    if val != 0:
+                        with ui.row().classes("stat-bar w-full justify-between"):
+                            ui.label(name).classes("text-white text-xs")
+                            ui.label(str(val)).classes("text-blue-300 text-xs font-bold")
+
+            if stats["RESISTANCE"] > 0:
+                ui.separator()
+                ui.label("Resistances").classes("text-sm font-bold text-green-300 mt-1")
+                resistances = [("Elementaire", stats["RESISTANCE"]), ("Feu", stats["FIRE_RES"]),
+                               ("Eau", stats["WATER_RES"]), ("Air", stats["AIR_RES"]),
+                               ("Terre", stats["EARTH_RES"])]
+                for name, val in resistances:
+                    if val != 0:
+                        with ui.row().classes("stat-bar w-full justify-between"):
+                            ui.label(name).classes("text-white text-xs")
+                            ui.label(str(val)).classes("text-green-300 text-xs font-bold")
+
+            secondary = [("Coup Critique", stats["CRITICAL_HIT"]), ("Parade", stats["BLOCK"]),
+                         ("Esquive", stats["DODGE"]), ("Tacle", stats["LOCK"]),
+                         ("Initiative", stats["INITIATIVE"])]
+            has_secondary = any(v != 0 for _, v in secondary)
+            if has_secondary:
+                ui.separator()
+                ui.label("Secondaires").classes("text-sm font-bold text-purple-300 mt-1")
+                for name, val in secondary:
+                    if val != 0:
+                        with ui.row().classes("stat-bar w-full justify-between"):
+                            ui.label(name).classes("text-white text-xs")
+                            ui.label(str(val)).classes("text-purple-300 text-xs font-bold")
+
+    def refresh_slot(slot):
+        container = slot_containers.get(slot)
+        if not container:
+            return
+        container.clear()
+        item = state.equipment.get(slot)
+        with container:
+            if item:
+                rcolor = RARITY_COLORS.get(item.get("rarity", "COMMON"), "#CCC")
+                ui.label(SLOT_LABELS.get(slot, slot)).classes("text-xs text-gray-400")
+                ui.label(item.get("name", "?")).classes("text-sm font-bold").style(f"color: {rcolor}")
+                lvl = item.get("level", 0)
+                ui.label(f"Nv.{lvl}").classes("text-xs text-gray-500")
+                with ui.row().classes("gap-1 flex-wrap"):
+                    for eff in item.get("effects", [])[:4]:
+                        fmt = eff.get("format", "")
+                        if fmt:
+                            ui.label(fmt).classes("text-xs text-gray-300")
+            else:
+                ui.label(SLOT_LABELS.get(slot, slot)).classes("text-sm text-gray-500")
+                ui.label("Vide").classes("text-xs text-gray-600 italic")
+
+    def open_item_panel(slot):
+        current_slot["value"] = slot
+        item_panel_visible["value"] = True
+        search_input["value"] = ""
+        rarity_select["value"] = None
+        refresh_item_list()
+        item_panel.set_visibility(True)
+
+    def refresh_item_list():
+        item_list_container.clear()
+        slot = current_slot["value"]
+        if not slot:
+            return
+        items = state.get_items_for_slot(slot, search_input["value"], rarity_select["value"])
+        with item_list_container:
+            ui.label(f"{SLOT_LABELS.get(slot, slot)} - {len(items)} items").classes("text-sm text-gray-400 mb-1")
+            for it in items:
+                rcolor = RARITY_COLORS.get(it.get("rarity", "COMMON"), "#CCC")
+                with ui.card().classes("item-row w-full p-2").on("click", lambda e, i=it, s=slot: select_item(s, i)):
+                    with ui.row().classes("w-full items-center gap-2"):
+                        ui.html(f'<span class="rarity-dot" style="background:{rcolor}"></span>')
+                        with ui.column().classes("gap-0"):
+                            ui.label(it.get("name", "?")).classes("text-sm font-bold").style(f"color: {rcolor}")
+                            with ui.row().classes("gap-2"):
+                                ui.label(f"Nv.{it.get('level', 0)}").classes("text-xs text-gray-400")
+                                mastery = it.get("total_mastery", 0)
+                                res = it.get("total_resistance", 0)
+                                if mastery:
+                                    ui.label(f"M:{mastery}").classes("text-xs text-blue-300")
+                                if res:
+                                    ui.label(f"R:{res}").classes("text-xs text-green-300")
+
+    def select_item(slot, item):
+        state.equip_item(slot, item)
+        refresh_slot(slot)
+        refresh_stats()
+        item_panel.set_visibility(False)
+
+    def unequip(slot):
+        state.unequip_slot(slot)
+        refresh_slot(slot)
+        refresh_stats()
+
+    def on_class_change(value):
+        state.character_class = value
+        state.equipment.clear()
+        state.active_spells.clear()
+        state.passive_spells.clear()
+        for slot in SLOT_ORDER:
+            refresh_slot(slot)
+        refresh_stats()
+        refresh_spells()
+
+    def on_level_change(value):
+        try:
+            state.level = int(value)
+        except (ValueError, TypeError):
+            state.level = 200
+        for slot in SLOT_ORDER:
+            refresh_slot(slot)
+        refresh_stats()
+
+    def refresh_spells():
+        spells_container.clear()
+        class_spells = state.get_class_spells()
+        with spells_container:
+            for category, label in [("elementary", "Elementaires"), ("active", "Actifs"), ("passive", "Passifs")]:
+                spells = class_spells.get(category, [])
+                if not spells:
+                    continue
+                ui.label(f"{label} ({len(spells)})").classes("text-md font-bold text-yellow-400 mt-2 mb-1")
+                with ui.row().classes("flex-wrap gap-2"):
+                    for sp in spells:
+                        tr = sp.get("translations", {}).get("fr", {})
+                        name = tr.get("name", "?")
+                        desc = tr.get("description", "")
+                        element = sp.get("element", "")
+                        ap = sp.get("apCost", 0)
+                        mp = sp.get("mpCost", 0)
+                        rng = sp.get("maxRange", 0)
+                        unlock = sp.get("unlockLevel", 0)
+                        eclass = "element-" + element.lower() if element else ""
+                        with ui.card().classes("spell-card"):
+                            ui.label(name).classes(f"text-sm font-bold {eclass}")
+                            with ui.row().classes("gap-1"):
+                                if ap: ui.label(f"{ap} PA").classes("text-xs text-blue-300")
+                                if mp: ui.label(f"{mp} PM").classes("text-xs text-green-300")
+                                if rng: ui.label(f"Po:{rng}").classes("text-xs text-gray-400")
+                                if unlock > 1: ui.label(f"Nv.{unlock}").classes("text-xs text-gray-500")
+                            if desc:
+                                ui.tooltip(desc)
