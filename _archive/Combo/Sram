@@ -1,0 +1,1041 @@
+=== PERSONNAGE ===
+
+Classe : Sram
+Nom : L'Immortel
+Niveau : 179
+XP : 516 876 187 / 1 088 476 225
+
+--- Stats de base ---
+PV : 8920
+PA : 13
+PM : 5
+PW : 8
+
+--- Maîtrises Élémentaires ---
+Feu : 808
+Eau : 808
+Terre : 190
+Air : 425
+
+--- Résistances Élémentaires ---
+Feu : 71% (564)
+Eau : 63% (452)
+Terre : 52% (335)
+Air : 70% (546)
+
+--- Combat ---
+Dommages infligés : 18%
+Coup critique : 72%
+Initiative : 142
+Esquive : 502
+Sagesse : 100
+Volonté : 0
+Soins réalisés : 6%
+Parade : 0%
+Portée : 0
+Tacle : 252
+Prospection : 100
+
+--- Secondaire ---
+Maîtrise Critique : 456
+Maîtrise Dos : 585
+Maîtrise Mêlée : 1030
+Maîtrise Distance : 0
+Maîtrise Soin : 0
+Maîtrise Berserk : -90
+Résistance Critique : 0
+Résistance Dos : 25
+Armure donnée : 0%
+Armure reçue : 0%
+Dommages indirects : 0%
+
+
+
+
+=== BONUS DE GUILDE ===
+
+- 5 Sagesse (×2) = 10 Sagesse
+- 5 Esquive (×3) = 15 Esquive
+- 5 Tacle (×3) = 15 Tacle
+- 2% Soins réalisés (×3) = 6% Soins réalisés
+- 2% Dommages infligés (×4) = 8% Dommages infligés
+- 5 Résistance Feu (×4) = 20 Résistance Feu
+- 5 Résistance Terre (×4) = 20 Résistance Terre
+- 5 Résistance Eau (×4) = 20 Résistance Eau
+- 5 Résistance Air (×4) = 20 Résistance Air
+- 10 PV (×3) = 30 PV
+- 5 PV (×3) = 15 PV
+- 5 Initiative (×2) = 10 Initiative
+- 5 Prospection (×2) = 10 Prospection
+- 5% XP Fabrication (×2) = 10% XP Fabrication
+
+=== MÉCANIQUES DE CLASSE : SRAM ===
+
+--- Passif : Assassin Squelettique ---
+
+En début de combat, débloque les sorts suivants (3ème barre) :
+- Invisibilité
+- Double
+- Piège de Répulsion
+- Piège d'Attraction
+- Piège de Téléportation
+- Retirer un Piège
+
+En début de combat, le Sram gagne 20% Coup Critique et 50 Point Faible.
+
+Le Sram inflige 50% Dommages supplémentaires aux ennemis isolés (aucun allié à 2 cases ou moins) ou au contact de son Double.
+
+En tuant un ennemi, le Sram gagne 25 Point Faible et l'état Assassin.
+
+En fin de tour, le Sram gagne 25 Point Faible s'il est isolé (aucun ennemi à 2 cases ou moins) et n'a pas l'état Assassin.
+
+Les sorts élémentaires du Sram génèrent du Point Faible.
+
+--- État : Assassin ---
+Le Sram a tué un ennemi ce tour.
+
+--- État : Point Faible ---
+Niveau 1 (cumulable)
+Point Faible est généré pour le Sram par les sorts élémentaires. Lorsque le niveau de Point Faible est assez élevé, le Sram peut le consommer avec certains sorts pour des effets plus puissants.
+
+Permet au Sram de profiter d'effets supplémentaires sur certains sorts.
+
+Tous les 25 Point Faible consommés :
+- +1 PA
+- +1 PM
+- +1 PW
+- Hémorragie (+10 niveaux) sur la cible
+
+
+
+=== SORTS INNÉS DU SRAM (Assassin Squelettique - Barre 3) ===
+
+--- Piège de Répulsion ---
+Coût : 2 PA, 1 PW
+Portée : 1-6 (ne nécéssite pas de ligne de vue)
+Pose le Piège de Répulsion (2 max)
+Au déclenchement :
+- Pousse les cibles de 2 cases
+- Regagne 2 PA si le piège est déclenché pendant le tour en cours
+
+État : Piège de Répulsion
+- Pousse de 2 cases
+
+Condition : 2 utilisations par tour
+
+--- Piège d'Attraction ---
+Coût : 2 PA, 1 PW
+Portée : 1-6 (ne nécéssite pas de ligne de vue)
+Pose le Piège d'Attraction (2 max)
+Au déclenchement :
+- Attire les cibles de 2 cases
+- Regagne 2 PA si le piège est déclenché pendant le tour en cours
+
+État : Piège d'Attraction (Niv. 0)
+- Attire de 2 cases
+
+Condition : 2 utilisations par tour
+
+--- Piège de Téléportation ---
+Coût : 2 PA, 1 PW
+Portée : 1-6
+Pose le Piège de Téléportation (2 max)
+Au déclenchement :
+- Téléporte la cible sur l'autre Piège de Téléportation (6 cases max)
+- Regagne 1 PA si le piège est déclenché pendant le tour en cours
+
+État : Piège de Téléportation (Niv. 0)
+- Téléporte la cible sur l'autre Piège de Téléportation (6 PO max entre les pièges)
+
+
+- Retirer un Piège --- Coût : 0 PA Portée : 1-63 (sans ligne de vue) Retire le piège ciblé.
+
+Condition : 2 utilisations par tour
+--- Double ---
+
+Coût : 2 PA, 1 PW
+Portée : 1 
+Invoque un Double (1 fois tous les 2 tours)
+Si le Double est sur le terrain :
+Le sort peut se lancer sur le Sram
+Le sort ne coûte pas de PA
+Le Sram prend contrôle du Double et joue son tour instantanément et quand il a fini de jouer avec son double reprend le controle du sram pendant que le double est controlé a l'état double
+Double (Niv. 1) :
+
+Condition : Invocation en jeu : Double ou n'a pas l'état double
+
+Caractéristiques :
+8 PA et 6 PM
+40 % des PV max du Sram
+Possède les caractéristiques du Sram
++2 Tacle
+Immunisé aux dommages de zone du Sram
+Ne peut pas être soigné
+Sorts :
+Peur
+Diversion
+Contact Létal
+Piège d'Embuscade
+
+--- Sorts du Double ( décomptés des PA/PM du double indépendament du sram )---
+
+--- Peur ---
+
+Coût : 2 PA
+Portée : 2-3 (sans ligne de vue, en ligne)
+Pousse la cible devant le Double Sram sur la case ciblée
+
+Condition : 2 utilisations par tour
+--- Diversion ---
+
+Coût : 2 PA
+Portée : 0 (soi-même)
+Tourne le regard des cibles vers le Double 2 portée en ( devant, deriere, à droite et a gauche )
+
+Condition : 1 utilisations par tour
+--- Contact Létal ---
+
+Coût : 2 PA
+Portée : 1 
+Marque Létale (Niv. 1) :
+Si le Sram tue un ennemi :
+Regagne 2 PA
+Le porteur de la marque échange de position avec l'ennemi tué
+Le porteur de la marque récupère l'Hémorragie de l'ennemi
+
+Condition : 2 tours de recharge
+
+--- Hémorragie (Niv. 1) ---
+
+Hémorragie ajoute des dommages supplémentaires à la cible à chaque fois que le Sram lui inflige des dommages directs.
+En recevant des dommages directs du Sram :
+1 % dommages supplémentaires (sous l'Armure)
+
+--- Piège d'Embuscade ---
+
+Coût : 4 PA
+Portée : 3-6 (sans ligne de vue)
+Pose le Piège d'Embuscade
+Au déclenchement :
+Le Double se téléporte face à la cible puis se tourne vers elle
+
+Condition : 1 utilisations par tour
+
+--- Invisibilité ---
+
+Coût : 2 PW
+Portée : 1-4 (sans ligne de vue)
+La cible devient Invisible (2 tours)
+Applique Apparent (3 tours)
++2 PM
+Lorsque le Sram devient Invisible, au tour suivant :
+Maître des Ombres : Si le sram sort d'invisibilité en infligeant des dommages directs avec un sort : 100 % Dommages infligés au prochain sort de Dommages directs
+
+
+Conditions :
+N'a pas l'état "Apparent" (cible)
+1 utilisation par tour
+1 tour de recharge
+
+
+--- État : Apparent ---
+
+Ne peut plus être Invisible pendant la durée de l'état (3 tours)
+--- État : Invisible (Niv. 1) ---
+
+Invisible
++1 Esquive
+Ne bloque pas la ligne de vue
+La case est montrée à chaque lancé de sort
+Redevient visible si :
+La cible utilise un sort pour infliger des dommages directs
+La cible est portée ou jetée
+Le Sram est K.O
+
+
+=== EMPLACEMENTS DE SORTS ET PASSIFS ===
+
+--- Sorts Neutres ---
+
+8 emplacements de base (débloqués au niveau 20)
+4 emplacements supplémentaires verrouillés :
+Niv. 30
+Niv. 40
+Niv. 60
+Niv. 80
+--- Passifs ---
+
+1 emplacement de base (débloqué au niveau 20)
+5 emplacements supplémentaires verrouillés :
+Niv. 30
+Niv. 50
+Niv. 100
+Niv. 150
+Niv. 200
+
+
+--- Passif 1 : Évasion ---
+
+Niveau de déblocage : 20
+100 % du niveau en Esquive
+Après avoir esquivé (avec pertes) :
++35 % du niveau en Esquive (3 tours)
+Description : "Pour s'échapper un moment, ou même durablement, ce passif est idéal !"
+
+--- Passif 2 : Assassin ---
+
+Niveau de déblocage : 20
+En tuant un ennemi :
+Ne gagne plus de Point Faible
+Regagne directement 1 PA, 1 PM, 1 PW
+Soin : 20 % des PV max
+Description : "Le Sram ne gagne plus de Point Faible en tuant un ennemi mais regagne directement 1 PA 1 PM 1 PW et 20 % de ses PV max à la place."
+
+--- Passif 3 : Duperie ---
+
+Niveau de déblocage : 20
+Après avoir reçu des dommages directs :
+Échange de position avec son Double (1 fois par tour de combattant)
+Description : "Le Sram échange de position avec son Double après avoir reçu des dommages directs."
+
+--- Passif 4 : Interception ---
+
+Niveau de déblocage : 20
+100 % du niveau en Tacle
+Après avoir taclé une cible :
++35 % du niveau en Tacle (3 tours)
+Description : "Hopla ! Où croyez-vous aller ? Restez donc ici !"
+
+
+--- Passif 5 : Retenue ---
+
+Niveau de déblocage : 20
+Invisibilité ne peut plus se lancer sur un allié
+Invisible est retiré seulement sur un sort à 4 PA ou plus
+Description : "Le Sram perd son invisibilité en infligeant des dommages directs seulement s'il s'agit d'un sort à 4 PA ou plus. Il peut ainsi utiliser des petits sorts avant de se révéler. En contrepartie, il ne peut plus rendre un allié invisible."
+
+
+--- Passif 6 : Passe-passe ---
+
+Niveau de déblocage : 20
+Le Double peut s'invoquer jusqu'à 4 Portée en ligne, sans ligne de vue
+En invoquant le Double :
+Échange de position avec le Double
+Échange à nouveau de position avec le Double en fin de tour
+Description : "En invoquant le Double, le Sram échange de position avec, avant d'échanger à nouveau de position avec à la fin de son tour."
+
+--- Passif 7 : Inspiration ---
+
+Niveau de déblocage : 25
+50 % du niveau en Initiative
+10 % Dommages infligés aux cibles ayant plus d'Initiative
+Description : "Une bonne respiration, une boisson fraîche et on entame le combat !"
+
+--- Passif 8 : Embuscade ---
+
+Niveau de déblocage : 25
+Les pièges ne rendent plus de PA au Sram
+Regagne 1 PW au déclenchement d'un piège
+Lorsqu'un ennemi déclenche un piège du Sram :
+Dommage Terre : 10 (dommages mêlée)
+Description : "Les pièges du Sram ne lui rendent plus de PA au déclenchement mais infligent des dommages aux ennemis. Le Sram regagne 1 PW lorsque ses pièges sont déclenchés."
+
+--- Passif 9 : Piège d'Attraction II ---
+
+Niveau de déblocage : 30
+Le Piège d'Attraction devient Piège d'Attraction II
+Le piège passe en zone croix de taille 1
+Au déclenchement, les cibles sont attirées vers le centre du piège
+État : Piège d'Attraction II (Niv. 0)
+
+Tourne le regard de la cible
+
+Pousse de 1 case
+
+Description : "Le piège d'attraction change de fonctionnement. Le piège devient en zone croix de taille 1 et attire les cibles vers le centre du piège."
+
+
+--- Passif 10 : Motivation ---
+
+Niveau de déblocage : 35
++1 PA
+-20 % Dommages infligés
++10 Volonté
+Description : "En étant motivé, on peut rapidement prendre le pas sur ses adversaires."
+
+--- Passif 11 : Peur Alternative ---
+
+Niveau de déblocage : 35
+Le sort Peur du Double change de fonctionnement :
+Le sort attire la cible au contact du Double
+Description : "Le sort Peur du Double change de fonction : les cibles sont attirées vers le Double au lieu d'être repoussées."
+
+--- Passif 12 : Hémophilie ---
+
+Niveau de déblocage : 40
+En fin de tour, convertit l'Hémorragie de ses ennemis en Hémophilie (1 tour) :
+4 % du niveau du Sram par niveau d'Hémorragie
+Hémorragie n'ajoute plus de dommages au Sram
+Description : "À la fin de son tour, le Sram transforme l'Hémorragie de ses ennemis en poison de début de tour. Ce poison inflige toujours des dommages mêlée."
+⚠️ ATTENTION : Passif actuellement DÉSACTIVÉ suite à la mise à jour 1.91.2. L'effet n'est pas appliqué même s'il est équipé dans le deck. En attente d'un correctif par Ankama.
+
+--- Passif 13 : Piège de Répulsion II ---
+
+Niveau de déblocage : 45
+Le Piège de Répulsion devient Piège de Répulsion II :
+Le piège n'est plus en zone
+Au déclenchement, la cible est poussée de 3 cases dans la direction où elle regarde
+État : Piège de Répulsion II
+
+Pousse de 3 cases
+
+Description : "Le piège de répulsion change de fonctionnement. Le piège devient monocible et pousse la cible dans la direction où elle regarde lors du déclenchement." 
+(les joueurs s'en servent pour améliorer leur mobilité ainsi que pieger les mobs en pvm)
+
+--- Passif 14 : Localisation Quantique ---
+
+Niveau de déblocage : 50
+En début de combat, la Maîtrise dos est convertie en Maîtrise mêlée
+Les dommages du Sram ne prennent plus l'orientation de la cible en compte
+Description : "Le Sram convertit ses dommages de dos en dommages mêlée. En contrepartie, il ne prend plus en compte l'orientation de ses cibles : elles sont toujours considérées de face."
+
+--- Passif 15 : Médecine ---
+
+Niveau de déblocage : 55
++30 % Soins réalisés
++25 % Armure donnée
+-15 % Dommages infligés
+Description : "Besoin d'un soigneur dans votre équipe ? Je suis là !"
+
+--- Passif 16 : Leurre ---
+
+Niveau de déblocage : 60
+Le Double explose s'il subit des dommages directs :
+Dommage : 50 % des PV courants du Double
+Hémorragie (+20 Niv.) en zone
+Description : "Le Double explose lorsqu'il subit des dommages directs. Il inflige des dommages en fonction de ses PV et applique de l'Hémorragie aux ennemis autour de lui."
+
+--- Passif 17 : Diversion Alternative ---
+
+Niveau de déblocage : 70
+Le sort Diversion du Double change de fonctionnement :
+Les cibles autour du Double sont retournées (en zone)
+Description : "Le sort Diversion du Double change de fonction : les cibles sont retournées de dos au Double au lieu de face."
+
+--- Passif 18 : Rock ---
+
+Niveau de déblocage : 65
++60 % Points de Vie
++25 % Soins reçus
+-25 % Dommages infligés
+-50 % Soins réalisés
+Description : "Plus solide que la montagne, je prendrai les dégâts pour vous !"
+
+--- Passif 19 : Piège de Téléportation II ---
+
+Niveau de déblocage : 80
+Le Piège de Téléportation devient Piège de Téléportation II :
+Le piège n'est pas consommé à l'utilisation
+Le piège dure 1 tour
+La téléportation est limitée à 4 cases max
+Le piège n'est déclenché que par les alliés
+État : Piège de Téléportation II (Niv. 0)
+
+Téléporte la cible sur l'autre Piège de Téléportation II (4 PO max entre les pièges)
+
+Le piège n'est pas retiré au déclenchement
+
+Description : "Le piège de téléportation change de fonctionnement. Le piège reste 1 tour et n'est plus consommé à l'utilisation. La téléportation est limitée à 4 cases max. Seuls les alliés peuvent déclencher le piège."
+
+
+--- Passif 20 : Assaut Létal ---
+
+Niveau de déblocage : 90
+La Marque Létale du Double change de fonctionnement :
+Si le Sram tue un ennemi :
+Regagne 2 PA
+Se téléporte dans le dos du porteur de la marque
+Le porteur de la marque récupère l'Hémorragie de l'enemi tué
+Description : "La marque létale du Double change de fonctionnement. Au lieu de déplacer le porteur de la marque lorsque le Sram tue un ennemi, il se téléporte directement dans son dos."
+
+
+--- Passif 21 : Carnage ---
+
+Niveau de déblocage : 75 
++15 % Dommages infligés +10 % Dommages infligés aux cibles ayant de l'Armure -30 % Soins réalisés 
+Description : "Soif de sang et de pouvoir, je suis là pour faire des dégâts !"
+
+--- Passif 22 : Assaut Brutal ---
+
+Niveau de déblocage : 100 
+Les sorts à 4 PA ou plus ne génèrent plus de Point Faible À la place, ils infligent 5 % dommages supplémentaires par PA Seuls les sorts qui génèrent du Point Faible de base sont concernés Les sorts Mise à mort et Traumatisme ne sont pas concernés par les effets de ce passif 
+Description : "Les sorts coûteux du Sram font davantage de dommages mais ne génèrent plus de Point Faible. Les sorts Mise à mort et Traumatisme ne sont pas concernés par les effets de ce passif."
+
+
+
+--- Sort Neutre 1 : Peur ---
+Niveau de déblocage  : 1
+Coût : 2 PA 
+Portée : 2-5 (sans ligne de vue, en ligne) Monocible
+Pousse la cible devant le Sram sur la case ciblée Si la cible poussée est le Double : regagne 2 PA 
+Condition : 3 utilisations par tour 
+Description : "Un sort de poussée modulable. La cible face au Sram est poussée sur la case visée. Le Sram regagne 2 PA si la cible poussée est son Double."
+
+--- Sort Neutre 2 : Galopade ---
+Niveau de déblocage  : 15
+Coût : 1 PW 
+Portée : 1-3 (sans ligne de vue, lancable sur allié / Utilisable sur soi même / portée modifiable)
+ +3 PM max (1 tour) +80 Esquive (1 tour) 
+ Condition : La cible ne doit pas être un ennemi, 2 tours de recharge 
+ Description : "Permet au Sram ou à un de ses alliés de gagner en mobilité."
+
+ --- Sort Neutre 3 : Entourloupe ---
+Niveau de déblocage  : 30
+Coût : 2 PA, 1 PW 
+Portée : 0 (soi-même) Échange de position avec le Double La 2ème utilisation dans le même tour est gratuite 
+Condition : Invocation en jeu : Double Sram 2 utilisations par tour 
+Description : "Permet au Sram d'échanger de position avec son Double. La deuxième utilisation dans le même tour est gratuite."
+
+
+
+--- Sort Neutre 4 : Sournoiserie ---
+
+Niveau de déblocage : 45 
+Coût : 2 PA 
+Portée : 1-6 (sans ligne de vue) 
+Sournoiserie (Niv. 1) (1 tour) : Si le porteur de l'état déclenche un piège du Sram : Le Sram se téléporte dans le dos de la cible L'état Sournoiserie est retiré 
+Condition : 2 tours de recharge 
+Description : "Le Sram marque la cible pendant un tour. Si elle déclenche un piège du Sram, celui-ci se téléporte dans son dos."
+
+--- Sort Neutre 5 : Assassinat ---
+
+Niveau de déblocage : 60 
+Coût : 1 PA, 2 PW 
+Portée : 1-3 (en ligne, sans ligne de vue, modifiable)
+
+Effets :
+
+-100 Résistance Élémentaire (sur la cible)
+Si la cible est encore en vie à la fin du tour :
++100 Résistance Élémentaire (1 tour)
+Conditions : La cible doit être un ennemi, 2 tours de recharge
+Description : "Le Sram réduit les résistances de la cible pour la tuer. Si elle est encore en vie à la fin du tour, elle gagne des résistances pendant 1 tour."
+
+--- Sort Neutre 6 : Surineur ---
+
+Niveau de déblocage : 90 
+Coût : 2 PA 
+Portée : 0 (soi-même)
+
+Effets : Au début du prochain tour :
+
++20% Dommages infligés de dos
++20% Dommages infligés en coup critique
+Stabilisé (tour en cours) ( ne peut pas utiliser de sort de téléportation ou de déplacements )
+Conditions : 2 tours de recharge
+Description : "Au prochain tour, le Sram gagne des dommages infligés en coup critique et de dos, et devient stabilisé pour le tour en cours."
+
+
+
+--- Sort Feu 1 : Premier Sang ---
+
+Coût : 2 PA 
+Portée : 1 (mêlée) Zone : Ligne horizontale de 3 cases
+
+Effets :
+
+Si la cible n'a pas d'Hémorragie : Hémorragie (+10 Niv.)
+Sinon : Hémorragie (+2 Niv.)
+Dommage Feu (zone)
+Point Faible (+10 Niv.)
+Conditions : 3 utilisations par tour
+Description : "Premier Sang applique un montant élevé d'Hémorragie aux ennemis qui n'en ont pas. Hémorragie ajoute des dommages à la cible lorsque le Sram lui inflige des dommages directs. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau -	Dommages - Critique
+20 -	6 -	8
+35 -	10 -	13
+50 -	14 - 	17
+65 -	17 -	22
+80 -	21 -  26
+95 -	24 -  31
+110 -	28 -	35
+125 -	32 -	40
+140 -	35 -	44
+155 -	39 -	49
+170 -	42 -	53
+185 -	46 -	58
+200 -	50 -	62
+215 -	53 -	67
+230 -	57 -	71
+245 -	60 -	76
+
+--- Sort Feu 2 : Ouvrir les Veines ---
+Coût : 2 PA 
+Portée : 1 (mêlée) Monocible
+
+Effets :
+
+Dommage Feu
+Consomme l'Hémorragie de la cible :
+Soin : 1% PV max par niveau d'Hémorragie
++1 Point Faible par niveau d'Hémorragie
+Conditions : 
+1 utilisation par cible
+3 utilisations par tour
+Description : "En plus d'infliger des dommages, le Sram consomme l'Hémorragie de sa cible pour se soigner et gagner du Point Faible. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau	Dommages	Critique
+20 -	7 -	9
+35 -	11 -	13
+50 -	15 -	18
+65 -	18 -	23
+80 -	22 -	28
+95 -	26 -	33
+110 -	30 -	38
+125 -	34 -	43
+140 -	38 -	48
+155 -	42 -	52
+170 -	46 -	57
+185 -	50 -	62
+200 -	54 -	67
+215 -	57 -	72
+230 -	61 -	77
+245 -	65 -	82
+
+
+--- Sort Feu 3 : Saignée Mortelle ---
+
+Coût : 3 PA 
+Portée : 1-5 (en ligne, non modifiable) Monocible
+
+Effets :
+
+Hémorragie (+6 Niv.) Saignée mortelle (Niv. 1) Dommage Feu Soin : 100% des dommages infligés par Hémorragie
+
+Conditions : 3 utilisations par cible 4 utilisations par tour
+
+Description : "Inflige des dommages et applique de l'Hémorragie à la cible. Hémorragie ajoute des dommages à la cible lorsque le Sram lui inflige des dommages directs. Les dommages infligés par l'Hémorragie activée par ce sort sont convertis en vol de vie sur le Sram. Au début du prochain tour du Sram, il lance une réplique du sort sur la cible. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 
+20 - 10 - 12 
+35 - 15 - 19 
+50 - 21 - 26 
+65 - 26 - 33 
+80 - 31 - 39 
+95 - 37 - 46 
+110 - 42 - 53
+ 125 - 48 - 60 
+ 140 - 53 - 66 
+ 155 - 58 - 73 
+ 170 - 64 - 80 
+ 185 - 69 - 87 
+ 200 - 75 - 93 
+ 215 - 80 - 100 
+ 230 - 85 - 107 
+ 245 - 91 - 114
+
+ --- Sort Feu 4 : Châtiment ---
+
+Coût : 4 PA 
+Portée : 0 (soi-même) Zone : Croix de taille 1
+
+Effets :
+
+Dommage Feu (zone croix) Si le Sram a consommé du Point Faible dans son tour : Dommage Feu : plus élevé à la place Point Faible (+20 Niv.)
+
+Conditions : 2 utilisations par tour
+
+Description : "Les dommages de ce sort sont plus élevés si le Sram a consommé du Point Faible dans son tour. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique - Dommages (PF consommé) - Critique (PF consommé) 
+20 - 15 - 19 - 19 - 23 
+35 - 23 - 29 - 29 - 36 
+50 - 32 - 40 - 40 - 50 
+65 - 40 - 50 - 50 - 63 
+80 - 48 - 61 - 61 - 76 
+95 - 57 - 71 - 71 - 89 
+110 - 65 - 82 - 82 - 102 
+125 - 74 - 92 - 92 - 115 
+140 - 82 - 103 - 103 - 128 
+155 - 90 - 113 - 113 - 141 
+170 - 99 - 124 - 124 - 155 
+185 - 107 - 134 - 134 - 168 
+200 - 116 - 145 - 145 - 181 
+215 - 124 - 155 - 155 - 194 
+230 - 132 - 166 - 166 - 207 
+245 - 141 - 176 - 176 - 220
+
+--- Sort Feu 5 : Mise à Mort ---
+
+Coût : 6 PA 
+Portée : 1 (mêlée) Monocible
+
+Effets :
+
+Dommage Feu 1% Dommages supplémentaires par Point Faible Consomme Point Faible
+
+Conditions : 1 utilisation par tour
+
+Description : "Inflige des dommages Feu et consomme le Point Faible pour faire des dommages supplémentaires. En fonction du nombre de Point Faible consommé, le Sram regagne des PA, des PM et des PW et applique de l'Hémorragie sur la cible après avoir infligé les dommages. Hémorragie ajoute des dommages à la cible lorsque le Sram lui inflige des dommages directs."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 20 - Déblocable au niveau 21 
+35 - 35 - 44
+50 - 48 - 59 
+65 - 60 - 75 
+80 - 73 - 91 
+95 - 85 - 107 
+110 - 98 - 122 
+125 - 111 - 138 
+140 - 123 - 154 
+155 - 136 - 170 
+170 - 148 - 185 
+185 - 161 - 201 
+200 - 174 - 217 
+215 - 186 - 233 
+230 - 199 - 248 
+245 - 211 - 264
+
+
+
+--- Sort Eau 1 : Kleptosram ---
+
+Coût : 2 PA Portée : 1-2 (en ligne, non modifiable, sans ligne de vue) Monocible
+
+Effets :
+
+Dommage Eau Si la cible est de dos : Point Faible (+5 Niv.) Point Faible (+10 Niv.)
+
+Conditions : 3 utilisations par tour
+
+Description : "Inflige des dommages Eau et génère davantage de Point Faible si la cible est de dos."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 
+20 - 6 - 8 
+35 - 10 - 13 
+50 - 14 - 17 
+65 - 17 - 22 
+80 - 21 - 26 
+95 - 24 - 31 
+110 - 28 - 35 
+125 - 32 - 40 
+140 - 35 - 44 
+155 - 39 - 49 
+170 - 42 - 53 
+185 - 46 - 58 
+200 - 50 - 62 
+215 - 53 - 67 
+230 - 57 - 71 
+245 - 60 - 76
+
+--- Sort Eau 2 : Arnaque ---
+
+Coût : 2 PA 
+Portée : 1-2 (non modifiable, sans ligne de vue) Monocible
+
+Effets :
+
+Dommage Eau 1% Dommages supplémentaires par Point Faible Soin : 0,5% des PV max par niv. de Point Faible Consomme Point Faible
+
+Conditions : 3 utilisations par tour
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 20 - 6 - 8 
+35 - 10 - 13 
+50 - 14 - 17 
+65 - 17 - 22 
+80 - 21 - 26 
+95 - 24 - 31 
+110 - 28 - 35 
+125 - 32 - 40 
+140 - 35 - 44 
+155 - 39 - 49 
+170 - 42 - 53 
+185 - 46 - 58 
+200 - 50 - 62 
+215 - 53 - 67 
+230 - 57 - 71 
+245 - 60 - 76
+
+--- Sort Eau 3 : Attaque Létale ---
+
+Coût : 4 PA Portée : 1-2 (non modifiable, sans ligne de vue) Monocible
+
+Effets :
+
+Dommage Eau Si ce sort tue un ennemi, regagne 2 PA et 2 PM Point Faible (+20 Niv.)
+
+Conditions : 2 utilisations par tour
+
+Description : "Si le sort tue la cible ennemie, le Sram regagne des PA et des PM. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 
+20 - 14 - 18 
+35 - 22 - 27 
+50 - 30 - 37 
+65 - 37 - 47 
+80 - 45 - 56 
+95 - 53 - 66 
+110 - 61 - 76 
+125 - 69 - 86 
+140 - 76 - 95 
+155 - 84 - 105 
+170 - 92 - 115 
+185 - 100 - 125 
+200 - 108 - 134 
+215 - 115 - 144 
+230 - 123 - 154 
+245 - 131 - 164
+
+--- Sort Eau 4 : Attaque Perfide ---
+
+Coût : 3 PA Portée : 1-2 (non modifiable, sans ligne de vue) Monocible
+
+Effets :
+
+Dommage Eau (passe sous l'Armure) 40% des dommages infligés sont convertis en Armure sur la cible Point Faible (+15 Niv.)
+
+Conditions : 2 utilisations par cible 3 utilisations par tour
+
+Description : "Inflige des dommages Eau élevés qui passent sous l'Armure. Une partie des dommages infligés est convertie en Armure sur la cible. Ce sort génère du Point Faible."
+
+Tableau de dommages par niveau :
+
+Niveau - Dommages - Critique 
+20 - 13 - 17 
+35 - 20 - 26 
+50 - 28 - 35 
+65 - 35 - 44 
+80 - 42 - 53 
+95 - 49 - 62 
+110 - 56 - 71 
+125 - 64 - 80 
+140 - 71 - 89 
+155 - 78 - 98 
+170 - 85 - 107 
+185 - 92 - 116 
+200 - 100 - 125 
+215 - 107 - 134 
+230 - 114 - 143 
+245 - 121 - 152
+
+
+Sort Eau 5 – Attaque Mortelle
+
+Coût : 5 PA
+Portée : 1‑2 (sans ligne de vue), monocible
+Niveau de déblocage : 23
+Effets :
+Dommage Eau (normal / critique)
+Si la cible a PV < 50 % : dommage Eau augmenté à la place
+Point Faible (+25 Niv.)
+Conditions : 1 utilisation par cible
+Tableau des dégâts (Normal / Critique — Normal PV<50% / Critique PV<50%) :
+
+Niveau	- Dégâts -	Crit	- Dégâts (PV<50%)	- Crit (PV<50%)
+20	Déblocable 23	—	—	—
+35	29	36	41	51
+50	40	50	56	70
+65	50	63	70	88
+80	61	76	85	106
+95	71	89	100	125
+110	82	102	114	143
+125	92	115	129	161
+140	103	128	144	180
+155	113	141	158	198
+170	124	155	173	217
+185	134	168	188	235
+200	145	181	203	253
+215	155	194	217	272
+230	166	207	232	290
+245	176	220	247	308
+
+
+Sort Air 1 – Coup Pénétrant
+
+Coût : 4 PA
+Portée : 1 (mêlée), zone ligne de 3 cases
+Niveau de déblocage : 6
+Effets :
+Dommage Air (normal / critique)
+Si la cible a de l'Armure : dommage Air supplémentaire (sur l'Armure) (normal / critique)
+Les dommages sont toujours mêlée
+Point Faible (+20 Niv.)
+Conditions : 2 utilisations par tour
+Description : « Inflige des dommages en ligne de 3 cases. Une ligne de dommages supplémentaires est appliquée sur l'Armure. Les dommages de ce sort sont toujours considérés mêlée, même si la cible est à plus de 2 cases. Ce sort génère du Point Faible. »
+
+
+Niveau	Dégâts	Crit	Dégâts Armure	Crit Armure
+20	14	18	7	9
+35	22	27	11	13
+50	30	37	15	18
+65	37	47	18	23
+80	45	57	22	28
+95	53	66	26	33
+110	61	76	30	38
+125	69	86	34	43
+140	76	95	38	47
+155	84	105	42	52
+170	92	115	46	57
+185	100	125	50	62
+200	108	134	54	67
+215	115	144	57	72
+230	123	154	61	77
+245	131	164	65	82
+
+Sort Air 2 – Fourberie
+
+Coût : 3 PA
+Portée : 1‑4 (en ligne, sans ligne de vue, non modifiable)
+Niveau de déblocage : 7
+Effets :
+Téléporte derrière la cible
+Dommage Air (normal / critique)
+Point Faible (+15 Niv.)
+Conditions : N'est pas porté, 1 utilisation par cible, 3 utilisations par tour
+Description : « Le Sram utilise les Ombres pour passer discrètement derrière sa cible. Ce sort génère du Point Faible. »
+Niveau	Dégâts	Crit
+20	10	13
+35	16	20
+50	22	28
+65	28	35
+80	34	43
+95	40	50
+110	45	57
+125	51	64
+140	57	72
+155	63	79
+170	69	86
+175	75	93
+200	80	101
+215	86	108
+230	92	115
+245	98	123
+
+
+Sort Air 3 – Coup Sournois
+
+Coût : 3 PA
+Portée : 1 (mêlée), monocible
+Niveau de déblocage : 13
+Effets :
+Dommage Air
+S'éloigne de 2 cases
+À chaque lancer du sort : répète les dommages sur les ennemis précédents (dommages mêlée)
+Pour chaque ennemi supplémentaire touché : Point Faible (+5 Niv.)
+Conditions : 1 utilisation par cible, 4 utilisations par tour
+Description : « Inflige des dommages Air aux ennemis et s'éloigne de la cible. À chaque lancer du sort, les dommages sont répétés sur les cibles précédentes. Ce sort génère du Point Faible. Le Sram gagne du Point Faible supplémentaire pour chaque ennemi qui subit des dommages. »
+Niveau	Dégâts	Crit
+20	10	13
+35	16	20
+50	22	28
+65	28	35
+80	34	43
+95	40	50
+110	45	57
+125	51	64
+140	57	72
+155	63	79
+170	69	86
+185	75	93
+200	80	101
+215	86	108
+230	92	115
+245	98	123
+
+
+
+Sort Air 4 – Effroi
+
+Coût : 3 PA
+Portée : 1 (mêlée), monocible
+Niveau de déblocage : 19
+Effets :
+Retourne la cible
+Dommage Air
+Si le Sram a consommé du Point Faible dans son tour : dommage Air augmenté à la place
+Point Faible (+15 Niv.)
+Conditions : 2 utilisations par cible, 3 utilisations par tour
+Description : « Retourne la cible avant de lui infliger des dommages. Les dommages sont plus élevés si le Sram a consommé du Point Faible dans son tour. Ce sort génère du Point Faible. »
+
+
+20	9	12	12	16
+35	14	18	19	24
+50	19	24	26	32
+65	24	30	32	40
+80	29	36	39	49
+95	34	44	42	56
+110	39	49	52	65
+125	44	55	59	73
+140	49	61	65	82
+155	54	64	72	90
+170	59	73	78	98
+185	64	80	85	106
+200	69	86	92	115
+215	73	92	98	123
+230	78	98	104	131
+245	83	104	111	139
+
+
+Sort Air 5 – Traumatisme
+
+Coût : 4 PA
+Portée : 1‑4 (en ligne, sans ligne de vue, non modifiable)
+Niveau de déblocage : 25
+Effets :
+Dommage Air
++1 % Dommages supplémentaires par Point Faible
+Les dommages sont toujours mêlée
+Consomme le Point Faible
+Conditions : 2 utilisations par tour
+Description : « Inflige des dommages Air toujours mêlée et consomme le Point Faible pour faire des dommages supplémentaires. En fonction du nombre de Point Faible consommé, le Sram regagne des PA, des PM et des PW et applique de l'Hémorragie sur la cible après avoir infligé les dommages. Hémorragie ajoute des dommages à la cible lorsque le Sram lui inflige des dommages directs. »
+
+20	Déblocable 25	—
+35	22	27
+50	30	37
+65	37	47
+80	45	57
+95	53	66
+110	61	76
+125	69	86
+140	76	95
+155	84	105
+170	92	115
+185	100	125
+200	108	134
+215	115	144
+230	123	154
+245	131	164
+
+
+
+
+Reliques & sublimations : Dofus Ivoire 
+
+Niveau : 155
+
+Coût : 1 PA, 2 PW
+Effets :
+
+Dofus Ivoire : Au début de chaque tour, gagne par élément : -200 % du niveau à un coup reçu ou +200 % du niveau à un coup donné (1× par tour)
+Par-delà la barrière : Si le sort coûte 4 PA ou plus → +15 % Dommages critique. Si le sort coûte 1 PW ou plus → +15 % Dommages critique
+Sublimations :
+
+Rupture PA (Niv. 4) : Fait perdre l'Armure à un ennemi → regagne 2 PA (2 activations/tour)
+Rupture Violente (Niv. 4) : Fait perdre l'Armure à un ennemi → inflige dommages lumière (40 % du niveau) (2 activations/tour)
+Témérité (Niv. 4) : Retire toute l'armure d'une cible → +12 % Dommages infligés pour le reste du tour (max 30 %)
+Influence lente (Niv. 2) : 2 % Coup critique par tour (max 30)

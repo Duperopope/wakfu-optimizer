@@ -1,0 +1,49 @@
+{
+  "confidence_threshold": 0.75,
+  "scan_interval_ms": 500,
+  "action_delay_ms": 300,
+  "hover_delay_ms": 150,
+  "calibration_offset_x": 0,
+  "calibration_offset_y": 0,
+  "calibration_points": [],
+  "selected_process": "",
+  "categories": [
+    "Alchimie",
+    "Bucheron",
+    "Paysan",
+    "Interaction"
+  ],
+  "templates": {},
+  "sequences": [],
+  "name_history": [],
+  "grid": {
+    "origin_x": 0,
+    "origin_y": 0,
+    "cell_w": 43,
+    "cell_h": 22,
+    "angle_deg": 27,
+    "cols": 20,
+    "rows": 20,
+    "visible": false
+  },
+  "grid_conditions": [],
+  "custom_categories": {
+    "Mineur": [],
+    "Ressource": [
+      "Herboristerie",
+      "Minage",
+      "Bûcheron",
+      "Pêche",
+      "Paysan",
+      "Trappeur",
+      "Minerai"
+    ]
+  },
+  "folders": {
+    "Wakfu": []
+  },
+  "types": [
+    "Arbre",
+    "Action cliquable"
+  ]
+}
