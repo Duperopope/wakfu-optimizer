@@ -120,6 +120,7 @@
   "protected_dirs": [
     "decompiled",
     "logs",
-    "reference"
+    "reference",
+    "frontend"
   ]
 }
