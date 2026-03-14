@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 data/extracted/static_effects.json
+scripts/autopush.py
