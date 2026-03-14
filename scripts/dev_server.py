@@ -1,8 +1,8 @@
 """
-dev_server.py - Serveur local d'execution pour le workflow Genspark
+dev_server.py v1.1 - Serveur local d'execution pour le workflow Genspark
 Ecoute sur localhost:8091 et execute les commandes envoyees par l'extension Chrome.
 
-SECURITE : Seules les commandes whitelistees sont autorisees.
+SECURITE : Blacklist de commandes dangereuses + chemins restreints au projet.
 LOGGING : Toutes les actions sont loguees dans logs/dev_server.log
 
 Usage : python scripts/dev_server.py
@@ -29,47 +29,29 @@ VOICE_NOTES_FILE = LOGS_DIR / "voice_notes.log"
 HOST = "127.0.0.1"
 PORT = 8091
 
-# Commandes PowerShell autorisees (whitelist)
-# On autorise uniquement les operations sur le projet
-ALLOWED_COMMANDS = [
-    "Set-Content",
-    "Get-Content",
-    "New-Item",
-    "Remove-Item",
-    "Copy-Item",
-    "Move-Item",
-    "Test-Path",
-    "Get-ChildItem",
-    "Get-Date",
-    "Write-Host",
-    "npm",
-    "npx",
-    "node",
-    "python",
-    "git",
-    "cd",
-    "Set-Location",
-    "Push-Location",
-    "Pop-Location",
-]
+# Chemin du projet normalise pour les comparaisons
+PROJECT_STR = str(PROJECT).lower().replace("/", "\\")
 
 # Commandes INTERDITES (blacklist absolue)
 BLOCKED_PATTERNS = [
     r"Invoke-WebRequest",
     r"Invoke-RestMethod",
     r"Start-Process",
-    r"Remove-Item\s+.*-Recurse.*C:\\",
-    r"Remove-Item\s+.*-Recurse.*D:\\",
-    r"Format-",
+    r"Remove-Item\s+.*-Recurse.*C:\\Windows",
+    r"Remove-Item\s+.*-Recurse.*C:\\Program",
+    r"Format-Volume",
+    r"Format-Disk",
     r"Stop-Computer",
     r"Restart-Computer",
     r"reg\s+delete",
     r"reg\s+add",
     r"netsh",
     r"shutdown",
-    r"del\s+/s",
-    r"rmdir\s+/s",
-    r"::.*system32",
+    r"del\s+/s\s+C:\\",
+    r"rmdir\s+/s\s+C:\\",
+    r"system32",
+    r"\\Windows\\",
+    r"\\Program Files",
 ]
 
 # ============================================================
@@ -102,22 +84,35 @@ def log_voice_note(note):
 # ============================================================
 
 def is_command_safe(command):
-    """Verifie qu'une commande est dans la whitelist et pas dans la blacklist."""
-    # Verifier la blacklist en premier
+    """Verifie qu'une commande n'est pas dans la blacklist."""
+    # Verifier la blacklist
     for pattern in BLOCKED_PATTERNS:
         if re.search(pattern, command, re.IGNORECASE):
             return False, f"Commande bloquee par pattern: {pattern}"
 
-    # Verifier que la commande ne sort pas du projet
-    # Autoriser uniquement les chemins dans le projet
-    project_str = str(PROJECT).replace("\\", "\\\\")
-    frontend_str = str(FRONTEND).replace("\\", "\\\\")
+    # Extraire TOUS les chemins absolus (avec ou sans guillemets, avec espaces)
+    # Pattern 1: chemins entre guillemets doubles "H:\..."
+    quoted_paths = re.findall(r'"([A-Za-z]:\\[^"]+)"', command)
+    # Pattern 2: chemins entre guillemets simples 'H:\...'
+    quoted_paths += re.findall(r"'([A-Za-z]:\\[^']+)'", command)
+    # Pattern 3: chemins sans guillemets (jusqu'a fin de ligne ou pipe ou point-virgule)
+    unquoted_paths = re.findall(r'(?<!["\'])([A-Za-z]:\\[^\s;|>]+)', command)
 
-    # Si la commande contient un chemin absolu, verifier qu'il est dans le projet
-    abs_paths = re.findall(r'[A-Z]:\\[^\s"\']+', command)
-    for p in abs_paths:
-        p_normalized = p.replace("/", "\\")
-        if not p_normalized.startswith(str(PROJECT)):
+    all_paths = quoted_paths + unquoted_paths
+    for p in all_paths:
+        p_clean = p.strip().lower().replace("/", "\\")
+        # Autoriser les chemins dans le projet
+        if p_clean.startswith(PROJECT_STR):
+            continue
+        # Autoriser les chemins relatifs resolus par le cwd
+        # Bloquer les chemins absolus hors projet
+        if re.match(r'^[a-z]:\\', p_clean):
+            # Exception : les chemins temporaires et le venv
+            if (p_clean.startswith(PROJECT_STR) or
+                "\\temp\\" in p_clean or
+                "\\tmp\\" in p_clean or
+                "\\.venv\\" in p_clean):
+                continue
             return False, f"Chemin hors projet interdit: {p}"
 
     return True, "OK"
@@ -126,11 +121,11 @@ def is_command_safe(command):
 # EXECUTION
 # ============================================================
 
-def execute_powershell(command, timeout=60):
+def execute_powershell(command, timeout=120):
     """Execute une commande PowerShell et retourne le resultat."""
     safe, reason = is_command_safe(command)
     if not safe:
-        log("BLOCKED", f"{reason} | Commande: {command[:100]}")
+        log("BLOCKED", f"{reason} | Commande: {command[:200]}")
         return {
             "success": False,
             "error": f"Commande bloquee: {reason}",
@@ -139,7 +134,9 @@ def execute_powershell(command, timeout=60):
             "duration": 0,
         }
 
-    log("EXEC", f"Commande: {command[:200]}...")
+    # Tronquer le log si la commande est tres longue
+    log_cmd = command[:300] + "..." if len(command) > 300 else command
+    log("EXEC", f"Commande ({len(command)} chars): {log_cmd}")
 
     start = time.time()
     try:
@@ -154,7 +151,7 @@ def execute_powershell(command, timeout=60):
         )
         duration = round(time.time() - start, 2)
 
-        log("RESULT", f"Code: {result.returncode} | Duree: {duration}s | Stdout: {len(result.stdout)} chars")
+        log("RESULT", f"Code: {result.returncode} | Duree: {duration}s | Stdout: {len(result.stdout)} chars | Stderr: {len(result.stderr)} chars")
 
         return {
             "success": result.returncode == 0,
@@ -216,6 +213,7 @@ def get_project_status():
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "project": str(PROJECT),
         "frontend_exists": FRONTEND.exists(),
+        "server_version": "1.1",
     }
 
     # Git status
@@ -227,7 +225,7 @@ def get_project_status():
     except Exception:
         status["git_changed_files"] = -1
 
-    # Dev server running?
+    # Dev server running ?
     try:
         r = subprocess.run(
             ["powershell", "-Command", "Get-Process -Name node -ErrorAction SilentlyContinue | Select-Object -First 1 | Format-List Id"],
@@ -335,7 +333,7 @@ class DevHandler(BaseHTTPRequestHandler):
 
         if path == "/execute":
             command = body.get("command", "")
-            timeout = body.get("timeout", 60)
+            timeout = body.get("timeout", 120)
             if not command:
                 self._json_response({"error": "Parametre 'command' manquant"}, 400)
                 return
@@ -361,12 +359,10 @@ class DevHandler(BaseHTTPRequestHandler):
             self._json_response({"success": True, "note": note})
 
         elif path == "/build-memory":
-            # Relance build_memory.py
             result = execute_powershell("python scripts/build_memory.py", timeout=30)
             self._json_response(result)
 
         elif path == "/session-end":
-            # Protocole de fin de session
             title = body.get("title", "Session sans titre")
             work_done = body.get("work_done", [])
             files_modified = body.get("files_modified", [])
@@ -388,11 +384,11 @@ def run_session_end(title, work_done, files_modified, issues):
 
     # 1. Creer SESSION_HANDOFF.md
     handoff_lines = [
-        f"# SESSION HANDOFF - wakfu-optimizer",
+        "# SESSION HANDOFF - wakfu-optimizer",
         f"> Derniere session : {ts}",
         f"> Titre : {title}",
-        f"",
-        f"## CE QUI A ETE FAIT",
+        "",
+        "## CE QUI A ETE FAIT",
     ]
     for w in work_done:
         handoff_lines.append(f"- {w}")
@@ -416,12 +412,12 @@ def run_session_end(title, work_done, files_modified, issues):
     # 2. Ajouter entree au CHANGELOG.md
     changelog_path = PROJECT / "CHANGELOG.md"
     changelog_entry = [
-        f"",
+        "",
         f"## [{date_str}] {title}",
         f"> Mise a jour : {ts}",
-        f"> Commits : https://github.com/Duperopope/wakfu-optimizer/commits/main",
-        f"",
-        f"### Ce qui a ete fait",
+        "> Commits : https://github.com/Duperopope/wakfu-optimizer/commits/main",
+        "",
+        "### Ce qui a ete fait",
     ]
     for w in work_done:
         changelog_entry.append(f"- {w}")
@@ -438,7 +434,6 @@ def run_session_end(title, work_done, files_modified, issues):
 
     if changelog_path.exists():
         existing = changelog_path.read_text("utf-8")
-        # Inserer apres le header
         marker = "---"
         if marker in existing:
             parts = existing.split(marker, 1)
@@ -469,27 +464,28 @@ def run_session_end(title, work_done, files_modified, issues):
 if __name__ == "__main__":
     os.chdir(PROJECT)
 
-    log("START", f"Dev Server demarre sur {HOST}:{PORT}")
+    log("START", f"Dev Server v1.1 demarre sur {HOST}:{PORT}")
     log("START", f"Projet : {PROJECT}")
-    log("START", f"Commandes autorisees : {len(ALLOWED_COMMANDS)}")
+    log("START", f"Chemin normalise : {PROJECT_STR}")
     log("START", f"Patterns bloques : {len(BLOCKED_PATTERNS)}")
 
     print("=" * 60)
-    print(f"  WAKFU DEV SERVER v1.0")
+    print(f"  WAKFU DEV SERVER v1.1")
     print(f"  http://{HOST}:{PORT}")
     print(f"  Projet : {PROJECT}")
     print(f"")
     print(f"  Routes :")
-    print(f"    GET  /health      - Verification")
-    print(f"    GET  /status      - Etat du projet")
-    print(f"    GET  /logs        - Derniers logs")
-    print(f"    GET  /read-file   - Lire un fichier (?path=...)")
-    print(f"    POST /execute     - Executer une commande PS")
-    print(f"    POST /write-file  - Ecrire un fichier")
-    print(f"    POST /voice-note  - Ajouter une note vocale")
+    print(f"    GET  /health       - Verification")
+    print(f"    GET  /status       - Etat du projet")
+    print(f"    GET  /logs         - Derniers logs")
+    print(f"    GET  /read-file    - Lire un fichier (?path=...)")
+    print(f"    POST /execute      - Executer une commande PS")
+    print(f"    POST /write-file   - Ecrire un fichier")
+    print(f"    POST /voice-note   - Ajouter une note vocale")
     print(f"    POST /build-memory - Regenerer la memoire")
-    print(f"    POST /session-end - Protocole fin de session")
+    print(f"    POST /session-end  - Protocole fin de session")
     print(f"")
+    print(f"  Securite : blacklist active, chemins restreints au projet")
     print(f"  Ctrl+C pour arreter")
     print("=" * 60)
 
