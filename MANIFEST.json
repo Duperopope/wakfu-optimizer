@@ -120,6 +120,8 @@
     "data/wakfuli/all_builds.json",
     "data/wakfuli/spell_index_from_builds.json",
     "data/wakfuli/sync_report.json",
-    "data/wakfuli/version.json"
+    "data/wakfuli/version.json",
+    "PROJECT_MEMORY.md",
+    "scripts/init_memory.py"
   ]
 }
