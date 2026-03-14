@@ -13,3 +13,12 @@ $projectDir = "H:\Co
 [2026-03-14 20:07:53] [START] Projet : H:\Code\Ankama Dev\wakfu-optimizer
 [2026-03-14 20:07:53] [START] Chemin normalise : h:\code\ankama dev\wakfu-optimizer
 [2026-03-14 20:07:53] [START] Patterns bloques : 18
+[2026-03-14 20:08:50] [EXEC] Commande (3050 chars): Copy# ===== TEST PIPELINE COMPLET =====
+$projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
+
+Write-Host "=== TEST WAKFU DEV PIPELINE ===" -ForegroundColor Cyan
+Write-Host ""
+
+# Test 1 : Lecture du MANIFEST
+Write-Host "[TEST 1] Lecture MANIFEST.json..." -ForegroundColor Yellow
+$manifest = Get-Content ...
