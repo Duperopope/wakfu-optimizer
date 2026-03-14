@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "effect": "Dommage : Neutre",
+    "effectId": "1",
+    "type": null,
+    "description": "Dommage [el0] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  {
+    "id": 20,
+    "effect": "Boost : Point de vie (PV)",
+    "effectId": "20",
+    "type": "HP",
+    "description": "[#charac HP] [#1] PV"
+  },
+  {
+    "id": 21,
+    "effect": "Deboost : Point de vie (PV)",
+    "effectId": "21",
+    "type": "HP",
+    "description": "[#charac HP] -[#1] Point{[>1]?s:} de Vie"
+  },
+  {
+    "id": 24,
+    "effect": "Soin : Neutre (Vol de vie)",
+    "effectId": "24",
+    "type": null,
+    "description": "Soin [el0] (Vol de vie) : [#1]{[-2]?{[0=2]? [ecnbi]:}:}"
+  },
+  {
+    "id": 26,
+    "effect": "Gain : Maîtrise Soin",
+    "effectId": "26",
+    "type": "HEAL_IN_PERCENT",
+    "description": "[#charac HEAL_IN_PERCENT] [#1] Maîtrise Soin"
+  },
+  {
+    "id": 31,
+    "effect": "Boost : PA",
+    "effectId": "31",
+    "type": "AP",
+    "description": "[#charac AP] [#1] PA"
+  },
+  {
+    "id": 39,
+    "effect": "Gain : charac passée en paramètre",
+    "effectId": "39",
+    "type": null,
+    "description": "[#1]{[~2]?%:} [#3]"
+  },
+  {
+    "id": 40,
+    "effect": "Perte : charac passée en paramètre",
+    "effectId": "40",
+    "type": null,
+    "description": "-[#1]{[~2]? %:} [#3]"
+  },
+  {
+    "id": 41,
+    "effect": "Boost : PM",
+    "effectId": "41",
+    "type": "MP",
+    "description": "[#charac MP] [#1] PM"
+  },
+  {
+    "id": 56,
+    "effect": "Deboost : PA",
+    "effectId": "56",
+    "type": "AP",
+    "description": "[#charac AP] -[#1] PA max"
+  },
+  {
+    "id": 57,
+    "effect": "Deboost : PM",
+    "effectId": "57",
+    "type": "MP",
+    "description": "[#charac MP] -[#1] PM max"
+  },
+  {
+    "id": 71,
+    "effect": "Gain : Résistance Dos",
+    "effectId": "71",
+    "type": "RES_BACKSTAB",
+    "description": "[#charac RES_BACKSTAB] [#1] Résistance Dos"
+  },
+  {
+    "id": 80,
+    "effect": "Gain : Résistance Élémentaire",
+    "effectId": "80",
+    "type": "RES_IN_PERCENT",
+    "description": "[#charac RES_IN_PERCENT] [#1] Résistance Élémentaire"
+  },
+  {
+    "id": 82,
+    "effect": "Gain : Résistance Feu",
+    "effectId": "82",
+    "type": "RES_FIRE_PERCENT",
+    "description": "[#charac RES_FIRE_PERCENT] [#1] Résistance Feu"
+  },
+  {
+    "id": 83,
+    "effect": "Gain : Résistance Eau",
+    "effectId": "83",
+    "type": "RES_WATER_PERCENT",
+    "description": "[#charac RES_WATER_PERCENT] [#1] Résistance Eau"
+  },
+  {
+    "id": 84,
+    "effect": "Gain : Résistance Terre",
+    "effectId": "84",
+    "type": "RES_EARTH_PERCENT",
+    "description": "[#charac RES_EARTH_PERCENT] [#1] Résistance Terre"
+  },
+  {
+    "id": 85,
+    "effect": "Gain : Résistance Air",
+    "effectId": "85",
+    "type": "RES_AIR_PERCENT",
+    "description": "[#charac RES_AIR_PERCENT] [#1] Résistance Air"
+  },
+  {
+    "id": 90,
+    "effect": "Perte : Résistance Élémentaire",
+    "effectId": "90",
+    "type": "RES_IN_PERCENT",
+    "description": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire"
+  },
+  {
+    "id": 96,
+    "effect": "Perte : Résistance Terre (sans cap)",
+    "effectId": "96",
+    "type": "RES_EARTH_PERCENT",
+    "description": "[#charac RES_EARTH_PERCENT] -[#1] Résistance Terre"
+  },
+  {
+    "id": 97,
+    "effect": "Perte : Résistance Feu (sans cap)",
+    "effectId": "97",
+    "type": "RES_FIRE_PERCENT",
+    "description": "[#charac RES_FIRE_PERCENT] -[#1] Résistance Feu"
+  },
+  {
+    "id": 98,
+    "effect": "Perte : Résistance Eau (sans cap)",
+    "effectId": "98",
+    "type": "RES_WATER_PERCENT",
+    "description": "[#charac RES_WATER_PERCENT] -[#1] Résistance Eau"
+  },
+  {
+    "id": 100,
+    "effect": "Perte : Résistance Élémentaire (sans cap)",
+    "effectId": "100",
+    "type": "RES_IN_PERCENT",
+    "description": "[#charac RES_IN_PERCENT] -[#1] Résistance élémentaire"
+  },
+  {
+    "id": 120,
+    "effect": "Gain : Maîtrise Élémentaire",
+    "effectId": "120",
+    "type": "DMG_IN_PERCENT",
+    "description": "[#charac DMG_IN_PERCENT] [#1] Maîtrise Élémentaire"
+  },
+  {
+    "id": 122,
+    "effect": "Gain : Maîtrise Feu",
+    "effectId": "122",
+    "type": "DMG_FIRE_PERCENT",
+    "description": "[#charac DMG_FIRE_PERCENT] [#1] Maîtrise Feu"
+  },
+  {
+    "id": 123,
+    "effect": "Gain : Maîtrise Terre",
+    "effectId": "123",
+    "type": "DMG_EARTH_PERCENT",
+    "description": "[#charac DMG_EARTH_PERCENT] [#1] Maîtrise Terre"
+  },
+  {
+    "id": 124,
+    "effect": "Gain : Maîtrise Eau",
+    "effectId": "124",
+    "type": "DMG_WATER_PERCENT",
+    "description": "[#charac DMG_WATER_PERCENT] [#1] Maîtrise Eau"
+  },
+  {
+    "id": 125,
+    "effect": "Gain : Maîtrise Air",
+    "effectId": "125",
+    "type": "DMG_AIR_PERCENT",
+    "description": "[#charac DMG_AIR_PERCENT] [#1] Maîtrise Air"
+  },
+  {
+    "id": 130,
+    "effect": "Perte : Maîtrise Élémentaire",
+    "effectId": "130",
+    "type": "DMG_IN_PERCENT",
+    "description": "[#charac DMG_IN_PERCENT] -[#1] Maîtrise Élémentaire"
+  },
+  {
+    "id": 132,
+    "effect": "Perte : Maîtrise Feu",
+    "effectId": "132",
+    "type": "DMG_FIRE_PERCENT",
+    "description": "[#charac DMG_FIRE_PERCENT] -[#1] Maîtrise Feu"
+  },
+  {
+    "id": 149,
+    "effect": "Gain : Maîtrise Critique",
+    "effectId": "149",
+    "type": "CRITICAL_BONUS",
+    "description": "[#charac CRITICAL_BONUS] [#1] Maîtrise Critique"
+  },
+  {
+    "id": 150,
+    "effect": "Gain : Coup Critique (%)",
+    "effectId": "150",
+    "type": "FEROCITY",
+    "description": "[#charac FEROCITY] [#1] % Coup critique"
+  },
+  {
+    "id": 160,
+    "effect": "Gain : Portée",
+    "effectId": "160",
+    "type": "RANGE",
+    "description": "[#charac RANGE] [#1] Portée"
+  },
+  {
+    "id": 161,
+    "effect": "Perte : Portée",
+    "effectId": "161",
+    "type": "RANGE",
+    "description": "[#charac RANGE] -[#1] Portée"
+  },
+  {
+    "id": 162,
+    "effect": "Gain : Prospection",
+    "effectId": "162",
+    "type": "PROSPECTION",
+    "description": "[#charac PROSPECTION] [#1] Prospection"
+  },
+  {
+    "id": 166,
+    "effect": "Gain : Sagesse",
+    "effectId": "166",
+    "type": "WISDOM",
+    "description": "[#charac WISDOM] [#1] Sagesse"
+  },
+  {
+    "id": 168,
+    "effect": "Perte : Coup Critique (%)",
+    "effectId": "168",
+    "type": "FEROCITY",
+    "description": "[#charac FEROCITY] -[#1] % Coup critique"
+  },
+  {
+    "id": 171,
+    "effect": "Gain : Initiative",
+    "effectId": "171",
+    "type": "INIT",
+    "description": "[#charac INIT] [#1] Initiative"
+  },
+  {
+    "id": 172,
+    "effect": "Perte : Initiative",
+    "effectId": "172",
+    "type": "INIT",
+    "description": "[#charac INIT] -[#1] Initiative"
+  },
+  {
+    "id": 173,
+    "effect": "Gain : Tacle",
+    "effectId": "173",
+    "type": "TACKLE",
+    "description": "[#charac TACKLE] [#1] Tacle"
+  },
+  {
+    "id": 174,
+    "effect": "Perte : Tacle",
+    "effectId": "174",
+    "type": "TACKLE",
+    "description": "[#charac TACKLE] -[#1] Tacle"
+  },
+  {
+    "id": 175,
+    "effect": "Gain : Esquive",
+    "effectId": "175",
+    "type": "DODGE",
+    "description": "[#charac DODGE] [#1] Esquive"
+  },
+  {
+    "id": 176,
+    "effect": "Perte : Esquive",
+    "effectId": "176",
+    "type": "DODGE",
+    "description": "[#charac DODGE] -[#1] Esquive"
+  },
+  {
+    "id": 177,
+    "effect": "Gain : Volonté",
+    "effectId": "177",
+    "type": "WILLPOWER",
+    "description": "[#charac WILLPOWER] [#1] Volonté"
+  },
+  {
+    "id": 180,
+    "effect": "Gain : Maîtrise Dos",
+    "effectId": "180",
+    "type": "BACKSTAB_BONUS",
+    "description": "[#charac BACKSTAB_BONUS] [#1] Maîtrise Dos"
+  },
+  {
+    "id": 181,
+    "effect": "Perte : Maîtrise Dos",
+    "effectId": "181",
+    "type": "BACKSTAB_BONUS",
+    "description": "[#charac BACKSTAB_BONUS] -[#1] Maîtrise Dos"
+  },
+  {
+    "id": 184,
+    "effect": "Gain : Contrôle",
+    "effectId": "184",
+    "type": "LEADERSHIP",
+    "description": "[#charac LEADERSHIP] [#1] Contrôle"
+  },
+  {
+    "id": 191,
+    "effect": "Boost : PW",
+    "effectId": "191",
+    "type": "WP",
+    "description": "[#charac WP] [#1] PW"
+  },
+  {
+    "id": 192,
+    "effect": "Deboost : PW",
+    "effectId": "192",
+    "type": "WP",
+    "description": "[#charac WP] -[#1] PW max"
+  },
+  {
+    "id": 193,
+    "effect": "Gain : PW",
+    "effectId": "193",
+    "type": "WP",
+    "description": "[#charac WP] [#1] PW"
+  },
+  {
+    "id": 194,
+    "effect": "Perte : PW",
+    "effectId": "194",
+    "type": "WP",
+    "description": "-[#1] PW"
+  },
+  {
+    "id": 304,
+    "effect": "State : Applique un état",
+    "effectId": "304",
+    "type": null,
+    "description": "[#1] {[99>3]?:{[0<3]?:{[~3]?([#3] %):}}}"
+  },
+  {
+    "id": 875,
+    "effect": "Gain : Parade",
+    "effectId": "875",
+    "type": "BLOCK",
+    "description": "[#charac BLOCK] [#1] % Parade"
+  },
+  {
+    "id": 876,
+    "effect": "Perte : Parade",
+    "effectId": "876",
+    "type": "BLOCK",
+    "description": "[#charac BLOCK] -[#1] % Parade"
+  },
+  {
+    "id": 988,
+    "effect": "Gain : Résistance Critique",
+    "effectId": "988",
+    "type": "CRITICAL_RES",
+    "description": "[#charac CRITICAL_RES] [#1] Résistance Critique"
+  },
+  {
+    "id": 1052,
+    "effect": "Gain : Maîtrise Mêlée",
+    "effectId": "1052",
+    "type": "MELEE_DMG",
+    "description": "[#charac MELEE_DMG] [#1] Maîtrise Mêlée"
+  },
+  {
+    "id": 1053,
+    "effect": "Gain : Maîtrise Distance",
+    "effectId": "1053",
+    "type": "RANGED_DMG",
+    "description": "[#charac RANGED_DMG] [#1] Maîtrise Distance"
+  },
+  {
+    "id": 1055,
+    "effect": "Gain : Maîtrise Berserk",
+    "effectId": "1055",
+    "type": "BERSERK_DMG",
+    "description": "[#charac BERSERK_DMG] [#1] Maîtrise Berserk"
+  },
+  {
+    "id": 1056,
+    "effect": "Perte : Maîtrise Critique",
+    "effectId": "1056",
+    "type": "CRITICAL_BONUS",
+    "description": "[#charac CRITICAL_BONUS] -[#1] Maîtrise Critique"
+  },
+  {
+    "id": 1059,
+    "effect": "Perte : Maîtrise Mêlée",
+    "effectId": "1059",
+    "type": "MELEE_DMG",
+    "description": "[#charac MELEE_DMG] -[#1] Maîtrise Mêlée"
+  },
+  {
+    "id": 1060,
+    "effect": "Perte : Maîtrise Distance",
+    "effectId": "1060",
+    "type": "RANGED_DMG",
+    "description": "[#charac RANGED_DMG] -[#1] Maîtrise Distance"
+  },
+  {
+    "id": 1061,
+    "effect": "Perte : Maîtrise Berserk",
+    "effectId": "1061",
+    "type": "BERSERK_DMG",
+    "description": "[#charac BERSERK_DMG] -[#1] Maîtrise Berserk"
+  },
+  {
+    "id": 1062,
+    "effect": "Perte : Résistance Critique",
+    "effectId": "1062",
+    "type": "CRITICAL_RES",
+    "description": "[#charac CRITICAL_RES] -[#1] Résistance Critique"
+  },
+  {
+    "id": 1063,
+    "effect": "Perte : Résistance Dos",
+    "effectId": "1063",
+    "type": "RES_BACKSTAB",
+    "description": "[#charac RES_BACKSTAB] -[#1] Résistance Dos"
+  },
+  {
+    "id": 1068,
+    "effect": "Gain : Maîtrise Élémentaire dans un nombre variable d'éléments",
+    "effectId": "1068",
+    "type": "DMG_IN_PERCENT",
+    "description": "[#charac DMG_IN_PERCENT] {[~3]?[#1] Maîtrise [#3]:[#1] Maîtrise sur [#2] élément{[>2]?s:}}"
+  },
+  {
+    "id": 1069,
+    "effect": "Gain : Résistance Élémentaire dans un nombre variable d'éléments",
+    "effectId": "1069",
+    "type": "RES_IN_PERCENT",
+    "description": "[#charac RES_IN_PERCENT] {[~3]?[#1] Résistance [#3]:[#1] Résistance sur [#2] élément{[>2]?s:}}"
+  },
+  {
+    "id": 1083,
+    "effect": "Dommage : Lumière",
+    "effectId": "1083",
+    "type": null,
+    "description": "Dommage [el6] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  {
+    "id": 1084,
+    "effect": "Soin : Lumière",
+    "effectId": "1084",
+    "type": null,
+    "description": "Soin [el6] : [#1]{[+3]? % des PV:}{[+3]?{[1=3]? max:{[2=3]? courants:{[3=3]? manquants:{[4=3]? max:{[5=3]? courants:{[6=3]? manquants:}}}}}}:}{[+3]?{[4<3]? du lanceur:{[7<3]? de la cible:}}:}{[-2]?{[0=2]? [ecnbi] [ecnbr]:}:}{[+2]?{[2=2]? [ecnbi]:}:}{[+2]?{[1=2]? [ecnbr]:}:}"
+  },
+  {
+    "id": 2001,
+    "effect": "Job : Modifie la quantité d'objets récoltée",
+    "effectId": "2001",
+    "type": null,
+    "description": "[#1] % Quantité Récolte{[~2]? en [#2]:}"
+  }
+]
