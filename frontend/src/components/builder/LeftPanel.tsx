@@ -144,7 +144,7 @@ const DEFAULT_BONUSES: Bonus[] = [
     stats: { HP: 55, DODGE: 20, TACKLE: 20, INIT: 10, WISDOM: 10, PROSPECTION: 10, DMG_IN_PERCENT: 8, HEAL_IN_PERCENT: 8, RES_FIRE_PERCENT: 5, RES_WATER_PERCENT: 5, RES_EARTH_PERCENT: 5, RES_AIR_PERCENT: 5 },
   },
   {
-    id: 2, label: "Bonus de Havre-Monde", shortLabel: "Havre", icon: "gem", iconSize: 22, active: false,
+    id: 2, label: "Bonus de Havre-Monde", shortLabel: "Havre", icon: "gem", iconSize: 44, active: false,
     stats: { HP: 10, WISDOM: 10, PROSPECTION: 10 },
   },
   {
@@ -418,6 +418,7 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 
 
