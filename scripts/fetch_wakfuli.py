@@ -18,7 +18,11 @@ print(f"\nStyles CSS: {len(styles)}")
 for s in styles[:10]:
     print(f"  {s}")
 
-print(f"\nTitre: {re.findall(r'<title>(.*?)</title>', html)}")
-print(f"Meta: {re.findall(r'<meta[^>]*content=[^>]*>', html)[:5]}")
-print(f"\nDiv/Section IDs: {re.findall(r'id=\"([^\"]+)\"', html)[:20]}")
-print(f"Classes principales: {re.findall(r'class=\"([^\"]{10,60})\"', html)[:20]}")
+titre = re.findall(r"<title>(.*?)</title>", html)
+print(f"\nTitre: {titre}")
+
+ids = re.findall(r'id="([^"]+)"', html)
+print(f"\nDiv/Section IDs: {ids[:20]}")
+
+classes = re.findall(r'class="([^"]{10,60})"', html)
+print(f"\nClasses principales: {classes[:20]}")
