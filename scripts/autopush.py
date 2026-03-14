@@ -11,7 +11,7 @@ def load_manifest():
     if not MANIFEST.exists():
         return set(), set()
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    files = set(m.get("protected", []) + m.get("local_only", []))
+    files = set(m.get("protected", []) + m.get("local_only", []) + m.get("allowed_files", []))
     dirs = set(m.get("protected_dirs", []))
     return files, dirs
 
