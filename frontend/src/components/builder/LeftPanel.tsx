@@ -105,7 +105,7 @@ interface Bonus {
 
 const DEFAULT_BONUSES: Bonus[] = [
   {
-    label: "Arbre",
+    label: "Bonus de Guilde",
     active: false,
     stats: {
       HP: 55, DODGE: 20, TACKLE: 20, INIT: 10, WISDOM: 10, PROSPECTION: 10,
@@ -114,12 +114,12 @@ const DEFAULT_BONUSES: Bonus[] = [
     },
   },
   {
-    label: "Gemme",
+    label: "Bonus de Havre-Monde",
     active: false,
     stats: { HP: 10, WISDOM: 10, PROSPECTION: 10 },
   },
   {
-    label: "Monture",
+    label: "Bonus de Monture",
     active: false,
     stats: { DMG_IN_PERCENT: 40 },
   },
@@ -313,25 +313,33 @@ export function LeftPanel() {
         </div>
       )}
 
-      {/* ========== BONUS ========== */}
-      <div className="px-3 pt-3 pb-2 border-b border-border">
-        <div className="text-[10px] font-bold uppercase tracking-widest text-cyan-wakfuli mb-1.5">Bonus</div>
-        {bonuses.map((b, i) => (
-          <label
-            key={b.label}
-            className={`flex items-center gap-2 px-2 py-1 rounded cursor-pointer transition-colors ${
-              b.active ? "bg-cyan-wakfuli/5" : "hover:bg-bg-lighter"
-            }`}
-          >
-            <input
-              type="checkbox"
-              checked={b.active}
-              onChange={() => toggleBonus(i)}
-              className="w-3 h-3 rounded accent-cyan-wakfuli cursor-pointer"
-            />
-            <span className="text-xs">{b.label}</span>
-          </label>
-        ))}
+      {/* ========== BONUS (ligne horizontale comme Wakfuli) ========== */}
+      <div className="px-3 pt-2 pb-2 border-b border-border">
+        <div className="flex items-center gap-1">
+          {bonuses.map((b, i) => {
+            const icons: Record<string, string> = {
+              "Bonus de Guilde": "\u{1F6E1}",
+              "Bonus de Havre-Monde": "\u{1F3E0}",
+              "Bonus de Monture": "\u{1F40E}",
+            };
+            return (
+              <button
+                key={b.label}
+                onClick={() => toggleBonus(i)}
+                title={b.label}
+                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all cursor-pointer border ${
+                  b.active
+                    ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
+                    : "bg-bg-lighter border-border text-neutral-400 hover:text-primary hover:border-border-light"
+                }`}
+              >
+                <span className="text-sm">{icons[b.label] ?? "\u2728"}</span>
+                <span className="hidden xl:inline">{b.label}</span>
+                <span className="xl:hidden">{b.label.split(" ").pop()}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* ========== STATS PRIMAIRES (barre horizontale PV/PA/PM/PW/PO) ========== */}
@@ -500,4 +508,5 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
