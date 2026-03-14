@@ -288,7 +288,7 @@ export function LeftPanel() {
                   ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
                   : "bg-bg-lighter border-border text-neutral-500 hover:text-primary hover:border-border-light"
               }`}>
-              <img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} className="w-[18px] h-[18px] object-contain" />
+              <img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} className="w-[22px] h-[22px] object-contain" />
               <span className="hidden xl:inline">{b.shortLabel}</span>
             </button>
           ))}
@@ -417,5 +417,6 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 
