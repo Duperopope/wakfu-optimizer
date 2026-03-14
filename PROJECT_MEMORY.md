@@ -1,20 +1,29 @@
 # PROJECT MEMORY - Wakfu Optimizer
 
-> Derniere mise a jour : 2026-03-14 14:45:00
+> Derniere mise a jour : 2026-03-14 18:26:00
 > Memoire persistante entre sessions Claude
 > GitHub : https://github.com/Duperopope/wakfu-optimizer
 
 ## WORKFLOW CLAUDE - A LIRE EN PREMIER
 
 ### Protocole de travail
-1. Toujours lire GitHub (raw files) avant de proposer du code
-2. Ne jamais demander a Sam de copier-coller des resultats - lire le repo
-3. Donner des blocs PowerShell complets a executer, sans placeholder
-4. autopush.py pousse automatiquement sur GitHub toutes les 2min environ
-5. Apres chaque bloc, verifier sur GitHub que les changements sont arrives
-6. Mettre a jour ce fichier a chaque etape significative
-7. Decouper les gros blocs en commandes separees (eviter les coupures)
-8. Toujours verifier les URLs CDN avant de les utiliser dans le code
+1. LIRE CE FICHIER EN ENTIER avant toute modification sur le projet
+2. Toujours lire GitHub (raw files) avant de proposer du code
+3. Ne jamais demander a Sam de copier-coller des resultats - lire le repo
+4. Donner des blocs PowerShell complets a executer, sans placeholder
+5. autopush.py pousse automatiquement sur GitHub toutes les 2min environ
+6. Apres chaque bloc, verifier sur GitHub que les changements sont arrives
+7. Mettre a jour ce fichier a chaque etape significative
+8. Decouper les gros blocs en commandes separees (eviter les coupures)
+9. Toujours verifier les URLs CDN avant de les utiliser dans le code
+
+### Protocole de fin de session - OBLIGATOIRE
+A la fin de chaque session de travail, toute IA doit :
+1. Mettre a jour ce PROJECT_MEMORY.md avec tout ce qui a ete fait
+2. Inscrire la date et heure REELLE (demander a Sam ou verifier en ligne, ne pas inventer)
+3. Mettre a jour les sections : Bugs corriges, Ce qui fonctionne, TODO, Assets
+4. Le repo se synchronise en temps reel via autopush.py, le fichier sera visible par les autres IA immediatement
+5. Ce fichier est le CERVEAU du projet : si une info manque ici, elle est perdue pour les prochaines sessions
 
 ### URLs essentielles pour Claude
 - Repo : https://github.com/Duperopope/wakfu-optimizer
@@ -63,7 +72,7 @@
 - api/data/route.ts : OK (GET lit ../data/wakfuli/)
 - BuilderLayout.tsx : OK (split 30/70 draggable)
 - ClassSelector.tsx : OK (FIX stopPropagation niveau)
-- LeftPanel.tsx : OK (FIX icone WP, stats dynamiques)
+- LeftPanel.tsx : OK v5 (icones locales stats+bonus, barre priorite elementaire draggable, bonus toggle iconScale, enchantements toggle, boutons copier/lien/visibilite/favori)
 - RightPanel.tsx : OK (items, filtres, ItemCard, modal anneau)
 - Navbar.tsx : OK
 - BuildContext.tsx : OK (computeStats + pendingRingItem)
@@ -82,18 +91,41 @@
 2. Chevauchement niveau/classe (stopPropagation)
 3. Icone WP cassee (WAKFU_POINT -> WP)
 4. Images items (cdn.wakfuli.com/items/{image_id}.webp)
+5. LeftPanel reecrit avec useBuild (runtime error fix)
+6. FEROCITY renomme en % Coup Critique
+7. Icones bonus CDN cassees remplacees par PNG custom locaux (tree/gem/mount)
+8. Icones stats CDN telechargees en local /icons/stats/*.webp
+9. Ajout barre priorite elementaire draggable (Feu/Eau/Terre/Air)
+10. iconScale individuel par bonus (gem.png 37x39px compense par scale 2.0)
 
 ## Ce qui fonctionne
 - Selection classe, edition niveau, nom du build
 - 7686 items avec images + filtres (recherche, niveau, type, rarete)
 - Equip/unequip + modal anneau + stats recalculees
 - Couleurs rarete correctes (Memory bleu, Relic violet, Epic rose)
+- 3 bonus toggle avec icones PNG custom (Guilde/Havre-Monde/Monture)
+- Bouton Enchantements toggle
+- Barre priorite elementaire draggable (4 elements)
+- Stats primaires + secondaires avec icones locales .webp
+- Boutons Copier JSON, Lien partageable, Visibilite, Favori
 
 ## TODO
-- [ ] Boutons action LeftPanel (Copier, Lien, Visibilite, Favori)
-- [ ] Checkboxes bonus (Arbre, Gemme, Monture)
+- [x] Boutons action LeftPanel (Copier, Lien, Visibilite, Favori) - DONE 2026-03-14
+- [x] Checkboxes bonus (Arbre, Gemme, Monture) - DONE avec icones custom
+- [x] Barre priorite elementaire draggable - DONE
+- [x] Icones stats locales /icons/stats/*.webp - DONE
+- [ ] Connecter priorite elementaire a computeStats
+- [ ] Localiser icones classes (cdn -> public/icons/breeds/)
+- [ ] gem.png a recreer en 64x64+ (actuellement 37x39px pixelise)
 - [ ] Onglet Sorts (all_spells.json)
-- [ ] Onglet Enchantements
+- [ ] Onglet Enchantements (logique dans BuildContext)
 - [ ] Onglet Aptitudes
 - [ ] Onglet Notes
 - [ ] Sauvegarde/chargement builds (localStorage)
+
+## Assets locaux ajoutes (2026-03-14)
+- frontend/public/icons/bonuses/tree.png (1735 bytes - Guilde)
+- frontend/public/icons/bonuses/gem.png (805 bytes - Havre-Monde, pixelise)
+- frontend/public/icons/bonuses/mount.png (Monture)
+- frontend/public/icons/stats/*.webp (28 fichiers telecharges depuis cdn.wakfuli.com/stats/)
+
