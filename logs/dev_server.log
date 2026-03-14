@@ -22,3 +22,4 @@ Write-Host ""
 # Test 1 : Lecture du MANIFEST
 Write-Host "[TEST 1] Lecture MANIFEST.json..." -ForegroundColor Yellow
 $manifest = Get-Content ...
+[2026-03-14 20:08:51] [RESULT] Code: 1 | Duree: 0.92s | Stdout: 848 chars | Stderr: 819 chars
