@@ -37,17 +37,37 @@ function proxy(res, url){
   });
 }
 
-// Lire index.html et vider le body pour eviter l'erreur d'hydratation React
+// Construire le shell HTML : garder <head> + scripts, vider le contenu rendu du body
 let shellHTML = "";
 try {
   const raw = fs.readFileSync(path.join(BASE, "index.html"), "utf-8");
-  // Garder le <head> intact (scripts, CSS, meta) mais vider le contenu du <body>
-  shellHTML = raw.replace(
-    /(<body[^>]*>)[\s\S]*?(<script)/i,
-    '$1<div id="__next"></div>$2'
-  );
+  // Extraire tout le <head>...</head>
+  const headMatch = raw.match(/<head[\s\S]*?<\/head>/i);
+  // Extraire les <script> du body (ceux avec self.__next_f et le bootstrap)
+  const bodyScripts = [];
+  const scriptRegex = /<script[^>]*>[\s\S]*?<\/script>/gi;
+  let m;
+  while ((m = scriptRegex.exec(raw)) !== null) {
+    // Ne garder que les scripts qui sont APRES </head>
+    if (m.index > raw.indexOf("</head>")) {
+      bodyScripts.push(m[0]);
+    }
+  }
+  // Extraire les attributs du <body>
+  const bodyTagMatch = raw.match(/<body([^>]*)>/i);
+  const bodyAttrs = bodyTagMatch ? bodyTagMatch[1] : "";
+
+  shellHTML = `<!DOCTYPE html><html lang="fr" class="min-h-screen flex flex-col">
+${headMatch ? headMatch[0] : "<head></head>"}
+<body${bodyAttrs}>
+<div id="__next"></div>
+${bodyScripts.join("\n")}
+</body></html>`;
+
+  console.log("[INIT] Shell HTML construit (" + shellHTML.length + " chars)");
+  console.log("[INIT] " + bodyScripts.length + " scripts preserves dans le body");
 } catch(e) {
-  console.error("ERREUR: index.html introuvable dans", BASE);
+  console.error("ERREUR: index.html introuvable dans", BASE, e.message);
   process.exit(1);
 }
 
@@ -60,28 +80,30 @@ http.createServer((req,res)=>{
     return res.end();
   }
 
-  // 1) API -> proxy vers api.wakfuli.com
+  // 1) API -> proxy vers api.wakfuli.com (401 /auth/me est normal)
   if(p.startsWith("/api/")){
-    const cached = path.join(BASE,"assets","api",p.replace(/^\/api\/v1\//,"").split("?")[0]);
-    if(fs.existsSync(cached)) return serveFile(res,cached,"application/json;charset=utf-8");
-    console.log("[API]",p+u.search);
+    const apiKey = p.replace(/^\/api\/v1\//,"").split("?")[0];
+    const cached = path.join(BASE,"assets","api",apiKey);
+    if(fs.existsSync(cached)){
+      console.log("[API CACHE]",p);
+      return serveFile(res,cached,"application/json;charset=utf-8");
+    }
+    console.log("[API PROXY]",p+u.search);
     return proxy(res,"https://api.wakfuli.com"+p+u.search);
   }
 
-  // 2) CDN images -> proxy vers cdn.wakfuli.com
+  // 2) CDN images
   if(/^\/(breeds|items|placeholders|rarity|stats|itemTypes)\//.test(p)){
     const local = path.join(BASE,"assets","images",path.basename(p));
     if(fs.existsSync(local)) return serveFile(res,local);
-    console.log("[CDN]",p);
     return proxy(res,"https://cdn.wakfuli.com"+p);
   }
 
-  // 3) Next.js chunks
+  // 3) Next.js chunks (local ou proxy)
   if(p.startsWith("/_next/static/chunks/")){
     const f = path.basename(p);
     if(serveFile(res,path.join(BASE,f))) return;
-    // Chunk manquant -> proxy vers wakfuli.com
-    console.log("[CHUNK MISS]",f);
+    console.log("[CHUNK PROXY]",f);
     return proxy(res,"https://wakfuli.com"+p);
   }
 
@@ -89,16 +111,27 @@ http.createServer((req,res)=>{
   if(p.startsWith("/_next/static/media/")){
     const f = path.basename(p);
     if(serveFile(res,path.join(BASE,"assets","fonts",f))) return;
+    return proxy(res,"https://wakfuli.com"+p);
   }
 
-  // 5) Tout le reste -> shell HTML (SPA)
-  res.writeHead(200,{"Content-Type":"text/html;charset=utf-8","Access-Control-Allow-Origin":"*"});
+  // 5) favicon
+  if(p.includes("favicon")){
+    return proxy(res,"https://wakfuli.com/favicon.ico");
+  }
+
+  // 6) Tout le reste -> shell HTML (SPA mode)
+  res.writeHead(200,{"Content-Type":"text/html;charset=utf-8"});
   res.end(shellHTML);
 
 }).listen(PORT,()=>{
+  console.log("");
   console.log("=== WAKFULI LOCAL ===");
   console.log("http://localhost:"+PORT+"/");
   console.log("http://localhost:"+PORT+"/builder/public");
-  console.log("Mode: SPA shell + API/CDN proxy");
+  console.log("http://localhost:"+PORT+"/builder/trending");
+  console.log("");
+  console.log("Mode: SPA shell (body vide) + API/CDN proxy");
+  console.log("Note: /auth/me retournera 401 = normal (pas connecte)");
   console.log("Ctrl+C pour arreter");
+  console.log("");
 });
