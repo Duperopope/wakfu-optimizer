@@ -1,0 +1,27 @@
+{
+  "active_spell_ids": [],
+  "passive_spell_ids": [],
+  "total_active": 0,
+  "total_passive": 0,
+  "total_unique": 0,
+  "classes_found": [
+    "cra",
+    "ecaflip",
+    "eliotrope",
+    "eniripsa",
+    "enutrof",
+    "feca",
+    "huppermage",
+    "iop",
+    "osamodas",
+    "ouginak",
+    "pandawa",
+    "roublard",
+    "sacrieur",
+    "sadida",
+    "sram",
+    "steamer",
+    "xelor",
+    "zobal"
+  ]
+}
