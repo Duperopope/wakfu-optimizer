@@ -1,0 +1,12 @@
+{
+  "name": "wakfuli-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scraper.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
