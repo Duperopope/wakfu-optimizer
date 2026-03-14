@@ -3,24 +3,40 @@
 import React, { useState, useCallback, useMemo } from "react";
 
 // ============================================================
-// Types
+// Types — basés sur les vraies caractéristiques Wakfu
+// Source: https://wakfu.wiki.gg/wiki/Characteristic
+// Icônes: https://github.com/Vertylo/wakassets/tree/main/characteristics
 // ============================================================
 interface StatValues {
   HP: number;
+  AP: number;
+  MP: number;
+  WP: number;
   DODGE: number;
   TACKLE: number;
   INIT: number;
   WISDOM: number;
   PROSPECTION: number;
-  "DMG%": number;
-  "HEAL%": number;
-  "RES%": number;
+  BLOCK: number;
+  WILLPOWER: number;
+  RANGE: number;
+  DMG_IN_PERCENT: number;
+  HEAL_IN_PERCENT: number;
+  RES_IN_PERCENT: number;
+  CRITICAL_BONUS: number;
+  CRITICAL_RES: number;
+  BACKSTAB_BONUS: number;
+  RES_BACKSTAB: number;
+  MELEE_DMG: number;
+  RANGED_DMG: number;
+  BERSERK_DMG: number;
+  INDIRECT_DMG: number;
 }
 
 interface Bonus {
   label: string;
   active: boolean;
-  stats: StatValues;
+  stats: Partial<StatValues>;
 }
 
 interface BuildState {
@@ -31,20 +47,85 @@ interface BuildState {
 }
 
 // ============================================================
-// Constantes par defaut (safe defaults — jamais undefined)
+// CDN des icônes — Vertylo/wakassets via GitHub Pages
+// Pattern: https://vertylo.github.io/wakassets/characteristics/{KEY}.png
+// ============================================================
+const ICON_BASE = "https://vertylo.github.io/wakassets/characteristics";
+
+// ============================================================
+// Safe defaults — toutes les stats a 0
 // ============================================================
 const EMPTY_STATS: StatValues = {
   HP: 0,
+  AP: 0,
+  MP: 0,
+  WP: 0,
   DODGE: 0,
   TACKLE: 0,
   INIT: 0,
   WISDOM: 0,
   PROSPECTION: 0,
-  "DMG%": 0,
-  "HEAL%": 0,
-  "RES%": 0,
+  BLOCK: 0,
+  WILLPOWER: 0,
+  RANGE: 0,
+  DMG_IN_PERCENT: 0,
+  HEAL_IN_PERCENT: 0,
+  RES_IN_PERCENT: 0,
+  CRITICAL_BONUS: 0,
+  CRITICAL_RES: 0,
+  BACKSTAB_BONUS: 0,
+  RES_BACKSTAB: 0,
+  MELEE_DMG: 0,
+  RANGED_DMG: 0,
+  BERSERK_DMG: 0,
+  INDIRECT_DMG: 0,
 };
 
+// ============================================================
+// Labels francophones pour l'affichage
+// ============================================================
+const STAT_LABELS: Record<keyof StatValues, string> = {
+  HP: "Points de Vie",
+  AP: "PA",
+  MP: "PM",
+  WP: "PW",
+  DODGE: "Esquive",
+  TACKLE: "Tacle",
+  INIT: "Initiative",
+  WISDOM: "Sagesse",
+  PROSPECTION: "Prospection",
+  BLOCK: "Parade",
+  WILLPOWER: "Volonte",
+  RANGE: "Portee",
+  DMG_IN_PERCENT: "% Degats infliges",
+  HEAL_IN_PERCENT: "% Soins realises",
+  RES_IN_PERCENT: "% Resistance",
+  CRITICAL_BONUS: "Maitr. Critique",
+  CRITICAL_RES: "Res. Critique",
+  BACKSTAB_BONUS: "Maitr. Dos",
+  RES_BACKSTAB: "Res. Dos",
+  MELEE_DMG: "Maitr. Melee",
+  RANGED_DMG: "Maitr. Distance",
+  BERSERK_DMG: "Maitr. Berserk",
+  INDIRECT_DMG: "% Degats indirects",
+};
+
+// Stats affichées dans le panneau (sous-ensemble pertinent pour les bonus Wakfuli)
+const DISPLAYED_STATS: (keyof StatValues)[] = [
+  "HP", "AP", "MP", "WP",
+  "DODGE", "TACKLE", "INIT",
+  "WISDOM", "PROSPECTION",
+  "DMG_IN_PERCENT", "HEAL_IN_PERCENT", "RES_IN_PERCENT",
+  "BLOCK", "WILLPOWER", "RANGE",
+  "CRITICAL_BONUS", "CRITICAL_RES",
+  "BACKSTAB_BONUS", "RES_BACKSTAB",
+  "MELEE_DMG", "RANGED_DMG",
+  "BERSERK_DMG", "INDIRECT_DMG",
+];
+
+// ============================================================
+// Bonus Wakfuli (extraits du chunk 25c3dbf546a727d1.js)
+// ============================================================
 const DEFAULT_BONUSES: Bonus[] = [
   {
     label: "Arbre",
@@ -56,9 +137,9 @@ const DEFAULT_BONUSES: Bonus[] = [
       INIT: 10,
       WISDOM: 10,
       PROSPECTION: 10,
-      "DMG%": 8,
-      "HEAL%": 8,
-      "RES%": 20,
+      DMG_IN_PERCENT: 8,
+      HEAL_IN_PERCENT: 8,
+      RES_IN_PERCENT: 20,
     },
   },
   {
@@ -66,44 +147,18 @@ const DEFAULT_BONUSES: Bonus[] = [
     active: false,
     stats: {
       HP: 10,
-      DODGE: 0,
-      TACKLE: 0,
-      INIT: 0,
       WISDOM: 10,
       PROSPECTION: 10,
-      "DMG%": 0,
-      "HEAL%": 0,
-      "RES%": 0,
     },
   },
   {
     label: "Monture",
     active: false,
     stats: {
-      HP: 0,
-      DODGE: 0,
-      TACKLE: 0,
-      INIT: 0,
-      WISDOM: 0,
-      PROSPECTION: 0,
-      "DMG%": 40,
-      "HEAL%": 0,
-      "RES%": 0,
+      DMG_IN_PERCENT: 40,
     },
   },
 ];
-
-const STAT_ICONS: Record<string, string> = {
-  HP: "hp",
-  DODGE: "dodge",
-  TACKLE: "tackle",
-  INIT: "initiative",
-  WISDOM: "wisdom",
-  PROSPECTION: "prospection",
-  "DMG%": "damage",
-  "HEAL%": "heals",
-  "RES%": "resistance",
-};
 
 const VISIBILITY_CYCLE: Array<"public" | "link-only" | "private"> = [
   "public",
@@ -113,38 +168,50 @@ const VISIBILITY_CYCLE: Array<"public" | "link-only" | "private"> = [
 
 const VISIBILITY_LABELS: Record<string, string> = {
   public: "Public",
-  "link-only": "Lien uniquement",
+  "link-only": "Lien seul",
   private: "Prive",
+};
+
+const VISIBILITY_ICONS: Record<string, string> = {
+  public: "\u{1F30D}",
+  "link-only": "\u{1F517}",
+  private: "\u{1F512}",
 };
 
 // ============================================================
 // Helpers
 // ============================================================
-
-/** Additionne deux StatValues de maniere safe */
-function addStats(a: StatValues, b: StatValues): StatValues {
-  const result = { ...EMPTY_STATS };
-  for (const key of Object.keys(EMPTY_STATS) as (keyof StatValues)[]) {
-    result[key] = (a?.[key] ?? 0) + (b?.[key] ?? 0);
+function addPartialStats(
+  base: StatValues,
+  partial: Partial<StatValues>
+): StatValues {
+  const result = { ...base };
+  for (const key of Object.keys(partial) as (keyof StatValues)[]) {
+    result[key] = (result[key] ?? 0) + (partial[key] ?? 0);
   }
   return result;
 }
 
-/** Encode un objet en base64 pour le partage */
 function encodePayload(data: unknown): string {
   try {
-    return btoa(JSON.stringify(data));
+    return btoa(encodeURIComponent(JSON.stringify(data)));
   } catch {
     console.error("[LeftPanel] Erreur encodage payload");
     return "";
   }
 }
 
+function formatBonusPreview(stats: Partial<StatValues>): string {
+  return Object.entries(stats)
+    .filter(([, v]) => (v ?? 0) > 0)
+    .map(([k, v]) => `${STAT_LABELS[k as keyof StatValues] ?? k} +${v}`)
+    .join(", ");
+}
+
 // ============================================================
-// Composant principal — EXPORT NOMME (pas default)
+// Composant — EXPORT NOMME pour BuilderLayout.tsx
 // ============================================================
 export function LeftPanel() {
-  // --- State du build -------------------------------------------------------
   const [build, setBuild] = useState<BuildState>({
     name: "Mon Build",
     level: 20,
@@ -152,48 +219,47 @@ export function LeftPanel() {
     visibility: "public",
   });
 
-  // --- Bonus toggles -------------------------------------------------------
-  const [bonuses, setBonuses] = useState<Bonus[]>(
-    () => structuredClone(DEFAULT_BONUSES)
+  const [bonuses, setBonuses] = useState<Bonus[]>(() =>
+    structuredClone(DEFAULT_BONUSES)
   );
 
-  // --- Favoris (localStorage) -----------------------------------------------
   const [isFavorite, setIsFavorite] = useState<boolean>(() => {
     if (typeof window === "undefined") return false;
     try {
       const stored = localStorage.getItem("wakfuli_favorites");
       if (!stored) return false;
-      const list: string[] = JSON.parse(stored);
+      const list = JSON.parse(stored);
       return Array.isArray(list) && list.includes("current");
     } catch {
       return false;
     }
   });
 
-  // --- Feedback utilisateur --------------------------------------------------
   const [feedback, setFeedback] = useState<string>("");
 
-  // --- Stats calculees (SAFE : part toujours de EMPTY_STATS) ----------------
+  // Calcul stats — safe, part de EMPTY_STATS
   const totalStats: StatValues = useMemo(() => {
     let computed = { ...EMPTY_STATS };
     for (const bonus of bonuses) {
       if (bonus.active && bonus.stats) {
-        computed = addStats(computed, bonus.stats);
+        computed = addPartialStats(computed, bonus.stats);
       }
     }
     return computed;
   }, [bonuses]);
 
-  // --- Handlers -------------------------------------------------------------
-
   const showFeedback = useCallback((msg: string) => {
     setFeedback(msg);
-    setTimeout(() => setFeedback(""), 2000);
+    setTimeout(() => setFeedback(""), 2500);
   }, []);
 
-  /** COPY — copie le build dans le presse-papier */
+  // ---- COPY ----
   const handleCopy = useCallback(async () => {
-    const payload = JSON.stringify({ build, stats: totalStats }, null, 2);
+    const payload = JSON.stringify(
+      { build, stats: totalStats, bonuses: bonuses.filter((b) => b.active).map((b) => b.label) },
+      null,
+      2
+    );
     try {
       if (navigator?.clipboard?.writeText) {
         await navigator.clipboard.writeText(payload);
@@ -208,42 +274,41 @@ export function LeftPanel() {
         document.body.removeChild(ta);
       }
       showFeedback("Build copie !");
-      console.info("[LeftPanel] Build copie dans le presse-papier");
+      console.info("[LeftPanel] Build copie");
     } catch (err) {
       console.error("[LeftPanel] Erreur copie :", err);
-      showFeedback("Erreur lors de la copie");
+      showFeedback("Erreur copie");
     }
-  }, [build, totalStats, showFeedback]);
+  }, [build, totalStats, bonuses, showFeedback]);
 
-  /** LINK — genere un lien de partage */
+  // ---- LINK ----
   const handleLink = useCallback(() => {
     const encoded = encodePayload({ build, stats: totalStats });
     if (!encoded) {
-      showFeedback("Erreur generation lien");
+      showFeedback("Erreur lien");
       return;
     }
     const url = `${window.location.origin}/builder?data=${encoded}`;
     navigator?.clipboard?.writeText(url).then(
       () => {
         showFeedback("Lien copie !");
-        console.info("[LeftPanel] Lien de partage copie :", url);
+        console.info("[LeftPanel] Lien :", url);
       },
-      () => showFeedback("Lien genere (copie echouee)")
+      () => showFeedback("Lien genere")
     );
   }, [build, totalStats, showFeedback]);
 
-  /** EYE — cycle de visibilite */
+  // ---- VISIBILITY ----
   const handleVisibility = useCallback(() => {
     setBuild((prev) => {
-      const currentIndex = VISIBILITY_CYCLE.indexOf(prev.visibility);
-      const nextIndex = (currentIndex + 1) % VISIBILITY_CYCLE.length;
-      const next = VISIBILITY_CYCLE[nextIndex];
-      console.info(`[LeftPanel] Visibilite : ${prev.visibility} -> ${next}`);
+      const idx = VISIBILITY_CYCLE.indexOf(prev.visibility);
+      const next = VISIBILITY_CYCLE[(idx + 1) % VISIBILITY_CYCLE.length];
+      console.info(`[LeftPanel] Visibilite: ${prev.visibility} -> ${next}`);
       return { ...prev, visibility: next };
     });
   }, []);
 
-  /** HEART — toggle favori */
+  // ---- FAVORITE ----
   const handleFavorite = useCallback(() => {
     setIsFavorite((prev) => {
       const next = !prev;
@@ -254,186 +319,142 @@ export function LeftPanel() {
           const parsed = JSON.parse(stored);
           if (Array.isArray(parsed)) list = parsed;
         }
-        if (next && !list.includes("current")) {
-          list.push("current");
-        } else if (!next) {
-          list = list.filter((id) => id !== "current");
-        }
+        if (next && !list.includes("current")) list.push("current");
+        else if (!next) list = list.filter((id) => id !== "current");
         localStorage.setItem("wakfuli_favorites", JSON.stringify(list));
-        console.info(`[LeftPanel] Favori : ${next ? "ajoute" : "retire"}`);
+        console.info(`[LeftPanel] Favori: ${next ? "+" : "-"}`);
       } catch (err) {
-        console.error("[LeftPanel] Erreur localStorage :", err);
+        console.error("[LeftPanel] localStorage err:", err);
       }
       return next;
     });
   }, []);
 
-  /** Toggle un bonus par index */
   const toggleBonus = useCallback((index: number) => {
     setBonuses((prev) =>
       prev.map((b, i) => (i === index ? { ...b, active: !b.active } : b))
     );
   }, []);
 
-  // --- Rendu ----------------------------------------------------------------
+  // ---- RENDU ----
   return (
-    <aside
-      style={{
-        width: 320,
-        padding: 16,
-        backgroundColor: "#1a1a2e",
-        color: "#e0e0e0",
-        borderRight: "1px solid #333",
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        overflowY: "auto",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        gap: 12,
-      }}
-    >
-      {/* ---- Header ---- */}
-      <div>
-        <h2 style={{ margin: 0, fontSize: 18, color: "#7ecbff" }}>
+    <aside style={panelStyle}>
+      {/* Header */}
+      <div style={{ padding: "16px 16px 0" }}>
+        <h2 style={{ margin: 0, fontSize: 17, color: "#7ecbff", fontWeight: 700 }}>
           {build.name}
         </h2>
-        <p style={{ margin: "4px 0 0", fontSize: 13, opacity: 0.7 }}>
-          {build.characterClass.charAt(0).toUpperCase() +
-            build.characterClass.slice(1)}{" "}
-          — Niv. {build.level}
+        <p style={{ margin: "4px 0 0", fontSize: 13, color: "#999" }}>
+          {build.characterClass.charAt(0).toUpperCase() + build.characterClass.slice(1)}
+          {" \u2014 Niv. "}
+          {build.level}
         </p>
       </div>
 
-      {/* ---- 4 boutons d action ---- */}
-      <div style={{ display: "flex", gap: 8 }}>
-        <button
-          onClick={handleCopy}
-          title="Copier le build"
-          style={btnStyle}
-        >
-          📋 Copy
-        </button>
-        <button
-          onClick={handleLink}
-          title="Generer un lien de partage"
-          style={btnStyle}
-        >
-          🔗 Link
-        </button>
-        <button
-          onClick={handleVisibility}
-          title={`Visibilite : ${VISIBILITY_LABELS[build.visibility]}`}
-          style={btnStyle}
-        >
-          👁️ {VISIBILITY_LABELS[build.visibility]}
-        </button>
-        <button
-          onClick={handleFavorite}
-          title={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
-          style={{
-            ...btnStyle,
-            color: isFavorite ? "#ff6b81" : "#e0e0e0",
-          }}
-        >
-          {isFavorite ? "❤️" : "🤍"} Fav
-        </button>
+      {/* 4 boutons */}
+      <div style={{ display: "flex", gap: 6, padding: "8px 16px" }}>
+        {[
+          { label: "Copier", icon: "\u{1F4CB}", handler: handleCopy },
+          { label: "Lien", icon: "\u{1F517}", handler: handleLink },
+          {
+            label: VISIBILITY_LABELS[build.visibility],
+            icon: VISIBILITY_ICONS[build.visibility],
+            handler: handleVisibility,
+          },
+          {
+            label: "Favori",
+            icon: isFavorite ? "\u2764\uFE0F" : "\u{1F90D}",
+            handler: handleFavorite,
+            activeColor: isFavorite ? "#ff6b81" : undefined,
+          },
+        ].map((btn) => (
+          <button
+            key={btn.label}
+            onClick={btn.handler}
+            title={btn.label}
+            style={{
+              ...btnStyle,
+              color: btn.activeColor ?? "#c0c0c0",
+            }}
+          >
+            <span style={{ fontSize: 14 }}>{btn.icon}</span>
+            <span style={{ fontSize: 11 }}>{btn.label}</span>
+          </button>
+        ))}
       </div>
 
-      {/* ---- Feedback ephemere ---- */}
+      {/* Feedback */}
       {feedback && (
-        <div
-          style={{
-            padding: "6px 10px",
-            backgroundColor: "#2d4a22",
-            borderRadius: 6,
-            fontSize: 13,
-            textAlign: "center",
-          }}
-        >
+        <div style={feedbackStyle}>
           {feedback}
         </div>
       )}
 
-      {/* ---- Bonus toggles ---- */}
-      <div>
-        <h3 style={{ fontSize: 14, margin: "8px 0 6px", color: "#a78bfa" }}>
-          Bonus
-        </h3>
+      {/* Bonus */}
+      <div style={{ padding: "0 16px" }}>
+        <h3 style={sectionTitle}>Bonus</h3>
         {bonuses.map((bonus, i) => (
-          <label
-            key={bonus.label}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              padding: "4px 0",
-              cursor: "pointer",
-              fontSize: 13,
-            }}
-          >
+          <label key={bonus.label} style={bonusRow}>
             <input
               type="checkbox"
               checked={bonus.active}
               onChange={() => toggleBonus(i)}
-              style={{ accentColor: "#7ecbff" }}
+              style={{ accentColor: "#7ecbff", width: 15, height: 15, cursor: "pointer" }}
             />
-            <span>{bonus.label}</span>
-            <span style={{ opacity: 0.5, marginLeft: "auto", fontSize: 11 }}>
-              {Object.entries(bonus.stats ?? {})
-                .filter(([, v]) => v > 0)
-                .map(([k, v]) => `${k} +${v}`)
-                .join(", ")}
+            <span style={{ fontWeight: 600, fontSize: 13 }}>{bonus.label}</span>
+            <span style={{ opacity: 0.45, marginLeft: "auto", fontSize: 10, maxWidth: 160, textAlign: "right" }}>
+              {formatBonusPreview(bonus.stats)}
             </span>
           </label>
         ))}
       </div>
 
-      {/* ---- Stats completes ---- */}
-      <div>
-        <h3 style={{ fontSize: 14, margin: "8px 0 6px", color: "#a78bfa" }}>
-          Statistiques
-        </h3>
-        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          {(Object.keys(EMPTY_STATS) as (keyof StatValues)[]).map((key) => (
-            <div
-              key={key}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                fontSize: 13,
-              }}
-            >
-              <img
-                src={`https://cdn.wakfuli.com/stats/${STAT_ICONS[key] ?? key.toLowerCase()}.webp`}
-                alt={key}
-                width={18}
-                height={18}
-                style={{ imageRendering: "pixelated" }}
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                }}
-              />
-              <span style={{ minWidth: 80 }}>{key}</span>
-              <span
-                style={{
-                  marginLeft: "auto",
-                  fontWeight: totalStats[key] > 0 ? 700 : 400,
-                  color: totalStats[key] > 0 ? "#7ecbff" : "#888",
-                }}
-              >
-                {totalStats[key]}
-              </span>
-            </div>
-          ))}
+      {/* Statistiques */}
+      <div style={{ padding: "0 16px", flex: 1, overflowY: "auto" }}>
+        <h3 style={sectionTitle}>Statistiques</h3>
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          {DISPLAYED_STATS.map((key) => {
+            const value = totalStats[key] ?? 0;
+            const hasValue = value !== 0;
+            return (
+              <div key={key} style={statRow}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`${ICON_BASE}/${key}.png`}
+                  alt={key}
+                  width={20}
+                  height={20}
+                  style={{ flexShrink: 0 }}
+                  onError={(e) => {
+                    const img = e.target as HTMLImageElement;
+                    img.style.display = "none";
+                  }}
+                />
+                <span style={{ fontSize: 12, color: hasValue ? "#ddd" : "#666" }}>
+                  {STAT_LABELS[key]}
+                </span>
+                <span
+                  style={{
+                    marginLeft: "auto",
+                    fontSize: 13,
+                    fontWeight: hasValue ? 700 : 400,
+                    color: hasValue ? "#7ecbff" : "#555",
+                    fontVariantNumeric: "tabular-nums",
+                  }}
+                >
+                  {value}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      {/* ---- Debug info (dev only) ---- */}
+      {/* Debug dev only */}
       {process.env.NODE_ENV === "development" && (
-        <details style={{ fontSize: 11, opacity: 0.5, marginTop: "auto" }}>
-          <summary>Debug</summary>
-          <pre style={{ whiteSpace: "pre-wrap", fontSize: 10 }}>
+        <details style={{ fontSize: 10, opacity: 0.4, padding: "8px 16px" }}>
+          <summary style={{ cursor: "pointer" }}>Debug state</summary>
+          <pre style={{ whiteSpace: "pre-wrap", fontSize: 9, marginTop: 4 }}>
             {JSON.stringify({ build, bonuses, totalStats, isFavorite }, null, 2)}
           </pre>
         </details>
@@ -443,17 +464,68 @@ export function LeftPanel() {
 }
 
 // ============================================================
-// Style commun boutons
+// Styles
 // ============================================================
+const panelStyle: React.CSSProperties = {
+  width: 320,
+  backgroundColor: "#12122a",
+  color: "#e0e0e0",
+  borderRight: "1px solid #2a2a45",
+  fontFamily: "'Inter', 'Segoe UI', system-ui, sans-serif",
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  gap: 8,
+  overflowY: "auto",
+};
+
 const btnStyle: React.CSSProperties = {
   flex: 1,
-  padding: "6px 4px",
-  fontSize: 12,
-  border: "1px solid #444",
-  borderRadius: 6,
-  backgroundColor: "#2a2a40",
-  color: "#e0e0e0",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: 2,
+  padding: "6px 2px",
+  border: "1px solid #333",
+  borderRadius: 8,
+  backgroundColor: "#1e1e3a",
+  color: "#c0c0c0",
   cursor: "pointer",
-  transition: "background-color 0.15s",
+  transition: "background-color 0.15s, border-color 0.15s",
+};
+
+const feedbackStyle: React.CSSProperties = {
+  margin: "0 16px",
+  padding: "6px 10px",
+  backgroundColor: "#1a3a1a",
+  border: "1px solid #2d5a22",
+  borderRadius: 6,
+  fontSize: 12,
   textAlign: "center",
+  color: "#8fc98f",
+};
+
+const sectionTitle: React.CSSProperties = {
+  fontSize: 12,
+  fontWeight: 700,
+  textTransform: "uppercase",
+  letterSpacing: "0.08em",
+  color: "#a78bfa",
+  margin: "12px 0 8px",
+};
+
+const bonusRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  padding: "5px 0",
+  cursor: "pointer",
+  borderBottom: "1px solid #1e1e3a",
+};
+
+const statRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  padding: "3px 0",
 };
