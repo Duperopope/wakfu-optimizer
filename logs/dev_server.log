@@ -2,3 +2,4 @@
 [2026-03-14 20:00:04] [START] Projet : H:\Code\Ankama Dev\wakfu-optimizer
 [2026-03-14 20:00:04] [START] Commandes autorisees : 19
 [2026-03-14 20:00:04] [START] Patterns bloques : 15
+[2026-03-14 20:05:16] [EXEC] Commande: python scripts/build_memory.py...

@@ -1,5 +1,5 @@
 # PROJECT MEMORY - wakfu-optimizer
-> Derniere mise a jour : 2026-03-14 18:48:56
+> Derniere mise a jour : 2026-03-14 20:05:16
 > CERVEAU du projet - A LIRE EN PREMIER par toute IA
 
 ## REGLES
@@ -11,22 +11,46 @@
 6. Verifier les URLs CDN avant de les utiliser
 
 ## FIN DE SESSION - OBLIGATOIRE
-1. Mettre a jour ce fichier avec tout ce qui a ete fait
-2. Date/heure avec Get-Date (JAMAIS en dur)
-3. Mettre a jour CHANGELOG.md (nouvelle entree)
-4. Ce fichier = cerveau. Info absente ici = perdue.
+1. Executer : python scripts/session_end.py
+2. Ou mettre a jour manuellement PROJECT_MEMORY.md + CHANGELOG.md
+3. Ce fichier = cerveau. Info absente ici = perdue.
 
 ## LIENS RAPIDES
 - Repo : https://github.com/Duperopope/wakfu-optimizer
 - Raw : https://raw.githubusercontent.com/Duperopope/wakfu-optimizer/main/{path}
 - Commits : https://api.github.com/repos/Duperopope/wakfu-optimizer/commits?per_page=5
-- Inventaire detaille : ARCHITECTURE.md
-- Historique sessions : CHANGELOG.md
+- ARCHITECTURE.md | CHANGELOG.md | BRIEFING.md | SESSION_HANDOFF.md
 
-## STACK
+## STACK (auto-detecte)
 - Frontend : Next.js 16.1.6 / React 19.2.3 / Tailwind CSS 4 / TypeScript 5
 - OS : Windows / PowerShell / VS Code
 - Serveur dev : npm run dev (port 3000 ou 8090)
+
+## COMPOSANTS BUILDER (auto-detecte)
+- BuilderLayout.tsx : 75 lignes
+- ClassSelector.tsx : 115 lignes
+- LeftPanel.tsx v5 : 396 lignes
+- RightPanel.tsx : 470 lignes
+- lib/BuildContext.tsx : 217 lignes
+- lib/useWakfuData.ts : 40 lignes
+
+## ASSETS (auto-detecte)
+- icons/stats/ : 33 icones .webp
+- icons/bonuses/ : 3 icones .png
+
+## DONNEES WAKFULI (auto-detecte)
+- all_items.json : 11.52 MB (7686 entrees) [OK]
+- all_actions.json : 12.8 KB (68 entrees) [OK]
+- all_builds.json : 38.39 MB (939 entrees) [OK]
+- all_spells.json : 3.66 MB [OK]
+- version.json : 71 B [OK]
+- sync_report.json : 512 B [OK]
+- spells_report.json : 2.2 KB [OK]
+
+## DERNIERE SYNC : 2026-03-14T11:13:26.199179
+- 7686 items, 68 actions, 939 builds
+
+## VERSION JEU : 1.91.1.53
 
 ## CE QUI MARCHE
 - Selection classe, level, nom du build
@@ -39,9 +63,10 @@
 - Couleurs rarete correctes
 
 ## TODO (priorite)
+- [ ] Redesign LeftPanel bonus pour matcher Wakfuli
 - [ ] Connecter priorite elementaire a computeStats
 - [ ] Localiser icones classes (cdn -> local)
-- [ ] Refaire gem.png en 64x64+ (pixelise)
+- [ ] Refaire gem.png en 64x64+
 - [ ] Onglet Sorts (all_spells.json dispo)
 - [ ] Enchantements dans BuildContext
 - [ ] Onglets Aptitudes / Notes
@@ -53,16 +78,17 @@
 - Items : cdn.wakfuli.com/items/{image_id}.webp
 - Raretes : cdn.wakfuli.com/rarity/{RARITY}.webp
 
-## FICHIERS ACTIFS (ou on travaille)
-- frontend/src/components/builder/LeftPanel.tsx (v5 - dernier modifie)
+## COMMITS RECENTS
+- 77685c6 auto 20:00:09: dev_server.log
+- 4add6c4 auto 19:59:32: ANIFEST.json, dev_server.py
+- b8bfd4f auto 19:54:37: build_memory.py
+- 766238b auto 19:47:05: BRIEFING.md
+- d5e7eb7 auto 19:46:44: ANIFEST.json
+
+## FICHIERS ACTIFS
+- frontend/src/components/builder/LeftPanel.tsx (dernier modifie)
 - frontend/src/components/builder/RightPanel.tsx
 - frontend/src/components/builder/BuilderLayout.tsx
 - frontend/src/components/builder/ClassSelector.tsx
 - frontend/src/lib/BuildContext.tsx
 - frontend/public/icons/ (stats/*.webp + bonuses/*.png)
-
-## CONTEXTE LEGACY (lire ARCHITECTURE.md si besoin)
-engine/ = moteur combat Python (formules de degats de reference)
-decompiled/ = 332 fichiers Java du client Wakfu
-data/raw/ + data/extracted/ = ancien systeme CDN Ankama
-scripts/ = 41 scripts legacy dans archive/
