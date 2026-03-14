@@ -313,32 +313,42 @@ export function LeftPanel() {
         </div>
       )}
 
-      {/* ========== BONUS (ligne horizontale comme Wakfuli) ========== */}
+      {/* ========== BONUS (Guilde / Havre-Monde / Monture) ========== */}
       <div className="px-3 pt-2 pb-2 border-b border-border">
-        <div className="flex items-center gap-1">
-          {bonuses.map((b, i) => {
-            const icons: Record<string, string> = {
-              "Bonus de Guilde": "\u{1F6E1}",
-              "Bonus de Havre-Monde": "\u{1F3E0}",
-              "Bonus de Monture": "\u{1F40E}",
-            };
-            return (
-              <button
-                key={b.label}
-                onClick={() => toggleBonus(i)}
-                title={b.label}
-                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all cursor-pointer border ${
-                  b.active
-                    ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
-                    : "bg-bg-lighter border-border text-neutral-400 hover:text-primary hover:border-border-light"
-                }`}
-              >
-                <span className="text-sm">{icons[b.label] ?? "\u2728"}</span>
-                <span className="hidden xl:inline">{b.label}</span>
-                <span className="xl:hidden">{b.label.split(" ").pop()}</span>
-              </button>
-            );
-          })}
+        <div className="flex items-center gap-1.5">
+          {bonuses.map((b, i) => (
+            <button
+              key={b.label}
+              onClick={() => toggleBonus(i)}
+              title={`${b.label}${b.active ? " (actif)" : ""}`}
+              className={`flex items-center gap-1.5 px-2 py-1.5 rounded text-[11px] font-medium transition-all cursor-pointer border ${
+                b.active
+                  ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
+                  : "bg-bg-lighter border-border text-neutral-500 hover:text-primary hover:border-border-light"
+              }`}
+            >
+              {/* Icone SVG par bonus */}
+              {i === 0 && (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              )}
+              {i === 1 && (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              )}
+              {i === 2 && (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M4 16c0 2.2 1.8 4 4 4h1l1-2h4l1 2h1c2.2 0 4-1.8 4-4v-2l-3-5c-.5-1-1.5-1.5-2.5-1.5h-5C8.5 7.5 7.5 8 7 9L4 14v2z" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="8.5" cy="14.5" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="15.5" cy="14.5" r="1" fill="currentColor" stroke="none"/>
+                  <path d="M7 7.5L5.5 4M17 7.5L18.5 4" strokeLinecap="round"/>
+                </svg>
+              )}
+              <span>{b.label}</span>
+            </button>
+          ))}
         </div>
       </div>
 
@@ -508,5 +518,6 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 

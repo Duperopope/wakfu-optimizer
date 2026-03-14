@@ -53,7 +53,7 @@ export function RightPanel() {
 
       <div className="flex-1 overflow-y-auto min-h-0 no-scrollbar">
         {activeTab === "items" && <ItemsTab />}
-        {activeTab === "enchants" && <PlaceholderTab label="Enchantements" />}
+        {activeTab === "enchants" && <EnchantsTab />}
         {activeTab === "aptitudes" && <PlaceholderTab label="Aptitudes" />}
         {activeTab === "spells" && <PlaceholderTab label="Sorts" />}
         {activeTab === "notes" && <PlaceholderTab label="Notes" />}
@@ -308,6 +308,163 @@ function ActionButton({ icon, disabled, onClick }: { icon: React.ReactNode; disa
   );
 }
 
+// ============================================================
+// Onglet Enchantement
+// Source: reference/wakfuli/assets/api/builds -> runes[], sublimations[]
+// Les runes augmentent les stats des slots d equipement
+// Les sublimations sont des bonus speciaux (parchemins)
+// ============================================================
+
+const RUNE_SLOTS = [
+  { slot: "helmet",      label: "Casque" },
+  { slot: "neck",        label: "Amulette" },
+  { slot: "chest",       label: "Plastron" },
+  { slot: "ring-left",   label: "Anneau G." },
+  { slot: "ring-right",  label: "Anneau D." },
+  { slot: "legs",        label: "Bottes" },
+  { slot: "back",        label: "Cape" },
+  { slot: "shoulders",   label: "Epaulettes" },
+  { slot: "belt",        label: "Ceinture" },
+  { slot: "weapon-main", label: "Arme 1" },
+  { slot: "weapon-off",  label: "Arme 2" },
+  { slot: "accessory",   label: "Accessoire" },
+  { slot: "pet",         label: "Familier" },
+] as const;
+
+const RUNE_STATS = [
+  { key: "HP",          label: "PV",          max: 20 },
+  { key: "DODGE",       label: "Esquive",     max: 10 },
+  { key: "TACKLE",      label: "Tacle",       max: 10 },
+  { key: "INIT",        label: "Initiative",  max: 10 },
+  { key: "WILLPOWER",   label: "Volonté",     max: 10 },
+  { key: "WISDOM",      label: "Sagesse",     max: 10 },
+  { key: "PROSPECTION", label: "Prospection", max: 10 },
+  { key: "DMG_IN_PERCENT", label: "Maîtrise Élem.", max: 20 },
+] as const;
+
+function EnchantsTab() {
+  const { build } = useBuild();
+  const [selectedSlot, setSelectedSlot] = useState<string>("helmet");
+  const [runeValues, setRuneValues] = useState<Record<string, Record<string, number>>>({});
+
+  const slotRunes = runeValues[selectedSlot] ?? {};
+  const equippedItem = build.equipment[selectedSlot as keyof typeof build.equipment];
+  const itemName = equippedItem
+    ? (equippedItem.item as { name?: string })?.name ?? "Objet équipé"
+    : null;
+
+  const setRuneValue = (stat: string, val: number) => {
+    setRuneValues(prev => ({
+      ...prev,
+      [selectedSlot]: {
+        ...(prev[selectedSlot] ?? {}),
+        [stat]: Math.max(0, Math.min(val, 20)),
+      }
+    }));
+  };
+
+  const totalRunePoints = Object.values(slotRunes).reduce((a, b) => a + b, 0);
+
+  return (
+    <div className="bg-bg-darker flex h-full flex-col p-3">
+      {/* Selection du slot */}
+      <div className="mb-3">
+        <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2">
+          Slot à enchanter
+        </div>
+        <div className="grid grid-cols-4 gap-1">
+          {RUNE_SLOTS.map(rs => {
+            const hasItem = !!build.equipment[rs.slot as keyof typeof build.equipment];
+            return (
+              <button
+                key={rs.slot}
+                onClick={() => setSelectedSlot(rs.slot)}
+                className={`flex flex-col items-center gap-1 p-2 rounded text-[10px] transition-all cursor-pointer border ${
+                  selectedSlot === rs.slot
+                    ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
+                    : hasItem
+                      ? "bg-bg-light border-border text-primary/70 hover:border-border-light"
+                      : "bg-bg-dark border-border/50 text-neutral-600"
+                }`}
+              >
+                <img
+                  src={hasItem
+                    ? `https://cdn.wakfuli.com/items/${(build.equipment[rs.slot as keyof typeof build.equipment]?.item as { image_id?: number })?.image_id}.webp`
+                    : `https://cdn.wakfuli.com/placeholders/${rs.slot}.webp`
+                  }
+                  alt={rs.label}
+                  className="w-8 h-8"
+                  onError={e => { (e.target as HTMLImageElement).style.visibility = "hidden"; }}
+                />
+                <span className="truncate w-full text-center">{rs.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Enchantement du slot selectionne */}
+      <div className="flex-1">
+        <div className="flex items-center justify-between mb-2">
+          <div className="text-sm font-semibold text-primary">
+            {itemName ?? <span className="text-neutral-500 italic">Aucun objet équipé</span>}
+          </div>
+          <div className="text-xs text-neutral-500">
+            Points: <span className={`font-bold ${totalRunePoints > 0 ? "text-cyan-wakfuli" : "text-neutral-600"}`}>{totalRunePoints}</span>
+          </div>
+        </div>
+
+        {!equippedItem ? (
+          <div className="flex items-center justify-center py-16 text-neutral-500 text-sm">
+            Équipe un objet dans ce slot pour l&apos;enchanter
+          </div>
+        ) : (
+          <div className="space-y-1">
+            {RUNE_STATS.map(rs => {
+              const val = slotRunes[rs.key] ?? 0;
+              return (
+                <div key={rs.key} className="flex items-center gap-2 bg-bg-dark rounded px-2 py-1.5">
+                  <img
+                    src={`https://cdn.wakfuli.com/stats/${rs.key}.webp`}
+                    alt={rs.label}
+                    className="w-5 h-5 flex-shrink-0"
+                    onError={e => { (e.target as HTMLImageElement).style.visibility = "hidden"; }}
+                  />
+                  <span className="text-xs text-neutral-400 flex-1">{rs.label}</span>
+                  <div className="flex items-center gap-1">
+                    <button
+                      onClick={() => setRuneValue(rs.key, val - 1)}
+                      className="w-5 h-5 flex items-center justify-center rounded bg-bg-lighter text-neutral-400 hover:text-primary hover:bg-bg-card cursor-pointer transition-colors text-xs"
+                    >-</button>
+                    <span className={`w-6 text-center text-xs font-bold tabular-nums ${val > 0 ? "text-cyan-wakfuli" : "text-neutral-600"}`}>
+                      {val}
+                    </span>
+                    <button
+                      onClick={() => setRuneValue(rs.key, val + 1)}
+                      className="w-5 h-5 flex items-center justify-center rounded bg-bg-lighter text-neutral-400 hover:text-primary hover:bg-bg-card cursor-pointer transition-colors text-xs"
+                    >+</button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Section Sublimations */}
+      <div className="mt-3 pt-3 border-t border-border">
+        <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2">
+          Sublimations
+        </div>
+        <div className="text-xs text-neutral-500 text-center py-6 bg-bg-dark rounded">
+          Recherche de sublimations — à implémenter
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function PlaceholderTab({ label }: { label: string }) {
   return <div className="flex items-center justify-center h-full text-primary/40 text-lg">Onglet {label} - a implementer</div>;
 }
+
