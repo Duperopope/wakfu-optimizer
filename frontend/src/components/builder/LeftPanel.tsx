@@ -1,82 +1,92 @@
 "use client";
 
 import React, { useState, useCallback, useMemo } from "react";
+import { useBuild } from "@/lib/BuildContext";
 
 // ============================================================
-// Wakfuli-style LeftPanel — fidele au design original
-// Sources:
-//   - Chunks JS Wakfuli (25c3dbf546a727d1.js, 16de6c976c6b691d.js)
-//   - Icones: https://github.com/Vertylo/wakassets/tree/main/characteristics
-//   - Stats: https://wakfu.wiki.gg/wiki/Characteristic
+// LeftPanel — Panneau gauche du builder
+// Sources de reference:
+//   - reference/wakfuli/pages/builder_public.html (structure HTML)
+//   - reference/wakfuli_all.css (couleurs + variables CSS Wakfuli)
+//   - CDN icons: cdn.wakfuli.com/stats/{STAT_NAME}.webp (PROJECT_MEMORY)
+//   - CDN breeds: cdn.wakfuli.com/breeds/{classname}.webp (PROJECT_MEMORY)
+//   - Stats: BuildContext.tsx -> computeStats() (35 stats)
 // ============================================================
 
-// --- Types ---
+// --- Definition des stats affichees, groupees comme Wakfuli ---
 interface StatDef {
   key: string;
   label: string;
-  icon: string;    // nom fichier dans wakassets/characteristics/
-  category: string;
+  category: "general" | "combat" | "mastery" | "resist";
 }
 
+const STAT_DEFS: StatDef[] = [
+  // General
+  { key: "HP",               label: "PV",             category: "general" },
+  { key: "AP",               label: "PA",             category: "general" },
+  { key: "MP",               label: "PM",             category: "general" },
+  { key: "WP",               label: "PW",             category: "general" },
+  { key: "RANGE",            label: "PO",             category: "general" },
+  // Combat
+  { key: "DODGE",            label: "Esquive",        category: "combat" },
+  { key: "TACKLE",           label: "Tacle",          category: "combat" },
+  { key: "INIT",             label: "Initiative",     category: "combat" },
+  { key: "BLOCK",            label: "Parade",         category: "combat" },
+  { key: "WILLPOWER",        label: "Volonté",        category: "combat" },
+  { key: "WISDOM",           label: "Sagesse",        category: "combat" },
+  { key: "PROSPECTION",      label: "Prospection",    category: "combat" },
+  { key: "FEROCITY",         label: "Férocité",       category: "combat" },
+  // Maitrise
+  { key: "DMG_IN_PERCENT",   label: "Maîtrise Élem.", category: "mastery" },
+  { key: "HEAL_IN_PERCENT",  label: "Maîtrise Soin",  category: "mastery" },
+  { key: "CRITICAL_BONUS",   label: "Maîtrise Crit.", category: "mastery" },
+  { key: "BACKSTAB_BONUS",   label: "Maîtrise Dos",   category: "mastery" },
+  { key: "MELEE_DMG",        label: "Maîtrise Mêlée", category: "mastery" },
+  { key: "RANGED_DMG",       label: "Maîtrise Dist.", category: "mastery" },
+  { key: "BERSERK_DMG",      label: "Maîtrise Bers.", category: "mastery" },
+  // Resistance
+  { key: "RES_FIRE_PERCENT",   label: "Rés. Feu",     category: "resist" },
+  { key: "RES_WATER_PERCENT",  label: "Rés. Eau",     category: "resist" },
+  { key: "RES_EARTH_PERCENT",  label: "Rés. Terre",   category: "resist" },
+  { key: "RES_AIR_PERCENT",    label: "Rés. Air",     category: "resist" },
+  { key: "CRITICAL_RES",       label: "Rés. Critique", category: "resist" },
+  { key: "RES_BACKSTAB",       label: "Rés. Dos",      category: "resist" },
+];
+
+const CATEGORY_LABELS: Record<string, string> = {
+  general: "Général",
+  combat: "Combat",
+  mastery: "Maîtrise",
+  resist: "Résistance",
+};
+
+// Map stat key -> icon filename sur cdn.wakfuli.com/stats/
+// Verifie dans PROJECT_MEMORY: cdn.wakfuli.com/stats/{STAT_NAME}.webp (WP pas WAKFU_POINT)
+const STAT_ICON_MAP: Record<string, string> = {
+  HP: "HP", AP: "AP", MP: "MP", WP: "WP", RANGE: "RANGE",
+  DODGE: "DODGE", TACKLE: "TACKLE", INIT: "INIT", BLOCK: "BLOCK",
+  WILLPOWER: "WILLPOWER", WISDOM: "WISDOM", PROSPECTION: "PROSPECTION",
+  FEROCITY: "FEROCITY",
+  DMG_IN_PERCENT: "DMG_IN_PERCENT", HEAL_IN_PERCENT: "HEAL_IN_PERCENT",
+  CRITICAL_BONUS: "CRITICAL_BONUS", BACKSTAB_BONUS: "BACKSTAB_BONUS",
+  MELEE_DMG: "MELEE_DMG", RANGED_DMG: "RANGED_DMG", BERSERK_DMG: "BERSERK_DMG",
+  RES_FIRE_PERCENT: "RES_FIRE_PERCENT", RES_WATER_PERCENT: "RES_WATER_PERCENT",
+  RES_EARTH_PERCENT: "RES_EARTH_PERCENT", RES_AIR_PERCENT: "RES_AIR_PERCENT",
+  CRITICAL_RES: "CRITICAL_RES", RES_BACKSTAB: "RES_BACKSTAB",
+};
+
+// --- Bonus Wakfuli (source: chunk 25c3dbf546a727d1.js) ---
 interface Bonus {
   label: string;
   active: boolean;
   stats: Record<string, number>;
 }
 
-interface BuildState {
-  name: string;
-  level: number;
-  characterClass: string;
-  visibility: "public" | "link-only" | "private";
-}
-
-// --- CDN icones Wakfu (Vertylo/wakassets GitHub Pages) ---
-const ICON_CDN = "https://vertylo.github.io/wakassets/characteristics";
-
-// --- Definition des stats affichees, groupees par categorie Wakfuli ---
-const STATS: StatDef[] = [
-  // Generale
-  { key: "HP",               label: "PV",                icon: "HP",               category: "general" },
-  { key: "AP",               label: "PA",                icon: "AP",               category: "general" },
-  { key: "MP",               label: "PM",                icon: "MP",               category: "general" },
-  { key: "WP",               label: "PW",                icon: "WP",               category: "general" },
-  { key: "RANGE",            label: "PO",                icon: "RANGE",            category: "general" },
-  // Combat
-  { key: "DODGE",            label: "Esquive",           icon: "DODGE",            category: "combat" },
-  { key: "TACKLE",           label: "Tacle",             icon: "TACKLE",           category: "combat" },
-  { key: "INIT",             label: "Initiative",        icon: "INIT",             category: "combat" },
-  { key: "BLOCK",            label: "Parade",            icon: "BLOCK",            category: "combat" },
-  { key: "WILLPOWER",        label: "Volonte",           icon: "WILLPOWER",        category: "combat" },
-  { key: "WISDOM",           label: "Sagesse",           icon: "WISDOM",           category: "combat" },
-  { key: "PROSPECTION",      label: "Prospection",       icon: "PROSPECTION",      category: "combat" },
-  // Maitrise
-  { key: "DMG_IN_PERCENT",   label: "% Degats",          icon: "DMG_IN_PERCENT",   category: "mastery" },
-  { key: "HEAL_IN_PERCENT",  label: "% Soins",           icon: "HEAL_IN_PERCENT",  category: "mastery" },
-  { key: "CRITICAL_BONUS",   label: "Critique",          icon: "CRITICAL_BONUS",   category: "mastery" },
-  { key: "BACKSTAB_BONUS",   label: "Dos",               icon: "BACKSTAB_BONUS",   category: "mastery" },
-  { key: "MELEE_DMG",        label: "Melee",             icon: "MELEE_DMG",        category: "mastery" },
-  { key: "RANGED_DMG",       label: "Distance",          icon: "RANGED_DMG",       category: "mastery" },
-  { key: "BERSERK_DMG",      label: "Berserk",           icon: "BERSERK_DMG",      category: "mastery" },
-  // Resistance
-  { key: "RES_IN_PERCENT",   label: "% Res.",            icon: "RES_IN_PERCENT",   category: "resist" },
-  { key: "CRITICAL_RES",     label: "Res. Crit.",        icon: "CRITICAL_RES",     category: "resist" },
-  { key: "RES_BACKSTAB",     label: "Res. Dos",          icon: "RES_BACKSTAB",     category: "resist" },
-];
-
-const CATEGORY_LABELS: Record<string, string> = {
-  general: "General",
-  combat: "Combat",
-  mastery: "Maitrise",
-  resist: "Resistance",
-};
-
-// --- Bonus Wakfuli (chunk 25c3dbf546a727d1.js) ---
 const DEFAULT_BONUSES: Bonus[] = [
   {
     label: "Arbre",
     active: false,
-    stats: { HP: 55, DODGE: 20, TACKLE: 20, INIT: 10, WISDOM: 10, PROSPECTION: 10, DMG_IN_PERCENT: 8, HEAL_IN_PERCENT: 8, RES_IN_PERCENT: 20 },
+    stats: { HP: 55, DODGE: 20, TACKLE: 20, INIT: 10, WISDOM: 10, PROSPECTION: 10, DMG_IN_PERCENT: 8, HEAL_IN_PERCENT: 8, RES_FIRE_PERCENT: 5, RES_WATER_PERCENT: 5, RES_EARTH_PERCENT: 5, RES_AIR_PERCENT: 5 },
   },
   {
     label: "Gemme",
@@ -91,95 +101,98 @@ const DEFAULT_BONUSES: Bonus[] = [
 ];
 
 const VIS_CYCLE: ("public" | "link-only" | "private")[] = ["public", "link-only", "private"];
-const VIS_LABEL: Record<string, string> = { public: "Public", "link-only": "Lien", private: "Prive" };
-const VIS_ICON: Record<string, string>  = { public: "\u{1F30D}", "link-only": "\u{1F517}", private: "\u{1F512}" };
-
-// --- Helpers ---
-function computeStats(bonuses: Bonus[]): Record<string, number> {
-  const result: Record<string, number> = {};
-  for (const s of STATS) result[s.key] = 0;
-  for (const b of bonuses) {
-    if (!b.active || !b.stats) continue;
-    for (const [k, v] of Object.entries(b.stats)) {
-      result[k] = (result[k] ?? 0) + (v ?? 0);
-    }
-  }
-  return result;
-}
-
-function encodeBuild(data: unknown): string {
-  try { return btoa(encodeURIComponent(JSON.stringify(data))); }
-  catch { return ""; }
-}
+const VIS_LABELS: Record<string, string> = { "public": "Public", "link-only": "Lien", "private": "Privé" };
+const VIS_COLORS: Record<string, string> = {
+  "public": "rgb(100, 220, 41)",
+  "link-only": "rgb(255, 153, 0)",
+  "private": "rgb(255, 61, 71)",
+};
 
 // ============================================================
 // COMPOSANT — export nomme pour { LeftPanel }
 // ============================================================
 export function LeftPanel() {
-  const [build, setBuild] = useState<BuildState>({
-    name: "Mon Build",
-    level: 20,
-    characterClass: "huppermage",
-    visibility: "public",
-  });
+  // Consomme le BuildContext pour les stats reelles
+  const { build, stats, setName, setLevel } = useBuild();
 
-  const [bonuses, setBonuses] = useState<Bonus[]>(() => structuredClone(DEFAULT_BONUSES));
+  const [bonuses, setBonuses] = useState<Bonus[]>(() =>
+    DEFAULT_BONUSES.map(b => ({ ...b, stats: { ...b.stats } }))
+  );
+  const [visibility, setVisibility] = useState<"public" | "link-only" | "private">("public");
   const [isFav, setIsFav] = useState(false);
   const [toast, setToast] = useState("");
 
-  const stats = useMemo(() => computeStats(bonuses), [bonuses]);
+  // Stats totales = stats du BuildContext + bonus actifs
+  const totalStats = useMemo(() => {
+    const merged: Record<string, number> = {};
+    // Commencer par les stats du contexte (items equipes)
+    for (const s of STAT_DEFS) {
+      merged[s.key] = (stats as Record<string, number>)[s.key] ?? 0;
+    }
+    // Ajouter les bonus actifs
+    for (const b of bonuses) {
+      if (!b.active) continue;
+      for (const [k, v] of Object.entries(b.stats)) {
+        if (k in merged) {
+          merged[k] = (merged[k] ?? 0) + (v ?? 0);
+        }
+      }
+    }
+    return merged;
+  }, [stats, bonuses]);
 
   const flash = useCallback((msg: string) => {
     setToast(msg);
     setTimeout(() => setToast(""), 2000);
   }, []);
 
-  // Actions
+  // --- Actions ---
   const onCopy = useCallback(async () => {
-    const txt = JSON.stringify({ ...build, stats }, null, 2);
+    const txt = JSON.stringify({ name: build.name, level: build.level, class: build.characterClass, stats: totalStats }, null, 2);
     try {
       await navigator.clipboard.writeText(txt);
-      flash("Copie !");
-    } catch { flash("Erreur"); }
-  }, [build, stats, flash]);
+      flash("Build copié !");
+    } catch { flash("Erreur copie"); }
+  }, [build, totalStats, flash]);
 
   const onLink = useCallback(() => {
-    const enc = encodeBuild({ ...build, stats });
-    if (!enc) return flash("Erreur");
-    const url = `${window.location.origin}/builder?b=${enc}`;
-    navigator.clipboard.writeText(url).then(() => flash("Lien copie !"), () => flash("Lien genere"));
-  }, [build, stats, flash]);
+    try {
+      const payload = btoa(encodeURIComponent(JSON.stringify({ name: build.name, level: build.level, class: build.characterClass })));
+      const url = `${window.location.origin}/builder?b=${payload}`;
+      navigator.clipboard.writeText(url).then(() => flash("Lien copié !"), () => flash("Lien généré"));
+    } catch { flash("Erreur lien"); }
+  }, [build, flash]);
 
   const onVis = useCallback(() => {
-    setBuild(p => {
-      const i = VIS_CYCLE.indexOf(p.visibility);
-      return { ...p, visibility: VIS_CYCLE[(i + 1) % VIS_CYCLE.length] };
+    setVisibility(prev => {
+      const i = VIS_CYCLE.indexOf(prev);
+      return VIS_CYCLE[(i + 1) % VIS_CYCLE.length];
     });
   }, []);
 
   const onFav = useCallback(() => {
-    setIsFav(p => {
-      const n = !p;
+    setIsFav(prev => {
+      const next = !prev;
       try {
-        const s = localStorage.getItem("wk_fav");
-        let l: string[] = s ? JSON.parse(s) : [];
-        if (!Array.isArray(l)) l = [];
-        l = n ? [...new Set([...l, "current"])] : l.filter(x => x !== "current");
-        localStorage.setItem("wk_fav", JSON.stringify(l));
-      } catch {}
-      return n;
+        const raw = localStorage.getItem("wk_fav");
+        let list: string[] = raw ? JSON.parse(raw) : [];
+        if (!Array.isArray(list)) list = [];
+        list = next ? [...new Set([...list, build.name])] : list.filter(x => x !== build.name);
+        localStorage.setItem("wk_fav", JSON.stringify(list));
+      } catch { /* noop */ }
+      return next;
     });
-  }, []);
+  }, [build.name]);
 
   const toggleBonus = useCallback((i: number) => {
-    setBonuses(p => p.map((b, j) => j === i ? { ...b, active: !b.active } : b));
+    setBonuses(prev => prev.map((b, j) => j === i ? { ...b, active: !b.active } : b));
   }, []);
 
   // Grouper les stats par categorie
   const categories = useMemo(() => {
     const cats: { id: string; label: string; items: StatDef[] }[] = [];
     const seen = new Set<string>();
-    for (const s of STATS) {
+    for (const s of STAT_DEFS) {
       if (!seen.has(s.category)) {
         seen.add(s.category);
         cats.push({ id: s.category, label: CATEGORY_LABELS[s.category] ?? s.category, items: [] });
@@ -190,83 +203,137 @@ export function LeftPanel() {
   }, []);
 
   return (
-    <aside className="wk-panel">
-      <style>{panelCSS}</style>
+    <aside className="h-full overflow-y-auto bg-bg-dark border-r border-border flex flex-col text-sm"
+           style={{ scrollbarWidth: "thin", scrollbarColor: "#2a2e37 transparent" }}>
 
-      {/* === BUILD HEADER === */}
-      <div className="wk-header">
-        <div className="wk-header-info">
-          <span className="wk-class-badge">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`https://vertylo.github.io/wakassets/breedsIcons/14.png`}
-              alt="class"
-              width={28}
-              height={28}
-              onError={e => { (e.target as HTMLImageElement).style.display = "none"; }}
+      {/* === HEADER === */}
+      <div className="p-3 border-b border-border">
+        {/* Classe + nom + niveau */}
+        <div className="flex items-center gap-3 mb-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`https://cdn.wakfuli.com/breeds/${build.characterClass}.webp`}
+            alt={build.characterClass}
+            className="w-10 h-10 rounded-lg bg-bg-lighter flex-shrink-0"
+            onError={e => { (e.target as HTMLImageElement).style.display = "none"; }}
+          />
+          <div className="flex-1 min-w-0">
+            <input
+              type="text"
+              value={build.name}
+              onChange={e => setName(e.target.value)}
+              className="w-full bg-transparent text-primary font-bold text-base outline-none border-b border-transparent hover:border-border-light focus:border-cyan-wakfuli transition-colors truncate"
+              spellCheck={false}
             />
-          </span>
-          <div>
-            <div className="wk-build-name">{build.name}</div>
-            <div className="wk-build-meta">
-              {build.characterClass.charAt(0).toUpperCase() + build.characterClass.slice(1)}
-              {" \u00B7 Niv. "}
-              {build.level}
+            <div className="flex items-center gap-2 mt-0.5">
+              <span className="text-neutral-400 capitalize text-xs">{build.characterClass}</span>
+              <span className="text-neutral-400 text-xs">·</span>
+              <span className="text-xs text-neutral-400">Niv.</span>
+              <input
+                type="number"
+                value={build.level}
+                onChange={e => setLevel(Number(e.target.value))}
+                min={1}
+                max={230}
+                className="w-10 bg-transparent text-primary text-xs font-semibold outline-none border-b border-transparent hover:border-border-light focus:border-cyan-wakfuli text-center"
+              />
             </div>
           </div>
         </div>
 
-        {/* Actions row */}
-        <div className="wk-actions">
-          <button className="wk-btn" onClick={onCopy} title="Copier le build">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        {/* Boutons d'action */}
+        <div className="flex gap-1.5">
+          <button
+            onClick={onCopy}
+            title="Copier le build"
+            className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md bg-bg-lighter border border-border text-neutral-400 hover:text-primary hover:border-border-light transition-colors cursor-pointer"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
           </button>
-          <button className="wk-btn" onClick={onLink} title="Lien de partage">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          <button
+            onClick={onLink}
+            title="Copier le lien"
+            className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md bg-bg-lighter border border-border text-neutral-400 hover:text-primary hover:border-border-light transition-colors cursor-pointer"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
           </button>
-          <button className="wk-btn" onClick={onVis} title={VIS_LABEL[build.visibility]}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            <span className="wk-btn-label">{VIS_LABEL[build.visibility]}</span>
+          <button
+            onClick={onVis}
+            title={VIS_LABELS[visibility]}
+            className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md bg-bg-lighter border border-border hover:border-border-light transition-colors cursor-pointer text-xs font-medium"
+            style={{ color: VIS_COLORS[visibility] }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <span>{VIS_LABELS[visibility]}</span>
           </button>
-          <button className={`wk-btn ${isFav ? "wk-btn-active" : ""}`} onClick={onFav} title="Favori">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill={isFav ? "#e74c6f" : "none"} stroke={isFav ? "#e74c6f" : "currentColor"} strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+          <button
+            onClick={onFav}
+            title="Favori"
+            className={`flex-1 flex items-center justify-center gap-1 py-1.5 rounded-md bg-bg-lighter border transition-colors cursor-pointer ${isFav ? "border-pink-400/30 text-pink-400" : "border-border text-neutral-400 hover:text-primary hover:border-border-light"}`}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
           </button>
         </div>
       </div>
 
       {/* === TOAST === */}
-      {toast && <div className="wk-toast">{toast}</div>}
+      {toast && (
+        <div className="mx-3 mt-2 px-3 py-1.5 bg-green-500/10 border border-green-500/20 rounded-md text-xs text-green-400 text-center animate-pulse">
+          {toast}
+        </div>
+      )}
 
       {/* === BONUS === */}
-      <div className="wk-section">
-        <div className="wk-section-title">Bonus</div>
+      <div className="p-3 border-b border-border">
+        <div className="text-[10px] font-bold uppercase tracking-widest text-cyan-wakfuli mb-2">Bonus</div>
         {bonuses.map((b, i) => (
-          <label key={b.label} className={`wk-bonus-row ${b.active ? "wk-bonus-active" : ""}`}>
-            <input type="checkbox" checked={b.active} onChange={() => toggleBonus(i)} />
-            <span className="wk-bonus-label">{b.label}</span>
+          <label
+            key={b.label}
+            className={`flex items-center gap-2 px-2 py-1.5 rounded-md cursor-pointer transition-colors mb-0.5 ${b.active ? "bg-cyan-wakfuli/5" : "hover:bg-bg-lighter"}`}
+          >
+            <input
+              type="checkbox"
+              checked={b.active}
+              onChange={() => toggleBonus(i)}
+              className="w-3.5 h-3.5 rounded accent-cyan-wakfuli cursor-pointer"
+            />
+            <span className="text-xs font-medium">{b.label}</span>
+            {b.active && (
+              <span className="ml-auto text-[10px] text-cyan-wakfuli/60">
+                +{Object.values(b.stats).reduce((a, v) => a + v, 0)}
+              </span>
+            )}
           </label>
         ))}
       </div>
 
       {/* === STATS === */}
-      <div className="wk-section wk-stats-section">
+      <div className="p-3 flex-1">
         {categories.map(cat => (
-          <div key={cat.id} className="wk-stat-group">
-            <div className="wk-stat-group-title">{cat.label}</div>
-            <div className="wk-stat-grid">
+          <div key={cat.id} className="mb-3">
+            <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-1.5">{cat.label}</div>
+            <div className="grid gap-1" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(70px, 1fr))" }}>
               {cat.items.map(s => {
-                const val = stats[s.key] ?? 0;
+                const val = totalStats[s.key] ?? 0;
+                const hasValue = val !== 0;
                 return (
-                  <div key={s.key} className={`wk-stat-cell ${val > 0 ? "wk-stat-active" : ""}`}>
+                  <div
+                    key={s.key}
+                    className={`flex flex-col items-center p-1.5 rounded-md border transition-colors ${hasValue ? "bg-cyan-wakfuli/5 border-cyan-wakfuli/10" : "bg-bg-dark border-border/50"}`}
+                  >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`${ICON_CDN}/${s.icon}.png`}
+                      src={`https://cdn.wakfuli.com/stats/${STAT_ICON_MAP[s.key] ?? s.key}.webp`}
                       alt={s.label}
-                      className="wk-stat-icon"
+                      className="w-5 h-5"
                       onError={e => { (e.target as HTMLImageElement).style.visibility = "hidden"; }}
                     />
-                    <span className="wk-stat-val">{val}</span>
-                    <span className="wk-stat-label">{s.label}</span>
+                    <span className={`text-sm font-bold tabular-nums leading-tight ${hasValue ? "text-cyan-wakfuli" : "text-neutral-600"}`}>
+                      {val}
+                    </span>
+                    <span className={`text-[9px] leading-tight text-center ${hasValue ? "text-neutral-400" : "text-neutral-600"}`}>
+                      {s.label}
+                    </span>
                   </div>
                 );
               })}
@@ -275,225 +342,15 @@ export function LeftPanel() {
         ))}
       </div>
 
-      {/* === DEBUG (dev) === */}
+      {/* === DEBUG (dev only) === */}
       {process.env.NODE_ENV === "development" && (
-        <details className="wk-debug">
-          <summary>Debug</summary>
-          <pre>{JSON.stringify({ build, stats, bonuses }, null, 2)}</pre>
+        <details className="p-2 opacity-30 text-[9px]">
+          <summary className="cursor-pointer">Debug</summary>
+          <pre className="mt-1 max-h-48 overflow-auto whitespace-pre-wrap text-[8px]">
+            {JSON.stringify({ name: build.name, level: build.level, class: build.characterClass, visibility, bonusesActive: bonuses.filter(b => b.active).map(b => b.label), totalStats }, null, 2)}
+          </pre>
         </details>
       )}
     </aside>
   );
 }
-
-// ============================================================
-// CSS — Fidele au style Wakfuli (dark theme, compact grid stats)
-// ============================================================
-const panelCSS = `
-/* Panel principal */
-.wk-panel {
-  width: 280px;
-  min-width: 280px;
-  height: 100vh;
-  background: #0f0e17;
-  border-right: 1px solid rgba(255,255,255,0.06);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  font-family: 'Inter', -apple-system, system-ui, sans-serif;
-  color: #c4c4d4;
-  font-size: 13px;
-  scrollbar-width: thin;
-  scrollbar-color: #2a2940 transparent;
-}
-.wk-panel::-webkit-scrollbar { width: 4px; }
-.wk-panel::-webkit-scrollbar-thumb { background: #2a2940; border-radius: 2px; }
-
-/* Header build */
-.wk-header {
-  padding: 14px 14px 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.wk-header-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.wk-class-badge {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: #1a1933;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.wk-class-badge img { width: 28px; height: 28px; }
-.wk-build-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: #eeeef6;
-  line-height: 1.2;
-}
-.wk-build-meta {
-  font-size: 11px;
-  color: #7a7a95;
-  margin-top: 1px;
-}
-
-/* Boutons d'action — icones SVG style Wakfuli */
-.wk-actions {
-  display: flex;
-  gap: 6px;
-}
-.wk-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  padding: 7px 0;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 8px;
-  background: #16152a;
-  color: #8888a8;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  font-size: 10px;
-}
-.wk-btn:hover {
-  background: #1e1d38;
-  border-color: rgba(255,255,255,0.14);
-  color: #b8b8d0;
-}
-.wk-btn-active { color: #e74c6f !important; border-color: rgba(231,76,111,0.3); }
-.wk-btn-label { font-size: 10px; }
-
-/* Toast */
-.wk-toast {
-  margin: 0 14px;
-  padding: 6px 10px;
-  background: rgba(76,175,80,0.12);
-  border: 1px solid rgba(76,175,80,0.25);
-  border-radius: 6px;
-  font-size: 11px;
-  text-align: center;
-  color: #81c784;
-  animation: wk-fade 0.2s ease;
-}
-@keyframes wk-fade { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
-
-/* Sections */
-.wk-section {
-  padding: 10px 14px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.wk-section-title {
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #6c5ce7;
-  margin-bottom: 8px;
-}
-
-/* Bonus rows */
-.wk-bonus-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.12s;
-  margin-bottom: 2px;
-}
-.wk-bonus-row:hover { background: rgba(255,255,255,0.03); }
-.wk-bonus-active { background: rgba(108,92,231,0.08); }
-.wk-bonus-row input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  accent-color: #6c5ce7;
-  cursor: pointer;
-}
-.wk-bonus-label {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/* Stats section */
-.wk-stats-section {
-  padding-bottom: 20px;
-  flex: 1;
-  border-bottom: none;
-}
-.wk-stat-group { margin-bottom: 10px; }
-.wk-stat-group-title {
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #5a5a75;
-  margin-bottom: 6px;
-  padding-left: 2px;
-}
-
-/* Grille compacte des stats — style Wakfuli */
-.wk-stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
-  gap: 3px;
-}
-.wk-stat-cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6px 4px 5px;
-  border-radius: 6px;
-  background: #13122a;
-  border: 1px solid rgba(255,255,255,0.03);
-  transition: all 0.15s;
-  gap: 2px;
-}
-.wk-stat-cell:hover { background: #1a1936; }
-.wk-stat-active {
-  border-color: rgba(108,92,231,0.2);
-  background: rgba(108,92,231,0.06);
-}
-.wk-stat-icon {
-  width: 20px;
-  height: 20px;
-  image-rendering: auto;
-}
-.wk-stat-val {
-  font-size: 14px;
-  font-weight: 700;
-  color: #444460;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-.wk-stat-active .wk-stat-val { color: #a89aec; }
-.wk-stat-label {
-  font-size: 9px;
-  color: #55556e;
-  text-align: center;
-  line-height: 1.1;
-}
-.wk-stat-active .wk-stat-label { color: #7a7a95; }
-
-/* Debug */
-.wk-debug {
-  padding: 8px 14px;
-  font-size: 9px;
-  opacity: 0.4;
-}
-.wk-debug pre {
-  white-space: pre-wrap;
-  font-size: 8px;
-  margin-top: 4px;
-  max-height: 200px;
-  overflow: auto;
-}
-`;
