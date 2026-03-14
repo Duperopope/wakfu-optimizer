@@ -50,12 +50,19 @@ def sync_paged(name, endpoint, limit=100):
     page = 1
     while True:
         url = f"{API_BASE}/{endpoint}?page={page}&limit={limit}"
-        try:
-            r = requests.get(url, timeout=30)
-            r.raise_for_status()
-            d = r.json()
-        except Exception as e:
-            log.error(f"{name} p{page}: {e}")
+        success = False
+        for attempt in range(3):
+            try:
+                r = requests.get(url, timeout=30)
+                r.raise_for_status()
+                d = r.json()
+                success = True
+                break
+            except Exception as e:
+                log.warning(f"  {name} p{page} tentative {attempt+1}/3: {e}")
+                time.sleep(2 * (attempt + 1))
+        if not success:
+            log.error(f"  {name} p{page}: echec apres 3 tentatives, arret")
             break
         meta = d.get("meta", {})
         rows = d.get("data", [])
@@ -65,7 +72,7 @@ def sync_paged(name, endpoint, limit=100):
         if page >= lp:
             break
         page += 1
-        time.sleep(0.3)
+        time.sleep(0.5)
     return result
 
 
@@ -78,12 +85,19 @@ def sync_builds():
     page = 1
     while True:
         url = f"{API_BASE}/builds?page={page}&limit=50"
-        try:
-            r = requests.get(url, timeout=30)
-            r.raise_for_status()
-            d = r.json()
-        except Exception as e:
-            log.error(f"Builds p{page}: {e}")
+        success = False
+        for attempt in range(3):
+            try:
+                r = requests.get(url, timeout=30)
+                r.raise_for_status()
+                d = r.json()
+                success = True
+                break
+            except Exception as e:
+                log.warning(f"  Builds p{page} tentative {attempt+1}/3: {e}")
+                time.sleep(2 * (attempt + 1))
+        if not success:
+            log.error(f"  Builds p{page}: echec apres 3 tentatives, arret")
             break
         meta = d.get("meta", {})
         rows = d.get("data", [])
@@ -105,7 +119,7 @@ def sync_builds():
         if page >= lp:
             break
         page += 1
-        time.sleep(0.3)
+        time.sleep(0.5)
     idx = {
         "active_spell_ids": sorted(sp_a),
         "passive_spell_ids": sorted(sp_p),
