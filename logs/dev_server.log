@@ -8,3 +8,4 @@
 $extDir = "H:\Code\Ank
 [2026-03-14 20:07:24] [BLOCKED] Commande bloquee par pattern: Invoke-WebRequest | Commande: Copy# ===== FIX dev_server.py - Correction detection chemins avec espaces =====
 $projectDir = "H:\Co
+[2026-03-14 20:07:44] [STOP] Serveur arrete par l'utilisateur
