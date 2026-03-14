@@ -16,37 +16,34 @@ export function ClassSelector() {
 
   return (
     <>
-      <div
-        className="flex items-center gap-2 w-full cursor-pointer"
-        onClick={() => setOpen(true)}
-      >
+      <div className="flex items-center gap-3 w-full">
+        {/* Icone de classe : clic ouvre la modale */}
         <img
           width={72}
           height={72}
-          alt={`${build.characterClass} icon`}
-          className="h-[72px] w-[72px]"
+          alt={build.characterClass}
+          className="h-[72px] w-[72px] cursor-pointer shrink-0 rounded-lg hover:ring-2 hover:ring-cyan-wakfuli/40 transition-all"
           src={`https://cdn.wakfuli.com/breeds/${build.characterClass}.webp`}
+          onClick={() => setOpen(true)}
         />
-        <div className="flex flex-col w-28 justify-center text-left p-1">
-          <span className="capitalize cursor-pointer font-bagnard">
+        {/* Infos texte : nom de classe (clic ouvre modale) + niveau (clic independant) */}
+        <div className="flex flex-col justify-center text-left gap-0.5 min-w-0">
+          <span
+            className="capitalize cursor-pointer font-bagnard text-base truncate hover:text-cyan-wakfuli transition-colors"
+            onClick={() => setOpen(true)}
+          >
             {build.characterClass}
           </span>
           <LevelEditor />
         </div>
       </div>
 
-      {/* Modal de selection de classe */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
-          <div className="bg-bg-dark rounded-lg p-6 w-[600px] max-h-[80vh] overflow-y-auto border border-gray-700">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={() => setOpen(false)}>
+          <div className="bg-bg-dark rounded-lg p-6 w-[600px] max-h-[80vh] overflow-y-auto border border-gray-700" onClick={(e) => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bagnard text-primary">
-                Choisir une classe
-              </h2>
-              <button
-                onClick={() => setOpen(false)}
-                className="text-primary/50 hover:text-primary cursor-pointer"
-              >
+              <h2 className="text-xl font-bagnard text-primary">Choisir une classe</h2>
+              <button onClick={() => setOpen(false)} className="text-primary/50 hover:text-primary cursor-pointer">
                 <X className="h-6 w-6" />
               </button>
             </div>
@@ -61,16 +58,8 @@ export function ClassSelector() {
                       : "bg-bg-light hover:bg-bg-lighter border border-transparent"
                   }`}
                 >
-                  <img
-                    width={56}
-                    height={56}
-                    alt={cls}
-                    className="h-14 w-14"
-                    src={`https://cdn.wakfuli.com/breeds/${cls}.webp`}
-                  />
-                  <span className="text-xs capitalize text-primary/80">
-                    {cls}
-                  </span>
+                  <img width={56} height={56} alt={cls} className="h-14 w-14" src={`https://cdn.wakfuli.com/breeds/${cls}.webp`} />
+                  <span className="text-xs capitalize text-primary/80">{cls}</span>
                 </button>
               ))}
             </div>
@@ -88,14 +77,14 @@ function LevelEditor() {
 
   const commit = () => {
     const n = parseInt(tempLevel, 10);
-    if (!isNaN(n)) setLevel(n);
+    if (!isNaN(n) && n >= 1 && n <= 230) setLevel(n);
     setEditing(false);
   };
 
   if (editing) {
     return (
-      <div className="flex items-center gap-1">
-        <span className="text-primary/50">Niveau</span>
+      <div className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
+        <span className="text-primary/50 text-sm">Niveau</span>
         <input
           type="number"
           min={1}
@@ -104,7 +93,7 @@ function LevelEditor() {
           onChange={(e) => setTempLevel(e.target.value)}
           onBlur={commit}
           onKeyDown={(e) => e.key === "Enter" && commit()}
-          className="w-14 bg-bg-lighter text-primary text-center rounded px-1 py-0.5 text-sm border border-gray-600 focus:border-cyan-wakfuli focus:outline-none"
+          className="w-16 bg-bg-lighter text-primary text-center rounded px-1.5 py-0.5 text-sm border border-gray-600 focus:border-cyan-wakfuli focus:outline-none"
           autoFocus
         />
       </div>
@@ -113,13 +102,14 @@ function LevelEditor() {
 
   return (
     <button
-      onClick={() => {
+      onClick={(e) => {
+        e.stopPropagation();
         setTempLevel(String(build.level));
         setEditing(true);
       }}
-      className="cursor-pointer text-left text-primary"
+      className="cursor-pointer text-left text-primary hover:text-cyan-wakfuli transition-colors"
     >
-      <span className="text-primary/50">Niveau</span> {build.level}
+      <span className="text-primary/50 text-sm">Niveau</span> <span className="text-sm">{build.level}</span>
     </button>
   );
 }
