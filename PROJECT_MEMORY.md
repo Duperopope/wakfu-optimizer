@@ -1,6 +1,6 @@
 # PROJECT MEMORY - Wakfu Optimizer
 
-> Derniere mise a jour : 2026-03-14 18:26:00
+> Derniere mise a jour : 2026-03-14 18:35:23
 > Memoire persistante entre sessions - CERVEAU (court terme)
 > GitHub : https://github.com/Duperopope/wakfu-optimizer
 > Archive long terme : voir CHANGELOG.md (historique complet avec liens commits)
@@ -22,7 +22,7 @@
 ### Protocole de fin de session - OBLIGATOIRE
 A la fin de chaque session de travail, toute IA doit :
 1. Mettre a jour ce PROJECT_MEMORY.md avec tout ce qui a ete fait
-2. Inscrire la date et heure REELLE (demander a Sam ou verifier en ligne, ne pas inventer)
+2. Inscrire la date et heure REELLE du systeme avec $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss" (ne JAMAIS ecrire en dur)
 3. Mettre a jour les sections : Bugs corriges, Ce qui fonctionne, TODO, Assets
 4. Le repo se synchronise en temps reel via autopush.py, le fichier sera visible par les autres IA immediatement
 5. Ce fichier est le CERVEAU du projet : si une info manque ici, elle est perdue pour les prochaines sessions
@@ -99,23 +99,12 @@ A la fin de chaque session de travail, toute IA doit :
 8. Icones stats CDN telechargees en local /icons/stats/*.webp
 9. Ajout barre priorite elementaire draggable (Feu/Eau/Terre/Air)
 10. iconScale individuel par bonus (gem.png 37x39px compense par scale 2.0)
-5. LeftPanel reecrit avec useBuild (runtime error fix)
-6. FEROCITY renomme en % Coup Critique
-7. Icones bonus CDN cassees remplacees par PNG custom locaux (tree/gem/mount)
-8. Icones stats CDN telechargees en local /icons/stats/*.webp
-9. Ajout barre priorite elementaire draggable (Feu/Eau/Terre/Air)
-10. iconScale individuel par bonus (gem.png 37x39px compense par scale 2.0)
 
 ## Ce qui fonctionne
 - Selection classe, edition niveau, nom du build
 - 7686 items avec images + filtres (recherche, niveau, type, rarete)
 - Equip/unequip + modal anneau + stats recalculees
 - Couleurs rarete correctes (Memory bleu, Relic violet, Epic rose)
-- 3 bonus toggle avec icones PNG custom (Guilde/Havre-Monde/Monture)
-- Bouton Enchantements toggle
-- Barre priorite elementaire draggable (4 elements)
-- Stats primaires + secondaires avec icones locales .webp
-- Boutons Copier JSON, Lien partageable, Visibilite, Favori
 - 3 bonus toggle avec icones PNG custom (Guilde/Havre-Monde/Monture)
 - Bouton Enchantements toggle
 - Barre priorite elementaire draggable (4 elements)
@@ -141,6 +130,7 @@ A la fin de chaque session de travail, toute IA doit :
 - frontend/public/icons/bonuses/gem.png (805 bytes - Havre-Monde, pixelise)
 - frontend/public/icons/bonuses/mount.png (Monture)
 - frontend/public/icons/stats/*.webp (28 fichiers telecharges depuis cdn.wakfuli.com/stats/)
+
 
 
 
