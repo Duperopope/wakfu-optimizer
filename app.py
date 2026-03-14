@@ -364,3 +364,77 @@ def main_page():
                                 if unlock > 1: ui.label(f"Nv.{unlock}").classes("text-xs text-gray-500")
                             if desc:
                                 ui.tooltip(desc)
+
+    # ==========================================================
+    # LAYOUT PRINCIPAL
+    # ==========================================================
+    with ui.header().classes("bg-gray-900 border-b border-gray-700"):
+        with ui.row().classes("w-full items-center gap-4 px-4"):
+            ui.label("WAKFU OPTIMIZER").classes("text-xl font-bold text-yellow-400")
+            ui.label(f"v{GAME_VERSION}").classes("text-xs text-gray-500")
+            ui.select(
+                options={c: c.capitalize() for c in CLASSES},
+                value=state.character_class,
+                on_change=lambda e: on_class_change(e.value),
+            ).classes("w-40").props("dense dark")
+            ui.number(
+                label="Niveau", value=state.level, min=1, max=245,
+                on_change=lambda e: on_level_change(e.value),
+            ).classes("w-24").props("dense dark")
+
+    with ui.row().classes("w-full h-full gap-0 p-0"):
+
+        # --- COLONNE GAUCHE : EQUIPEMENT ---
+        with ui.column().classes("w-1/4 p-3 bg-gray-800 overflow-y-auto").style("min-height: calc(100vh - 60px)"):
+            ui.label("Equipement").classes("text-lg font-bold text-yellow-400 mb-2")
+            for slot in SLOT_ORDER:
+                slot_card = ui.card().classes("slot-card w-full mb-1")
+                slot_card.on("click", lambda e, s=slot: open_item_panel(s))
+                with slot_card:
+                    slot_container = ui.column().classes("w-full gap-0")
+                    slot_containers[slot] = slot_container
+                    with slot_container:
+                        ui.label(SLOT_LABELS.get(slot, slot)).classes("text-sm text-gray-500")
+                        ui.label("Vide").classes("text-xs text-gray-600 italic")
+                with ui.row().classes("w-full justify-end -mt-2"):
+                    ui.button(icon="close", on_click=lambda e, s=slot: unequip(s)).props("flat dense round size=xs").classes("text-red-400")
+
+        # --- COLONNE CENTRE : SORTS ---
+        with ui.column().classes("w-1/2 p-3 overflow-y-auto").style("min-height: calc(100vh - 60px)"):
+            spells_container = ui.column().classes("w-full")
+            refresh_spells()
+
+        # --- COLONNE DROITE : STATS ---
+        with ui.column().classes("w-1/4 p-3 bg-gray-800 overflow-y-auto").style("min-height: calc(100vh - 60px)"):
+            stats_container = ui.column().classes("w-full")
+            refresh_stats()
+
+    # --- PANEL ITEMS (overlay) ---
+    with ui.dialog() as item_panel:
+        with ui.card().classes("w-96 max-h-screen bg-gray-900"):
+            ui.label("Choisir un item").classes("text-lg font-bold text-yellow-400 mb-2")
+            with ui.row().classes("w-full gap-2 mb-2"):
+                ui.input(
+                    placeholder="Rechercher...",
+                    on_change=lambda e: (search_input.update({"value": e.value}), refresh_item_list()),
+                ).classes("flex-grow").props("dense dark clearable")
+                ui.select(
+                    options={"": "Toutes", **{r: r.capitalize() for r in RARITY_ORDER}},
+                    value="",
+                    on_change=lambda e: (rarity_select.update({"value": e.value if e.value else None}), refresh_item_list()),
+                ).classes("w-32").props("dense dark")
+            item_list_container = ui.column().classes("w-full overflow-y-auto gap-1").style("max-height: 70vh")
+
+
+# =============================================================
+# LANCEMENT
+# =============================================================
+print("=" * 50)
+print("WAKFU OPTIMIZER")
+print(f"  Version jeu : {GAME_VERSION}")
+print(f"  Items       : {len(ALL_ITEMS)}")
+print(f"  Classes     : {len(CLASSES)}")
+print("  URL         : http://localhost:8080")
+print("=" * 50)
+
+ui.run(title="Wakfu Optimizer", port=8080, reload=False)
