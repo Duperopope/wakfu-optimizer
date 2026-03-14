@@ -6,23 +6,23 @@ import { Copy, Link, Eye, Heart, TreePine, Gem, Cat } from "lucide-react";
 
 const CLASS_RESOURCE: Record<string, { label: string; icon: string; color: string }> = {
   huppermage: { label: "BQ", icon: "HUPPERMAGE_RESOURCE", color: "#e1b900" },
-  cra: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  ecaflip: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  eliotrope: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  eniripsa: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  enutrof: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  feca: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  iop: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  osamodas: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  ouginak: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  pandawa: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  roublard: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  sacrieur: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  sadida: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  sram: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  steamer: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  xelor: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
-  zobal: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
+  cra: { label: "WP", icon: "WP", color: "#19c1ef" },
+  ecaflip: { label: "WP", icon: "WP", color: "#19c1ef" },
+  eliotrope: { label: "WP", icon: "WP", color: "#19c1ef" },
+  eniripsa: { label: "WP", icon: "WP", color: "#19c1ef" },
+  enutrof: { label: "WP", icon: "WP", color: "#19c1ef" },
+  feca: { label: "WP", icon: "WP", color: "#19c1ef" },
+  iop: { label: "WP", icon: "WP", color: "#19c1ef" },
+  osamodas: { label: "WP", icon: "WP", color: "#19c1ef" },
+  ouginak: { label: "WP", icon: "WP", color: "#19c1ef" },
+  pandawa: { label: "WP", icon: "WP", color: "#19c1ef" },
+  roublard: { label: "WP", icon: "WP", color: "#19c1ef" },
+  sacrieur: { label: "WP", icon: "WP", color: "#19c1ef" },
+  sadida: { label: "WP", icon: "WP", color: "#19c1ef" },
+  sram: { label: "WP", icon: "WP", color: "#19c1ef" },
+  steamer: { label: "WP", icon: "WP", color: "#19c1ef" },
+  xelor: { label: "WP", icon: "WP", color: "#19c1ef" },
+  zobal: { label: "WP", icon: "WP", color: "#19c1ef" },
 };
 
 function statColor(val: number, base: number = 0): string {
@@ -33,7 +33,7 @@ function statColor(val: number, base: number = 0): string {
 
 export function LeftPanel() {
   const { build, setName, stats } = useBuild();
-  const resource = CLASS_RESOURCE[build.characterClass] || { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" };
+  const resource = CLASS_RESOURCE[build.characterClass] || { label: "WP", icon: "WP", color: "#19c1ef" };
 
   return (
     <div className="flex flex-1 flex-col divide-y divide-border bg-bg-darker overflow-hidden h-full">
@@ -210,3 +210,4 @@ function ElementStatCell({ icon, value, color }: { icon: string; value: string; 
     </div>
   );
 }
+
