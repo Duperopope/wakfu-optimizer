@@ -1,6 +1,6 @@
 # PROJECT MEMORY - Wakfu Optimizer
 
-> Derniere mise a jour : 2026-03-14 18:35:23
+> Derniere mise a jour : 2026-03-14 18:43:58
 > Memoire persistante entre sessions - CERVEAU (court terme)
 > GitHub : https://github.com/Duperopope/wakfu-optimizer
 > Archive long terme : voir CHANGELOG.md (historique complet avec liens commits)
@@ -37,7 +37,9 @@ A la fin de chaque session de travail, toute IA doit :
 - Frontend : Next.js 16.1.6 / React 19.2.3 / Tailwind CSS 4 / TypeScript 5
 - Backend data : Python (sync_wakfuli.py, install_spells.py, build_memory.py)
 - Deploiement : Local (npm run dev sur port 3000)
-- Autopush : scripts/autopush.py (auto-commit + push toutes les 2min)
+- Autopush : scripts/autopush.py (auto-commit + push toutes les 5s)
+- Scripts actifs : autopush.py, sync_wakfuli.py, install_spells.py, build_memory.py
+- Scripts legacy : archives dans archive/scripts_legacy/ (voir archive/README.md)
 - OS : Windows / PowerShell / VS Code
 - Machine : AMD 5700 X3D, 32GB RAM, 1TB dispo
 
@@ -130,6 +132,7 @@ A la fin de chaque session de travail, toute IA doit :
 - frontend/public/icons/bonuses/gem.png (805 bytes - Havre-Monde, pixelise)
 - frontend/public/icons/bonuses/mount.png (Monture)
 - frontend/public/icons/stats/*.webp (28 fichiers telecharges depuis cdn.wakfuli.com/stats/)
+
 
 
 

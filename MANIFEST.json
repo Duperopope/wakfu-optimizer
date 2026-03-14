@@ -122,6 +122,7 @@
     "decompiled",
     "logs",
     "reference",
-    "frontend"
+    "frontend",
+    "archive"
   ]
 }
