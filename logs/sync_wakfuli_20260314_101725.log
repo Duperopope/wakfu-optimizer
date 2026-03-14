@@ -208,3 +208,33 @@
 2026-03-14 10:18:48,884 [INFO] [Builds] Requete page 14/19...
 2026-03-14 10:18:51,030 [INFO] [Builds] Page 14/19 -- 700/939 recuperes
 2026-03-14 10:18:51,345 [INFO] [Builds] Requete page 15/19...
+2026-03-14 10:18:53,193 [INFO] [Builds] Page 15/19 -- 750/939 recuperes
+2026-03-14 10:18:53,507 [INFO] [Builds] Requete page 16/19...
+2026-03-14 10:18:55,694 [INFO] [Builds] Page 16/19 -- 800/939 recuperes
+2026-03-14 10:18:56,009 [INFO] [Builds] Requete page 17/19...
+2026-03-14 10:18:58,059 [INFO] [Builds] Page 17/19 -- 850/939 recuperes
+2026-03-14 10:18:58,360 [INFO] [Builds] Requete page 18/19...
+2026-03-14 10:19:00,667 [INFO] [Builds] Page 18/19 -- 900/939 recuperes
+2026-03-14 10:19:00,981 [INFO] [Builds] Requete page 19/19...
+2026-03-14 10:19:02,256 [INFO] [Builds] Page 19/19 -- 939/939 recuperes
+2026-03-14 10:19:02,256 [INFO] [Builds] Termine : 939 entrees recuperees (attendu: 939)
+2026-03-14 10:19:02,257 [INFO] Classes trouvees dans les builds : ['cra', 'ecaflip', 'eliotrope', 'eniripsa', 'enutrof', 'feca', 'huppermage', 'iop', 'osamodas', 'ouginak', 'pandawa', 'roublard', 'sacrieur', 'sadida', 'sram', 'steamer', 'xelor', 'zobal']
+2026-03-14 10:19:02,258 [INFO] Sorts actifs uniques : 356
+2026-03-14 10:19:02,258 [INFO] Sorts passifs uniques : 195
+2026-03-14 10:19:02,258 [INFO] Builds sans sorts (spells=null) : 32
+2026-03-14 10:19:04,279 [INFO] Sauvegarde : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli\all_builds.json (38.39 MB)
+2026-03-14 10:19:04,282 [INFO] Sauvegarde : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli\spell_index_from_builds.json (0.01 MB)
+2026-03-14 10:19:04,282 [INFO] Sauvegarde : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli\sync_report.json (0.00 MB)
+2026-03-14 10:19:04,282 [INFO] ============================================================
+2026-03-14 10:19:04,282 [INFO] SYNCHRONISATION TERMINEE
+2026-03-14 10:19:04,282 [INFO] ============================================================
+2026-03-14 10:19:04,282 [INFO] Version du jeu     : 1.91.1.53
+2026-03-14 10:19:04,283 [INFO] Items              : 7686
+2026-03-14 10:19:04,283 [INFO] Actions            : 68
+2026-03-14 10:19:04,283 [INFO] Builds publics     : 939
+2026-03-14 10:19:04,283 [INFO] Sorts uniques      : 551
+2026-03-14 10:19:04,283 [INFO] Classes couvertes  : cra, ecaflip, eliotrope, eniripsa, enutrof, feca, huppermage, iop, osamodas, ouginak, pandawa, roublard, sacrieur, sadida, sram, steamer, xelor, zobal
+2026-03-14 10:19:04,283 [INFO] Duree              : 98.2s
+2026-03-14 10:19:04,283 [INFO] Fichiers dans      : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli
+2026-03-14 10:19:04,283 [INFO] Log complet        : H:\Code\Ankama Dev\wakfu-optimizer\logs\sync_wakfuli_20260314_101725.log
+2026-03-14 10:19:04,284 [INFO] ============================================================
