@@ -116,7 +116,8 @@
     "utils/__init__.py",
     "utils/changelog.py",
     "utils/logger.py",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "ARCHITECTURE.md"
   ],
   "protected_dirs": [
     "decompiled",
