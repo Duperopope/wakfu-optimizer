@@ -1,154 +1,88 @@
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
+import https from "node:https";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REF_DIR = path.resolve(__dirname, "..");
-const PAGES_DIR = path.join(REF_DIR, "pages");
-const ASSETS_DIR = path.join(REF_DIR, "assets");
-
-const MIME = {
-  ".html": "text/html; charset=utf-8",
-  ".css":  "text/css; charset=utf-8",
-  ".js":   "application/javascript; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-  ".webp": "image/webp",
-  ".png":  "image/png",
-  ".woff2": "font/woff2",
-  ".otf":  "font/otf",
-  ".ico":  "image/x-icon",
-};
-
-function getMime(p) {
-  return MIME[path.extname(p).toLowerCase()] || "application/octet-stream";
-}
-
-// Routes vers pages HTML rendues par Playwright
-const PAGE_ROUTES = {
-  "/": "index.html",
-  "/index": "index.html",
-  "/builder/my": "builder_my.html",
-  "/builder/public": "builder_public.html",
-  "/builder/trending": "builder_public.html",
-  "/legal/privacy": "legal_privacy.html",
-  "/legal/terms": "legal_terms.html",
-  "/legal/imprint": "legal_imprint.html",
-};
-
-function findAsset(urlPath) {
-  // CSS/JS chunks
-  const chunkMatch = urlPath.match(/\/_next\/static\/chunks\/(.+)/);
-  if (chunkMatch) {
-    const f = path.join(REF_DIR, chunkMatch[1]);
-    if (fs.existsSync(f)) return f;
-  }
-  // Fonts
-  const mediaMatch = urlPath.match(/\/_next\/static\/media\/(.+)/);
-  if (mediaMatch) {
-    const f = path.join(ASSETS_DIR, "fonts", mediaMatch[1]);
-    if (fs.existsSync(f)) return f;
-  }
-  // Images CDN (breeds, items, placeholders, rarity, stats)
-  for (const prefix of ["breeds", "items", "placeholders", "rarity", "stats", "itemTypes", "etc"]) {
-    if (urlPath.startsWith(`/${prefix}/`)) {
-      // Essayer structure complete
-      const f = path.join(ASSETS_DIR, "images", urlPath.substring(1));
-      if (fs.existsSync(f)) return f;
-      // Essayer a plat
-      const flat = path.join(ASSETS_DIR, "images", path.basename(urlPath));
-      if (fs.existsSync(flat)) return flat;
-    }
-  }
-  // Fichier direct dans REF_DIR
-  const direct = path.join(REF_DIR, urlPath.replace(/^\//, ""));
-  if (fs.existsSync(direct) && fs.statSync(direct).isFile()) return direct;
-  return null;
-}
-
+const BASE = path.resolve(__dirname, "..");
 const PORT = 8090;
 
-const server = http.createServer((req, res) => {
-  const urlPath = decodeURIComponent(req.url.split("?")[0]);
+const MIME = {
+  ".html":"text/html;charset=utf-8", ".js":"application/javascript;charset=utf-8",
+  ".css":"text/css;charset=utf-8", ".json":"application/json;charset=utf-8",
+  ".woff2":"font/woff2", ".otf":"font/otf", ".webp":"image/webp",
+  ".png":"image/png", ".svg":"image/svg+xml", ".ico":"image/x-icon"
+};
 
-  // 1) Pages HTML rendues — priorite absolue
-  const pageFile = PAGE_ROUTES[urlPath];
-  if (pageFile) {
-    const fullPath = path.join(PAGES_DIR, pageFile);
-    if (fs.existsSync(fullPath)) {
-      // Lire le HTML et SUPPRIMER les scripts pour empecher le SPA de prendre le dessus
-      let html = fs.readFileSync(fullPath, "utf-8");
-      // Retirer tous les <script> pour garder le HTML statique pur
-      html = html.replace(/<script[\s\S]*?<\/script>/gi, "");
-      html = html.replace(/<script[^>]*\/>/gi, "");
-      res.writeHead(200, {
-        "Content-Type": "text/html; charset=utf-8",
-        "Cache-Control": "no-cache",
-      });
-      res.end(html);
-      console.log(`[PAGE] ${urlPath} -> pages/${pageFile} (static, no JS)`);
-      return;
-    }
-  }
+function mime(f){ return MIME[path.extname(f).toLowerCase()] || "application/octet-stream"; }
 
-  // 2) Assets (CSS, images, fonts) — on les sert normalement
-  const assetPath = findAsset(urlPath);
-  if (assetPath) {
-    res.writeHead(200, {
-      "Content-Type": getMime(assetPath),
-      "Cache-Control": "max-age=3600",
-      "Access-Control-Allow-Origin": "*",
+function serveFile(res, fp, ct){
+  if(!fs.existsSync(fp)) return false;
+  const d = fs.readFileSync(fp);
+  res.writeHead(200,{"Content-Type":ct||mime(fp),"Access-Control-Allow-Origin":"*"});
+  res.end(d); return true;
+}
+
+function proxy(res, url){
+  https.get(url,{headers:{"User-Agent":"WakfuOpt/1.0"}}, pr=>{
+    const ch=[]; pr.on("data",c=>ch.push(c)); pr.on("end",()=>{
+      const body=Buffer.concat(ch);
+      res.writeHead(pr.statusCode,{"Content-Type":pr.headers["content-type"]||"application/octet-stream","Access-Control-Allow-Origin":"*"});
+      res.end(body);
     });
-    fs.createReadStream(assetPath).pipe(res);
-    console.log(`[200] ${urlPath}`);
-    return;
+  }).on("error",e=>{
+    res.writeHead(502,{"Content-Type":"application/json"});
+    res.end(JSON.stringify({error:e.message}));
+  });
+}
+
+http.createServer((req,res)=>{
+  const u = new URL(req.url, "http://localhost:"+PORT);
+  const p = decodeURIComponent(u.pathname);
+
+  if(req.method==="OPTIONS"){
+    res.writeHead(204,{"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"*","Access-Control-Allow-Headers":"*"});
+    return res.end();
   }
 
-  // 3) API calls — retourner des reponses vides mais valides
-  if (urlPath.startsWith("/api/")) {
-    res.writeHead(200, {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    });
-    // Essayer de servir la reponse API capturee
-    const apiFile = path.join(ASSETS_DIR, "api", urlPath.replace(/^\//, "").replace(/\//g, "_"));
-    if (fs.existsSync(apiFile)) {
-      fs.createReadStream(apiFile).pipe(res);
-      console.log(`[API] ${urlPath} -> cached`);
-    } else {
-      res.end(JSON.stringify({ data: [], message: "offline" }));
-      console.log(`[API] ${urlPath} -> empty stub`);
-    }
-    return;
+  // 1) API -> proxy vers api.wakfuli.com
+  if(p.startsWith("/api/")){
+    const cached = path.join(BASE,"assets","api",p.replace(/^\/api\/v1\//,"").split("?")[0]);
+    if(fs.existsSync(cached)) return serveFile(res,cached,"application/json;charset=utf-8");
+    console.log("[API]",p+u.search);
+    return proxy(res,"https://api.wakfuli.com"+p+u.search);
   }
 
-  // 4) Tout autre chemin de navigation -> index.html statique
-  if (!path.extname(urlPath) || urlPath.startsWith("/builder/")) {
-    const indexPath = path.join(PAGES_DIR, "builder_public.html");
-    if (fs.existsSync(indexPath)) {
-      let html = fs.readFileSync(indexPath, "utf-8");
-      html = html.replace(/<script[\s\S]*?<\/script>/gi, "");
-      html = html.replace(/<script[^>]*\/>/gi, "");
-      res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      res.end(html);
-      console.log(`[FALLBACK] ${urlPath} -> builder_public.html (static)`);
-      return;
-    }
+  // 2) CDN images -> proxy vers cdn.wakfuli.com
+  if(/^\/(breeds|items|placeholders|rarity|stats|itemTypes)\//.test(p)){
+    const local = path.join(BASE,"assets","images",path.basename(p));
+    if(fs.existsSync(local)) return serveFile(res,local);
+    console.log("[CDN]",p);
+    return proxy(res,"https://cdn.wakfuli.com"+p);
   }
 
-  console.log(`[404] ${urlPath}`);
-  res.writeHead(404);
-  res.end("Not found");
-});
+  // 3) Next.js chunks
+  if(p.startsWith("/_next/static/chunks/")){
+    const f = path.basename(p);
+    if(serveFile(res,path.join(BASE,f))) return;
+  }
 
-server.listen(PORT, () => {
-  const pages = Object.keys(PAGE_ROUTES);
-  console.log(`\n========================================`);
-  console.log(`  WAKFULI REFERENCE LOCALE (statique)`);
-  console.log(`========================================`);
-  console.log(`\nPages disponibles:`);
-  pages.forEach(p => console.log(`  http://localhost:${PORT}${p}`));
-  console.log(`\nMode: HTML statique (pas de JS SPA)`);
-  console.log(`Les pages montrent le rendu exact capture par Playwright.`);
-  console.log(`\nCtrl+C pour arreter\n`);
+  // 4) Next.js fonts
+  if(p.startsWith("/_next/static/media/")){
+    const f = path.basename(p);
+    if(serveFile(res,path.join(BASE,"assets","fonts",f))) return;
+  }
+
+  // 5) Pages HTML -> index.html (SPA fallback)
+  if(serveFile(res,path.join(BASE,"index.html"),"text/html;charset=utf-8")) return;
+
+  res.writeHead(404); res.end("Not found");
+
+}).listen(PORT,()=>{
+  console.log("=== WAKFULI LOCAL ===");
+  console.log("http://localhost:"+PORT+"/");
+  console.log("http://localhost:"+PORT+"/builder/public");
+  console.log("Mode: SPA + API proxy vers api.wakfuli.com");
+  console.log("Ctrl+C pour arreter");
 });
