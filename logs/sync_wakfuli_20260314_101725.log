@@ -156,3 +156,29 @@
 2026-03-14 10:18:10,592 [INFO] [Items] Requete page 72/77...
 2026-03-14 10:18:10,902 [INFO] [Items] Page 72/77 -- 7200/7686 recuperes
 2026-03-14 10:18:11,214 [INFO] [Items] Requete page 73/77...
+2026-03-14 10:18:11,847 [INFO] [Items] Page 73/77 -- 7300/7686 recuperes
+2026-03-14 10:18:12,153 [INFO] [Items] Requete page 74/77...
+2026-03-14 10:18:12,708 [INFO] [Items] Page 74/77 -- 7400/7686 recuperes
+2026-03-14 10:18:13,024 [INFO] [Items] Requete page 75/77...
+2026-03-14 10:18:13,791 [INFO] [Items] Page 75/77 -- 7500/7686 recuperes
+2026-03-14 10:18:14,099 [INFO] [Items] Requete page 76/77...
+2026-03-14 10:18:14,342 [INFO] [Items] Page 76/77 -- 7600/7686 recuperes
+2026-03-14 10:18:14,645 [INFO] [Items] Requete page 77/77...
+2026-03-14 10:18:14,900 [INFO] [Items] Page 77/77 -- 7686/7686 recuperes
+2026-03-14 10:18:14,900 [INFO] [Items] Termine : 7686 entrees recuperees (attendu: 7686)
+2026-03-14 10:18:15,472 [INFO] Sauvegarde : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli\all_items.json (11.52 MB)
+2026-03-14 10:18:15,472 [INFO] ============================================================
+2026-03-14 10:18:15,472 [INFO] EXTRACTION DES ACTIONS
+2026-03-14 10:18:15,472 [INFO] ============================================================
+2026-03-14 10:18:15,473 [INFO] [Actions] Requete page 1...
+2026-03-14 10:18:15,667 [INFO] [Actions] Total: 68 entrees sur 1 pages
+2026-03-14 10:18:15,667 [INFO] [Actions] Page 1/1 -- 68/68 recuperes
+2026-03-14 10:18:15,667 [INFO] [Actions] Termine : 68 entrees recuperees (attendu: 68)
+2026-03-14 10:18:15,669 [INFO] Sauvegarde : H:\Code\Ankama Dev\wakfu-optimizer\data\wakfuli\all_actions.json (0.01 MB)
+2026-03-14 10:18:15,669 [INFO] ============================================================
+2026-03-14 10:18:15,669 [INFO] EXTRACTION DES BUILDS PUBLICS
+2026-03-14 10:18:15,669 [INFO] ============================================================
+2026-03-14 10:18:15,669 [INFO] [Builds] Requete page 1...
+2026-03-14 10:18:18,013 [INFO] [Builds] Total: 939 entrees sur 19 pages
+2026-03-14 10:18:18,013 [INFO] [Builds] Page 1/19 -- 50/939 recuperes
+2026-03-14 10:18:18,326 [INFO] [Builds] Requete page 2/19...
