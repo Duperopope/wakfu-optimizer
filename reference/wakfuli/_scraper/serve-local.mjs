@@ -1,5 +1,3 @@
-// Serveur local pour naviguer dans la reference Wakfuli offline
-// Source: reference/wakfuli/ (scrape du 2026-03-14)
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -26,50 +24,45 @@ function getMime(p) {
   return MIME[path.extname(p).toLowerCase()] || "application/octet-stream";
 }
 
-// Cherche le fichier dans plusieurs endroits
-function findFile(urlPath) {
-  // 1) /_next/static/chunks/xxx.js ou .css -> reference/wakfuli/xxx.js
+// Routes vers pages HTML rendues par Playwright
+const PAGE_ROUTES = {
+  "/": "index.html",
+  "/index": "index.html",
+  "/builder/my": "builder_my.html",
+  "/builder/public": "builder_public.html",
+  "/builder/trending": "builder_public.html",
+  "/legal/privacy": "legal_privacy.html",
+  "/legal/terms": "legal_terms.html",
+  "/legal/imprint": "legal_imprint.html",
+};
+
+function findAsset(urlPath) {
+  // CSS/JS chunks
   const chunkMatch = urlPath.match(/\/_next\/static\/chunks\/(.+)/);
   if (chunkMatch) {
     const f = path.join(REF_DIR, chunkMatch[1]);
     if (fs.existsSync(f)) return f;
   }
-
-  // 2) /_next/static/media/xxx -> reference/wakfuli/assets/fonts/xxx
+  // Fonts
   const mediaMatch = urlPath.match(/\/_next\/static\/media\/(.+)/);
   if (mediaMatch) {
     const f = path.join(ASSETS_DIR, "fonts", mediaMatch[1]);
     if (fs.existsSync(f)) return f;
   }
-
-  // 3) Images CDN interceptees: /breeds/xxx, /items/xxx, /placeholders/xxx, /rarity/xxx
+  // Images CDN (breeds, items, placeholders, rarity, stats)
   for (const prefix of ["breeds", "items", "placeholders", "rarity", "stats", "itemTypes", "etc"]) {
     if (urlPath.startsWith(`/${prefix}/`)) {
+      // Essayer structure complete
       const f = path.join(ASSETS_DIR, "images", urlPath.substring(1));
       if (fs.existsSync(f)) return f;
-      // Essayer aussi a plat
+      // Essayer a plat
       const flat = path.join(ASSETS_DIR, "images", path.basename(urlPath));
       if (fs.existsSync(flat)) return flat;
     }
   }
-
-  // 4) /api/* -> assets/api/
-  if (urlPath.startsWith("/api/")) {
-    // Transformer /api/v1/builds -> assets/api/v1_builds.json (ou similaire)
-    const safeName = urlPath.replace(/^\//, "").replace(/\//g, "_") + ".json";
-    const f = path.join(ASSETS_DIR, "api", safeName);
-    if (fs.existsSync(f)) return f;
-  }
-
-  // 5) Pages: /builder/public -> pages/builder_public.html
-  const pageName = urlPath === "/" ? "index" : urlPath.replace(/^\//, "").replace(/\//g, "_");
-  const pageFile = path.join(PAGES_DIR, pageName + ".html");
-  if (fs.existsSync(pageFile)) return pageFile;
-
-  // 6) Fichier direct dans REF_DIR
+  // Fichier direct dans REF_DIR
   const direct = path.join(REF_DIR, urlPath.replace(/^\//, ""));
   if (fs.existsSync(direct) && fs.statSync(direct).isFile()) return direct;
-
   return null;
 }
 
@@ -77,41 +70,85 @@ const PORT = 8090;
 
 const server = http.createServer((req, res) => {
   const urlPath = decodeURIComponent(req.url.split("?")[0]);
-  const filePath = findFile(urlPath);
 
-  if (!filePath) {
-    // Fallback: si c'est un path de navigation, servir index.html
-    if (!path.extname(urlPath) || urlPath.includes("/builder/")) {
-      const indexPath = path.join(PAGES_DIR, "index.html");
-      if (fs.existsSync(indexPath)) {
-        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-        fs.createReadStream(indexPath).pipe(res);
-        return;
-      }
+  // 1) Pages HTML rendues — priorite absolue
+  const pageFile = PAGE_ROUTES[urlPath];
+  if (pageFile) {
+    const fullPath = path.join(PAGES_DIR, pageFile);
+    if (fs.existsSync(fullPath)) {
+      // Lire le HTML et SUPPRIMER les scripts pour empecher le SPA de prendre le dessus
+      let html = fs.readFileSync(fullPath, "utf-8");
+      // Retirer tous les <script> pour garder le HTML statique pur
+      html = html.replace(/<script[\s\S]*?<\/script>/gi, "");
+      html = html.replace(/<script[^>]*\/>/gi, "");
+      res.writeHead(200, {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-cache",
+      });
+      res.end(html);
+      console.log(`[PAGE] ${urlPath} -> pages/${pageFile} (static, no JS)`);
+      return;
     }
-    console.log(`[404] ${urlPath}`);
-    res.writeHead(404);
-    res.end("Not found");
+  }
+
+  // 2) Assets (CSS, images, fonts) — on les sert normalement
+  const assetPath = findAsset(urlPath);
+  if (assetPath) {
+    res.writeHead(200, {
+      "Content-Type": getMime(assetPath),
+      "Cache-Control": "max-age=3600",
+      "Access-Control-Allow-Origin": "*",
+    });
+    fs.createReadStream(assetPath).pipe(res);
+    console.log(`[200] ${urlPath}`);
     return;
   }
 
-  const mime = getMime(filePath);
-  res.writeHead(200, {
-    "Content-Type": mime,
-    "Cache-Control": "max-age=3600",
-    "Access-Control-Allow-Origin": "*",
-  });
-  fs.createReadStream(filePath).pipe(res);
-  console.log(`[200] ${urlPath} -> ${path.relative(REF_DIR, filePath)}`);
+  // 3) API calls — retourner des reponses vides mais valides
+  if (urlPath.startsWith("/api/")) {
+    res.writeHead(200, {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    });
+    // Essayer de servir la reponse API capturee
+    const apiFile = path.join(ASSETS_DIR, "api", urlPath.replace(/^\//, "").replace(/\//g, "_"));
+    if (fs.existsSync(apiFile)) {
+      fs.createReadStream(apiFile).pipe(res);
+      console.log(`[API] ${urlPath} -> cached`);
+    } else {
+      res.end(JSON.stringify({ data: [], message: "offline" }));
+      console.log(`[API] ${urlPath} -> empty stub`);
+    }
+    return;
+  }
+
+  // 4) Tout autre chemin de navigation -> index.html statique
+  if (!path.extname(urlPath) || urlPath.startsWith("/builder/")) {
+    const indexPath = path.join(PAGES_DIR, "builder_public.html");
+    if (fs.existsSync(indexPath)) {
+      let html = fs.readFileSync(indexPath, "utf-8");
+      html = html.replace(/<script[\s\S]*?<\/script>/gi, "");
+      html = html.replace(/<script[^>]*\/>/gi, "");
+      res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+      res.end(html);
+      console.log(`[FALLBACK] ${urlPath} -> builder_public.html (static)`);
+      return;
+    }
+  }
+
+  console.log(`[404] ${urlPath}`);
+  res.writeHead(404);
+  res.end("Not found");
 });
 
 server.listen(PORT, () => {
-  console.log(`\n=== Serveur reference Wakfuli ===`);
-  console.log(`http://localhost:${PORT}/`);
-  console.log(`http://localhost:${PORT}/builder/my`);
-  console.log(`http://localhost:${PORT}/builder/public`);
-  console.log(`\nFichiers servis depuis: ${REF_DIR}`);
-  console.log(`Pages: ${fs.readdirSync(PAGES_DIR).length} HTML`);
-  console.log(`Assets: ${fs.readdirSync(REF_DIR).filter(f => f.endsWith(".js")).length} JS, ${fs.readdirSync(REF_DIR).filter(f => f.endsWith(".css")).length} CSS`);
+  const pages = Object.keys(PAGE_ROUTES);
+  console.log(`\n========================================`);
+  console.log(`  WAKFULI REFERENCE LOCALE (statique)`);
+  console.log(`========================================`);
+  console.log(`\nPages disponibles:`);
+  pages.forEach(p => console.log(`  http://localhost:${PORT}${p}`));
+  console.log(`\nMode: HTML statique (pas de JS SPA)`);
+  console.log(`Les pages montrent le rendu exact capture par Playwright.`);
   console.log(`\nCtrl+C pour arreter\n`);
 });
