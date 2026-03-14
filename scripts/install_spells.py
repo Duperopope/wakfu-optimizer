@@ -20,8 +20,6 @@ for p in SEARCH_PATHS:
 
 if not source:
     print("ERREUR : wakfuli_all_spells.json introuvable")
-    for p in SEARCH_PATHS:
-        print("  - " + str(p))
     exit(1)
 
 print("Trouve : " + str(source))
@@ -33,9 +31,9 @@ total_all = 0
 report_classes = {}
 for cls in sorted(classes):
     info = data[cls]
-    n_elem = len(info.get("elementaries", []))
-    n_act = len(info.get("actives", []))
-    n_pas = len(info.get("passives", []))
+    n_elem = len(info.get("elementary", []))
+    n_act = len(info.get("active", []))
+    n_pas = len(info.get("passive", []))
     n_tot = n_elem + n_act + n_pas
     total_all += n_tot
     report_classes[cls] = {
