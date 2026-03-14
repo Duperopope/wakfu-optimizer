@@ -4,7 +4,6 @@ import { useBuild } from "@/lib/BuildContext";
 import { ClassSelector } from "@/components/builder/ClassSelector";
 import { Copy, Link, Eye, Heart, TreePine, Gem, Cat } from "lucide-react";
 
-// Mapping des ressources de classe (BQ = Wakfu Points, etc.)
 const CLASS_RESOURCE: Record<string, { label: string; icon: string; color: string }> = {
   huppermage: { label: "BQ", icon: "HUPPERMAGE_RESOURCE", color: "#e1b900" },
   cra: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
@@ -32,7 +31,6 @@ export function LeftPanel() {
 
   return (
     <div className="flex flex-1 flex-col divide-y divide-border bg-bg-darker overflow-hidden h-full">
-      {/* Build header: nom editable */}
       <div className="flex h-10 items-center justify-center p-2 shrink-0">
         <input
           className="w-full bg-transparent border-none p-0 m-0 text-ellipsis whitespace-nowrap font-sans text-primary/50 focus:text-primary focus:outline-none focus:ring-0 text-center"
@@ -42,28 +40,23 @@ export function LeftPanel() {
         />
       </div>
 
-      {/* Classe + niveau + actions */}
       <div className="flex items-center gap-2 w-full p-2 shrink-0">
         <ClassSelector />
-        {/* Action icons */}
         <div className="flex items-center gap-1 ml-auto">
-          <ActionIcon title="Copier le build"><Copy className="h-4 w-4" /></ActionIcon>
-          <ActionIcon title="Lien de partage"><Link className="h-4 w-4" /></ActionIcon>
+          <ActionIcon title="Copier"><Copy className="h-4 w-4" /></ActionIcon>
+          <ActionIcon title="Lien"><Link className="h-4 w-4" /></ActionIcon>
           <ActionIcon title="Visibilite"><Eye className="h-4 w-4" /></ActionIcon>
           <ActionIcon title="Favori"><Heart className="h-4 w-4" /></ActionIcon>
         </div>
       </div>
 
-      {/* Bonus checkboxes */}
       <div className="flex items-center gap-4 p-2 shrink-0">
         <BonusCheck icon={<TreePine className="h-4 w-4 text-green-400" />} label="Arbre" />
         <BonusCheck icon={<Gem className="h-4 w-4 text-purple-400" />} label="Gemme" />
         <BonusCheck icon={<Cat className="h-4 w-4 text-amber-400" />} label="Monture" />
       </div>
 
-      {/* Stats — scrollable */}
       <div className="flex-1 overflow-y-auto min-h-0 no-scrollbar p-4">
-        {/* Stats principales — 2x2 grid */}
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-[2px]">
             <StatCell icon="HP" label="PV" value="2050" color="#ff515b" />
@@ -75,7 +68,6 @@ export function LeftPanel() {
           </div>
         </div>
 
-        {/* Section Maitrises et Resistances */}
         <div className="flex justify-between w-full px-3 items-center mb-2">
           <span className="text-lg font-bagnard">Maitrises et Resistances</span>
         </div>
@@ -102,7 +94,6 @@ export function LeftPanel() {
           </div>
         </div>
 
-        {/* Section Combat */}
         <div className="w-full text-lg px-3 font-bagnard mb-2">Combat</div>
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-x-[2px]">
@@ -131,7 +122,6 @@ export function LeftPanel() {
           </div>
         </div>
 
-        {/* Section Secondaire */}
         <div className="w-full text-lg px-3 font-bagnard mb-2">Secondaire</div>
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-x-[2px]">
@@ -164,19 +154,14 @@ export function LeftPanel() {
   );
 }
 
-/* --- Action icon button --- */
 function ActionIcon({ children, title }: { children: React.ReactNode; title: string }) {
   return (
-    <button
-      title={title}
-      className="flex h-8 w-8 items-center justify-center rounded text-primary/50 hover:text-primary hover:bg-bg-light cursor-pointer transition-colors"
-    >
+    <button title={title} className="flex h-8 w-8 items-center justify-center rounded text-primary/50 hover:text-primary hover:bg-bg-light cursor-pointer transition-colors">
       {children}
     </button>
   );
 }
 
-/* --- Bonus checkbox --- */
 function BonusCheck({ icon, label }: { icon: React.ReactNode; label: string }) {
   return (
     <label className="flex items-center gap-1.5 cursor-pointer text-sm text-primary/60 hover:text-primary/80 transition-colors">
@@ -187,39 +172,17 @@ function BonusCheck({ icon, label }: { icon: React.ReactNode; label: string }) {
   );
 }
 
-/* --- Composant stat cell reutilisable --- */
-function StatCell({
-  icon,
-  label,
-  value,
-  color,
-}: {
-  icon: string;
-  label?: string;
-  value: string;
-  color?: string;
-}) {
+function StatCell({ icon, label, value, color }: { icon: string; label?: string; value: string; color?: string }) {
   return (
     <div className="flex-1 min-w-0">
       <div className="flex items-center rounded-xs bg-bg-light p-1 gap-1">
         <div className="flex items-center justify-start gap-1">
-          <img
-            width={22}
-            height={22}
-            alt={icon}
-            className="h-[22px] w-[22px]"
-            src={`https://cdn.wakfuli.com/stats/${icon}.webp`}
-          />
+          <img width={22} height={22} alt={icon} className="h-[22px] w-[22px]" src={`https://cdn.wakfuli.com/stats/${icon}.webp`} />
           {label && <span className="w-full truncate text-sm">{label}</span>}
         </div>
         <div className="flex-1">
           <div className="w-fit float-right rounded-md px-1">
-            <button
-              className="cursor-pointer text-sm text-right"
-              style={{ color: color || "#8899aa" }}
-            >
-              {value}
-            </button>
+            <button className="cursor-pointer text-sm text-right" style={{ color: color || "#8899aa" }}>{value}</button>
           </div>
         </div>
       </div>
@@ -227,32 +190,15 @@ function StatCell({
   );
 }
 
-/* --- Element stat cell (sans label texte) --- */
-function ElementStatCell({
-  icon,
-  value,
-  color,
-}: {
-  icon: string;
-  value: string;
-  color: string;
-}) {
+function ElementStatCell({ icon, value, color }: { icon: string; value: string; color: string }) {
   return (
     <div className="flex items-center rounded-xs bg-bg-light p-1 gap-1">
       <div className="flex items-center justify-start gap-1">
-        <img
-          width={22}
-          height={22}
-          alt={icon}
-          className="h-[22px] w-[22px]"
-          src={`https://cdn.wakfuli.com/stats/${icon}.webp`}
-        />
+        <img width={22} height={22} alt={icon} className="h-[22px] w-[22px]" src={`https://cdn.wakfuli.com/stats/${icon}.webp`} />
       </div>
       <div className="flex-1">
         <div className="w-fit float-right rounded-md px-1">
-          <button className="cursor-pointer text-sm" style={{ color }}>
-            {value}
-          </button>
+          <button className="cursor-pointer text-sm" style={{ color }}>{value}</button>
         </div>
       </div>
     </div>
