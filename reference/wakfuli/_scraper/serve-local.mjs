@@ -37,6 +37,20 @@ function proxy(res, url){
   });
 }
 
+// Lire index.html et vider le body pour eviter l'erreur d'hydratation React
+let shellHTML = "";
+try {
+  const raw = fs.readFileSync(path.join(BASE, "index.html"), "utf-8");
+  // Garder le <head> intact (scripts, CSS, meta) mais vider le contenu du <body>
+  shellHTML = raw.replace(
+    /(<body[^>]*>)[\s\S]*?(<script)/i,
+    '$1<div id="__next"></div>$2'
+  );
+} catch(e) {
+  console.error("ERREUR: index.html introuvable dans", BASE);
+  process.exit(1);
+}
+
 http.createServer((req,res)=>{
   const u = new URL(req.url, "http://localhost:"+PORT);
   const p = decodeURIComponent(u.pathname);
@@ -66,6 +80,9 @@ http.createServer((req,res)=>{
   if(p.startsWith("/_next/static/chunks/")){
     const f = path.basename(p);
     if(serveFile(res,path.join(BASE,f))) return;
+    // Chunk manquant -> proxy vers wakfuli.com
+    console.log("[CHUNK MISS]",f);
+    return proxy(res,"https://wakfuli.com"+p);
   }
 
   // 4) Next.js fonts
@@ -74,15 +91,14 @@ http.createServer((req,res)=>{
     if(serveFile(res,path.join(BASE,"assets","fonts",f))) return;
   }
 
-  // 5) Pages HTML -> index.html (SPA fallback)
-  if(serveFile(res,path.join(BASE,"index.html"),"text/html;charset=utf-8")) return;
-
-  res.writeHead(404); res.end("Not found");
+  // 5) Tout le reste -> shell HTML (SPA)
+  res.writeHead(200,{"Content-Type":"text/html;charset=utf-8","Access-Control-Allow-Origin":"*"});
+  res.end(shellHTML);
 
 }).listen(PORT,()=>{
   console.log("=== WAKFULI LOCAL ===");
   console.log("http://localhost:"+PORT+"/");
   console.log("http://localhost:"+PORT+"/builder/public");
-  console.log("Mode: SPA + API proxy vers api.wakfuli.com");
+  console.log("Mode: SPA shell + API/CDN proxy");
   console.log("Ctrl+C pour arreter");
 });
