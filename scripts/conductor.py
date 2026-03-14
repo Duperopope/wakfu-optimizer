@@ -1,14 +1,14 @@
 """
 conductor.py v1.0 - Agent Conductor pour le pipeline auto-codant
 Analyse les resultats et decide la prochaine action.
-Utilise mistral:7b via Ollama.
+Utilise qwen2.5-coder:7b via Ollama.
 """
 import json, urllib.request, time
 from pathlib import Path
 from datetime import datetime
 
 OLLAMA_URL = 'http://localhost:11434'
-MODEL = 'mistral:7b'
+MODEL = 'qwen2.5-coder:7b'
 PROJECT = Path(__file__).resolve().parent.parent
 LOGS = PROJECT / 'logs'
 LOGS.mkdir(exist_ok=True)
