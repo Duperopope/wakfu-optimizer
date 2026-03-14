@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
+/* ============================================
+   WAKFU OPTIMIZER — Design Tokens
+   Reproduit fidelement le theme Wakfuli dark
+   ============================================ */
+
+@theme {
+  /* --- Couleurs de fond --- */
+  --color-bg-darker: #0a0d13;
+  --color-bg-dark: #101319;
+  --color-bg-light: #1a1e27;
+  --color-bg-lighter: #22262f;
+  --color-bg-card: #383e4d;
+
+  /* --- Couleurs primaires --- */
+  --color-primary: #e1ffff;
+  --color-cyan-wakfuli: #71f2ff;
+
+  /* --- Couleurs elementaires --- */
+  --color-fire: #ff9333;
+  --color-water: #99f9f9;
+  --color-earth: #c4dd1e;
+  --color-air: #ed99ff;
+
+  /* --- Couleurs de stats --- */
+  --color-hp: #ff515b;
+  --color-ap: #19c1ef;
+  --color-mp: #afd34c;
+  --color-wp: #e1b900;
+
+  /* --- Couleurs de rarete --- */
+  --color-rarity-common: #b0b0b0;
+  --color-rarity-rare: #36e376;
+  --color-rarity-mythical: #f28c28;
+  --color-rarity-legendary: #ffd700;
+  --color-rarity-memory: #e84dff;
+  --color-rarity-epic: #ff6b9d;
+  --color-rarity-relic: #ff4444;
+
+  /* --- Couleurs UI --- */
+  --color-positive: #64dc29;
+  --color-negative: #ff4444;
+  --color-neutral: #8899aa;
+  --color-border: #2a2e37;
+  --color-border-light: #3a3e47;
+}
+
+/* --- Variables CSS custom pour les fonds alternes des effets --- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wakfuli-odd-bg: 16, 19, 25;
+  --wakfuli-even-bg: 22, 26, 35;
+  --wakfuli-color-neutral: 136, 153, 170;
+  --wakfuli-color-positive: 100, 220, 41;
+  --wakfuli-color-negative: 255, 68, 68;
+  --wakfuli-color-visibility-link-only: 255, 180, 40;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* --- Rarity gradient fades pour les item cards --- */
+.bg-rarity-common-fade {
+  background: linear-gradient(180deg, rgba(176,176,176,0.12) 0%, transparent 100%);
+}
+.bg-rarity-rare-fade {
+  background: linear-gradient(180deg, rgba(54,227,118,0.12) 0%, transparent 100%);
+}
+.bg-rarity-3-fade {
+  background: linear-gradient(180deg, rgba(242,140,40,0.12) 0%, transparent 100%);
+}
+.bg-rarity-4-fade {
+  background: linear-gradient(180deg, rgba(255,215,0,0.12) 0%, transparent 100%);
+}
+.bg-rarity-memory-fade {
+  background: linear-gradient(180deg, rgba(232,77,255,0.12) 0%, transparent 100%);
+}
+.bg-rarity-epic-fade {
+  background: linear-gradient(180deg, rgba(255,107,157,0.12) 0%, transparent 100%);
+}
+.bg-rarity-relic-fade {
+  background: linear-gradient(180deg, rgba(255,68,68,0.12) 0%, transparent 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* --- Police Bagnard (titres de sections) --- */
+@font-face {
+  font-family: 'Bagnard';
+  src: url('/fonts/Bagnard.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+.font-bagnard {
+  font-family: 'Bagnard', serif;
+}
+
+/* --- Scrollbar invisible (comme Wakfuli) --- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- Fond global --- */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a0d13;
+  color: #e1ffff;
 }
