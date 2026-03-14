@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { SLOT_ORDER, RARITY_CSS, RARITY_LABELS, type EquipmentSlot, type BuilderTab, type WakfuItem, type Rarity } from "@/types/wakfu";
+import { SLOT_ORDER, RARITY_CSS, RARITY_LABELS, POSITION_TO_SLOT, type EquipmentSlot, type BuilderTab, type WakfuItem, type Rarity } from "@/types/wakfu";
 import { useWakfuData } from "@/lib/useWakfuData";
 import { useBuild } from "@/lib/BuildContext";
-import { Funnel, ListOrdered, ArrowDownWideNarrow, LayoutList, Heart, Eye, Search, X, ScrollText, Hammer, Eraser, Plus, ExternalLink, EyeOff, Loader2 } from "lucide-react";
+import { Funnel, ListOrdered, ArrowDownWideNarrow, LayoutList, Heart, Eye, Search, X, ScrollText, Hammer, Eraser, Plus, ExternalLink, EyeOff, Loader2, Minus } from "lucide-react";
 
 const TABS: { key: BuilderTab; label: string }[] = [
   { key: "items", label: "items" },
@@ -63,19 +63,35 @@ export function RightPanel() {
 }
 
 function EquipmentSlotIcon({ slot }: { slot: EquipmentSlot }) {
-  const { build } = useBuild();
+  const { build, unequipItem } = useBuild();
   const equipped = build.equipment[slot];
+  const equippedItem = equipped?.item as WakfuItem | undefined;
+
   return (
-    <div className="relative bg-bg-dark">
-      <div className={`relative flex items-center justify-center rounded-sm border-2 transition-colors duration-200 h-13 w-13 cursor-pointer ${equipped ? "border-cyan-wakfuli/60 bg-cyan-wakfuli/10" : "border-transparent hover:border-primary/80 hover:bg-bg-light/30"}`}>
+    <div className="relative bg-bg-dark group">
+      <div className={`relative flex items-center justify-center rounded-sm border-2 transition-colors duration-200 h-13 w-13 cursor-pointer ${equipped ? "border-cyan-wakfuli/60 bg-cyan-wakfuli/10" : "border-transparent hover:border-primary/80 hover:bg-bg-light/30"}`}
+        onClick={() => equipped && unequipItem(slot)}
+        title={equipped ? `${equippedItem?.name || slot} - clic pour retirer` : slot}
+      >
         <span className="flex items-center justify-center h-13 w-13">
           <div className="h-full aspect-square flex items-center justify-center rounded bg-bg-dark p-1 border border-gray-700 transition-colors duration-200 hover:border-primary/80 hover:bg-bg-light/30">
             <div className="h-full w-full relative">
-              <img alt={slot} width={50} height={50} className="w-full h-full object-contain" src={`https://cdn.wakfuli.com/placeholders/${slot}.webp`} />
+              {equippedItem ? (
+                <img alt={equippedItem.name} width={50} height={50} className="w-full h-full object-contain"
+                  src={`https://cdn.wakfuli.com/items/${equippedItem.image_id}.webp`}
+                  onError={(e) => { (e.target as HTMLImageElement).src = `https://cdn.wakfuli.com/placeholders/${slot}.webp`; }} />
+              ) : (
+                <img alt={slot} width={50} height={50} className="w-full h-full object-contain" src={`https://cdn.wakfuli.com/placeholders/${slot}.webp`} />
+              )}
             </div>
           </div>
         </span>
       </div>
+      {equipped && (
+        <div className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <Minus className="h-2.5 w-2.5 text-white" />
+        </div>
+      )}
     </div>
   );
 }
@@ -100,9 +116,16 @@ function ItemsTab() {
     if (!allItems) return [];
     let items = allItems;
     items = items.filter((it) => it.level >= levelMin && it.level <= levelMax);
-    if (search.trim()) { const q = search.toLowerCase(); items = items.filter((it) => it.name.toLowerCase().includes(q) || String(it.id).includes(q)); }
-    if (activeTypes.size > 0) { items = items.filter((it) => { const tid = (it as Record<string,unknown>).item_type_id; return typeof tid === "number" && activeTypes.has(tid); }); }
-    if (activeRarities.size > 0) { items = items.filter((it) => activeRarities.has(it.rarity)); }
+    if (search.trim()) {
+      const q = search.toLowerCase();
+      items = items.filter((it) => it.name.toLowerCase().includes(q) || String(it.id).includes(q));
+    }
+    if (activeTypes.size > 0) {
+      items = items.filter((it) => it.types && it.types.some((t) => activeTypes.has(t)));
+    }
+    if (activeRarities.size > 0) {
+      items = items.filter((it) => activeRarities.has(it.rarity));
+    }
     return items.slice(0, 200);
   }, [allItems, search, levelMin, levelMax, activeTypes, activeRarities]);
 
@@ -158,15 +181,18 @@ function ItemsTab() {
       </div>
 
       <div className="flex-1 overflow-y-auto no-scrollbar">
-        {loading && <div className="flex items-center justify-center py-20 gap-3 text-primary/50"><Loader2 className="h-6 w-6 animate-spin" /><span>Chargement des items...</span></div>}
+        {loading && <div className="flex items-center justify-center py-20 gap-3 text-primary/50"><Loader2 className="h-6 w-6 animate-spin" /><span>Chargement de {allItems ? allItems.length : "..."} items...</span></div>}
         {error && <div className="text-center text-red-400 py-20">Erreur: {error}<br /><span className="text-sm text-primary/40">Verifie que data/wakfuli/all_items.json existe</span></div>}
         {!loading && !error && (
-          <div className="grid grid-cols-2 gap-1">
-            {filteredItems.length === 0
-              ? <div className="text-center text-primary/40 col-span-2 py-20">Aucun item ne correspond aux filtres</div>
-              : filteredItems.map((item, idx) => <ItemCard key={item.id} item={item} index={idx} />)
-            }
-          </div>
+          <>
+            <div className="text-xs text-primary/30 px-2 pb-1">{filteredItems.length} items affiches{allItems ? ` / ${allItems.length} total` : ""}</div>
+            <div className="grid grid-cols-2 gap-1">
+              {filteredItems.length === 0
+                ? <div className="text-center text-primary/40 col-span-2 py-20">Aucun item ne correspond aux filtres</div>
+                : filteredItems.map((item, idx) => <ItemCard key={item.id} item={item} index={idx} />)
+              }
+            </div>
+          </>
         )}
       </div>
     </div>
@@ -174,15 +200,26 @@ function ItemsTab() {
 }
 
 function ItemCard({ item, index }: { item: WakfuItem; index: number }) {
+  const { equipItem } = useBuild();
   const rc = RARITY_CSS[item.rarity] || "text-gray-400";
   const rl = RARITY_LABELS[item.rarity] || item.rarity;
   const bg = index % 2 === 0 ? "bg-bg-dark" : "bg-bg-light";
+
+  const handleEquip = () => {
+    if (!item.equipment_position || item.equipment_position.length === 0) return;
+    const pos = item.equipment_position[0];
+    const slot = POSITION_TO_SLOT[pos];
+    if (slot) {
+      equipItem(slot, item as unknown as Record<string, unknown>);
+    }
+  };
+
   return (
     <div className={`${bg} rounded-md p-2 flex flex-col gap-1 border border-transparent hover:border-primary/20 transition-colors`}>
       <div className="flex items-start gap-2">
         <div className="h-10 w-10 rounded bg-bg-darker flex items-center justify-center shrink-0 overflow-hidden">
           <img width={40} height={40} alt={item.name} className="h-full w-full object-contain"
-            src={`https://static.ankama.com/wakfu/portal/game/item/115/${item.imageId}.png`}
+            src={`https://cdn.wakfuli.com/items/${item.image_id}.webp`}
             onError={(e) => { (e.target as HTMLImageElement).src = "https://cdn.wakfuli.com/placeholders/helmet.webp"; }} />
         </div>
         <div className="flex-1 min-w-0">
@@ -198,14 +235,22 @@ function ItemCard({ item, index }: { item: WakfuItem; index: number }) {
       </div>
       {item.effects && item.effects.length > 0 && (
         <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
-          {item.effects.slice(0, 4).map((eff, i) => <span key={i} className="text-xs text-primary/60">{eff.value > 0 ? "+" : ""}{eff.value} {eff.label}</span>)}
+          {item.effects.slice(0, 4).map((eff, i) => (
+            <span key={i} className="text-xs text-primary/60">
+              {eff.format || `${eff.value > 0 ? "+" : ""}${eff.value} ${eff.type}`}
+            </span>
+          ))}
           {item.effects.length > 4 && <span className="text-xs text-primary/30">+{item.effects.length - 4}</span>}
         </div>
       )}
       <div className="flex items-center gap-1 mt-1">
-        <button className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-cyan-wakfuli/20 cursor-pointer transition-colors" title="Equiper"><Plus className="h-3.5 w-3.5 text-cyan-wakfuli" /></button>
+        <button onClick={handleEquip} className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-cyan-wakfuli/20 cursor-pointer transition-colors" title="Equiper"><Plus className="h-3.5 w-3.5 text-cyan-wakfuli" /></button>
         <button className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-bg-lighter cursor-pointer transition-colors" title="Favori"><Heart className="h-3.5 w-3.5 text-primary/50" /></button>
-        <button className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-bg-lighter cursor-pointer transition-colors" title="Wakfuli"><ExternalLink className="h-3.5 w-3.5 text-primary/50" /></button>
+        {item.encyclopedia_link && (
+          <a href={item.encyclopedia_link} target="_blank" rel="noopener noreferrer" className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-bg-lighter cursor-pointer transition-colors" title="Encyclopedie">
+            <ExternalLink className="h-3.5 w-3.5 text-primary/50" />
+          </a>
+        )}
         <button className="h-6 w-6 flex items-center justify-center rounded bg-bg-card hover:bg-bg-lighter cursor-pointer transition-colors" title="Masquer"><EyeOff className="h-3.5 w-3.5 text-primary/50" /></button>
       </div>
     </div>
