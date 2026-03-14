@@ -47,3 +47,53 @@
 - MELEE_DMG, RANGED_DMG, HEAL_IN_PERCENT, BERSERK_DMG
 - ARMOR_GIVEN, ARMOR_RECEIVED, INDIRECT_DMG
 - type null + states[] = effet passif special
+
+## Regles du projet
+- Fichiers backend dans MANIFEST.json/allowed_files AVANT creation
+- frontend/ dans protected_dirs (tous fichiers proteges)
+- Commandes via PowerShell uniquement
+- Data dans data/wakfuli/, logs dans logs/
+- Pas de placeholder, code complet et fonctionnel
+- data/wakfuli/*.json en local only (trop gros pour git)
+
+## Fichiers frontend (2026-03-14 14:45)
+- globals.css : OK (couleurs raretes + classes CSS explicites)
+- layout.tsx : OK (RootLayout + ThemeProvider + IBM Plex Sans)
+- page.tsx : OK (BuildProvider + BuilderLayout)
+- api/data/route.ts : OK (GET lit ../data/wakfuli/)
+- BuilderLayout.tsx : OK (split 30/70 draggable)
+- ClassSelector.tsx : OK (FIX stopPropagation niveau)
+- LeftPanel.tsx : OK (FIX icone WP, stats dynamiques)
+- RightPanel.tsx : OK (items, filtres, ItemCard, modal anneau)
+- Navbar.tsx : OK
+- BuildContext.tsx : OK (computeStats + pendingRingItem)
+- useWakfuData.ts : OK
+- wakfu.ts : OK (types, POSITION_TO_SLOT, RARITY_CSS)
+
+## Donnees locales
+- all_items.json 11.52 MB (7686 items)
+- all_actions.json 0.01 MB (68)
+- all_builds.json 38.39 MB (939)
+- all_spells.json 3.66 MB (908 sorts, 18 classes)
+- Version jeu : 1.91.1.53
+
+## Bugs corriges cette session
+1. Couleurs raretes (classes CSS explicites pour Tailwind 4)
+2. Chevauchement niveau/classe (stopPropagation)
+3. Icone WP cassee (WAKFU_POINT -> WP)
+4. Images items (cdn.wakfuli.com/items/{image_id}.webp)
+
+## Ce qui fonctionne
+- Selection classe, edition niveau, nom du build
+- 7686 items avec images + filtres (recherche, niveau, type, rarete)
+- Equip/unequip + modal anneau + stats recalculees
+- Couleurs rarete correctes (Memory bleu, Relic violet, Epic rose)
+
+## TODO
+- [ ] Boutons action LeftPanel (Copier, Lien, Visibilite, Favori)
+- [ ] Checkboxes bonus (Arbre, Gemme, Monture)
+- [ ] Onglet Sorts (all_spells.json)
+- [ ] Onglet Enchantements
+- [ ] Onglet Aptitudes
+- [ ] Onglet Notes
+- [ ] Sauvegarde/chargement builds (localStorage)
