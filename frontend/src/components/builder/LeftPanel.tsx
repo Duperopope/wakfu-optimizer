@@ -25,8 +25,14 @@ const CLASS_RESOURCE: Record<string, { label: string; icon: string; color: strin
   zobal: { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" },
 };
 
+function statColor(val: number, base: number = 0): string {
+  if (val > base) return "#64dc29";
+  if (val < base) return "#ff4444";
+  return "#8899aa";
+}
+
 export function LeftPanel() {
-  const { build, setName } = useBuild();
+  const { build, setName, stats } = useBuild();
   const resource = CLASS_RESOURCE[build.characterClass] || { label: "WP", icon: "WAKFU_POINT", color: "#19c1ef" };
 
   return (
@@ -59,12 +65,12 @@ export function LeftPanel() {
       <div className="flex-1 overflow-y-auto min-h-0 no-scrollbar p-4">
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-[2px]">
-            <StatCell icon="HP" label="PV" value="2050" color="#ff515b" />
-            <StatCell icon="AP" label="PA" value="6" color="#19c1ef" />
+            <StatCell icon="HP" label="PV" value={String(stats.HP)} color="#ff515b" />
+            <StatCell icon="AP" label="PA" value={String(stats.AP)} color="#19c1ef" />
           </div>
           <div className="flex w-full gap-[2px]">
-            <StatCell icon="MP" label="PM" value="3" color="#afd34c" />
-            <StatCell icon={resource.icon} label={resource.label} value="6" color={resource.color} />
+            <StatCell icon="MP" label="PM" value={String(stats.MP)} color="#afd34c" />
+            <StatCell icon={resource.icon} label={resource.label} value={String(stats.WP)} color={resource.color} />
           </div>
         </div>
 
@@ -74,22 +80,22 @@ export function LeftPanel() {
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-[2px]">
             <div className="flex flex-col flex-1 gap-[2px]">
-              <ElementStatCell icon="DMG_FIRE_PERCENT" value="0" color="#ff9333" />
-              <ElementStatCell icon="RES_FIRE_PERCENT" value="0% (0)" color="#ff9333" />
+              <ElementStatCell icon="DMG_FIRE_PERCENT" value={String(stats.DMG_FIRE_PERCENT)} color="#ff9333" />
+              <ElementStatCell icon="RES_FIRE_PERCENT" value={String(stats.RES_FIRE_PERCENT)} color="#ff9333" />
             </div>
             <div className="flex flex-col flex-1 gap-[2px]">
-              <ElementStatCell icon="DMG_WATER_PERCENT" value="0" color="#99f9f9" />
-              <ElementStatCell icon="RES_WATER_PERCENT" value="0% (0)" color="#99f9f9" />
+              <ElementStatCell icon="DMG_WATER_PERCENT" value={String(stats.DMG_WATER_PERCENT)} color="#99f9f9" />
+              <ElementStatCell icon="RES_WATER_PERCENT" value={String(stats.RES_WATER_PERCENT)} color="#99f9f9" />
             </div>
           </div>
           <div className="flex w-full gap-[2px]">
             <div className="flex flex-col flex-1 gap-[2px]">
-              <ElementStatCell icon="DMG_EARTH_PERCENT" value="0" color="#c4dd1e" />
-              <ElementStatCell icon="RES_EARTH_PERCENT" value="0% (0)" color="#c4dd1e" />
+              <ElementStatCell icon="DMG_EARTH_PERCENT" value={String(stats.DMG_EARTH_PERCENT)} color="#c4dd1e" />
+              <ElementStatCell icon="RES_EARTH_PERCENT" value={String(stats.RES_EARTH_PERCENT)} color="#c4dd1e" />
             </div>
             <div className="flex flex-col flex-1 gap-[2px]">
-              <ElementStatCell icon="DMG_AIR_PERCENT" value="0" color="#ed99ff" />
-              <ElementStatCell icon="RES_AIR_PERCENT" value="0% (0)" color="#ed99ff" />
+              <ElementStatCell icon="DMG_AIR_PERCENT" value={String(stats.DMG_AIR_PERCENT)} color="#ed99ff" />
+              <ElementStatCell icon="RES_AIR_PERCENT" value={String(stats.RES_AIR_PERCENT)} color="#ed99ff" />
             </div>
           </div>
         </div>
@@ -97,27 +103,27 @@ export function LeftPanel() {
         <div className="w-full text-lg px-3 font-bagnard mb-2">Combat</div>
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="FINAL_DMG_IN_PERCENT" label="Dommages infliges" value="0%" />
-            <StatCell icon="FINAL_HEAL_IN_PERCENT" label="Soins realises" value="0%" />
+            <StatCell icon="FINAL_DMG_IN_PERCENT" label="Dommages infliges" value={`${stats.FINAL_DMG_IN_PERCENT}%`} color={statColor(stats.FINAL_DMG_IN_PERCENT)} />
+            <StatCell icon="FINAL_HEAL_IN_PERCENT" label="Soins realises" value={`${stats.FINAL_HEAL_IN_PERCENT}%`} color={statColor(stats.FINAL_HEAL_IN_PERCENT)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="FEROCITY" label="% Coup critique" value="3%" color="#64dc29" />
-            <StatCell icon="BLOCK" label="% Parade" value="0%" />
+            <StatCell icon="FEROCITY" label="% Coup critique" value={`${stats.FEROCITY}%`} color={statColor(stats.FEROCITY, 3)} />
+            <StatCell icon="BLOCK" label="% Parade" value={`${stats.BLOCK}%`} color={statColor(stats.BLOCK)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="INIT" label="Initiative" value="0" />
-            <StatCell icon="RANGE" label="Portee" value="0" />
+            <StatCell icon="INIT" label="Initiative" value={String(stats.INIT)} color={statColor(stats.INIT)} />
+            <StatCell icon="RANGE" label="Portee" value={String(stats.RANGE)} color={statColor(stats.RANGE)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="DODGE" label="Esquive" value="0" />
-            <StatCell icon="TACKLE" label="Tacle" value="0" />
+            <StatCell icon="DODGE" label="Esquive" value={String(stats.DODGE)} color={statColor(stats.DODGE)} />
+            <StatCell icon="TACKLE" label="Tacle" value={String(stats.TACKLE)} color={statColor(stats.TACKLE)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="WISDOM" label="Sagesse" value="30" color="#64dc29" />
-            <StatCell icon="PROSPECTION" label="Prospection" value="30" color="#64dc29" />
+            <StatCell icon="WISDOM" label="Sagesse" value={String(stats.WISDOM)} color={statColor(stats.WISDOM)} />
+            <StatCell icon="PROSPECTION" label="Prospection" value={String(stats.PROSPECTION)} color={statColor(stats.PROSPECTION)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="WILLPOWER" label="Volonte" value="0" />
+            <StatCell icon="WILLPOWER" label="Volonte" value={String(stats.WILLPOWER)} color={statColor(stats.WILLPOWER)} />
             <div className="flex-1 min-w-0" />
           </div>
         </div>
@@ -125,27 +131,27 @@ export function LeftPanel() {
         <div className="w-full text-lg px-3 font-bagnard mb-2">Secondaire</div>
         <div className="flex w-full flex-col gap-y-[2px] mb-3 overflow-hidden rounded-md">
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="CRITICAL_BONUS" label="Maitrise critique" value="0" />
-            <StatCell icon="CRITICAL_RES" label="Resistance critique" value="0" />
+            <StatCell icon="CRITICAL_BONUS" label="Maitrise critique" value={String(stats.CRITICAL_BONUS)} color={statColor(stats.CRITICAL_BONUS)} />
+            <StatCell icon="CRITICAL_RES" label="Resistance critique" value={String(stats.CRITICAL_RES)} color={statColor(stats.CRITICAL_RES)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="BACKSTAB_BONUS" label="Maitrise dos" value="0" />
-            <StatCell icon="RES_BACKSTAB" label="Resistance dos" value="0" />
+            <StatCell icon="BACKSTAB_BONUS" label="Maitrise dos" value={String(stats.BACKSTAB_BONUS)} color={statColor(stats.BACKSTAB_BONUS)} />
+            <StatCell icon="RES_BACKSTAB" label="Resistance dos" value={String(stats.RES_BACKSTAB)} color={statColor(stats.RES_BACKSTAB)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="MELEE_DMG" label="Maitrise melee" value="0" />
-            <StatCell icon="ARMOR_GIVEN" label="Armure donnee" value="0%" />
+            <StatCell icon="MELEE_DMG" label="Maitrise melee" value={String(stats.MELEE_DMG)} color={statColor(stats.MELEE_DMG)} />
+            <StatCell icon="ARMOR_GIVEN" label="Armure donnee" value={`${stats.ARMOR_GIVEN}%`} color={statColor(stats.ARMOR_GIVEN)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="RANGED_DMG" label="Maitrise distance" value="0" />
-            <StatCell icon="ARMOR_RECEIVED" label="Armure recue" value="0%" />
+            <StatCell icon="RANGED_DMG" label="Maitrise distance" value={String(stats.RANGED_DMG)} color={statColor(stats.RANGED_DMG)} />
+            <StatCell icon="ARMOR_RECEIVED" label="Armure recue" value={`${stats.ARMOR_RECEIVED}%`} color={statColor(stats.ARMOR_RECEIVED)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="HEAL_IN_PERCENT" label="Maitrise soin" value="0" />
-            <StatCell icon="INDIRECT_DMG" label="Dommages indirects" value="0%" />
+            <StatCell icon="HEAL_IN_PERCENT" label="Maitrise soin" value={String(stats.HEAL_IN_PERCENT)} color={statColor(stats.HEAL_IN_PERCENT)} />
+            <StatCell icon="INDIRECT_DMG" label="Dommages indirects" value={`${stats.INDIRECT_DMG}%`} color={statColor(stats.INDIRECT_DMG)} />
           </div>
           <div className="flex w-full gap-x-[2px]">
-            <StatCell icon="BERSERK_DMG" label="Maitrise berserk" value="0" />
+            <StatCell icon="BERSERK_DMG" label="Maitrise berserk" value={String(stats.BERSERK_DMG)} color={statColor(stats.BERSERK_DMG)} />
             <div className="flex-1 min-w-0" />
           </div>
         </div>
@@ -182,7 +188,7 @@ function StatCell({ icon, label, value, color }: { icon: string; label?: string;
         </div>
         <div className="flex-1">
           <div className="w-fit float-right rounded-md px-1">
-            <button className="cursor-pointer text-sm text-right" style={{ color: color || "#8899aa" }}>{value}</button>
+            <span className="text-sm text-right" style={{ color: color || "#8899aa" }}>{value}</span>
           </div>
         </div>
       </div>
@@ -198,7 +204,7 @@ function ElementStatCell({ icon, value, color }: { icon: string; value: string; 
       </div>
       <div className="flex-1">
         <div className="w-fit float-right rounded-md px-1">
-          <button className="cursor-pointer text-sm" style={{ color }}>{value}</button>
+          <span className="text-sm" style={{ color }}>{value}</span>
         </div>
       </div>
     </div>
