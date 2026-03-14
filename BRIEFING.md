@@ -1,5 +1,5 @@
 # BRIEFING - wakfu-optimizer
-> Auto-genere le 2026-03-14 19:47:04
+> Auto-genere le 2026-03-14 20:05:16 par build_memory.py v3
 > CE FICHIER EST INJECTE AUTOMATIQUEMENT EN DEBUT DE SESSION PAR L'EXTENSION CHROME
 > Il resume TOUT ce qu'une IA doit savoir pour travailler sur ce projet
 
@@ -17,12 +17,13 @@ Sam est un Product Owner no-code. Il ne code PAS lui-meme. L'IA doit fournir des
 6. autopush.py tourne en fond et synchronise vers GitHub toutes les 5s
 7. Mettre a jour PROJECT_MEMORY.md et CHANGELOG.md a chaque etape importante
 8. Verifier les URLs CDN avant de les utiliser dans le code
+9. En fin de session : executer python scripts/session_end.py
 
 ## LE PROJET
 Un optimiseur de builds pour le MMORPG Wakfu, inspire du site Wakfuli (https://wakfuli.com).
 L'application permet de creer des builds : choisir une classe, un level, equiper des items, voir les stats calculees en temps reel.
 
-## STACK TECHNIQUE
+## STACK TECHNIQUE (auto-detecte)
 - **Framework** : Next.js 16.1.6 / React 19.2.3 / TypeScript 5
 - **CSS** : Tailwind CSS 4
 - **OS** : Windows 11 / PowerShell / VS Code
@@ -30,14 +31,11 @@ L'application permet de creer des builds : choisir une classe, un level, equiper
 - **Repo** : https://github.com/Duperopope/wakfu-optimizer
 - **Sync** : autopush.py (git add/commit/push toutes les 5s)
 
-## ARCHITECTURE FRONTEND (ou on travaille)
-Tous les fichiers actifs sont dans frontend/src/ :
-
-### Composants builder (frontend/src/components/builder/)
-- **BuilderLayout.tsx** : layout 2 panneaux avec split draggable 30/70
-- **LeftPanel.tsx (v5)** : panneau gauche - stats, bonus, priorite elementaire, enchantements
-- **RightPanel.tsx** : panneau droit - onglets items (filtre/equip) et enchantements (runes)
-- **ClassSelector.tsx** : modal selection classe + editeur de niveau
+## COMPOSANTS BUILDER (auto-detecte)
+- **BuilderLayout.tsx** (75 lignes)
+- **ClassSelector.tsx** (115 lignes)
+- **LeftPanel.tsx** v5 (396 lignes)
+- **RightPanel.tsx** (470 lignes)
 
 ### Contexte et logique (frontend/src/lib/)
 - **BuildContext.tsx** : etat global du build via React Context + useBuild() hook
@@ -48,9 +46,9 @@ Tous les fichiers actifs sont dans frontend/src/ :
 - **useWakfuData.ts** : hook de chargement des JSON
 - **wakfu.ts** : types TypeScript et constantes (CLASSES, etc.)
 
-### Assets (frontend/public/)
-- icons/stats/*.webp : 28 icones de stats (telechargees depuis cdn.wakfuli.com)
-- icons/bonuses/*.png : 3 icones custom (tree.png, gem.png, mount.png)
+### Assets (auto-detecte)
+- icons/stats/ : 33 icones .webp
+- icons/bonuses/ : 3 icones .png (tree.png, gem.png, mount.png)
 - data/*.json : copies locales des donnees Wakfuli
 
 ## CE QUI FONCTIONNE ACTUELLEMENT
@@ -58,13 +56,21 @@ Tous les fichiers actifs sont dans frontend/src/ :
 - 7686 items avec images, filtres, equip/unequip, modal double anneau
 - Stats recalculees dynamiquement via computeStats
 - 3 bonus toggles (Guilde/Havre-Monde/Monture) avec icones PNG custom
-- Barre de priorite elementaire draggable (Feu/Eau/Terre/Air) via HTML5 drag-and-drop
+- Barre de priorite elementaire draggable (Feu/Eau/Terre/Air)
 - Toggle enchantements + onglet runes
-- Boutons : Copier JSON, Lien partageable base64, Visibilite (public/lien/prive), Favori localStorage
-- Couleurs de rarete correctes (CSS explicite pour Tailwind 4)
-- Section debug en mode developpement
+- Boutons : Copier JSON, Lien partageable base64, Visibilite, Favori localStorage
+- Couleurs de rarete correctes
 
-## DONNEES CDN WAKFULI
+## DONNEES (auto-detecte)
+- all_items.json: 11.52 MB (7686 entrees)
+- all_actions.json: 12.8 KB (68 entrees)
+- all_builds.json: 38.39 MB (939 entrees)
+- all_spells.json: 3.66 MB
+- version.json: 71 B
+- sync_report.json: 512 B
+- spells_report.json: 2.2 KB
+
+## CDN WAKFULI
 - Stats : https://cdn.wakfuli.com/stats/{STAT_KEY}.webp
 - Classes : https://cdn.wakfuli.com/breeds/{class}.webp
 - Items : https://cdn.wakfuli.com/items/{image_id}.webp
@@ -79,7 +85,6 @@ Tous les fichiers actifs sont dans frontend/src/ :
 6. Integrer enchantements dans BuildContext
 7. Onglets Aptitudes et Notes
 8. Sauvegarde builds dans localStorage
-9. Connecter le moteur de combat Python (engine/) au frontend
 
 ## PROBLEMES CONNUS
 - gem.png pixelise (37x39px), compense par iconScale 2.0
@@ -87,20 +92,19 @@ Tous les fichiers actifs sont dans frontend/src/ :
 - Priorite elementaire non connectee a computeStats
 - Enchantements pas encore dans BuildContext
 
-## FICHIERS LEGACY (ne pas toucher sauf besoin specifique)
-- engine/ : moteur combat Python pour Sram (formules de degats reference)
-- decompiled/ : 332 fichiers Java decompiles du client Wakfu
-- data/raw/ + data/extracted/ : ancien systeme CDN Ankama
-- scripts/ : 41 scripts legacy dans archive/scripts_legacy/
-- reference/ : 758 fichiers scrapes de wakfuli.com
+## COMMITS RECENTS
+- 4d6e34b auto 20:05:19: ROJECT_MEMORY.md, dev_server.log
+- 77685c6 auto 20:00:09: dev_server.log
+- 4add6c4 auto 19:59:32: ANIFEST.json, dev_server.py
 
 ## SCRIPTS ACTIFS
 - **autopush.py** : sync git toutes les 5s, nettoie fichiers hors MANIFEST.json
+- **build_memory.py** : regenere PROJECT_MEMORY.md + BRIEFING.md (CE SCRIPT)
+- **session_end.py** : fin de session (CHANGELOG + SESSION_HANDOFF + build_memory)
 - **sync_wakfuli.py** : telecharge items/builds/spells depuis l'API Wakfuli
 - **install_spells.py** : installe les donnees de sorts
-- **build_memory.py** : regenere PROJECT_MEMORY.md depuis l'etat du repo
 
-## DOCUMENTATION COMPLEMENTAIRE
+## DOCUMENTATION
 - **PROJECT_MEMORY.md** : cerveau du projet (etat actuel, todo, regles)
 - **ARCHITECTURE.md** : inventaire detaille de tous les dossiers et fichiers
 - **CHANGELOG.md** : historique chronologique de toutes les sessions
