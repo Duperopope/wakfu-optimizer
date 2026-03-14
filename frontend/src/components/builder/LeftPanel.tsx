@@ -141,9 +141,9 @@ function encodePayload(data: unknown): string {
 }
 
 // ============================================================
-// Composant principal
+// Composant principal — EXPORT NOMME (pas default)
 // ============================================================
-export default function LeftPanel() {
+export function LeftPanel() {
   // --- State du build -------------------------------------------------------
   const [build, setBuild] = useState<BuildState>({
     name: "Mon Build",
@@ -154,7 +154,7 @@ export default function LeftPanel() {
 
   // --- Bonus toggles -------------------------------------------------------
   const [bonuses, setBonuses] = useState<Bonus[]>(
-    () => structuredClone(DEFAULT_BONUSES) // copie profonde pour eviter mutation
+    () => structuredClone(DEFAULT_BONUSES)
   );
 
   // --- Favoris (localStorage) -----------------------------------------------
@@ -198,7 +198,6 @@ export default function LeftPanel() {
       if (navigator?.clipboard?.writeText) {
         await navigator.clipboard.writeText(payload);
       } else {
-        // Fallback textarea
         const ta = document.createElement("textarea");
         ta.value = payload;
         ta.style.position = "fixed";
