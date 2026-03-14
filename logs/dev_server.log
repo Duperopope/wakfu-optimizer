@@ -31,3 +31,10 @@ Write-Host "Timestamp : $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundCo
 $briefing = Test-Path "H:\Code\Ankama Dev\wakfu-optimizer\BRIEFING.md"
 $memory ...
 [2026-03-14 20:12:33] [RESULT] Code: 0 | Duree: 0.5s | Stdout: 161 chars | Stderr: 968 chars
+[2026-03-14 20:15:37] [EXEC] Commande (21513 chars): # ===== build_memory.py v3 + session_end.py + MANIFEST update =====
+$projectDir = "H:\Code\Ankama Dev\wakfu-optimizer"
+
+# ---------------------------------------------------------------
+# 1. build_memory.py v3
+# ---------------------------------------------------------------
+$buildMemoryContent = @'...
