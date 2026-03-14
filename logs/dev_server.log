@@ -9,3 +9,7 @@ $extDir = "H:\Code\Ank
 [2026-03-14 20:07:24] [BLOCKED] Commande bloquee par pattern: Invoke-WebRequest | Commande: Copy# ===== FIX dev_server.py - Correction detection chemins avec espaces =====
 $projectDir = "H:\Co
 [2026-03-14 20:07:44] [STOP] Serveur arrete par l'utilisateur
+[2026-03-14 20:07:53] [START] Dev Server v1.1 demarre sur 127.0.0.1:8091
+[2026-03-14 20:07:53] [START] Projet : H:\Code\Ankama Dev\wakfu-optimizer
+[2026-03-14 20:07:53] [START] Chemin normalise : h:\code\ankama dev\wakfu-optimizer
+[2026-03-14 20:07:53] [START] Patterns bloques : 18
