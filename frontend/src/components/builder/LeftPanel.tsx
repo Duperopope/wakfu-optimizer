@@ -133,22 +133,22 @@ interface Bonus {
   label: string;
   shortLabel: string;
   icon: "tree" | "gem" | "mount";
-  iconSize: number;
+  iconScale: number;
   active: boolean;
   stats: Record<string, number>;
 }
 
 const DEFAULT_BONUSES: Bonus[] = [
   {
-    id: 1, label: "Bonus de Guilde", shortLabel: "Guilde", icon: "tree", iconSize: 20, active: false,
+    id: 1, label: "Bonus de Guilde", shortLabel: "Guilde", icon: "tree", iconScale: 1.0, active: false,
     stats: { HP: 55, DODGE: 20, TACKLE: 20, INIT: 10, WISDOM: 10, PROSPECTION: 10, DMG_IN_PERCENT: 8, HEAL_IN_PERCENT: 8, RES_FIRE_PERCENT: 5, RES_WATER_PERCENT: 5, RES_EARTH_PERCENT: 5, RES_AIR_PERCENT: 5 },
   },
   {
-    id: 2, label: "Bonus de Havre-Monde", shortLabel: "Havre", icon: "gem", iconSize: 44, active: false,
+    id: 2, label: "Bonus de Havre-Monde", shortLabel: "Havre", icon: "gem", iconScale: 2.0, active: false,
     stats: { HP: 10, WISDOM: 10, PROSPECTION: 10 },
   },
   {
-    id: 3, label: "Bonus de Monture", shortLabel: "Monture", icon: "mount", iconSize: 22, active: false,
+    id: 3, label: "Bonus de Monture", shortLabel: "Monture", icon: "mount", iconScale: 1.0, active: false,
     stats: { DMG_IN_PERCENT: 40 },
   },
 ];
@@ -289,7 +289,7 @@ export function LeftPanel() {
                   ? "bg-cyan-wakfuli/10 border-cyan-wakfuli/30 text-cyan-wakfuli"
                   : "bg-bg-lighter border-border text-neutral-500 hover:text-primary hover:border-border-light"
               }`}>
-              <img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} style={{ width: `${b.iconSize}px`, height: `${b.iconSize}px` }} />
+              <img src={`/icons/bonuses/${b.icon}.png`} alt={b.label} className="w-5 h-5" style={{ transform: `scale(${b.iconScale})` }} />
               <span className="hidden xl:inline">{b.shortLabel}</span>
             </button>
           ))}
@@ -418,6 +418,7 @@ export function LeftPanel() {
     </aside>
   );
 }
+
 
 
 
