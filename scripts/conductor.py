@@ -53,7 +53,11 @@ CONDUCTOR_PROMPT = (
     '"priority": "high" ou "medium" ou "low"}} '
     'Regles: continue=OK donne prochaine instruction, fix=erreur explique quoi corriger '
     '(ajoute fix_command avec la commande PowerShell pour corriger si possible), '
-    'escalate=probleme critique pour humain, done=tache terminee. Sois concis.'
+    'escalate=probleme critique pour humain, done=tache terminee. '
+    'IMPORTANT: fix_command DOIT etre une vraie commande PowerShell executable, '
+    'PAS du texte en francais. Exemple: python -c "print(2+2)" ou Write-Host "test". '
+    'Si tu ne sais pas comment corriger, utilise action=escalate pour demander a Claude Opus. '
+    'Sois concis.'
 )
 
 def ask_conductor(command, output, returncode, task_context=''):
@@ -117,6 +121,30 @@ def ask_conductor(command, output, returncode, task_context=''):
             return {'action': 'fix', 'message': 'Erreur: ' + output[:200], 'analysis': 'Echec (fallback)', 'priority': 'high'}
 
 def format_message(decision):
+    # Mini-contexte anti context-rot
+    try:
+        project = Path(__file__).resolve().parent.parent
+        todo_file = project / 'PROJECT_MEMORY.md'
+        if todo_file.exists():
+            tc = todo_file.read_text('utf-8', errors='replace')
+            idx = tc.find('- [ ]')
+            if idx > 0:
+                end = tc.find('\n', idx)
+                current_task = tc[idx:end].strip() if end > 0 else tc[idx:idx+100].strip()
+                decision['current_task'] = current_task
+    except: pass
+    # Mini-contexte anti context-rot
+    try:
+        project = Path(__file__).resolve().parent.parent
+        todo_file = project / 'PROJECT_MEMORY.md'
+        if todo_file.exists():
+            tc = todo_file.read_text('utf-8', errors='replace')
+            idx = tc.find('- [ ]')
+            if idx > 0:
+                end = tc.find('\n', idx)
+                current_task = tc[idx:end].strip() if end > 0 else tc[idx:idx+100].strip()
+                decision['current_task'] = current_task
+    except: pass
     action = decision.get('action', 'continue')
     msg = decision.get('message', '')
     analysis = decision.get('analysis', '')
